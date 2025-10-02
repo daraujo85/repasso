@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulado Interactivo – Repaso I (JSON)</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f8fafc; color:#222; margin:0; padding:0; font-size:18px; line-height:1.6; }
+    header { background:#4f46e5; color:#fff; padding:20px; text-align:center; position: sticky; top: 0; z-index: 1000; }
+    header h1 { margin:0; font-size:28px; }
+    main { max-width:1000px; margin:20px auto; padding:10px; }
+    .card { background:#fff; border:1px solid #ddd; border-radius:10px; padding:50px; margin:25px 0; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
+    h2 { font-size:22px; margin:0 0 15px; color:#333; }
+    label { display:block; margin:12px 0 6px; font-weight:bold; }
+    .row { display:flex; gap:12px; align-items:flex-start; margin-top:10px; }
+    .num { width:32px; font-weight:bold; }
+    input.inp { width:100%; padding:12px; font-size:18px; border:1px solid #bbb; border-radius:6px; }
+    .feedback { margin-top:6px; }
+    .ok { color:#065f46; background:#d1fae5; padding:8px; border-radius:6px; }
+    .bad { color:#991b1b; background:#fee2e2; padding:8px; border-radius:6px; }
+    .actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; justify-content:flex-end; }
+    button { font-size:18px; padding:12px 20px; border:none; border-radius:6px; cursor:pointer; }
+    #btnCheck { background:#4f46e5; color:#fff; }
+    #btnClear { background:#e5e7eb; }
+    #scoreBox { text-align:right; font-weight:bold; margin-bottom:15px; font-size:20px; }
+    .progress-bar { background:#e5e7eb; border-radius:6px; overflow:hidden; height:25px; margin:8px; }
+    .progress-fill { background:linear-gradient(to right,#4f46e5,#3b82f6); height:100%; width:0%; transition:width .2s ease; }
+    .badge { display:inline-block; background:#fff7ed; color:#c2410c; border:1px solid #fdba74; padding:2px 8px; border-radius:999px; font-size:12px; margin-left:10px; }
+    /* sticky container para manter nota e progresso visíveis */
+    .sticky-top { position: sticky; top: 72px; z-index: 999; padding: 8px 0; background: #f8fafc; box-shadow: 0 2px 5px rgba(0,0,0,0.06); }
+    .sticky-top #scoreBox { margin: 10px; }
+    
+    /* seletor de simulados, discreto e à direita */
+    .sim-selector { display:flex; justify-content:flex-end; align-items:center; gap:8px; margin: 6px 10px 0; }
+    .sim-select { font-size:14px; padding:6px 8px; border:1px solid #ddd; border-radius:6px; background:#fff; }
+    
+    /* botão WhatsApp */
+    .wa-btn { background:#25D366; color:#fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Simulado Interactivo – Repaso I</h1>
+    <p>Responda e veja o feedback imediato.</p>
+  </header>
+
+  <main>
+    <div class="sticky-top">
+      <div id="scoreBox">Nota: 0%</div>
+      <div class="progress-bar"><div id="progress" class="progress-fill"></div></div>
+      <div class="sim-selector">
+        <span style="font-weight:normal; font-size:14px; color:#555;">Simulado:</span>
+        <select id="simSelect" class="sim-select">
+          <option value="">Carregando simulados...</option>
+        </select>
+      </div>
+    </div>
+    <!-- container das seções geradas dinamicamente -->
+    <div id="quiz"></div>
+
+    <div class="actions">      
+      <button id="btnClear" onclick="location.reload()">Novo Simulado</button>
+      <button id="btnShare" class="wa-btn" onclick="shareWhatsApp()">Compartilhar no WhatsApp</button>
+    </div>
+  </main>
+
+  <script>
+    let totalQuestions = 0;
+
+    // util: embaralhar array
+    function shuffle(arr) {
+      const a = arr.slice();
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    // util: ordenar por numero ascendente
+    function sortByNumero(items) {
+      return (items || []).slice().sort((a, b) => {
+        const na = Number(a?.numero);
+        const nb = Number(b?.numero);
+        const va = Number.isFinite(na) ? na : Number.MAX_SAFE_INTEGER;
+        const vb = Number.isFinite(nb) ? nb : Number.MAX_SAFE_INTEGER;
+        return va - vb;
+      });
+    }
+
+    // Escolhe aleatoriamente uma variante por número, mantendo ordem numérica
+    function chooseVariants(items) {
+      const byNum = {};
+      (items || []).forEach(it => {
+        const n = Number(it?.numero);
+        const key = Number.isFinite(n) ? n : (it?.numero ?? '');
+        if (!byNum[key]) byNum[key] = [];
+        byNum[key].push(it);
+      });
+      const chosen = Object.keys(byNum).map(k => {
+        const arr = byNum[k];
+        return arr[Math.floor(Math.random() * arr.length)];
+      });
+      return sortByNumero(chosen);
+    }
+
+    // util: obter slug do query param (suporta ?slug=, ?s=, ?simulado=)
+    function getSlugParam() {
+      const params = new URLSearchParams(location.search);
+      return (params.get('slug') || params.get('s') || params.get('simulado') || '').toLowerCase();
+    }
+
+    // util: obter parâmetro de grupo (suporta ?group=, ?grupo=, ?section=)
+    function getGroupParam() {
+      const params = new URLSearchParams(location.search);
+      return (params.get('group') || params.get('grupo') || params.get('section') || '');
+    }
+
+    // Compartilhar via WhatsApp o simulado atual
+    function shareWhatsApp() {
+      try {
+        const sel = document.getElementById('simSelect');
+        const currentSlug = sel ? (sel.value || '') : '';
+        const url = new URL(location.href);
+        if (currentSlug) {
+          url.searchParams.set('slug', currentSlug);
+        }
+        // Remover parâmetros de grupo para link mais limpo
+        url.searchParams.delete('group');
+        url.searchParams.delete('grupo');
+        url.searchParams.delete('section');
+        const title = (document.querySelector('header h1')?.textContent || 'Simulado').trim();
+        const msg = `Vamos praticar? ${title}\n${url.toString()}`;
+        const shareUrl = 'https://wa.me/?text=' + encodeURIComponent(msg);
+        window.open(shareUrl, '_blank');
+      } catch (e) {
+        console.error('Falha ao compartilhar no WhatsApp', e);
+        alert('Não foi possível abrir o compartilhamento.');
+      }
+    }
+
+    // UI: renderiza seletor de simulados sem poluir a tela
+    function renderSimuladosSelector(simulados, selectedSlug) {
+      const sel = document.getElementById('simSelect');
+      if (!sel) return;
+      sel.innerHTML = '';
+      const placeholder = document.createElement('option');
+      placeholder.value = '';
+      placeholder.textContent = 'Selecione um simulado...';
+      placeholder.disabled = true;
+      placeholder.selected = !selectedSlug;
+      sel.appendChild(placeholder);
+
+      (simulados || []).forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = (s.slug || '').toLowerCase();
+        opt.textContent = s.title || s.slug || 'Simulado';
+        if (selectedSlug && opt.value === String(selectedSlug).toLowerCase()) {
+          opt.selected = true;
+        }
+        sel.appendChild(opt);
+      });
+
+      sel.addEventListener('change', () => {
+        const val = sel.value;
+        if (val) {
+          const url = new URL(location.href);
+          url.searchParams.set('slug', val);
+          // remover grupo se existir para evitar confusão
+          url.searchParams.delete('group');
+          url.searchParams.delete('grupo');
+          url.searchParams.delete('section');
+          location.href = url.toString();
+        }
+      });
+    }
+
+    async function loadSimulado() {
+      try {
+        const res = await fetch('questoes.json');
+        const data = await res.json();
+        const slug = getSlugParam();
+        let simulado = null;
+
+        // popula seletor com todos os simulados, já destacando o atual (se houver)
+        renderSimuladosSelector((data.simulados || []), slug);
+    
+        if (slug) {
+          simulado = (data.simulados || []).find(s => (s.slug || '').toLowerCase() === slug);
+        }
+    
+        // Se um slug foi informado mas não existe, mostra mensagem amigável e não faz fallback
+        if (slug && !simulado) {
+          const quiz = document.getElementById('quiz');
+          const headerTitle = document.querySelector('header h1');
+          if (headerTitle) {
+            headerTitle.textContent = 'Simulado – não disponível';
+          }
+          quiz.innerHTML = `
+            <section class="card">
+              <h2>Simulado indisponível</h2>
+              <p>😔 Desculpe, o simulado solicitado ainda não está disponível.</p>
+              <p>Verifique o endereço ou escolha outro simulado.</p>
+            </section>
+          `;
+          return;
+        }
+    
+        // Sem slug, escolhe um simulado aleatório como comportamento padrão
+        if (!slug) {
+          const sims = data.simulados || [];
+          simulado = sims[Math.floor(Math.random() * sims.length)];
+          // atualiza seletor para refletir o escolhido aleatoriamente
+          renderSimuladosSelector((data.simulados || []), simulado?.slug || '');
+        }
+    
+        // normaliza e ordena o conjunto de perguntas para o render (ordem numérica)
+        if (Array.isArray(simulado?.questions)) {
+          simulado = { ...simulado, questions: sortByNumero(simulado.questions) };
+        } else if (Array.isArray(simulado?.groupsSets)) {
+          // novo formato: groupsSets (array de conjuntos de grupos)
+          const normalizedSets = (simulado.groupsSets || []).map(set =>
+            (set || []).map(g => ({
+              ...g,
+              items: sortByNumero((g.items || g.perguntas || g.questions || []))
+            }))
+          );
+          if (normalizedSets.length > 0) {
+            const chosen = normalizedSets[Math.floor(Math.random() * normalizedSets.length)];
+            simulado = { ...simulado, groupsSets: normalizedSets, groups: chosen, __fromGroupsSets: true };
+          }
+        } else if (Array.isArray(simulado?.groups)) {
+          simulado = {
+            ...simulado,
+            groups: (simulado.groups || []).map(g => ({
+              ...g,
+              items: sortByNumero((g.items || g.perguntas || g.questions || []))
+            }))
+          };
+          // Seleciona group por parâmetro (index 1-based ou parte do título); se não houver, escolhe aleatoriamente
+          const groupParam = getGroupParam();
+          if ((simulado.groups || []).length > 0 && !simulado.__fromGroupsSets) {
+            let selected = null;
+            if (groupParam) {
+              const gp = groupParam.trim().toLowerCase();
+              const asIndex = Number(gp);
+              if (Number.isFinite(asIndex) && asIndex >= 1 && asIndex <= simulado.groups.length) {
+                selected = simulado.groups[asIndex - 1];
+              } else {
+                selected = simulado.groups.find(g => (g.title || '').toLowerCase().includes(gp)) || null;
+              }
+            }
+            if (!selected) {
+              selected = simulado.groups[Math.floor(Math.random() * simulado.groups.length)];
+            }
+            simulado = { ...simulado, groups: [selected] };
+          }
+        }
+    
+        // atualiza título no header
+        const headerTitle = document.querySelector('header h1');
+        if (headerTitle) {
+          headerTitle.textContent = `Simulado – ${simulado.title || 'Repaso I'}`;
+        }
+        // garante que o seletor reflita o simulado carregado
+        renderSimuladosSelector((data.simulados || []), simulado?.slug || slug || '');
+    
+        renderQuiz(simulado);
+      } catch (e) {
+        const quiz = document.getElementById('quiz');
+        quiz.innerHTML = '<div class="bad">Erro ao carregar questoes.json</div>';
+        console.error(e);
+      }
+    }
+
+    function renderQuiz(simulado) {
+      const quiz = document.getElementById('quiz');
+      quiz.innerHTML = '';
+
+      let count = 0;
+
+      // novo formato preferido: questions (lista plana)
+      if (Array.isArray(simulado.questions)) {
+        const section = document.createElement('section');
+        section.className = 'card';
+        section.innerHTML = `<h2>${simulado.title || 'Simulado'}</h2>`;
+
+        (simulado.questions || []).forEach((q, idx) => {
+          const wrap = document.createElement('div');
+          wrap.className = 'row';
+          const number = q.numero ?? (idx + 1);
+          wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
+          wrap.dataset.msg = q.mensagem || '';
+          const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
+          wrap.dataset.type = t;
+
+          let inputHtml = '';
+          if (t === 'mc' && Array.isArray(q.opcoes)) {
+            const name = `q-questions-${number}`;
+            inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="${opt}"> ${opt}</label>`).join('');
+          } else if (t === 'vf') {
+            const name = `q-questions-${number}`;
+            inputHtml = `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="V"> Verdadeiro</label>` +
+                        `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="F"> Falso</label>`;
+          } else if (t === 'select' && Array.isArray(q.opcoes)) {
+            inputHtml = `<select class="sel" style="width:100%; padding:12px; font-size:18px; border:1px solid #bbb; border-radius:6px;">` +
+                        q.opcoes.map(opt => `<option value="${opt}">${opt}</option>`).join('') +
+                        `</select>`;
+          } else if (t === 'assoc' && Array.isArray(q.pares)) {
+            const options = q.pares.map(p => p.b);
+            inputHtml = `<div class="assoc">` +
+                        q.pares.map((p, i) => `<div style="display:flex; gap:8px; align-items:center; margin:6px 0;"><div style="width:32px; font-weight:bold;">${i+1})</div><div style="flex:1;">${p.a}</div><div style="min-width:200px;"><select class="assoc-sel" style="width:100%; padding:10px; font-size:16px; border:1px solid #bbb; border-radius:6px;"><option value="" selected disabled>Seleccione...</option>` +
+                        options.map(opt => `<option value=\"${opt}\">${opt}</option>`).join('') +
+                        `</select></div></div>`).join('') + `</div>`;
+            // sobrescreve gabarito com ordem correta das correspondências
+            wrap.dataset.gabarito = JSON.stringify(options);
+          } else if (t === 'checkbox' && Array.isArray(q.opcoes)) {
+            const name = `q-questions-${number}`;
+            inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="checkbox" name="${name}" value="${opt}"> ${opt}</label>`).join('');
+          } else {
+            inputHtml = `<input class="inp" type="text">`;
+          }
+          wrap.innerHTML = `
+            <div class="num">${number}.</div>
+            <div style="flex:1">
+              <label class="label">${q.enunciado}</label>
+              ${inputHtml}
+              <div class="feedback"></div>
+            </div>
+          `;
+          section.appendChild(wrap);
+        });
+
+        quiz.appendChild(section);
+        count = (simulado.questions || []).length;
+      } else if (Array.isArray(simulado.groups)) {
+        // grupos (seções)
+        simulado.groups.forEach((group, gidx) => {
+          const section = document.createElement('section');
+          section.className = 'card';
+          const title = group.title || `Seção ${gidx + 1}`;
+          const badge = group.badge || '';
+          section.innerHTML = `<h2>${title}${badge ? ` <span class="badge">${badge}</span>` : ''}</h2>`;
+
+          const groupItems = group.items || group.perguntas || group.questions || [];
+          groupItems.forEach((q, idx) => {
+            count++;
+            const wrap = document.createElement('div');
+            wrap.className = 'row';
+            const number = q.numero ?? idx + 1;
+            wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
+            wrap.dataset.msg = q.mensagem || '';
+            const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
+            wrap.dataset.type = t;
+
+            let inputHtml = '';
+            if (t === 'mc' && Array.isArray(q.opcoes)) {
+              const name = `q-${gidx}-${number}`;
+              inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="${opt}"> ${opt}</label>`).join('');
+            } else if (t === 'vf') {
+              const name = `q-${gidx}-${number}`;
+              inputHtml = `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="V"> Verdadeiro</label>` +
+                          `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="F"> Falso</label>`;
+            } else if (t === 'select' && Array.isArray(q.opcoes)) {
+              inputHtml = `<select class="sel" style="width:100%; padding:12px; font-size:18px; border:1px solid #bbb; border-radius:6px;">` +
+                          q.opcoes.map(opt => `<option value="${opt}">${opt}</option>`).join('') +
+                          `</select>`;
+            } else if (t === 'assoc' && Array.isArray(q.pares)) {
+              const options = q.pares.map(p => p.b);
+              inputHtml = `<div class="assoc">` +
+                          q.pares.map((p, i) => `<div style="display:flex; gap:8px; align-items:center; margin:6px 0;"><div style="width:32px; font-weight:bold;">${i+1})</div><div style="flex:1;">${p.a}</div><div style="min-width:200px;"><select class="assoc-sel" style="width:100%; padding:10px; font-size:16px; border:1px solid #bbb; border-radius:6px;"><option value="" selected disabled>Seleccione...</option>` +
+                          options.map(opt => `<option value=\"${opt}\">${opt}</option>`).join('') +
+                          `</select></div></div>`).join('') + `</div>`;
+              // sobrescreve gabarito com ordem correta das correspondências
+              wrap.dataset.gabarito = JSON.stringify(options);
+            } else if (t === 'checkbox' && Array.isArray(q.opcoes)) {
+              const name = `q-${gidx}-${number}`;
+              inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="checkbox" name="${name}" value="${opt}"> ${opt}</label>`).join('');
+            } else {
+              inputHtml = `<input class="inp" type="text">`;
+            }
+
+            wrap.innerHTML = `
+              <div class="num">${number}.</div>
+              <div style="flex:1">
+                <label class="label">${q.enunciado}</label>
+                ${inputHtml}
+                <div class="feedback"></div>
+              </div>
+            `;
+            section.appendChild(wrap);
+          });
+
+          quiz.appendChild(section);
+        });
+      } else {
+        // legado plano: única seção
+        const items = Object.values(simulado);
+        count = items.length;
+
+        const section = document.createElement('section');
+        section.className = 'card';
+        section.innerHTML = `<h2>Simulado</h2>`;
+
+        items.forEach((q, idx) => {
+          const wrap = document.createElement('div');
+          wrap.className = 'row';
+          const number = q.numero ?? (idx + 1);
+          wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
+          wrap.dataset.msg = q.mensagem || '';
+          const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
+          wrap.dataset.type = t;
+
+            let inputHtml = '';
+            if (t === 'mc' && Array.isArray(q.opcoes)) {
+              const name = `q-legacy-${number}`;
+              inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="${opt}"> ${opt}</label>`).join('');
+            } else if (t === 'vf') {
+              const name = `q-legacy-${number}`;
+              inputHtml = `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="V"> Verdadeiro</label>` +
+                          `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="F"> Falso</label>`;
+            } else if (t === 'select' && Array.isArray(q.opcoes)) {
+              inputHtml = `<select class="sel" style="width:100%; padding:12px; font-size:18px; border:1px solid #bbb; border-radius:6px;">` +
+                          q.opcoes.map(opt => `<option value="${opt}">${opt}</option>`).join('') +
+                          `</select>`;
+            } else if (t === 'assoc' && Array.isArray(q.pares)) {
+              const options = q.pares.map(p => p.b);
+              inputHtml = `<div class="assoc">` +
+                          q.pares.map((p, i) => `<div style="display:flex; gap:8px; align-items:center; margin:6px 0;"><div style="width:32px; font-weight:bold;">${i+1})</div><div style="flex:1;">${p.a}</div><div style="min-width:200px;"><select class="assoc-sel" style="width:100%; padding:10px; font-size:16px; border:1px solid #bbb; border-radius:6px;"><option value="" selected disabled>Seleccione...</option>` +
+                          options.map(opt => `<option value=\"${opt}\">${opt}</option>`).join('') +
+                          `</select></div></div>`).join('') + `</div>`;
+              // sobrescreve gabarito com ordem correta das correspondências
+              wrap.dataset.gabarito = JSON.stringify(options);
+            } else if (t === 'checkbox' && Array.isArray(q.opcoes)) {
+              const name = `q-legacy-${number}`;
+              inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="checkbox" name="${name}" value="${opt}"> ${opt}</label>`).join('');
+            } else {
+              inputHtml = `<input class="inp" type="text">`;
+            }
+          wrap.innerHTML = `
+            <div class="num">${number}.</div>
+            <div style="flex:1">
+              <label class="label">${q.enunciado}</label>
+              ${inputHtml}
+              <div class="feedback"></div>
+            </div>
+          `;
+          section.appendChild(wrap);
+        });
+
+        quiz.appendChild(section);
+      }
+
+      totalQuestions = count;
+
+      // Eventos dos inputs
+      // substituir por eventos por tipo
+      Array.from(document.querySelectorAll('section.card .row')).forEach(row => {
+        const type = row.dataset.type || 'text';
+        if (type === 'text') {
+          const inp = row.querySelector('input.inp');
+          if (inp) {
+            inp.addEventListener('blur', () => { checkRow(row); updateScore(); });
+            inp.addEventListener('input', () => {
+              const fb = row.querySelector('.feedback');
+              fb.innerHTML = '';
+              row.dataset.checked = 'false';
+              row.dataset.correct = '0';
+            });
+          }
+        } else if (type === 'select') {
+          const sel = row.querySelector('select.sel') || row.querySelector('select');
+          if (sel) {
+            sel.addEventListener('change', () => { checkRow(row); updateScore(); });
+          }
+        } else if (type === 'assoc') {
+          row.querySelectorAll('select.assoc-sel').forEach(sel => {
+            sel.addEventListener('change', () => { checkRow(row); updateScore(); });
+          });
+        } else if (type === 'checkbox') {
+          row.querySelectorAll('input[type=checkbox]').forEach(chk => {
+            chk.addEventListener('change', () => { checkRow(row); updateScore(); });
+          });
+        } else { // mc ou vf
+          row.querySelectorAll('input[type=radio]').forEach(radio => {
+            radio.addEventListener('change', () => { checkRow(row); updateScore(); });
+          });
+        }
+      });
+    }
+
+    function normalize(s) {
+      return s.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function checkField(el) {
+      const feedback = el.parentElement.querySelector('.feedback');
+      const ans = JSON.parse(el.dataset.gabarito);
+      const val = normalize(el.value);
+      
+      if(!val)
+      {
+        return;
+      }
+
+      const isCorrect = ans.some(a => normalize(a) === val);
+      if (isCorrect) {
+        feedback.innerHTML = '<div class="ok">✅ Correto</div>';
+      } else {
+        const corr = ans[0];
+        const msg = el.dataset.msg || '';
+        feedback.innerHTML = `<div class="bad">❌ Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+      }
+      el.dataset.checked = 'true';
+      el.dataset.correct = isCorrect ? '1' : '0';
+      return isCorrect;
+    }
+
+    function clearFeedback(el) {
+      const fb = el.parentElement.querySelector('.feedback');
+      fb.innerHTML = '';
+      el.dataset.checked = 'false';
+      el.dataset.correct = '0';
+    }
+
+    function checkAll() {
+      const rows = Array.from(document.querySelectorAll('section.card .row'));
+      let correct = 0;
+      rows.forEach(row => { if (checkRow(row)) correct++; });
+      const pct = Math.round((correct / totalQuestions) * 100);
+      document.getElementById('scoreBox').textContent = `Nota: ${pct}%`;
+      document.getElementById('progress').style.width = pct + '%';
+    }
+
+    function updateScore() {
+      const rows = Array.from(document.querySelectorAll('section.card .row')).filter(row => row.dataset.checked === 'true');
+      const correct = rows.filter(row => row.dataset.correct === '1').length;
+      const pct = Math.round((correct / totalQuestions) * 100);
+      document.getElementById('scoreBox').textContent = `Nota: ${pct}%`;
+      document.getElementById('progress').style.width = pct + '%';
+    }
+
+    function checkRow(row) {
+      const feedback = row.querySelector('.feedback');
+      const ans = JSON.parse(row.dataset.gabarito || '[]');
+      const type = row.dataset.type || 'text';
+      let val = '';
+  
+      if (type === 'text') {
+        const inp = row.querySelector('input.inp');
+        val = inp ? inp.value : '';
+      } else if (type === 'select') {
+        const sel = row.querySelector('select.sel') || row.querySelector('select');
+        val = sel ? (sel.value || sel.options[sel.selectedIndex]?.text || '') : '';
+      } else if (type === 'assoc') {
+        const sels = Array.from(row.querySelectorAll('select.assoc-sel'));
+        const vals = sels.map(sel => sel ? (sel.value || '') : '');
+        // se algum estiver vazio, não corrige ainda
+        if (vals.some(v => !normalize(String(v)))) {
+          return false;
+        }
+        const valsNorm = vals.map(v => normalize(String(v)));
+        const ansArr = (ans || []).map(a => normalize(String(a)));
+        const isCorrect = ansArr.length === valsNorm.length && ansArr.every((a, i) => a === valsNorm[i]);
+        if (isCorrect) {
+          feedback.innerHTML = '<div class="ok">✅ Correto</div>';
+        } else {
+          const corr = (ans || []).join(', ');
+          const msg = row.dataset.msg || '';
+          feedback.innerHTML = `<div class=\"bad\">❌ Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+        }
+        row.dataset.checked = 'true';
+        row.dataset.correct = isCorrect ? '1' : '0';
+        return isCorrect;
+      } else if (type === 'checkbox') {
+        const checks = Array.from(row.querySelectorAll('input[type=checkbox]:checked'));
+        const vals = checks.map(ch => ch.value);
+        const expectedLen = (ans || []).length;
+        if (vals.length !== expectedLen) {
+          return false;
+        }
+        const valsNorm = vals.map(v => normalize(String(v))).sort();
+        const ansArr = (ans || []).map(a => normalize(String(a))).sort();
+        const isCorrect = ansArr.length === valsNorm.length && ansArr.every((a, i) => a === valsNorm[i]);
+        if (isCorrect) {
+          feedback.innerHTML = '<div class=\"ok\">✅ Correto</div>';
+        } else {
+          const corr = (ans || []).join(', ');
+          const msg = row.dataset.msg || '';
+          feedback.innerHTML = `<div class=\"bad\">❌ Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+        }
+        row.dataset.checked = 'true';
+        row.dataset.correct = isCorrect ? '1' : '0';
+        return isCorrect;
+      } else { // mc ou vf
+        const checked = row.querySelector('input[type=radio]:checked');
+        val = checked ? checked.value : '';
+      }
+
+      const nval = normalize(val);
+      if (!nval) {
+        return false;
+      }
+
+      const isCorrect = (ans || []).some(a => normalize(String(a)) === nval);
+      if (isCorrect) {
+        feedback.innerHTML = '<div class="ok">✅ Correto</div>';
+      } else {
+        const corr = (ans || [])[0] ?? '';
+        const msg = row.dataset.msg || '';
+        feedback.innerHTML = `<div class="bad">❌ Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+      }
+      row.dataset.checked = 'true';
+      row.dataset.correct = isCorrect ? '1' : '0';
+      return isCorrect;
+    }
+
+    loadSimulado();
+  </script>
+  <script>
+  // Ajuste dinâmico: posiciona a barra de progresso sticky logo abaixo do header
+  (function(){
+    function updateStickyTop(){
+      const header = document.querySelector('header');
+      const sticky = document.querySelector('.sticky-top');
+      if (!header || !sticky) return;
+      const h = header.offsetHeight;
+      sticky.style.top = h + 'px';
+    }
+    window.addEventListener('load', updateStickyTop);
+    window.addEventListener('resize', updateStickyTop);
+  })();
+  </script>
+  <!-- Botão flutuante: Ir ao topo -->
+  <script>
+  (function(){
+    const btn = document.createElement('button');
+    btn.id = 'btnTopo';
+    btn.type = 'button';
+    btn.setAttribute('aria-label', 'Ir ao topo');
+    btn.title = 'Ir ao topo';
+    // Ícone SVG seta para cima
+    btn.innerHTML = '<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z" fill="currentColor"></path></svg>';
+    Object.assign(btn.style, {
+      position: 'fixed',
+      right: '20px',
+      bottom: '20px',
+      zIndex: '9999',
+      width: '56px',
+      height: '56px',
+      padding: '0',
+      borderRadius: '50%',
+      background: 'linear-gradient(135deg,#4f46e5,#3b82f6)',
+      color: '#fff',
+      border: 'none',
+      boxShadow: '0 6px 14px rgba(0,0,0,0.2)',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    });
+    // Mostrar apenas após rolar um pouco
+    btn.style.display = 'none';
+    let ticking = false;
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          btn.style.display = window.scrollY > 200 ? 'block' : 'none';
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+  
+    btn.addEventListener('mouseenter', () => { btn.style.transform = 'scale(1.06)'; });
+    btn.addEventListener('mouseleave', () => { btn.style.transform = 'scale(1)'; });
+  
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  
+    document.body.appendChild(btn);
+  })();
+  </script>
+</body>
+</html>

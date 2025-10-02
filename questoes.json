@@ -1,0 +1,3266 @@
+{
+  "simulados": [
+    {
+      "title": "Repaso I",
+      "slug": "repaso-i",
+      "groupsSets": [
+        [
+          {
+            "title": "1) Presente de indicativo (SER/TENER/ESTAR y outros)",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Aquel hombre ____ nuestro profesor de matemáticas. (SER)",
+                "gabarito": [
+                  "es"
+                ],
+                "mensagem": "SER"
+              },
+              {
+                "numero": 2,
+                "enunciado": "No ____ el peor jugador de nuestro equipo. (SER – TÚ)",
+                "gabarito": [
+                  "eres"
+                ],
+                "mensagem": "SER – TÚ"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Ustedes ____ razón. (TENER)",
+                "gabarito": [
+                  "tienen"
+                ],
+                "mensagem": "TENER"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Yo siempre ____ hambre por la noche. (TENER)",
+                "gabarito": [
+                  "tengo"
+                ],
+                "mensagem": "TENER"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Yo ____ estudiando. (ESTAR)",
+                "gabarito": [
+                  "estoy"
+                ],
+                "mensagem": "ESTAR"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Marcos y Carlos ____ en la escuela. (ESTAR)",
+                "gabarito": [
+                  "estan",
+                  "están"
+                ],
+                "mensagem": "ESTAR"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Nosotros ____ en el club deportivo. (NADAR)",
+                "gabarito": [
+                  "nadamos"
+                ],
+                "mensagem": "NADAR"
+              },
+              {
+                "numero": 8,
+                "enunciado": "¿____ mucho? (TRABAJAR – VOSOTROS)",
+                "gabarito": [
+                  "trabajais",
+                  "trabajáis"
+                ],
+                "mensagem": "TRABAJAR – VOSOTROS"
+              },
+              {
+                "numero": 9,
+                "enunciado": "María siempre ____ muchos trabajos. (IMPRIMIR)",
+                "gabarito": [
+                  "imprime"
+                ],
+                "mensagem": "IMPRIMIR"
+              },
+              {
+                "numero": 10,
+                "enunciado": "No ____ en las brujas. (CREER – YO)",
+                "gabarito": [
+                  "creo"
+                ],
+                "mensagem": "CREER – YO"
+              },
+              {
+                "numero": 11,
+                "enunciado": "El ayuntamiento ____ las calles una vez a la semana. (BARRER)",
+                "gabarito": [
+                  "barre"
+                ],
+                "mensagem": "BARRER"
+              },
+              {
+                "numero": 12,
+                "enunciado": "¿____ agua a la leche? (AÑADIR – TÚ)",
+                "gabarito": [
+                  "anades",
+                  "añades"
+                ],
+                "mensagem": "AÑADIR – TÚ"
+              },
+              {
+                "numero": 13,
+                "enunciado": "¿____ mucho con el calor? (SUFRIR – VOSOTROS)",
+                "gabarito": [
+                  "sufris",
+                  "sufrís"
+                ],
+                "mensagem": "SUFRIR – VOSOTROS"
+              }
+            ],
+            "badge": "Completar"
+          },
+          {
+            "title": "2) Números cardinales (escribe en palabras)",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "3971",
+                "gabarito": [
+                  "tres mil novecientos setenta y uno"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "2222",
+                "gabarito": [
+                  "dos mil doscientos veintidos",
+                  "dos mil doscientos veintidós"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "646",
+                "gabarito": [
+                  "seiscientos cuarenta y seis"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "5950",
+                "gabarito": [
+                  "cinco mil novecientos cincuenta"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "320",
+                "gabarito": [
+                  "trescientos veinte"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 6,
+                "enunciado": "516",
+                "gabarito": [
+                  "quinientos dieciseis",
+                  "quinientos dieciséis"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 7,
+                "enunciado": "807",
+                "gabarito": [
+                  "ochocientos siete"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 8,
+                "enunciado": "114",
+                "gabarito": [
+                  "ciento catorce"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 9,
+                "enunciado": "204",
+                "gabarito": [
+                  "doscientos cuatro"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 10,
+                "enunciado": "1788",
+                "gabarito": [
+                  "mil setecientos ochenta y ocho"
+                ],
+                "mensagem": null
+              }
+            ],
+            "badge": "Escritura"
+          },
+          {
+            "title": "3) Adjetivos posesivos",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "___ amigo es muy simpático. (yo)",
+                "gabarito": [
+                  "mi"
+                ],
+                "mensagem": "yo"
+              },
+              {
+                "numero": 2,
+                "enunciado": "___ perros son bonitos. (él)",
+                "gabarito": [
+                  "sus"
+                ],
+                "mensagem": "él"
+              },
+              {
+                "numero": 3,
+                "enunciado": "___ camas están arregladas. (nosotros)",
+                "gabarito": [
+                  "nuestras"
+                ],
+                "mensagem": "nosotros"
+              },
+              {
+                "numero": 4,
+                "enunciado": "¿Es este ___ libro, señor? (usted)",
+                "gabarito": [
+                  "su"
+                ],
+                "mensagem": "usted"
+              },
+              {
+                "numero": 5,
+                "enunciado": "___ amiga es muy tímida. (tú)",
+                "gabarito": [
+                  "tu"
+                ],
+                "mensagem": "tú"
+              },
+              {
+                "numero": 6,
+                "enunciado": "___ cuadernos son pequeños. (yo)",
+                "gabarito": [
+                  "mis"
+                ],
+                "mensagem": "yo"
+              },
+              {
+                "numero": 7,
+                "enunciado": "___ coche es moderno. (vosotros)",
+                "gabarito": [
+                  "vuestro"
+                ],
+                "mensagem": "vosotros"
+              },
+              {
+                "numero": 8,
+                "enunciado": "___ libros están cerrados. (nosotras)",
+                "gabarito": [
+                  "nuestros"
+                ],
+                "mensagem": "nosotras"
+              }
+            ],
+            "badge": "Completar"
+          },
+          {
+            "title": "4) ¿Qué hora es?",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "10:00",
+                "gabarito": [
+                  "son las diez"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "1:55",
+                "gabarito": [
+                  "son las dos menos cinco"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "11:25",
+                "gabarito": [
+                  "son las once y veinticinco"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "7:35",
+                "gabarito": [
+                  "son las ocho menos veinticinco"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "8:15",
+                "gabarito": [
+                  "son las ocho y cuarto"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 6,
+                "enunciado": "9:50",
+                "gabarito": [
+                  "son las diez menos diez"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 7,
+                "enunciado": "2:30",
+                "gabarito": [
+                  "son las dos y media"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 8,
+                "enunciado": "8:40",
+                "gabarito": [
+                  "son las nueve menos veinte"
+                ],
+                "mensagem": null
+              }
+            ],
+            "badge": "Expresa la hora"
+          },
+          {
+            "title": "5) Nombres de letras → palabra",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "a) E – ese – pe – a – eñe – a",
+                "gabarito": [
+                  "españa",
+                  "espana"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "b) cu – u – i – ene – ce – e",
+                "gabarito": [
+                  "quince"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "c) ce – o – che – e",
+                "gabarito": [
+                  "coche"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "d) i griega – e – ge – u – a",
+                "gabarito": [
+                  "yegua"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "e) uve – a – ce – a",
+                "gabarito": [
+                  "vaca"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 6,
+                "enunciado": "f) ce – e – be – o – elle – a",
+                "gabarito": [
+                  "cebolla"
+                ],
+                "mensagem": null
+              }
+            ],
+            "badge": "Formar palabra"
+          },
+          {
+            "title": "6) Plural de palabras",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "actriz →",
+                "gabarito": [
+                  "actrices"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "jugador →",
+                "gabarito": [
+                  "jugadores"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "estudiante →",
+                "gabarito": [
+                  "estudiantes"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "reloj →",
+                "gabarito": [
+                  "relojes"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "pie →",
+                "gabarito": [
+                  "pies"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 6,
+                "enunciado": "juez →",
+                "gabarito": [
+                  "jueces"
+                ],
+                "mensagem": null
+              }
+            ],
+            "badge": "Transformar"
+          },
+          {
+            "title": "7) Femenino",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "el enfermero →",
+                "gabarito": [
+                  "la enfermera"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "el entrenador →",
+                "gabarito": [
+                  "la entrenadora"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "el ciclista →",
+                "gabarito": [
+                  "la ciclista"
+                ],
+                "mensagem": null
+              }
+            ],
+            "badge": "Transformar"
+          },
+          {
+            "title": "8) Demostrativos",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "____ camino es más peligroso.",
+                "gabarito": [
+                  "este",
+                  "ese",
+                  "aquel"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "____ casa es moderna.",
+                "gabarito": [
+                  "esta",
+                  "esa",
+                  "aquella"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "____ regalos son para Sandra.",
+                "gabarito": [
+                  "estos",
+                  "esos",
+                  "aquellos"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "____ sillas están sucias.",
+                "gabarito": [
+                  "estas",
+                  "esas",
+                  "aquellas"
+                ],
+                "mensagem": null
+              }
+            ],
+            "badge": "Completar"
+          },
+          {
+            "title": "9) Interrogativos",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "¿____ haces? ¿Estudias o trabajas?",
+                "gabarito": [
+                  "qué",
+                  "que"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿____ es tu amigo? — Es alto y moreno.",
+                "gabarito": [
+                  "cómo",
+                  "como"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "¿____ está tu mochila? — En mi dormitorio.",
+                "gabarito": [
+                  "dónde",
+                  "donde"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "¿____ es tu lápiz? — El azul.",
+                "gabarito": [
+                  "cuál",
+                  "cual"
+                ],
+                "mensagem": null
+              }
+            ],
+            "badge": "Completar"
+          },
+          {
+            "title": "10) Preposiciones de lugar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "La pizarra está ____ de la profesora.",
+                "gabarito": [
+                  "delante",
+                  "frente",
+                  "al lado"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "La pizarra está ____ de los alumnos.",
+                "gabarito": [
+                  "delante",
+                  "frente"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Mi libro está ____ de la mesa.",
+                "gabarito": [
+                  "encima",
+                  "debajo"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "La mesa de la profesora está ____ de la ventana.",
+                "gabarito": [
+                  "al lado",
+                  "delante",
+                  "cerca"
+                ],
+                "mensagem": null
+              }
+            ],
+            "badge": "Completar"
+          },
+          {
+            "title": "11) Tratamiento: formal (usted) o informal (tú)",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "a) ¿Cómo te llamas?",
+                "gabarito": [
+                  "informal",
+                  "tu",
+                  "tú"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "b) ¿Cuál es su número de teléfono?",
+                "gabarito": [
+                  "formal",
+                  "usted"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "c) ¿De dónde es?",
+                "gabarito": [
+                  "formal",
+                  "usted"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "d) ¿Dónde trabajas?",
+                "gabarito": [
+                  "informal",
+                  "tu",
+                  "tú"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "e) ¿A qué se dedica?",
+                "gabarito": [
+                  "formal",
+                  "usted"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 6,
+                "enunciado": "f) ¿Dónde vives?",
+                "gabarito": [
+                  "informal",
+                  "tu",
+                  "tú"
+                ],
+                "mensagem": null
+              }
+            ],
+            "badge": "Clasificar"
+          },
+          {
+            "title": "12) Profesiones (según definición)",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Arregla y corta el pelo de la gente",
+                "gabarito": [
+                  "peluquero",
+                  "peluquera"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "Prepara la comida en restaurantes",
+                "gabarito": [
+                  "cocinero",
+                  "cocinera"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Trabaja con leyes",
+                "gabarito": [
+                  "abogado",
+                  "abogada"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "Da clases",
+                "gabarito": [
+                  "profesor",
+                  "profesora",
+                  "docente"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "Entrega correspondencias",
+                "gabarito": [
+                  "cartero",
+                  "cartera"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 6,
+                "enunciado": "Actúa en tele/teatro",
+                "gabarito": [
+                  "actor",
+                  "actriz"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 7,
+                "enunciado": "Sirve comida en bares",
+                "gabarito": [
+                  "camarero",
+                  "camarera",
+                  "mesero",
+                  "mesera"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 8,
+                "enunciado": "Conduce coches/autobuses",
+                "gabarito": [
+                  "conductor",
+                  "conductora",
+                  "chofer"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 9,
+                "enunciado": "Hace espectáculos musicales",
+                "gabarito": [
+                  "músico",
+                  "musico",
+                  "música",
+                  "musica"
+                ],
+                "mensagem": null
+              }
+            ],
+            "badge": "Completar"
+          },
+          {
+            "title": "13) Familia y estado civil",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Jorge todavía no se ha casado. Él está ____.",
+                "gabarito": [
+                  "soltero"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "El hijo de mi tía es mi ____.",
+                "gabarito": [
+                  "primo"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "La madre de mi padre es mi ____.",
+                "gabarito": [
+                  "abuela"
+                ],
+                "mensagem": null
+              }
+            ],
+            "badge": "Completar"
+          }
+        ],
+        [
+          {
+            "title": "1) Presente de indicativo (SER/TENER/ESTAR y outros)",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Mi abuela ____ muy simpática. (SER)",
+                "gabarito": [
+                  "es"
+                ],
+                "mensagem": "SER"
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Tú ____ frío? (TENER – TÚ)",
+                "gabarito": [
+                  "tienes"
+                ],
+                "mensagem": "TENER – TÚ"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Nosotros ____ cansados. (ESTAR)",
+                "gabarito": [
+                  "estamos"
+                ],
+                "mensagem": "ESTAR – NOSOTROS"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Yo ____ dos hermanos. (TENER)",
+                "gabarito": [
+                  "tengo"
+                ],
+                "mensagem": "TENER – YO"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Ustedes ____ muy amables. (SER)",
+                "gabarito": [
+                  "son"
+                ],
+                "mensagem": "SER – USTEDES"
+              },
+              {
+                "numero": 6,
+                "enunciado": "María y Ana ____ en la biblioteca. (ESTAR)",
+                "gabarito": [
+                  "estan",
+                  "están"
+                ],
+                "mensagem": "ESTAR – ELLAS"
+              },
+              {
+                "numero": 7,
+                "enunciado": "¿Vosotros ____ en España? (VIVIR – VOSOTROS)",
+                "gabarito": [
+                  "vivis",
+                  "vivís"
+                ],
+                "mensagem": "VIVIR – VOSOTROS"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Mi hermano ____ en una panadería. (TRABAJAR – ÉL)",
+                "gabarito": [
+                  "trabaja"
+                ],
+                "mensagem": "TRABAJAR – ÉL"
+              },
+              {
+                "numero": 9,
+                "enunciado": "Yo no ____ café. (BEBER – YO)",
+                "gabarito": [
+                  "bebo"
+                ],
+                "mensagem": "BEBER – YO"
+              },
+              {
+                "numero": 10,
+                "enunciado": "¿____ fútbol los fines de semana? (JUGAR – TÚ)",
+                "gabarito": [
+                  "juegas"
+                ],
+                "mensagem": "JUGAR – TÚ"
+              },
+              {
+                "numero": 11,
+                "enunciado": "Mi padre ____ la cena hoy. (COCINAR – ÉL)",
+                "gabarito": [
+                  "cocina"
+                ],
+                "mensagem": "COCINAR – ÉL"
+              },
+              {
+                "numero": 12,
+                "enunciado": "Lucía ____ cartas todos los meses. (ESCRIBIR – ELLA)",
+                "gabarito": [
+                  "escribe"
+                ],
+                "mensagem": "ESCRIBIR – ELLA"
+              },
+              {
+                "numero": 13,
+                "enunciado": "Ellos ____ temprano. (LLEGAR – ELLOS)",
+                "gabarito": [
+                  "llegan"
+                ],
+                "mensagem": "LLEGAR – ELLOS"
+              }
+            ]
+          },
+          {
+            "title": "2) Números cardinales (escribe en palabras)",
+            "badge": "Escritura",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "4312",
+                "gabarito": [
+                  "cuatro mil trescientos doce"
+                ],
+                "mensagem": "Recuerda: 'y' a partir de 31."
+              },
+              {
+                "numero": 2,
+                "enunciado": "999",
+                "gabarito": [
+                  "novecientos noventa y nueve"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "150",
+                "gabarito": [
+                  "ciento cincuenta"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "730",
+                "gabarito": [
+                  "setecientos treinta"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "2001",
+                "gabarito": [
+                  "dos mil uno"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 6,
+                "enunciado": "318",
+                "gabarito": [
+                  "trescientos dieciocho"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 7,
+                "enunciado": "1407",
+                "gabarito": [
+                  "mil cuatrocientos siete"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 8,
+                "enunciado": "2850",
+                "gabarito": [
+                  "dos mil ochocientos cincuenta"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 9,
+                "enunciado": "73",
+                "gabarito": [
+                  "setenta y tres"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 10,
+                "enunciado": "101",
+                "gabarito": [
+                  "ciento uno"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "3) Adjetivos posesivos",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "___ casa es grande. (yo)",
+                "gabarito": [
+                  "mi"
+                ],
+                "mensagem": "yo"
+              },
+              {
+                "numero": 2,
+                "enunciado": "___ hermanos estudian mucho. (ella)",
+                "gabarito": [
+                  "sus"
+                ],
+                "mensagem": "ella"
+              },
+              {
+                "numero": 3,
+                "enunciado": "___ mochilas están en el suelo. (nosotros)",
+                "gabarito": [
+                  "nuestras"
+                ],
+                "mensagem": "nosotros (f.)"
+              },
+              {
+                "numero": 4,
+                "enunciado": "¿Dónde está ___ pasaporte, señor? (usted)",
+                "gabarito": [
+                  "su"
+                ],
+                "mensagem": "usted"
+              },
+              {
+                "numero": 5,
+                "enunciado": "___ profesor es muy bueno. (tú)",
+                "gabarito": [
+                  "tu"
+                ],
+                "mensagem": "tú"
+              },
+              {
+                "numero": 6,
+                "enunciado": "___ lápices están rotos. (yo)",
+                "gabarito": [
+                  "mis"
+                ],
+                "mensagem": "yo"
+              },
+              {
+                "numero": 7,
+                "enunciado": "___ abuelos viven lejos. (vosotros)",
+                "gabarito": [
+                  "vuestros"
+                ],
+                "mensagem": "vosotros"
+              },
+              {
+                "numero": 8,
+                "enunciado": "___ madre es médica. (nosotras)",
+                "gabarito": [
+                  "nuestra"
+                ],
+                "mensagem": "nosotras"
+              }
+            ]
+          },
+          {
+            "title": "4) ¿Qué hora es?",
+            "badge": "Expresa la hora",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "3:15",
+                "gabarito": [
+                  "son las tres y cuarto"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "12:45",
+                "gabarito": [
+                  "es la una menos cuarto"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "4:20",
+                "gabarito": [
+                  "son las cuatro y veinte"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "6:50",
+                "gabarito": [
+                  "son las siete menos diez"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "1:05",
+                "gabarito": [
+                  "es la una y cinco"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 6,
+                "enunciado": "10:45",
+                "gabarito": [
+                  "son las once menos cuarto"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 7,
+                "enunciado": "3:30",
+                "gabarito": [
+                  "son las tres y media"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 8,
+                "enunciado": "11:40",
+                "gabarito": [
+                  "son las doce menos veinte"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "5) Nombres de letras → palabra",
+            "badge": "Formar palabra",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "a) a – eme – i – ge – o",
+                "gabarito": [
+                  "amigo"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "b) cu – u – e – ese – o",
+                "gabarito": [
+                  "queso"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "c) zeta – a – pe – a – te – o",
+                "gabarito": [
+                  "zapato"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "d) pe – e – erre – erre – o",
+                "gabarito": [
+                  "perro"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "e) ge – u – i – te – a – erre – erre – a",
+                "gabarito": [
+                  "guitarra"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 6,
+                "enunciado": "f) ene – i – eñe – o",
+                "gabarito": [
+                  "niño",
+                  "nino"
+                ],
+                "mensagem": "Acepta sin tilde: nino"
+              }
+            ]
+          },
+          {
+            "title": "6) Plural de palabras",
+            "badge": "Transformar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "lápiz →",
+                "gabarito": [
+                  "lapices",
+                  "lápices"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "papel →",
+                "gabarito": [
+                  "papeles"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "pez →",
+                "gabarito": [
+                  "peces"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "cruz →",
+                "gabarito": [
+                  "cruces"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "ley →",
+                "gabarito": [
+                  "leyes"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 6,
+                "enunciado": "flor →",
+                "gabarito": [
+                  "flores"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "7) Femenino",
+            "badge": "Transformar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "el profesor →",
+                "gabarito": [
+                  "la profesora"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "el juez →",
+                "gabarito": [
+                  "la jueza"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "el actor →",
+                "gabarito": [
+                  "la actriz"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "8) Demostrativos",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "____ cuaderno es mío.",
+                "gabarito": [
+                  "este",
+                  "ese",
+                  "aquel"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "____ mesa es grande.",
+                "gabarito": [
+                  "esta",
+                  "esa",
+                  "aquella"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "____ coches son nuevos.",
+                "gabarito": [
+                  "estos",
+                  "esos",
+                  "aquellos"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "____ flores están marchitas.",
+                "gabarito": [
+                  "estas",
+                  "esas",
+                  "aquellas"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "9) Interrogativos",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "¿____ te llamas?",
+                "gabarito": [
+                  "cómo",
+                  "como"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿____ vives?",
+                "gabarito": [
+                  "dónde",
+                  "donde"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "¿____ prefieres, té o café?",
+                "gabarito": [
+                  "cuál",
+                  "cual"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "¿____ libro quieres?",
+                "gabarito": [
+                  "qué",
+                  "que"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "10) Preposiciones de lugar",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "El profesor está ____ de los alumnos.",
+                "gabarito": [
+                  "delante",
+                  "frente"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "La puerta está ____ del escritorio.",
+                "gabarito": [
+                  "al lado",
+                  "delante",
+                  "detras",
+                  "detrás"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Mi mochila está ____ de la silla.",
+                "gabarito": [
+                  "encima",
+                  "debajo"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "La ventana está ____ de la mesa.",
+                "gabarito": [
+                  "al lado",
+                  "cerca",
+                  "delante"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "11) Tratamiento: formal (usted) o informal (tú)",
+            "badge": "Clasificar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "g) ¿Cómo está usted?",
+                "gabarito": [
+                  "formal",
+                  "usted"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "h) ¿Qué tal estás?",
+                "gabarito": [
+                  "informal",
+                  "tu",
+                  "tú"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "i) ¿Podría decirme su nombre?",
+                "gabarito": [
+                  "formal",
+                  "usted"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "j) ¿Me pasas tu cuaderno?",
+                "gabarito": [
+                  "informal",
+                  "tu",
+                  "tú"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "k) ¿De dónde es usted?",
+                "gabarito": [
+                  "formal",
+                  "usted"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 6,
+                "enunciado": "l) ¿Puedes ayudarme con esto?",
+                "gabarito": [
+                  "informal",
+                  "tu",
+                  "tú"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "12) Profesiones (según definición)",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Cuida a los enfermos en el hospital",
+                "gabarito": [
+                  "enfermero",
+                  "enfermera"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "Apaga incendios",
+                "gabarito": [
+                  "bombero",
+                  "bombera"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Vende medicinas",
+                "gabarito": [
+                  "farmaceutico",
+                  "farmacéutico",
+                  "farmaceutica",
+                  "farmacéutica"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "Construye edificios",
+                "gabarito": [
+                  "albañil",
+                  "albanil"
+                ],
+                "mensagem": "Acepta sin tilde: albanil"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Repara coches",
+                "gabarito": [
+                  "mecanico",
+                  "mecánico",
+                  "mecanica",
+                  "mecánica"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 6,
+                "enunciado": "Escribe en un periódico",
+                "gabarito": [
+                  "periodista"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 7,
+                "enunciado": "Vuela aviones",
+                "gabarito": [
+                  "piloto"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 8,
+                "enunciado": "Cuida animales en una clínica",
+                "gabarito": [
+                  "veterinario",
+                  "veterinaria"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 9,
+                "enunciado": "Atiende a los clientes en una tienda",
+                "gabarito": [
+                  "dependiente",
+                  "dependienta",
+                  "vendedor",
+                  "vendedora"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "13) Familia y estado civil",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "El esposo de mi hermana es mi ____. ",
+                "gabarito": [
+                  "cuñado",
+                  "cunado"
+                ],
+                "mensagem": "Acepta sin tilde: cunado"
+              },
+              {
+                "numero": 2,
+                "enunciado": "La hija de mi hermano es mi ____. ",
+                "gabarito": [
+                  "sobrina"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Mi padre y mi madre son mis ____. ",
+                "gabarito": [
+                  "padres"
+                ],
+                "mensagem": null
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "1) Presente de indicativo (SER / TENER / ESTAR y otros)",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Mi hermano ____ alto y simpático. (SER)",
+                "gabarito": [
+                  "es"
+                ],
+                "mensagem": "SER – él"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Nosotros ____ tres perros y un gato. (TENER)",
+                "gabarito": [
+                  "tenemos"
+                ],
+                "mensagem": "TENER – nosotros"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Yo ____ en la escuela ahora. (ESTAR)",
+                "gabarito": [
+                  "estoy"
+                ],
+                "mensagem": "ESTAR – yo"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Ellos ____ en Madrid desde 2020. (VIVIR)",
+                "gabarito": [
+                  "viven"
+                ],
+                "mensagem": "VIVIR – ellos"
+              },
+              {
+                "numero": 5,
+                "enunciado": "¿Tú ____ café por la mañana? (BEBER)",
+                "gabarito": [
+                  "bebes"
+                ],
+                "mensagem": "BEBER – tú"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Usted ____ muy amable. (SER)",
+                "gabarito": [
+                  "es"
+                ],
+                "mensagem": "SER – usted"
+              }
+            ]
+          },
+          {
+            "title": "2) Números cardinales (escribe en palabras)",
+            "badge": "Escritura",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "234",
+                "gabarito": [
+                  "doscientos treinta y cuatro"
+                ],
+                "mensagem": "Ojo con el uso de 'y'"
+              },
+              {
+                "numero": 2,
+                "enunciado": "1415",
+                "gabarito": [
+                  "mil cuatrocientos quince"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "72",
+                "gabarito": [
+                  "setenta y dos"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "5089",
+                "gabarito": [
+                  "cinco mil ochenta y nueve"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "16",
+                "gabarito": [
+                  "dieciséis",
+                  "dieciseis"
+                ],
+                "mensagem": "Acepta con o sin tilde"
+              },
+              {
+                "numero": 6,
+                "enunciado": "300",
+                "gabarito": [
+                  "trescientos"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "3) Adjetivos posesivos",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "___ libros están en la mesa. (yo)",
+                "gabarito": [
+                  "mis"
+                ],
+                "mensagem": "yo plural"
+              },
+              {
+                "numero": 2,
+                "enunciado": "___ casa es grande. (ella)",
+                "gabarito": [
+                  "su"
+                ],
+                "mensagem": "ella singular"
+              },
+              {
+                "numero": 3,
+                "enunciado": "___ abuelos son simpáticos. (nosotros)",
+                "gabarito": [
+                  "nuestros"
+                ],
+                "mensagem": "nosotros plural"
+              },
+              {
+                "numero": 4,
+                "enunciado": "¿Dónde están ___ zapatos? (vosotros)",
+                "gabarito": [
+                  "vuestros"
+                ],
+                "mensagem": "vosotros plural"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Él cuida mucho a ___ madre. (él)",
+                "gabarito": [
+                  "su"
+                ],
+                "mensagem": "él singular"
+              }
+            ]
+          },
+          {
+            "title": "4) ¿Qué hora es?",
+            "badge": "Expresa la hora",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "4:15",
+                "gabarito": [
+                  "son las cuatro y cuarto"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "11:30",
+                "gabarito": [
+                  "son las once y media"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "1:00",
+                "gabarito": [
+                  "es la una"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "7:50",
+                "gabarito": [
+                  "son las ocho menos diez"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "12:45",
+                "gabarito": [
+                  "es la una menos cuarto"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "5) Nombres de letras → palabra",
+            "badge": "Formar palabra",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "c – a – s – a",
+                "gabarito": [
+                  "casa"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "a – m – i – g – o",
+                "gabarito": [
+                  "amigo"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "e – s – c – u – e – l – a",
+                "gabarito": [
+                  "escuela"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "f – a – m – i – l – i – a",
+                "gabarito": [
+                  "familia"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "s – o – l",
+                "gabarito": [
+                  "sol"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "6) Plural de palabras",
+            "badge": "Transformar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "profesor →",
+                "gabarito": [
+                  "profesores"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "lápiz →",
+                "gabarito": [
+                  "lápices",
+                  "lapices"
+                ],
+                "mensagem": "Cambio de z → c"
+              },
+              {
+                "numero": 3,
+                "enunciado": "ciudad →",
+                "gabarito": [
+                  "ciudades"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "flor →",
+                "gabarito": [
+                  "flores"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "reloj →",
+                "gabarito": [
+                  "relojes"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "7) Femenino",
+            "badge": "Transformar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "el actor →",
+                "gabarito": [
+                  "la actriz"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "el tío →",
+                "gabarito": [
+                  "la tía",
+                  "la tia"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "el rey →",
+                "gabarito": [
+                  "la reina"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "el león →",
+                "gabarito": [
+                  "la leona"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "el amigo →",
+                "gabarito": [
+                  "la amiga"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "8) Demostrativos",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "____ casa es muy grande. (cerca)",
+                "gabarito": [
+                  "esta"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "____ coches son azules. (lejos)",
+                "gabarito": [
+                  "esos"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "____ montaña es altísima. (muy lejos)",
+                "gabarito": [
+                  "aquella"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "____ libros están en la mesa. (cerca)",
+                "gabarito": [
+                  "estos"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "____ chicas bailan bien. (muy lejos)",
+                "gabarito": [
+                  "aquellas"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "9) Interrogativos",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "¿____ estudias español?",
+                "gabarito": [
+                  "por qué",
+                  "porque"
+                ],
+                "mensagem": "pregunta de razón"
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿____ vives?",
+                "gabarito": [
+                  "dónde",
+                  "donde"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "¿____ es tu cantante favorito?",
+                "gabarito": [
+                  "quién"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "¿____ cuesta la entrada?",
+                "gabarito": [
+                  "cuánto",
+                  "cuanto"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "¿____ prefieres: té o café?",
+                "gabarito": [
+                  "cuál",
+                  "cual"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "10) Preposiciones de lugar",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "La lámpara está ____ la mesa.",
+                "gabarito": [
+                  "sobre",
+                  "encima de"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "El perro está ____ la casa.",
+                "gabarito": [
+                  "dentro de"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "El parque está ____ la escuela.",
+                "gabarito": [
+                  "cerca de"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "El coche está ____ el garaje.",
+                "gabarito": [
+                  "en"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "El banco está ____ la plaza.",
+                "gabarito": [
+                  "junto a",
+                  "al lado de"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "11) Formal o informal",
+            "badge": "Clasificar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "¿Cómo está usted?",
+                "gabarito": [
+                  "formal"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Qué tal, amigo?",
+                "gabarito": [
+                  "informal"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Buenos días, señor López. ¿Cómo se encuentra?",
+                "gabarito": [
+                  "formal"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "¡Hola, Marta! ¿Cómo estás?",
+                "gabarito": [
+                  "informal"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "12) Profesiones",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Cuida a los enfermos",
+                "gabarito": [
+                  "enfermero",
+                  "enfermera"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "Construye edificios",
+                "gabarito": [
+                  "arquitecto",
+                  "arquitecta"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Apaga incendios",
+                "gabarito": [
+                  "bombero",
+                  "bombera"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "Repara coches",
+                "gabarito": [
+                  "mecánico",
+                  "mecanico",
+                  "mecánica",
+                  "mecanica"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "Trabaja en una oficina",
+                "gabarito": [
+                  "oficinista"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "13) Familia y estado civil",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "La madre de mi madre es mi ____.",
+                "gabarito": [
+                  "abuela"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "El hijo de mi hermano es mi ____.",
+                "gabarito": [
+                  "sobrino"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Una mujer casada está ____.",
+                "gabarito": [
+                  "casada"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "El esposo de mi hija es mi ____.",
+                "gabarito": [
+                  "yerno"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "Un hombre sin pareja está ____.",
+                "gabarito": [
+                  "soltero"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "14) Países y nacionalidades",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Brasil →",
+                "gabarito": [
+                  "brasileño",
+                  "brasileña"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "España →",
+                "gabarito": [
+                  "español",
+                  "española"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "México →",
+                "gabarito": [
+                  "mexicano",
+                  "mexicana"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "Argentina →",
+                "gabarito": [
+                  "argentino",
+                  "argentina"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "Portugal →",
+                "gabarito": [
+                  "portugués",
+                  "portuguesa"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "15) Vocabulario de comidas",
+            "badge": "Escribir",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Un fruto amarillo y ácido",
+                "gabarito": [
+                  "limón"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "Comida típica italiana",
+                "gabarito": [
+                  "pizza"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Bebida caliente hecha con granos tostados",
+                "gabarito": [
+                  "café"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "Postre frío hecho con leche y azúcar",
+                "gabarito": [
+                  "helado"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "Comida principal en la mañana",
+                "gabarito": [
+                  "desayuno"
+                ],
+                "mensagem": null
+              }
+            ]
+          }
+        ],
+        [
+  {
+    "title": "1) Presente de indicativo (verbos comunes)",
+    "badge": "Completar",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "Mi madre ____ enfermera. (SER)",
+        "tipo": "select",
+        "opcoes": [
+          "es",
+          "está",
+          "soy"
+        ],
+        "gabarito": [
+          "es"
+        ],
+        "mensagem": "SER – ella"
+      },
+      {
+        "numero": 2,
+        "enunciado": "¿Tú ____ en casa? (ESTAR)",
+        "tipo": "mc",
+        "opcoes": [
+          "estás",
+          "estoy",
+          "son"
+        ],
+        "gabarito": [
+          "estás"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "La oración 'Nosotros tenemos clase' usa TENER en 1ª persona del plural.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "Selecciona todas las formas correctas del verbo SER:",
+        "tipo": "checkbox",
+        "opcoes": [
+          "soy",
+          "eres",
+          "es",
+          "está"
+        ],
+        "gabarito": [
+          "soy",
+          "eres",
+          "es"
+        ],
+        "mensagem": "Cuidado: 'está' es de ESTAR"
+      },
+      {
+        "numero": 5,
+        "enunciado": "Yo ____ agua todos los días. (BEBER)",
+        "gabarito": [
+          "bebo"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "2) Números",
+    "badge": "Escribir en palabras",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "219 → escribe en palabras",
+        "gabarito": [
+          "doscientos diecinueve"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "Selecciona la forma correcta para '4500':",
+        "tipo": "select",
+        "opcoes": [
+          "cuatro mil quinientos",
+          "cuatro mil cincuenta",
+          "cuatrocientos cincuenta"
+        ],
+        "gabarito": [
+          "cuatro mil quinientos"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "Asocia el número con su nombre:",
+        "tipo": "assoc",
+        "pares": [
+          {
+            "a": "13",
+            "b": "trece"
+          },
+          {
+            "a": "30",
+            "b": "treinta"
+          },
+          {
+            "a": "70",
+            "b": "setenta"
+          }
+        ],
+        "gabarito": [
+          "trece",
+          "treinta",
+          "setenta"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "Selecciona la opción correcta para 16:",
+        "tipo": "mc",
+        "opcoes": [
+          "dieciséis",
+          "diez y seis",
+          "dieciseis"
+        ],
+        "gabarito": [
+          "dieciséis"
+        ],
+        "mensagem": "Forma preferida: dieciséis"
+      },
+      {
+        "numero": 5,
+        "enunciado": "75 → escribe en palabras",
+        "gabarito": [
+          "setenta y cinco"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "3) Posesivos",
+    "badge": "Completar",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "___ abuelos viven aquí. (ella)",
+        "tipo": "mc",
+        "opcoes": [
+          "mi",
+          "su",
+          "sus"
+        ],
+        "gabarito": [
+          "sus"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "___ casas son antiguas. (nosotros)",
+        "gabarito": [
+          "nuestras"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "La oración 'Tu amiga es simpática' usa posesivo de segunda persona singular.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "Completa: ¿Dónde está ___ mochila? (tú)",
+        "tipo": "select",
+        "opcoes": [
+          "tu",
+          "tus",
+          "su"
+        ],
+        "gabarito": [
+          "tu"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "4) La hora",
+    "badge": "Responde",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "2:05",
+        "tipo": "select",
+        "opcoes": [
+          "son las dos y cinco",
+          "es la una y cinco",
+          "son las dos y cuarto"
+        ],
+        "gabarito": [
+          "son las dos y cinco"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "1:30",
+        "tipo": "mc",
+        "opcoes": [
+          "es la una y media",
+          "son la una y media",
+          "es las una y media"
+        ],
+        "gabarito": [
+          "es la una y media"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "Las 12:45 puede decirse 'la una menos cuarto'.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "9:40",
+        "gabarito": [
+          "son las diez menos veinte"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "5) Letras → palabra",
+    "badge": "Escribir",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "b – i – c – i – c – l – e – t – a",
+        "gabarito": [
+          "bicicleta"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "f – o – t – o",
+        "tipo": "mc",
+        "opcoes": [
+          "foto",
+          "fota",
+          "feto"
+        ],
+        "gabarito": [
+          "foto"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "c – i – e – l – o",
+        "tipo": "select",
+        "opcoes": [
+          "cielo",
+          "ciello",
+          "cile"
+        ],
+        "gabarito": [
+          "cielo"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "La secuencia n – i – ñ – o corresponde a 'niño'.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "6) Plurales",
+    "badge": "Transformar",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "avión →",
+        "gabarito": [
+          "aviones"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "color →",
+        "tipo": "mc",
+        "opcoes": [
+          "colores",
+          "coloreses",
+          "coloros"
+        ],
+        "gabarito": [
+          "colores"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "El plural de 'mes' es 'meses'.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "papá →",
+        "tipo": "select",
+        "opcoes": [
+          "papás",
+          "papases",
+          "papáes"
+        ],
+        "gabarito": [
+          "papás"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "7) Femenino",
+    "badge": "Transformar",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "el gallo →",
+        "gabarito": [
+          "la gallina"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "el príncipe →",
+        "tipo": "mc",
+        "opcoes": [
+          "la princesa",
+          "la príncipe",
+          "la principa"
+        ],
+        "gabarito": [
+          "la princesa"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "'la artista' puede ser femenino sin cambiar la palabra.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "el héroe →",
+        "tipo": "select",
+        "opcoes": [
+          "la heroína",
+          "la heroina",
+          "la héroa"
+        ],
+        "gabarito": [
+          "la heroína"
+        ],
+        "mensagem": "Con tilde"
+      }
+    ]
+  },
+  {
+    "title": "8) Demostrativos",
+    "badge": "Completar",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "____ libro es interesante. (cerca)",
+        "tipo": "select",
+        "opcoes": [
+          "este",
+          "ese",
+          "aquel"
+        ],
+        "gabarito": [
+          "este"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "____ chicas bailan bien. (lejos)",
+        "tipo": "mc",
+        "opcoes": [
+          "esas",
+          "estas",
+          "aquellas"
+        ],
+        "gabarito": [
+          "esas"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "Marca los demostrativos plurales:",
+        "tipo": "checkbox",
+        "opcoes": [
+          "este",
+          "estos",
+          "estas",
+          "esa"
+        ],
+        "gabarito": [
+          "estos",
+          "estas"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "____ casa es de Juan. (muy lejos)",
+        "gabarito": [
+          "aquella"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "9) Interrogativos",
+    "badge": "Completar",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "____ estudias español? (razón)",
+        "tipo": "mc",
+        "opcoes": [
+          "porqué",
+          "por qué",
+          "porque"
+        ],
+        "gabarito": [
+          "por qué"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "____ es tu profesor? (persona)",
+        "tipo": "select",
+        "opcoes": [
+          "quién",
+          "quiénes",
+          "qué"
+        ],
+        "gabarito": [
+          "quién"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "Se escribe 'dónde' con tilde en preguntas directas.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "____ libros quieres? (elección)",
+        "gabarito": [
+          "cuáles",
+          "cuales"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "10) Preposiciones de lugar",
+    "badge": "Completar",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "El gato está ____ la cama.",
+        "tipo": "mc",
+        "opcoes": [
+          "encima de",
+          "debajo de",
+          "delante de"
+        ],
+        "gabarito": [
+          "debajo de"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "La ventana está ____ la pared.",
+        "tipo": "select",
+        "opcoes": [
+          "en",
+          "sobre",
+          "dentro de"
+        ],
+        "gabarito": [
+          "en"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "'Al lado de' y 'junto a' pueden ser sinónimos.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "El banco está ____ la plaza.",
+        "gabarito": [
+          "al lado de",
+          "junto a"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "11) Formal e informal",
+    "badge": "Clasificar",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "¿Podría usted repetir?",
+        "tipo": "mc",
+        "opcoes": [
+          "formal",
+          "informal"
+        ],
+        "gabarito": [
+          "formal"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "¿Cómo te llamas?",
+        "tipo": "select",
+        "opcoes": [
+          "formal",
+          "informal"
+        ],
+        "gabarito": [
+          "informal"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "'Usted' se usa para trato formal.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "Clasifica: '¿Me ayudas con esto?': ____",
+        "gabarito": [
+          "informal",
+          "tú",
+          "tu"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "12) Profesiones",
+    "badge": "Completar",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "Persona que cura animales:",
+        "tipo": "mc",
+        "opcoes": [
+          "veterano",
+          "vendedor",
+          "veterinario"
+        ],
+        "gabarito": [
+          "veterinario"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "Persona que prepara pan:",
+        "tipo": "select",
+        "opcoes": [
+          "panadero",
+          "pandero",
+          "pastelero"
+        ],
+        "gabarito": [
+          "panadero"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "Un 'periodista' puede ser hombre o mujer.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "Persona que enseña en la escuela:",
+        "gabarito": [
+          "profesor",
+          "profesora"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "13) Familia",
+    "badge": "Completar",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "El padre de mi esposo es mi ____.",
+        "tipo": "mc",
+        "opcoes": [
+          "suegro",
+          "cuñado",
+          "tío"
+        ],
+        "gabarito": [
+          "suegro"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "La hija de mi tía es mi ____.",
+        "tipo": "select",
+        "opcoes": [
+          "prima",
+          "sobrina",
+          "hermana"
+        ],
+        "gabarito": [
+          "prima"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "El esposo de mi hija es mi yerno.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "La pareja de mi hermano es mi ____.",
+        "gabarito": [
+          "cuñada"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "14) Países y nacionalidades",
+    "badge": "Completar",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "Selecciona las nacionalidades correctas para Perú:",
+        "tipo": "checkbox",
+        "opcoes": [
+          "peruano",
+          "peruense",
+          "peruana",
+          "perusí"
+        ],
+        "gabarito": [
+          "peruano",
+          "peruana"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 2,
+        "enunciado": "Alemania →",
+        "tipo": "select",
+        "opcoes": [
+          "alemán",
+          "alemano",
+          "alemaina"
+        ],
+        "gabarito": [
+          "alemán"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "De Portugal → portugués/portuguesa.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "Francia → ____ (nacionalidad fem.)",
+        "gabarito": [
+          "francesa",
+          "francesa"
+        ],
+        "mensagem": null
+      }
+    ]
+  },
+  {
+    "title": "15) Vocabulario de la casa",
+    "badge": "Completar",
+    "perguntas": [
+      {
+        "numero": 1,
+        "enunciado": "Objeto para iluminar una habitación:",
+        "tipo": "mc",
+        "opcoes": [
+          "lampara",
+          "lámpara",
+          "candela"
+        ],
+        "gabarito": [
+          "lámpara"
+        ],
+        "mensagem": "Con tilde"
+      },
+      {
+        "numero": 2,
+        "enunciado": "Lugar para comer en casa:",
+        "tipo": "select",
+        "opcoes": [
+          "comedor",
+          "cena",
+          "cocino"
+        ],
+        "gabarito": [
+          "comedor"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 3,
+        "enunciado": "Una 'nevera' sirve para enfriar comida.",
+        "tipo": "vf",
+        "gabarito": [
+          "V"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 4,
+        "enunciado": "Selecciona los muebles:",
+        "tipo": "checkbox",
+        "opcoes": [
+          "mesa",
+          "ventana",
+          "silla",
+          "suelo"
+        ],
+        "gabarito": [
+          "mesa",
+          "silla"
+        ],
+        "mensagem": null
+      },
+      {
+        "numero": 5,
+        "enunciado": "Aparato para calentar comida rápidamente: ____",
+        "gabarito": [
+          "microondas"
+        ],
+        "mensagem": null
+      }
+    ]
+  }
+]
+      ]
+    },
+    {
+      "title": "Exemplo – Tipos de perguntas",
+      "slug": "mc-exemplo",
+      "groups": [
+        {
+          "title": "Exercícios de exemplo",
+          "badge": "Demo",
+          "items": [
+            {
+              "numero": 1,
+              "enunciado": "¿Cuál es la capital de España?",
+              "tipo": "mc",
+              "opcoes": [
+                "Barcelona",
+                "Madrid",
+                "Sevilla"
+              ],
+              "gabarito": [
+                "Madrid"
+              ],
+              "mensagem": "Geografía"
+            },
+            {
+              "numero": 2,
+              "enunciado": "Selecciona la forma correcta de 'SER' para 'yo':",
+              "tipo": "select",
+              "opcoes": [
+                "es",
+                "soy",
+                "eres"
+              ],
+              "gabarito": [
+                "soy"
+              ],
+              "mensagem": "Verbo SER"
+            },
+            {
+              "numero": 3,
+              "enunciado": "La afirmación 'El sol es una estrella' es:",
+              "tipo": "vf",
+              "gabarito": [
+                "V"
+              ],
+              "mensagem": "Ciencias"
+            },
+            {
+              "numero": 4,
+              "enunciado": "Traduce al español: 'house'",
+              "gabarito": [
+                "casa"
+              ],
+              "mensagem": "Traducción"
+            },
+            {
+              "numero": 5,
+              "enunciado": "Asocia los números de la columna A con la columna B:",
+              "tipo": "assoc",
+              "pares": [
+                {
+                  "a": "Uno",
+                  "b": "1"
+                },
+                {
+                  "a": "Dos",
+                  "b": "2"
+                },
+                {
+                  "a": "Tres",
+                  "b": "3"
+                }
+              ],
+              "gabarito": [
+                "1",
+                "2",
+                "3"
+              ],
+              "mensagem": "Elige el número correspondiente para cada palabra."
+            },
+            {
+              "numero": 6,
+              "enunciado": "Selecciona todas las palabras que son colores:",
+              "tipo": "checkbox",
+              "opcoes": [
+                "casa",
+                "rojo",
+                "verde",
+                "mesa",
+                "azul"
+              ],
+              "gabarito": [
+                "rojo",
+                "verde",
+                "azul"
+              ],
+              "mensagem": "Múltipla selección"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
