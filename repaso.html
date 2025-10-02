@@ -26,6 +26,10 @@
     .progress-bar { background:#e5e7eb; border-radius:6px; overflow:hidden; height:25px; margin:8px; }
     .progress-fill { background:linear-gradient(to right,#4f46e5,#3b82f6); height:100%; width:0%; transition:width .2s ease; }
     .badge { display:inline-block; background:#fff7ed; color:#c2410c; border:1px solid #fdba74; padding:2px 8px; border-radius:999px; font-size:12px; margin-left:10px; }
+    .prompt-media { margin:0 0 12px; }
+    .prompt-media img { max-width:100%; height:auto; display:block; border-radius:6px; }
+    .prompt-audio { margin:0 0 12px; }
+    .prompt-audio audio { width:100%; max-width:320px; }
     /* sticky container para manter nota e progresso visíveis */
     .sticky-top { position: sticky; top: 72px; z-index: 999; padding: 8px 0; background: #f8fafc; box-shadow: 0 2px 5px rgba(0,0,0,0.06); }
     .sticky-top #scoreBox { margin: 10px; }
@@ -116,6 +120,15 @@
       return (params.get('group') || params.get('grupo') || params.get('section') || '');
     }
 
+    function getGroupSetParam() {
+      const params = new URLSearchParams(location.search);
+      const raw = params.get('groupset') || params.get('gs') || params.get('set');
+      if (!raw) return null;
+      const idx = Number(raw);
+      if (!Number.isInteger(idx) || idx < 0) return null;
+      return idx;
+    }
+
     // Compartilhar via WhatsApp o simulado atual
     function shareWhatsApp() {
       try {
@@ -129,6 +142,9 @@
         url.searchParams.delete('group');
         url.searchParams.delete('grupo');
         url.searchParams.delete('section');
+        url.searchParams.delete('groupset');
+        url.searchParams.delete('gs');
+        url.searchParams.delete('set');
         const title = (document.querySelector('header h1')?.textContent || 'Simulado').trim();
         const msg = `Vamos praticar? ${title}\n${url.toString()}`;
         const shareUrl = 'https://wa.me/?text=' + encodeURIComponent(msg);
@@ -170,6 +186,9 @@
           url.searchParams.delete('group');
           url.searchParams.delete('grupo');
           url.searchParams.delete('section');
+          url.searchParams.delete('groupset');
+          url.searchParams.delete('gs');
+          url.searchParams.delete('set');
           location.href = url.toString();
         }
       });
@@ -226,8 +245,13 @@
             }))
           );
           if (normalizedSets.length > 0) {
-            const chosen = normalizedSets[Math.floor(Math.random() * normalizedSets.length)];
-            simulado = { ...simulado, groupsSets: normalizedSets, groups: chosen, __fromGroupsSets: true };
+            const paramIndex = getGroupSetParam();
+            let chosenIndex = Math.floor(Math.random() * normalizedSets.length);
+            if (paramIndex !== null && paramIndex >= 0 && paramIndex < normalizedSets.length) {
+              chosenIndex = paramIndex;
+            }
+            const chosen = normalizedSets[chosenIndex];
+            simulado = { ...simulado, groupsSets: normalizedSets, groups: chosen, __fromGroupsSets: true, __groupSetIndex: chosenIndex };
           }
         } else if (Array.isArray(simulado?.groups)) {
           simulado = {
@@ -293,6 +317,11 @@
           wrap.dataset.msg = q.mensagem || '';
           const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
           wrap.dataset.type = t;
+          const imgSrc = q.imagem || q.image || q.imageUrl;
+          const altText = q.altImagem || q.alt || q.legenda || ("Imagem da questao " + number);
+          const imgHtml = imgSrc ? '<figure class="prompt-media"><img src="' + imgSrc + '" alt="' + altText + '" loading="lazy"></figure>' : '';
+          const audioSrc = q.audio || q.audioUrl || q.audioLink || q.som;
+          const audioHtml = audioSrc ? '<figure class="prompt-audio"><audio controls preload="none" src="' + audioSrc + '"></audio></figure>' : '';
 
           let inputHtml = '';
           if (t === 'mc' && Array.isArray(q.opcoes)) {
@@ -323,6 +352,7 @@
           wrap.innerHTML = `
             <div class="num">${number}.</div>
             <div style="flex:1">
+              ${imgHtml}${audioHtml}
               <label class="label">${q.enunciado}</label>
               ${inputHtml}
               <div class="feedback"></div>
@@ -352,6 +382,11 @@
             wrap.dataset.msg = q.mensagem || '';
             const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
             wrap.dataset.type = t;
+            const imgSrc = q.imagem || q.image || q.imageUrl;
+            const altText = q.altImagem || q.alt || q.legenda || ("Imagem da questao " + number);
+            const imgHtml = imgSrc ? '<figure class="prompt-media"><img src="' + imgSrc + '" alt="' + altText + '" loading="lazy"></figure>' : '';
+            const audioSrc = q.audio || q.audioUrl || q.audioLink || q.som;
+            const audioHtml = audioSrc ? '<figure class="prompt-audio"><audio controls preload="none" src="' + audioSrc + '"></audio></figure>' : '';
 
             let inputHtml = '';
             if (t === 'mc' && Array.isArray(q.opcoes)) {
@@ -383,6 +418,7 @@
             wrap.innerHTML = `
               <div class="num">${number}.</div>
               <div style="flex:1">
+                ${imgHtml}${audioHtml}
                 <label class="label">${q.enunciado}</label>
                 ${inputHtml}
                 <div class="feedback"></div>
@@ -410,6 +446,11 @@
           wrap.dataset.msg = q.mensagem || '';
           const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
           wrap.dataset.type = t;
+          const imgSrc = q.imagem || q.image || q.imageUrl;
+          const altText = q.altImagem || q.alt || q.legenda || ("Imagem da questao " + number);
+          const imgHtml = imgSrc ? '<figure class="prompt-media"><img src="' + imgSrc + '" alt="' + altText + '" loading="lazy"></figure>' : '';
+          const audioSrc = q.audio || q.audioUrl || q.audioLink || q.som;
+          const audioHtml = audioSrc ? '<figure class="prompt-audio"><audio controls preload="none" src="' + audioSrc + '"></audio></figure>' : '';
 
             let inputHtml = '';
             if (t === 'mc' && Array.isArray(q.opcoes)) {
@@ -440,6 +481,7 @@
           wrap.innerHTML = `
             <div class="num">${number}.</div>
             <div style="flex:1">
+              ${imgHtml}${audioHtml}
               <label class="label">${q.enunciado}</label>
               ${inputHtml}
               <div class="feedback"></div>

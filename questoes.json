@@ -22,7 +22,9 @@
                   "tienen",
                   "tengo"
                 ],
-                "tipo": "select"
+                "tipo": "select",
+                "imagem": "https://cypes.grupoeurohispana.com/img/profesion/1189/recurso-principal-7117214.jpg",
+                "altImagem": "Professor apresentando conteúdo em sala de aula"
               },
               {
                 "numero": 2,
@@ -1269,6 +1271,34 @@
               }
             ],
             "badge": "Completar"
+          },
+          {
+            "title": "Saludos con audio",
+            "badge": "Escuchar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Escucha el audio y escribe la despedida.",
+                "audio": "https://superespanol.com/wp-content/uploads/02-06-hasta-luego.mp3",
+                "gabarito": [
+                  "HASTA LUEGO",
+                  "hasta luego"
+                ],
+                "mensagem": "hasta luego",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha el audio y escribe la despedida.",
+                "audio": "https://superespanol.com/wp-content/uploads/02-04-buenas-noches.mp3",
+                "gabarito": [
+                  "BUENAS NOCHES",
+                  "buenas noches"
+                ],
+                "mensagem": "buenas noches",
+                "tipo": "text"
+              }
+            ]
           }
         ],
         [
@@ -1290,7 +1320,9 @@
                   "estamos",
                   "tengo"
                 ],
-                "tipo": "select"
+                "tipo": "select",
+                "imagem": "https://img.novocuidar.pt/wp-content/uploads/2021/12/enfermagem-idosos.jpg",
+                "altImagem": "Enfermeira cuidando de um paciente"
               },
               {
                 "numero": 2,
@@ -1305,7 +1337,9 @@
                   "estamos",
                   "tengo"
                 ],
-                "tipo": "mc"
+                "tipo": "mc",
+                "imagem": "https://revistaanamaria.com.br/wp-content/uploads/2025/06/pessoa-com-frio_1749661546058.jpg",
+                "altImagem": "Enfermeira cuidando de um paciente"
               },
               {
                 "numero": 3,
@@ -2534,6 +2568,35 @@
                 "tipo": "text"
               }
             ]
+          },
+          {
+            "title": "Saludos con audio",
+            "badge": "Escuchar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Escucha el audio y escribe la despedida.",
+                "audio": "https://superespanol.com/wp-content/uploads/02-05-adios.mp3",
+                "gabarito": [
+                  "ADIÓS",
+                  "adios",
+                  "adiós"
+                ],
+                "mensagem": "adiós",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha el audio y escribe la expresión.",
+                "audio": "https://superespanol.com/wp-content/uploads/02-10-buen-fin-de-semana.mp3",
+                "gabarito": [
+                  "BUEN FIN DE SEMANA",
+                  "buen fin de semana"
+                ],
+                "mensagem": "buen fin de semana",
+                "tipo": "text"
+              }
+            ]
           }
         ],
         [
@@ -2555,7 +2618,9 @@
                   "estoy",
                   "viven"
                 ],
-                "tipo": "select"
+                "tipo": "select",
+                "imagem": "https://thumbs.dreamstime.com/b/hermano-mayor-y-una-hermana-y-hermanos-m%C3%A1s-jovenes-48972362.jpg",
+                "altImagem": "Pessoa alta"
               },
               {
                 "numero": 2,
@@ -3694,6 +3759,37 @@
                 "tipo": "mc"
               }
             ]
+          },
+          {
+            "title": "Saludos con audio",
+            "badge": "Escuchar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Escucha el audio y escribe la expresión.",
+                "audio": "https://superespanol.com/wp-content/uploads/02-11-buen-viaje.mp3",
+                "gabarito": [
+                  "BUEN VIAJE",
+                  "buen viaje"
+                ],
+                "mensagem": "buen viaje",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha el audio y completa la pregunta formal.",
+                "audio": "https://superespanol.com/wp-content/uploads/01-03-como-se-llama.mp3",
+                "gabarito": [
+                  "CÓMO SE LLAMA",
+                  "como se llama",
+                  "cómo se llama",
+                  "¿CÓMO SE LLAMA?",
+                  "¿cómo se llama?"
+                ],
+                "mensagem": "¿cómo se llama?",
+                "tipo": "text"
+              }
+            ]
           }
         ],
         [
@@ -3714,7 +3810,9 @@
                 "gabarito": [
                   "es"
                 ],
-                "mensagem": "SER – ella"
+                "mensagem": "SER – ella",
+                "imagem": "https://media.istockphoto.com/id/1373259632/pt/foto/lovely-nurse-take-care-of-child-at-clinic.jpg?s=612x612&w=0&k=20&c=EV9uKNNL9_RF1S4ibuRkZSC5KsObGbW8ILyuEUHdBPE=",
+                "altImagem": "Enfermeira"
               },
               {
                 "numero": 2,
@@ -4670,6 +4768,37 @@
                 "tipo": "mc"
               }
             ]
+          },
+          {
+            "title": "Saludos con audio",
+            "badge": "Escuchar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Escucha el audio y completa la pregunta informal.",
+                "audio": "https://superespanol.com/wp-content/uploads/01-04-como-te-llamas.mp3",
+                "gabarito": [
+                  "CÓMO TE LLAMAS",
+                  "como te llamas",
+                  "cómo te llamas",
+                  "¿CÓMO TE LLAMAS?",
+                  "¿cómo te llamas?"
+                ],
+                "mensagem": "¿cómo te llamas?",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha el audio y escribe la expresión.",
+                "audio": "https://superespanol.com/wp-content/uploads/01-05-mucho-gusto.mp3",
+                "gabarito": [
+                  "MUCHO GUSTO",
+                  "mucho gusto"
+                ],
+                "mensagem": "mucho gusto",
+                "tipo": "text"
+              }
+            ]
           }
         ],
         [
@@ -4891,7 +5020,9 @@
                   "son las seis menos cuarto",
                   "son las siete y cuarto"
                 ],
-                "tipo": "select"
+                "tipo": "select",
+                "imagem": "https://cdn.create.vista.com/api/media/small/362007738/stock-photo-simple-classic-black-white-wall-clock-isolated-white-clock-arabic",
+                "altImagem": "Relógio marcando seis e quarenta e cinco"
               },
               {
                 "numero": 2,
@@ -5157,7 +5288,9 @@
                   "estas",
                   "aquellos"
                 ],
-                "tipo": "mc"
+                "tipo": "mc",
+                "imagem": "https://www.wildnatureimages.com/images/xl/070620-014-The-Tetons.jpg",
+                "altImagem": "Cordilheira ao fundo representando montanhas distantes"
               },
               {
                 "numero": 3,
@@ -5588,7 +5721,9 @@
                   "cuaderno",
                   "marcador"
                 ],
-                "tipo": "select"
+                "tipo": "select",
+                "imagem": "https://bazarhorizonte.vtexassets.com/arquivos/ids/344810/016667_000000_1.jpg?v=636558460835400000",
+                "altImagem": "Borracha usada em quadro"
               },
               {
                 "numero": 3,
@@ -5629,6 +5764,37 @@
                   "pupitre"
                 ],
                 "mensagem": null,
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "Saludos con audio",
+            "badge": "Escuchar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Escucha el audio y escribe la palabra.",
+                "audio": "https://superespanol.com/wp-content/uploads/01-07-encantada.mp3",
+                "gabarito": [
+                  "ENCANTADA",
+                  "encantada"
+                ],
+                "mensagem": "encantada",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha el audio y completa la pregunta.",
+                "audio": "https://superespanol.com/wp-content/uploads/01-17-de-donde-eres.mp3",
+                "gabarito": [
+                  "DE DÓNDE ERES",
+                  "de donde eres",
+                  "de dónde eres",
+                  "¿DE DÓNDE ERES?",
+                  "¿de dónde eres?"
+                ],
+                "mensagem": "¿de dónde eres?",
                 "tipo": "text"
               }
             ]

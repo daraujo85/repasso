@@ -19,4 +19,6 @@ O servidor simples do Python expoe todos os arquivos da pasta atual; mantenha ap
 ## Desenvolvimento
 - Ajuste ou amplie os simulados editando questoes.json, respeitando a estrutura existente.
 - Atualizacoes na interface podem ser feitas em repaso.html; basta recarregar o navegador apos salvar.
+- Perguntas podem trazer uma imagem opcional definindo os campos imagem (URL) e altImagem no questoes.json.
+- Perguntas podem incluir audio adicionando o campo audio (URL) no questoes.json.
 - Para parar o servidor HTTP, pressione Ctrl+C na janela em que ele foi iniciado.
