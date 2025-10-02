@@ -14,7 +14,15 @@
                 "gabarito": [
                   "es"
                 ],
-                "mensagem": "SER"
+                "mensagem": "SER",
+                "opcoes": [
+                  "Seleccione...",
+                  "es",
+                  "eres",
+                  "tienen",
+                  "tengo"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -22,7 +30,14 @@
                 "gabarito": [
                   "eres"
                 ],
-                "mensagem": "SER – TÚ"
+                "mensagem": "SER – TÚ",
+                "opcoes": [
+                  "eres",
+                  "es",
+                  "tienen",
+                  "tengo"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -30,7 +45,8 @@
                 "gabarito": [
                   "tienen"
                 ],
-                "mensagem": "TENER"
+                "mensagem": "TENER",
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -38,7 +54,15 @@
                 "gabarito": [
                   "tengo"
                 ],
-                "mensagem": "TENER"
+                "mensagem": "TENER",
+                "opcoes": [
+                  "Seleccione...",
+                  "tengo",
+                  "es",
+                  "eres",
+                  "tienen"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -46,7 +70,14 @@
                 "gabarito": [
                   "estoy"
                 ],
-                "mensagem": "ESTAR"
+                "mensagem": "ESTAR",
+                "opcoes": [
+                  "estoy",
+                  "es",
+                  "eres",
+                  "tienen"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -55,7 +86,8 @@
                   "estan",
                   "están"
                 ],
-                "mensagem": "ESTAR"
+                "mensagem": "ESTAR",
+                "tipo": "text"
               },
               {
                 "numero": 7,
@@ -63,7 +95,15 @@
                 "gabarito": [
                   "nadamos"
                 ],
-                "mensagem": "NADAR"
+                "mensagem": "NADAR",
+                "opcoes": [
+                  "Seleccione...",
+                  "nadamos",
+                  "es",
+                  "eres",
+                  "tienen"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 8,
@@ -72,7 +112,14 @@
                   "trabajais",
                   "trabajáis"
                 ],
-                "mensagem": "TRABAJAR – VOSOTROS"
+                "mensagem": "TRABAJAR – VOSOTROS",
+                "opcoes": [
+                  "trabajais",
+                  "trabajáis",
+                  "es",
+                  "eres"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 9,
@@ -80,7 +127,8 @@
                 "gabarito": [
                   "imprime"
                 ],
-                "mensagem": "IMPRIMIR"
+                "mensagem": "IMPRIMIR",
+                "tipo": "text"
               },
               {
                 "numero": 10,
@@ -88,7 +136,15 @@
                 "gabarito": [
                   "creo"
                 ],
-                "mensagem": "CREER – YO"
+                "mensagem": "CREER – YO",
+                "opcoes": [
+                  "Seleccione...",
+                  "creo",
+                  "es",
+                  "eres",
+                  "tienen"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 11,
@@ -96,7 +152,14 @@
                 "gabarito": [
                   "barre"
                 ],
-                "mensagem": "BARRER"
+                "mensagem": "BARRER",
+                "opcoes": [
+                  "barre",
+                  "es",
+                  "eres",
+                  "tienen"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 12,
@@ -105,7 +168,8 @@
                   "anades",
                   "añades"
                 ],
-                "mensagem": "AÑADIR – TÚ"
+                "mensagem": "AÑADIR – TÚ",
+                "tipo": "text"
               },
               {
                 "numero": 13,
@@ -114,7 +178,15 @@
                   "sufris",
                   "sufrís"
                 ],
-                "mensagem": "SUFRIR – VOSOTROS"
+                "mensagem": "SUFRIR – VOSOTROS",
+                "opcoes": [
+                  "Seleccione...",
+                  "sufris",
+                  "sufrís",
+                  "es",
+                  "eres"
+                ],
+                "tipo": "select"
               }
             ],
             "badge": "Completar"
@@ -128,7 +200,15 @@
                 "gabarito": [
                   "tres mil novecientos setenta y uno"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "tres mil novecientos setenta y uno",
+                  "dos mil doscientos veintidos",
+                  "seiscientos cuarenta y seis",
+                  "cinco mil novecientos cincuenta"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -137,7 +217,14 @@
                   "dos mil doscientos veintidos",
                   "dos mil doscientos veintidós"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "dos mil doscientos veintidos",
+                  "dos mil doscientos veintidós",
+                  "tres mil novecientos setenta y uno",
+                  "seiscientos cuarenta y seis"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -145,7 +232,8 @@
                 "gabarito": [
                   "seiscientos cuarenta y seis"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -153,7 +241,15 @@
                 "gabarito": [
                   "cinco mil novecientos cincuenta"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "cinco mil novecientos cincuenta",
+                  "tres mil novecientos setenta y uno",
+                  "dos mil doscientos veintidos",
+                  "seiscientos cuarenta y seis"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -161,7 +257,14 @@
                 "gabarito": [
                   "trescientos veinte"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "trescientos veinte",
+                  "tres mil novecientos setenta y uno",
+                  "dos mil doscientos veintidos",
+                  "seiscientos cuarenta y seis"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -170,7 +273,8 @@
                   "quinientos dieciseis",
                   "quinientos dieciséis"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 7,
@@ -178,7 +282,15 @@
                 "gabarito": [
                   "ochocientos siete"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "ochocientos siete",
+                  "tres mil novecientos setenta y uno",
+                  "dos mil doscientos veintidos",
+                  "seiscientos cuarenta y seis"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 8,
@@ -186,7 +298,14 @@
                 "gabarito": [
                   "ciento catorce"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "ciento catorce",
+                  "tres mil novecientos setenta y uno",
+                  "dos mil doscientos veintidos",
+                  "seiscientos cuarenta y seis"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 9,
@@ -194,7 +313,8 @@
                 "gabarito": [
                   "doscientos cuatro"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 10,
@@ -202,7 +322,15 @@
                 "gabarito": [
                   "mil setecientos ochenta y ocho"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "mil setecientos ochenta y ocho",
+                  "tres mil novecientos setenta y uno",
+                  "dos mil doscientos veintidos",
+                  "seiscientos cuarenta y seis"
+                ],
+                "tipo": "select"
               }
             ],
             "badge": "Escritura"
@@ -216,7 +344,15 @@
                 "gabarito": [
                   "mi"
                 ],
-                "mensagem": "yo"
+                "mensagem": "yo",
+                "opcoes": [
+                  "Seleccione...",
+                  "mi",
+                  "sus",
+                  "nuestras",
+                  "su"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -224,7 +360,14 @@
                 "gabarito": [
                   "sus"
                 ],
-                "mensagem": "él"
+                "mensagem": "él",
+                "opcoes": [
+                  "sus",
+                  "mi",
+                  "nuestras",
+                  "su"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -232,7 +375,8 @@
                 "gabarito": [
                   "nuestras"
                 ],
-                "mensagem": "nosotros"
+                "mensagem": "nosotros",
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -240,7 +384,15 @@
                 "gabarito": [
                   "su"
                 ],
-                "mensagem": "usted"
+                "mensagem": "usted",
+                "opcoes": [
+                  "Seleccione...",
+                  "su",
+                  "mi",
+                  "sus",
+                  "nuestras"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -248,7 +400,14 @@
                 "gabarito": [
                   "tu"
                 ],
-                "mensagem": "tú"
+                "mensagem": "tú",
+                "opcoes": [
+                  "tu",
+                  "mi",
+                  "sus",
+                  "nuestras"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -256,7 +415,8 @@
                 "gabarito": [
                   "mis"
                 ],
-                "mensagem": "yo"
+                "mensagem": "yo",
+                "tipo": "text"
               },
               {
                 "numero": 7,
@@ -264,7 +424,15 @@
                 "gabarito": [
                   "vuestro"
                 ],
-                "mensagem": "vosotros"
+                "mensagem": "vosotros",
+                "opcoes": [
+                  "Seleccione...",
+                  "vuestro",
+                  "mi",
+                  "sus",
+                  "nuestras"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 8,
@@ -272,7 +440,14 @@
                 "gabarito": [
                   "nuestros"
                 ],
-                "mensagem": "nosotras"
+                "mensagem": "nosotras",
+                "opcoes": [
+                  "nuestros",
+                  "mi",
+                  "sus",
+                  "nuestras"
+                ],
+                "tipo": "mc"
               }
             ],
             "badge": "Completar"
@@ -286,7 +461,15 @@
                 "gabarito": [
                   "son las diez"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "son las diez",
+                  "son las dos menos cinco",
+                  "son las once y veinticinco",
+                  "son las ocho menos veinticinco"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -294,7 +477,14 @@
                 "gabarito": [
                   "son las dos menos cinco"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "son las dos menos cinco",
+                  "son las diez",
+                  "son las once y veinticinco",
+                  "son las ocho menos veinticinco"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -302,7 +492,8 @@
                 "gabarito": [
                   "son las once y veinticinco"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -310,7 +501,15 @@
                 "gabarito": [
                   "son las ocho menos veinticinco"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "son las ocho menos veinticinco",
+                  "son las diez",
+                  "son las dos menos cinco",
+                  "son las once y veinticinco"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -318,7 +517,14 @@
                 "gabarito": [
                   "son las ocho y cuarto"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "son las ocho y cuarto",
+                  "son las diez",
+                  "son las dos menos cinco",
+                  "son las once y veinticinco"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -326,7 +532,8 @@
                 "gabarito": [
                   "son las diez menos diez"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 7,
@@ -334,7 +541,15 @@
                 "gabarito": [
                   "son las dos y media"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "son las dos y media",
+                  "son las diez",
+                  "son las dos menos cinco",
+                  "son las once y veinticinco"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 8,
@@ -342,7 +557,14 @@
                 "gabarito": [
                   "son las nueve menos veinte"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "son las nueve menos veinte",
+                  "son las diez",
+                  "son las dos menos cinco",
+                  "son las once y veinticinco"
+                ],
+                "tipo": "mc"
               }
             ],
             "badge": "Expresa la hora"
@@ -357,7 +579,15 @@
                   "españa",
                   "espana"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "españa",
+                  "espana",
+                  "quince",
+                  "coche"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -365,7 +595,14 @@
                 "gabarito": [
                   "quince"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "quince",
+                  "españa",
+                  "coche",
+                  "yegua"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -373,7 +610,8 @@
                 "gabarito": [
                   "coche"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -381,7 +619,15 @@
                 "gabarito": [
                   "yegua"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "yegua",
+                  "españa",
+                  "quince",
+                  "coche"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -389,7 +635,14 @@
                 "gabarito": [
                   "vaca"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "vaca",
+                  "españa",
+                  "quince",
+                  "coche"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -397,7 +650,8 @@
                 "gabarito": [
                   "cebolla"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ],
             "badge": "Formar palabra"
@@ -411,7 +665,15 @@
                 "gabarito": [
                   "actrices"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "actrices",
+                  "jugadores",
+                  "estudiantes",
+                  "relojes"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -419,7 +681,14 @@
                 "gabarito": [
                   "jugadores"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "jugadores",
+                  "actrices",
+                  "estudiantes",
+                  "relojes"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -427,7 +696,8 @@
                 "gabarito": [
                   "estudiantes"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -435,7 +705,15 @@
                 "gabarito": [
                   "relojes"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "relojes",
+                  "actrices",
+                  "jugadores",
+                  "estudiantes"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -443,7 +721,14 @@
                 "gabarito": [
                   "pies"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "pies",
+                  "actrices",
+                  "jugadores",
+                  "estudiantes"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -451,7 +736,8 @@
                 "gabarito": [
                   "jueces"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ],
             "badge": "Transformar"
@@ -465,7 +751,14 @@
                 "gabarito": [
                   "la enfermera"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "la enfermera",
+                  "la entrenadora",
+                  "la ciclista"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -473,7 +766,13 @@
                 "gabarito": [
                   "la entrenadora"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "la entrenadora",
+                  "la enfermera",
+                  "la ciclista"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -481,7 +780,8 @@
                 "gabarito": [
                   "la ciclista"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ],
             "badge": "Transformar"
@@ -497,7 +797,15 @@
                   "ese",
                   "aquel"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "este",
+                  "ese",
+                  "aquel",
+                  "esta"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -507,7 +815,14 @@
                   "esa",
                   "aquella"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "esta",
+                  "esa",
+                  "aquella",
+                  "este"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -517,7 +832,8 @@
                   "esos",
                   "aquellos"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -527,7 +843,15 @@
                   "esas",
                   "aquellas"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "estas",
+                  "esas",
+                  "aquellas",
+                  "este"
+                ],
+                "tipo": "select"
               }
             ],
             "badge": "Completar"
@@ -542,7 +866,15 @@
                   "qué",
                   "que"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "qué",
+                  "que",
+                  "cómo",
+                  "dónde"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -551,7 +883,14 @@
                   "cómo",
                   "como"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "cómo",
+                  "como",
+                  "qué",
+                  "dónde"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -560,7 +899,8 @@
                   "dónde",
                   "donde"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -569,7 +909,15 @@
                   "cuál",
                   "cual"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "cuál",
+                  "cual",
+                  "qué",
+                  "cómo"
+                ],
+                "tipo": "select"
               }
             ],
             "badge": "Completar"
@@ -585,7 +933,15 @@
                   "frente",
                   "al lado"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "delante",
+                  "frente",
+                  "al lado",
+                  "encima"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -594,7 +950,14 @@
                   "delante",
                   "frente"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "delante",
+                  "frente",
+                  "encima",
+                  "al lado"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -603,7 +966,8 @@
                   "encima",
                   "debajo"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -613,7 +977,15 @@
                   "delante",
                   "cerca"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "al lado",
+                  "delante",
+                  "cerca",
+                  "encima"
+                ],
+                "tipo": "select"
               }
             ],
             "badge": "Completar"
@@ -629,7 +1001,15 @@
                   "tu",
                   "tú"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "informal",
+                  "tu",
+                  "tú",
+                  "formal"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -638,7 +1018,14 @@
                   "formal",
                   "usted"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "formal",
+                  "usted",
+                  "informal",
+                  "tu"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -647,7 +1034,8 @@
                   "formal",
                   "usted"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -657,7 +1045,15 @@
                   "tu",
                   "tú"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "informal",
+                  "tu",
+                  "tú",
+                  "formal"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -666,7 +1062,14 @@
                   "formal",
                   "usted"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "formal",
+                  "usted",
+                  "informal",
+                  "tu"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -676,7 +1079,8 @@
                   "tu",
                   "tú"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ],
             "badge": "Clasificar"
@@ -691,7 +1095,15 @@
                   "peluquero",
                   "peluquera"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "peluquero",
+                  "peluquera",
+                  "cocinero",
+                  "abogado"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -700,7 +1112,14 @@
                   "cocinero",
                   "cocinera"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "cocinero",
+                  "cocinera",
+                  "peluquero",
+                  "abogado"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -709,7 +1128,8 @@
                   "abogado",
                   "abogada"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -719,7 +1139,15 @@
                   "profesora",
                   "docente"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "profesor",
+                  "profesora",
+                  "docente",
+                  "peluquero"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -728,7 +1156,14 @@
                   "cartero",
                   "cartera"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "cartero",
+                  "cartera",
+                  "peluquero",
+                  "cocinero"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -737,7 +1172,8 @@
                   "actor",
                   "actriz"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 7,
@@ -748,7 +1184,15 @@
                   "mesero",
                   "mesera"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "camarero",
+                  "camarera",
+                  "mesero",
+                  "mesera"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 8,
@@ -758,7 +1202,14 @@
                   "conductora",
                   "chofer"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "conductor",
+                  "conductora",
+                  "chofer",
+                  "peluquero"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 9,
@@ -769,7 +1220,8 @@
                   "música",
                   "musica"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ],
             "badge": "Completar"
@@ -783,7 +1235,14 @@
                 "gabarito": [
                   "soltero"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "soltero",
+                  "primo",
+                  "abuela"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -791,7 +1250,13 @@
                 "gabarito": [
                   "primo"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "primo",
+                  "soltero",
+                  "abuela"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -799,7 +1264,8 @@
                 "gabarito": [
                   "abuela"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ],
             "badge": "Completar"
@@ -816,7 +1282,15 @@
                 "gabarito": [
                   "es"
                 ],
-                "mensagem": "SER"
+                "mensagem": "SER",
+                "opcoes": [
+                  "Seleccione...",
+                  "es",
+                  "tienes",
+                  "estamos",
+                  "tengo"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -824,7 +1298,14 @@
                 "gabarito": [
                   "tienes"
                 ],
-                "mensagem": "TENER – TÚ"
+                "mensagem": "TENER – TÚ",
+                "opcoes": [
+                  "tienes",
+                  "es",
+                  "estamos",
+                  "tengo"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -832,7 +1313,8 @@
                 "gabarito": [
                   "estamos"
                 ],
-                "mensagem": "ESTAR – NOSOTROS"
+                "mensagem": "ESTAR – NOSOTROS",
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -840,7 +1322,15 @@
                 "gabarito": [
                   "tengo"
                 ],
-                "mensagem": "TENER – YO"
+                "mensagem": "TENER – YO",
+                "opcoes": [
+                  "Seleccione...",
+                  "tengo",
+                  "es",
+                  "tienes",
+                  "estamos"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -848,7 +1338,14 @@
                 "gabarito": [
                   "son"
                 ],
-                "mensagem": "SER – USTEDES"
+                "mensagem": "SER – USTEDES",
+                "opcoes": [
+                  "son",
+                  "es",
+                  "tienes",
+                  "estamos"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -857,7 +1354,8 @@
                   "estan",
                   "están"
                 ],
-                "mensagem": "ESTAR – ELLAS"
+                "mensagem": "ESTAR – ELLAS",
+                "tipo": "text"
               },
               {
                 "numero": 7,
@@ -866,7 +1364,15 @@
                   "vivis",
                   "vivís"
                 ],
-                "mensagem": "VIVIR – VOSOTROS"
+                "mensagem": "VIVIR – VOSOTROS",
+                "opcoes": [
+                  "Seleccione...",
+                  "vivis",
+                  "vivís",
+                  "es",
+                  "tienes"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 8,
@@ -874,7 +1380,14 @@
                 "gabarito": [
                   "trabaja"
                 ],
-                "mensagem": "TRABAJAR – ÉL"
+                "mensagem": "TRABAJAR – ÉL",
+                "opcoes": [
+                  "trabaja",
+                  "es",
+                  "tienes",
+                  "estamos"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 9,
@@ -882,7 +1395,8 @@
                 "gabarito": [
                   "bebo"
                 ],
-                "mensagem": "BEBER – YO"
+                "mensagem": "BEBER – YO",
+                "tipo": "text"
               },
               {
                 "numero": 10,
@@ -890,7 +1404,15 @@
                 "gabarito": [
                   "juegas"
                 ],
-                "mensagem": "JUGAR – TÚ"
+                "mensagem": "JUGAR – TÚ",
+                "opcoes": [
+                  "Seleccione...",
+                  "juegas",
+                  "es",
+                  "tienes",
+                  "estamos"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 11,
@@ -898,7 +1420,14 @@
                 "gabarito": [
                   "cocina"
                 ],
-                "mensagem": "COCINAR – ÉL"
+                "mensagem": "COCINAR – ÉL",
+                "opcoes": [
+                  "cocina",
+                  "es",
+                  "tienes",
+                  "estamos"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 12,
@@ -906,7 +1435,8 @@
                 "gabarito": [
                   "escribe"
                 ],
-                "mensagem": "ESCRIBIR – ELLA"
+                "mensagem": "ESCRIBIR – ELLA",
+                "tipo": "text"
               },
               {
                 "numero": 13,
@@ -914,7 +1444,15 @@
                 "gabarito": [
                   "llegan"
                 ],
-                "mensagem": "LLEGAR – ELLOS"
+                "mensagem": "LLEGAR – ELLOS",
+                "opcoes": [
+                  "Seleccione...",
+                  "llegan",
+                  "es",
+                  "tienes",
+                  "estamos"
+                ],
+                "tipo": "select"
               }
             ]
           },
@@ -928,7 +1466,15 @@
                 "gabarito": [
                   "cuatro mil trescientos doce"
                 ],
-                "mensagem": "Recuerda: 'y' a partir de 31."
+                "mensagem": "Recuerda: 'y' a partir de 31.",
+                "opcoes": [
+                  "Seleccione...",
+                  "cuatro mil trescientos doce",
+                  "novecientos noventa y nueve",
+                  "ciento cincuenta",
+                  "setecientos treinta"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -936,7 +1482,14 @@
                 "gabarito": [
                   "novecientos noventa y nueve"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "novecientos noventa y nueve",
+                  "cuatro mil trescientos doce",
+                  "ciento cincuenta",
+                  "setecientos treinta"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -944,7 +1497,8 @@
                 "gabarito": [
                   "ciento cincuenta"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -952,7 +1506,15 @@
                 "gabarito": [
                   "setecientos treinta"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "setecientos treinta",
+                  "cuatro mil trescientos doce",
+                  "novecientos noventa y nueve",
+                  "ciento cincuenta"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -960,7 +1522,14 @@
                 "gabarito": [
                   "dos mil uno"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "dos mil uno",
+                  "cuatro mil trescientos doce",
+                  "novecientos noventa y nueve",
+                  "ciento cincuenta"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -968,7 +1537,8 @@
                 "gabarito": [
                   "trescientos dieciocho"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 7,
@@ -976,7 +1546,15 @@
                 "gabarito": [
                   "mil cuatrocientos siete"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "mil cuatrocientos siete",
+                  "cuatro mil trescientos doce",
+                  "novecientos noventa y nueve",
+                  "ciento cincuenta"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 8,
@@ -984,7 +1562,14 @@
                 "gabarito": [
                   "dos mil ochocientos cincuenta"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "dos mil ochocientos cincuenta",
+                  "cuatro mil trescientos doce",
+                  "novecientos noventa y nueve",
+                  "ciento cincuenta"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 9,
@@ -992,7 +1577,8 @@
                 "gabarito": [
                   "setenta y tres"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 10,
@@ -1000,7 +1586,15 @@
                 "gabarito": [
                   "ciento uno"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "ciento uno",
+                  "cuatro mil trescientos doce",
+                  "novecientos noventa y nueve",
+                  "ciento cincuenta"
+                ],
+                "tipo": "select"
               }
             ]
           },
@@ -1014,7 +1608,15 @@
                 "gabarito": [
                   "mi"
                 ],
-                "mensagem": "yo"
+                "mensagem": "yo",
+                "opcoes": [
+                  "Seleccione...",
+                  "mi",
+                  "sus",
+                  "nuestras",
+                  "su"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1022,7 +1624,14 @@
                 "gabarito": [
                   "sus"
                 ],
-                "mensagem": "ella"
+                "mensagem": "ella",
+                "opcoes": [
+                  "sus",
+                  "mi",
+                  "nuestras",
+                  "su"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1030,7 +1639,8 @@
                 "gabarito": [
                   "nuestras"
                 ],
-                "mensagem": "nosotros (f.)"
+                "mensagem": "nosotros (f.)",
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1038,7 +1648,15 @@
                 "gabarito": [
                   "su"
                 ],
-                "mensagem": "usted"
+                "mensagem": "usted",
+                "opcoes": [
+                  "Seleccione...",
+                  "su",
+                  "mi",
+                  "sus",
+                  "nuestras"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1046,7 +1664,14 @@
                 "gabarito": [
                   "tu"
                 ],
-                "mensagem": "tú"
+                "mensagem": "tú",
+                "opcoes": [
+                  "tu",
+                  "mi",
+                  "sus",
+                  "nuestras"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -1054,7 +1679,8 @@
                 "gabarito": [
                   "mis"
                 ],
-                "mensagem": "yo"
+                "mensagem": "yo",
+                "tipo": "text"
               },
               {
                 "numero": 7,
@@ -1062,7 +1688,15 @@
                 "gabarito": [
                   "vuestros"
                 ],
-                "mensagem": "vosotros"
+                "mensagem": "vosotros",
+                "opcoes": [
+                  "Seleccione...",
+                  "vuestros",
+                  "mi",
+                  "sus",
+                  "nuestras"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 8,
@@ -1070,7 +1704,14 @@
                 "gabarito": [
                   "nuestra"
                 ],
-                "mensagem": "nosotras"
+                "mensagem": "nosotras",
+                "opcoes": [
+                  "nuestra",
+                  "mi",
+                  "sus",
+                  "nuestras"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -1084,7 +1725,15 @@
                 "gabarito": [
                   "son las tres y cuarto"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "son las tres y cuarto",
+                  "es la una menos cuarto",
+                  "son las cuatro y veinte",
+                  "son las siete menos diez"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1092,7 +1741,14 @@
                 "gabarito": [
                   "es la una menos cuarto"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "es la una menos cuarto",
+                  "son las tres y cuarto",
+                  "son las cuatro y veinte",
+                  "son las siete menos diez"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1100,7 +1756,8 @@
                 "gabarito": [
                   "son las cuatro y veinte"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1108,7 +1765,15 @@
                 "gabarito": [
                   "son las siete menos diez"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "son las siete menos diez",
+                  "son las tres y cuarto",
+                  "es la una menos cuarto",
+                  "son las cuatro y veinte"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1116,7 +1781,14 @@
                 "gabarito": [
                   "es la una y cinco"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "es la una y cinco",
+                  "son las tres y cuarto",
+                  "es la una menos cuarto",
+                  "son las cuatro y veinte"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -1124,7 +1796,8 @@
                 "gabarito": [
                   "son las once menos cuarto"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 7,
@@ -1132,7 +1805,15 @@
                 "gabarito": [
                   "son las tres y media"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "son las tres y media",
+                  "son las tres y cuarto",
+                  "es la una menos cuarto",
+                  "son las cuatro y veinte"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 8,
@@ -1140,7 +1821,14 @@
                 "gabarito": [
                   "son las doce menos veinte"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "son las doce menos veinte",
+                  "son las tres y cuarto",
+                  "es la una menos cuarto",
+                  "son las cuatro y veinte"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -1154,7 +1842,15 @@
                 "gabarito": [
                   "amigo"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "amigo",
+                  "queso",
+                  "zapato",
+                  "perro"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1162,7 +1858,14 @@
                 "gabarito": [
                   "queso"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "queso",
+                  "amigo",
+                  "zapato",
+                  "perro"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1170,7 +1873,8 @@
                 "gabarito": [
                   "zapato"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1178,7 +1882,15 @@
                 "gabarito": [
                   "perro"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "perro",
+                  "amigo",
+                  "queso",
+                  "zapato"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1186,7 +1898,14 @@
                 "gabarito": [
                   "guitarra"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "guitarra",
+                  "amigo",
+                  "queso",
+                  "zapato"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -1195,7 +1914,8 @@
                   "niño",
                   "nino"
                 ],
-                "mensagem": "Acepta sin tilde: nino"
+                "mensagem": "Acepta sin tilde: nino",
+                "tipo": "text"
               }
             ]
           },
@@ -1210,7 +1930,15 @@
                   "lapices",
                   "lápices"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "lapices",
+                  "lápices",
+                  "papeles",
+                  "peces"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1218,7 +1946,14 @@
                 "gabarito": [
                   "papeles"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "papeles",
+                  "lapices",
+                  "peces",
+                  "cruces"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1226,7 +1961,8 @@
                 "gabarito": [
                   "peces"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1234,7 +1970,15 @@
                 "gabarito": [
                   "cruces"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "cruces",
+                  "lapices",
+                  "papeles",
+                  "peces"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1242,7 +1986,14 @@
                 "gabarito": [
                   "leyes"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "leyes",
+                  "lapices",
+                  "papeles",
+                  "peces"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -1250,7 +2001,8 @@
                 "gabarito": [
                   "flores"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ]
           },
@@ -1264,7 +2016,14 @@
                 "gabarito": [
                   "la profesora"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "la profesora",
+                  "la jueza",
+                  "la actriz"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1272,7 +2031,13 @@
                 "gabarito": [
                   "la jueza"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "la jueza",
+                  "la profesora",
+                  "la actriz"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1280,7 +2045,8 @@
                 "gabarito": [
                   "la actriz"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ]
           },
@@ -1296,7 +2062,15 @@
                   "ese",
                   "aquel"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "este",
+                  "ese",
+                  "aquel",
+                  "esta"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1306,7 +2080,14 @@
                   "esa",
                   "aquella"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "esta",
+                  "esa",
+                  "aquella",
+                  "este"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1316,7 +2097,8 @@
                   "esos",
                   "aquellos"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1326,7 +2108,15 @@
                   "esas",
                   "aquellas"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "estas",
+                  "esas",
+                  "aquellas",
+                  "este"
+                ],
+                "tipo": "select"
               }
             ]
           },
@@ -1341,7 +2131,15 @@
                   "cómo",
                   "como"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "cómo",
+                  "como",
+                  "dónde",
+                  "cuál"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1350,7 +2148,14 @@
                   "dónde",
                   "donde"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "dónde",
+                  "donde",
+                  "cómo",
+                  "cuál"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1359,7 +2164,8 @@
                   "cuál",
                   "cual"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1368,7 +2174,15 @@
                   "qué",
                   "que"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "qué",
+                  "que",
+                  "cómo",
+                  "dónde"
+                ],
+                "tipo": "select"
               }
             ]
           },
@@ -1383,7 +2197,15 @@
                   "delante",
                   "frente"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "delante",
+                  "frente",
+                  "al lado",
+                  "encima"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1394,7 +2216,14 @@
                   "detras",
                   "detrás"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "al lado",
+                  "delante",
+                  "detras",
+                  "detrás"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1403,7 +2232,8 @@
                   "encima",
                   "debajo"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1413,7 +2243,15 @@
                   "cerca",
                   "delante"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "al lado",
+                  "cerca",
+                  "delante",
+                  "encima"
+                ],
+                "tipo": "select"
               }
             ]
           },
@@ -1428,7 +2266,15 @@
                   "formal",
                   "usted"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "formal",
+                  "usted",
+                  "informal",
+                  "tu"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1438,7 +2284,14 @@
                   "tu",
                   "tú"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "informal",
+                  "tu",
+                  "tú",
+                  "formal"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1447,7 +2300,8 @@
                   "formal",
                   "usted"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1457,7 +2311,15 @@
                   "tu",
                   "tú"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "informal",
+                  "tu",
+                  "tú",
+                  "formal"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1466,7 +2328,14 @@
                   "formal",
                   "usted"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "formal",
+                  "usted",
+                  "informal",
+                  "tu"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -1476,7 +2345,8 @@
                   "tu",
                   "tú"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ]
           },
@@ -1491,7 +2361,15 @@
                   "enfermero",
                   "enfermera"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "enfermero",
+                  "enfermera",
+                  "bombero",
+                  "farmaceutico"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1500,7 +2378,14 @@
                   "bombero",
                   "bombera"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "bombero",
+                  "bombera",
+                  "enfermero",
+                  "farmaceutico"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1511,7 +2396,8 @@
                   "farmaceutica",
                   "farmacéutica"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1520,7 +2406,15 @@
                   "albañil",
                   "albanil"
                 ],
-                "mensagem": "Acepta sin tilde: albanil"
+                "mensagem": "Acepta sin tilde: albanil",
+                "opcoes": [
+                  "Seleccione...",
+                  "albañil",
+                  "albanil",
+                  "enfermero",
+                  "bombero"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1531,7 +2425,14 @@
                   "mecanica",
                   "mecánica"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "mecanico",
+                  "mecánico",
+                  "mecanica",
+                  "mecánica"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -1539,7 +2440,8 @@
                 "gabarito": [
                   "periodista"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 7,
@@ -1547,7 +2449,15 @@
                 "gabarito": [
                   "piloto"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "piloto",
+                  "enfermero",
+                  "bombero",
+                  "farmaceutico"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 8,
@@ -1556,7 +2466,14 @@
                   "veterinario",
                   "veterinaria"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "veterinario",
+                  "veterinaria",
+                  "enfermero",
+                  "bombero"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 9,
@@ -1567,7 +2484,8 @@
                   "vendedor",
                   "vendedora"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ]
           },
@@ -1582,7 +2500,15 @@
                   "cuñado",
                   "cunado"
                 ],
-                "mensagem": "Acepta sin tilde: cunado"
+                "mensagem": "Acepta sin tilde: cunado",
+                "opcoes": [
+                  "Seleccione...",
+                  "cuñado",
+                  "cunado",
+                  "sobrina",
+                  "padres"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1590,7 +2516,13 @@
                 "gabarito": [
                   "sobrina"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "sobrina",
+                  "cuñado",
+                  "padres"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1598,7 +2530,8 @@
                 "gabarito": [
                   "padres"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ]
           }
@@ -1614,7 +2547,15 @@
                 "gabarito": [
                   "es"
                 ],
-                "mensagem": "SER – él"
+                "mensagem": "SER – él",
+                "opcoes": [
+                  "Seleccione...",
+                  "es",
+                  "tenemos",
+                  "estoy",
+                  "viven"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1622,7 +2563,14 @@
                 "gabarito": [
                   "tenemos"
                 ],
-                "mensagem": "TENER – nosotros"
+                "mensagem": "TENER – nosotros",
+                "opcoes": [
+                  "tenemos",
+                  "es",
+                  "estoy",
+                  "viven"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1630,7 +2578,8 @@
                 "gabarito": [
                   "estoy"
                 ],
-                "mensagem": "ESTAR – yo"
+                "mensagem": "ESTAR – yo",
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1638,7 +2587,15 @@
                 "gabarito": [
                   "viven"
                 ],
-                "mensagem": "VIVIR – ellos"
+                "mensagem": "VIVIR – ellos",
+                "opcoes": [
+                  "Seleccione...",
+                  "viven",
+                  "es",
+                  "tenemos",
+                  "estoy"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1646,7 +2603,14 @@
                 "gabarito": [
                   "bebes"
                 ],
-                "mensagem": "BEBER – tú"
+                "mensagem": "BEBER – tú",
+                "opcoes": [
+                  "bebes",
+                  "es",
+                  "tenemos",
+                  "estoy"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -1654,7 +2618,8 @@
                 "gabarito": [
                   "es"
                 ],
-                "mensagem": "SER – usted"
+                "mensagem": "SER – usted",
+                "tipo": "text"
               }
             ]
           },
@@ -1668,7 +2633,15 @@
                 "gabarito": [
                   "doscientos treinta y cuatro"
                 ],
-                "mensagem": "Ojo con el uso de 'y'"
+                "mensagem": "Ojo con el uso de 'y'",
+                "opcoes": [
+                  "Seleccione...",
+                  "doscientos treinta y cuatro",
+                  "mil cuatrocientos quince",
+                  "setenta y dos",
+                  "cinco mil ochenta y nueve"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1676,7 +2649,14 @@
                 "gabarito": [
                   "mil cuatrocientos quince"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "mil cuatrocientos quince",
+                  "doscientos treinta y cuatro",
+                  "setenta y dos",
+                  "cinco mil ochenta y nueve"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1684,7 +2664,8 @@
                 "gabarito": [
                   "setenta y dos"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1692,7 +2673,15 @@
                 "gabarito": [
                   "cinco mil ochenta y nueve"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "cinco mil ochenta y nueve",
+                  "doscientos treinta y cuatro",
+                  "mil cuatrocientos quince",
+                  "setenta y dos"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1701,7 +2690,14 @@
                   "dieciséis",
                   "dieciseis"
                 ],
-                "mensagem": "Acepta con o sin tilde"
+                "mensagem": "Acepta con o sin tilde",
+                "opcoes": [
+                  "dieciséis",
+                  "dieciseis",
+                  "doscientos treinta y cuatro",
+                  "mil cuatrocientos quince"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 6,
@@ -1709,7 +2705,8 @@
                 "gabarito": [
                   "trescientos"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ]
           },
@@ -1723,7 +2720,15 @@
                 "gabarito": [
                   "mis"
                 ],
-                "mensagem": "yo plural"
+                "mensagem": "yo plural",
+                "opcoes": [
+                  "Seleccione...",
+                  "mis",
+                  "su",
+                  "nuestros",
+                  "vuestros"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1731,7 +2736,14 @@
                 "gabarito": [
                   "su"
                 ],
-                "mensagem": "ella singular"
+                "mensagem": "ella singular",
+                "opcoes": [
+                  "su",
+                  "mis",
+                  "nuestros",
+                  "vuestros"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1739,7 +2751,8 @@
                 "gabarito": [
                   "nuestros"
                 ],
-                "mensagem": "nosotros plural"
+                "mensagem": "nosotros plural",
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1747,7 +2760,15 @@
                 "gabarito": [
                   "vuestros"
                 ],
-                "mensagem": "vosotros plural"
+                "mensagem": "vosotros plural",
+                "opcoes": [
+                  "Seleccione...",
+                  "vuestros",
+                  "mis",
+                  "su",
+                  "nuestros"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1755,7 +2776,14 @@
                 "gabarito": [
                   "su"
                 ],
-                "mensagem": "él singular"
+                "mensagem": "él singular",
+                "opcoes": [
+                  "su",
+                  "mis",
+                  "nuestros",
+                  "vuestros"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -1769,7 +2797,15 @@
                 "gabarito": [
                   "son las cuatro y cuarto"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "son las cuatro y cuarto",
+                  "son las once y media",
+                  "es la una",
+                  "son las ocho menos diez"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1777,7 +2813,14 @@
                 "gabarito": [
                   "son las once y media"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "son las once y media",
+                  "son las cuatro y cuarto",
+                  "es la una",
+                  "son las ocho menos diez"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1785,7 +2828,8 @@
                 "gabarito": [
                   "es la una"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1793,7 +2837,15 @@
                 "gabarito": [
                   "son las ocho menos diez"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "son las ocho menos diez",
+                  "son las cuatro y cuarto",
+                  "son las once y media",
+                  "es la una"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1801,7 +2853,14 @@
                 "gabarito": [
                   "es la una menos cuarto"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "es la una menos cuarto",
+                  "son las cuatro y cuarto",
+                  "son las once y media",
+                  "es la una"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -1815,7 +2874,15 @@
                 "gabarito": [
                   "casa"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "casa",
+                  "amigo",
+                  "escuela",
+                  "familia"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1823,7 +2890,14 @@
                 "gabarito": [
                   "amigo"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "amigo",
+                  "casa",
+                  "escuela",
+                  "familia"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1831,7 +2905,8 @@
                 "gabarito": [
                   "escuela"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1839,7 +2914,15 @@
                 "gabarito": [
                   "familia"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "familia",
+                  "casa",
+                  "amigo",
+                  "escuela"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1847,7 +2930,14 @@
                 "gabarito": [
                   "sol"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "sol",
+                  "casa",
+                  "amigo",
+                  "escuela"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -1861,7 +2951,15 @@
                 "gabarito": [
                   "profesores"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "profesores",
+                  "lápices",
+                  "ciudades",
+                  "flores"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1870,7 +2968,14 @@
                   "lápices",
                   "lapices"
                 ],
-                "mensagem": "Cambio de z → c"
+                "mensagem": "Cambio de z → c",
+                "opcoes": [
+                  "lápices",
+                  "lapices",
+                  "profesores",
+                  "ciudades"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1878,7 +2983,8 @@
                 "gabarito": [
                   "ciudades"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1886,7 +2992,15 @@
                 "gabarito": [
                   "flores"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "flores",
+                  "profesores",
+                  "lápices",
+                  "ciudades"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1894,7 +3008,14 @@
                 "gabarito": [
                   "relojes"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "relojes",
+                  "profesores",
+                  "lápices",
+                  "ciudades"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -1908,7 +3029,15 @@
                 "gabarito": [
                   "la actriz"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "la actriz",
+                  "la tía",
+                  "la reina",
+                  "la leona"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1917,7 +3046,14 @@
                   "la tía",
                   "la tia"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "la tía",
+                  "la tia",
+                  "la actriz",
+                  "la reina"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1925,7 +3061,8 @@
                 "gabarito": [
                   "la reina"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1933,7 +3070,15 @@
                 "gabarito": [
                   "la leona"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "la leona",
+                  "la actriz",
+                  "la tía",
+                  "la reina"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1941,7 +3086,14 @@
                 "gabarito": [
                   "la amiga"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "la amiga",
+                  "la actriz",
+                  "la tía",
+                  "la reina"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -1955,7 +3107,15 @@
                 "gabarito": [
                   "esta"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "esta",
+                  "esos",
+                  "aquella",
+                  "estos"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -1963,7 +3123,14 @@
                 "gabarito": [
                   "esos"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "esos",
+                  "esta",
+                  "aquella",
+                  "estos"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -1971,7 +3138,8 @@
                 "gabarito": [
                   "aquella"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -1979,7 +3147,15 @@
                 "gabarito": [
                   "estos"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "estos",
+                  "esta",
+                  "esos",
+                  "aquella"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -1987,7 +3163,14 @@
                 "gabarito": [
                   "aquellas"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "aquellas",
+                  "esta",
+                  "esos",
+                  "aquella"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -2002,7 +3185,15 @@
                   "por qué",
                   "porque"
                 ],
-                "mensagem": "pregunta de razón"
+                "mensagem": "pregunta de razón",
+                "opcoes": [
+                  "Seleccione...",
+                  "por qué",
+                  "porque",
+                  "dónde",
+                  "quién"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -2011,7 +3202,14 @@
                   "dónde",
                   "donde"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "dónde",
+                  "donde",
+                  "por qué",
+                  "quién"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -2019,7 +3217,8 @@
                 "gabarito": [
                   "quién"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -2028,7 +3227,15 @@
                   "cuánto",
                   "cuanto"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "cuánto",
+                  "cuanto",
+                  "por qué",
+                  "dónde"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -2037,7 +3244,14 @@
                   "cuál",
                   "cual"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "cuál",
+                  "cual",
+                  "por qué",
+                  "dónde"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -2052,7 +3266,15 @@
                   "sobre",
                   "encima de"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "sobre",
+                  "encima de",
+                  "dentro de",
+                  "cerca de"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -2060,7 +3282,14 @@
                 "gabarito": [
                   "dentro de"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "dentro de",
+                  "sobre",
+                  "cerca de",
+                  "en"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -2068,7 +3297,8 @@
                 "gabarito": [
                   "cerca de"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -2076,7 +3306,15 @@
                 "gabarito": [
                   "en"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "en",
+                  "sobre",
+                  "dentro de",
+                  "cerca de"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -2085,7 +3323,14 @@
                   "junto a",
                   "al lado de"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "junto a",
+                  "al lado de",
+                  "sobre",
+                  "dentro de"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -2099,7 +3344,8 @@
                 "gabarito": [
                   "formal"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 2,
@@ -2107,7 +3353,8 @@
                 "gabarito": [
                   "informal"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 3,
@@ -2115,7 +3362,8 @@
                 "gabarito": [
                   "formal"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -2123,7 +3371,8 @@
                 "gabarito": [
                   "informal"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               }
             ]
           },
@@ -2138,7 +3387,15 @@
                   "enfermero",
                   "enfermera"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "enfermero",
+                  "enfermera",
+                  "arquitecto",
+                  "bombero"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -2147,7 +3404,14 @@
                   "arquitecto",
                   "arquitecta"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "arquitecto",
+                  "arquitecta",
+                  "enfermero",
+                  "bombero"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -2156,7 +3420,8 @@
                   "bombero",
                   "bombera"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -2167,7 +3432,15 @@
                   "mecánica",
                   "mecanica"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "mecánico",
+                  "mecanico",
+                  "mecánica",
+                  "mecanica"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -2175,7 +3448,14 @@
                 "gabarito": [
                   "oficinista"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "oficinista",
+                  "enfermero",
+                  "arquitecto",
+                  "bombero"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -2189,7 +3469,15 @@
                 "gabarito": [
                   "abuela"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "abuela",
+                  "sobrino",
+                  "casada",
+                  "yerno"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -2197,7 +3485,14 @@
                 "gabarito": [
                   "sobrino"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "sobrino",
+                  "abuela",
+                  "casada",
+                  "yerno"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -2205,7 +3500,8 @@
                 "gabarito": [
                   "casada"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -2213,7 +3509,15 @@
                 "gabarito": [
                   "yerno"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "yerno",
+                  "abuela",
+                  "sobrino",
+                  "casada"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -2221,7 +3525,14 @@
                 "gabarito": [
                   "soltero"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "soltero",
+                  "abuela",
+                  "sobrino",
+                  "casada"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -2236,7 +3547,15 @@
                   "brasileño",
                   "brasileña"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "brasileño",
+                  "brasileña",
+                  "español",
+                  "mexicano"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -2245,7 +3564,14 @@
                   "español",
                   "española"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "español",
+                  "española",
+                  "brasileño",
+                  "mexicano"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -2254,7 +3580,8 @@
                   "mexicano",
                   "mexicana"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -2263,7 +3590,15 @@
                   "argentino",
                   "argentina"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "argentino",
+                  "argentina",
+                  "brasileño",
+                  "español"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -2272,7 +3607,14 @@
                   "portugués",
                   "portuguesa"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "portugués",
+                  "portuguesa",
+                  "brasileño",
+                  "español"
+                ],
+                "tipo": "mc"
               }
             ]
           },
@@ -2286,7 +3628,15 @@
                 "gabarito": [
                   "limón"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "limón",
+                  "pizza",
+                  "café",
+                  "helado"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 2,
@@ -2294,7 +3644,14 @@
                 "gabarito": [
                   "pizza"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "pizza",
+                  "limón",
+                  "café",
+                  "helado"
+                ],
+                "tipo": "mc"
               },
               {
                 "numero": 3,
@@ -2302,7 +3659,8 @@
                 "gabarito": [
                   "café"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "tipo": "text"
               },
               {
                 "numero": 4,
@@ -2310,7 +3668,15 @@
                 "gabarito": [
                   "helado"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "helado",
+                  "limón",
+                  "pizza",
+                  "café"
+                ],
+                "tipo": "select"
               },
               {
                 "numero": 5,
@@ -2318,948 +3684,1956 @@
                 "gabarito": [
                   "desayuno"
                 ],
-                "mensagem": null
+                "mensagem": null,
+                "opcoes": [
+                  "desayuno",
+                  "limón",
+                  "pizza",
+                  "café"
+                ],
+                "tipo": "mc"
               }
             ]
           }
         ],
         [
-  {
-    "title": "1) Presente de indicativo (verbos comunes)",
-    "badge": "Completar",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "Mi madre ____ enfermera. (SER)",
-        "tipo": "select",
-        "opcoes": [
-          "es",
-          "está",
-          "soy"
-        ],
-        "gabarito": [
-          "es"
-        ],
-        "mensagem": "SER – ella"
-      },
-      {
-        "numero": 2,
-        "enunciado": "¿Tú ____ en casa? (ESTAR)",
-        "tipo": "mc",
-        "opcoes": [
-          "estás",
-          "estoy",
-          "son"
-        ],
-        "gabarito": [
-          "estás"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "La oración 'Nosotros tenemos clase' usa TENER en 1ª persona del plural.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "Selecciona todas las formas correctas del verbo SER:",
-        "tipo": "checkbox",
-        "opcoes": [
-          "soy",
-          "eres",
-          "es",
-          "está"
-        ],
-        "gabarito": [
-          "soy",
-          "eres",
-          "es"
-        ],
-        "mensagem": "Cuidado: 'está' es de ESTAR"
-      },
-      {
-        "numero": 5,
-        "enunciado": "Yo ____ agua todos los días. (BEBER)",
-        "gabarito": [
-          "bebo"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "2) Números",
-    "badge": "Escribir en palabras",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "219 → escribe en palabras",
-        "gabarito": [
-          "doscientos diecinueve"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "Selecciona la forma correcta para '4500':",
-        "tipo": "select",
-        "opcoes": [
-          "cuatro mil quinientos",
-          "cuatro mil cincuenta",
-          "cuatrocientos cincuenta"
-        ],
-        "gabarito": [
-          "cuatro mil quinientos"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "Asocia el número con su nombre:",
-        "tipo": "assoc",
-        "pares": [
           {
-            "a": "13",
-            "b": "trece"
+            "title": "1) Presente de indicativo (verbos comunes)",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Mi madre ____ enfermera. (SER)",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "es",
+                  "está",
+                  "soy"
+                ],
+                "gabarito": [
+                  "es"
+                ],
+                "mensagem": "SER – ella"
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Tú ____ en casa? (ESTAR)",
+                "tipo": "mc",
+                "opcoes": [
+                  "estás",
+                  "estoy",
+                  "son"
+                ],
+                "gabarito": [
+                  "estás"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "La oración 'Nosotros tenemos clase' usa TENER en 1ª persona del plural.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "Selecciona todas las formas correctas del verbo SER:",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "soy",
+                  "eres",
+                  "es",
+                  "está"
+                ],
+                "gabarito": [
+                  "soy",
+                  "eres",
+                  "es"
+                ],
+                "mensagem": "Cuidado: 'está' es de ESTAR"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Yo ____ agua todos los días. (BEBER)",
+                "gabarito": [
+                  "bebo"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "bebo",
+                  "es",
+                  "estás",
+                  "V"
+                ],
+                "tipo": "mc"
+              }
+            ]
           },
           {
-            "a": "30",
-            "b": "treinta"
+            "title": "2) Números",
+            "badge": "Escribir en palabras",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "219 → escribe en palabras",
+                "gabarito": [
+                  "doscientos diecinueve"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "doscientos diecinueve",
+                  "cuatro mil quinientos",
+                  "trece",
+                  "dieciséis"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Selecciona la forma correcta para '4500':",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "cuatro mil quinientos",
+                  "cuatro mil cincuenta",
+                  "cuatrocientos cincuenta"
+                ],
+                "gabarito": [
+                  "cuatro mil quinientos"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Asocia el número con su nombre:",
+                "tipo": "assoc",
+                "pares": [
+                  {
+                    "a": "13",
+                    "b": "trece"
+                  },
+                  {
+                    "a": "30",
+                    "b": "treinta"
+                  },
+                  {
+                    "a": "70",
+                    "b": "setenta"
+                  }
+                ],
+                "gabarito": [
+                  "trece",
+                  "treinta",
+                  "setenta"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "Selecciona la opción correcta para 16:",
+                "tipo": "mc",
+                "opcoes": [
+                  "dieciséis",
+                  "diez y seis",
+                  "dieciseis"
+                ],
+                "gabarito": [
+                  "dieciséis"
+                ],
+                "mensagem": "Forma preferida: dieciséis"
+              },
+              {
+                "numero": 5,
+                "enunciado": "75 → escribe en palabras",
+                "gabarito": [
+                  "setenta y cinco"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "setenta y cinco",
+                  "doscientos diecinueve",
+                  "cuatro mil quinientos",
+                  "trece"
+                ],
+                "tipo": "mc"
+              }
+            ]
           },
           {
-            "a": "70",
-            "b": "setenta"
+            "title": "3) Posesivos",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "___ abuelos viven aquí. (ella)",
+                "tipo": "mc",
+                "opcoes": [
+                  "mi",
+                  "su",
+                  "sus"
+                ],
+                "gabarito": [
+                  "sus"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "___ casas son antiguas. (nosotros)",
+                "gabarito": [
+                  "nuestras"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "nuestras",
+                  "sus",
+                  "V",
+                  "tu"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 3,
+                "enunciado": "La oración 'Tu amiga es simpática' usa posesivo de segunda persona singular.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "Completa: ¿Dónde está ___ mochila? (tú)",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "tu",
+                  "tus",
+                  "su"
+                ],
+                "gabarito": [
+                  "tu"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "4) La hora",
+            "badge": "Responde",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "2:05",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "son las dos y cinco",
+                  "es la una y cinco",
+                  "son las dos y cuarto"
+                ],
+                "gabarito": [
+                  "son las dos y cinco"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "1:30",
+                "tipo": "mc",
+                "opcoes": [
+                  "es la una y media",
+                  "son la una y media",
+                  "es las una y media"
+                ],
+                "gabarito": [
+                  "es la una y media"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Las 12:45 puede decirse 'la una menos cuarto'.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "9:40",
+                "gabarito": [
+                  "son las diez menos veinte"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "son las diez menos veinte",
+                  "son las dos y cinco",
+                  "es la una y media",
+                  "V"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "5) Letras → palabra",
+            "badge": "Escribir",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "b – i – c – i – c – l – e – t – a",
+                "gabarito": [
+                  "bicicleta"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "bicicleta",
+                  "foto",
+                  "cielo",
+                  "V"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 2,
+                "enunciado": "f – o – t – o",
+                "tipo": "mc",
+                "opcoes": [
+                  "foto",
+                  "fota",
+                  "feto"
+                ],
+                "gabarito": [
+                  "foto"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "c – i – e – l – o",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "cielo",
+                  "ciello",
+                  "cile"
+                ],
+                "gabarito": [
+                  "cielo"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "La secuencia n – i – ñ – o corresponde a 'niño'.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "6) Plurales",
+            "badge": "Transformar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "avión →",
+                "gabarito": [
+                  "aviones"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "aviones",
+                  "colores",
+                  "V",
+                  "papás"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 2,
+                "enunciado": "color →",
+                "tipo": "mc",
+                "opcoes": [
+                  "colores",
+                  "coloreses",
+                  "coloros"
+                ],
+                "gabarito": [
+                  "colores"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "El plural de 'mes' es 'meses'.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "papá →",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "papás",
+                  "papases",
+                  "papáes"
+                ],
+                "gabarito": [
+                  "papás"
+                ],
+                "mensagem": null
+              }
+            ]
+          },
+          {
+            "title": "7) Femenino",
+            "badge": "Transformar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "el gallo →",
+                "gabarito": [
+                  "la gallina"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "la gallina",
+                  "la princesa",
+                  "V",
+                  "la heroína"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 2,
+                "enunciado": "el príncipe →",
+                "tipo": "mc",
+                "opcoes": [
+                  "la princesa",
+                  "la príncipe",
+                  "la principa"
+                ],
+                "gabarito": [
+                  "la princesa"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "'la artista' puede ser femenino sin cambiar la palabra.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "el héroe →",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "la heroína",
+                  "la heroina",
+                  "la héroa"
+                ],
+                "gabarito": [
+                  "la heroína"
+                ],
+                "mensagem": "Con tilde"
+              }
+            ]
+          },
+          {
+            "title": "8) Demostrativos",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "____ libro es interesante. (cerca)",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "este",
+                  "ese",
+                  "aquel"
+                ],
+                "gabarito": [
+                  "este"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "____ chicas bailan bien. (lejos)",
+                "tipo": "mc",
+                "opcoes": [
+                  "esas",
+                  "estas",
+                  "aquellas"
+                ],
+                "gabarito": [
+                  "esas"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Marca los demostrativos plurales:",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "este",
+                  "estos",
+                  "estas",
+                  "esa"
+                ],
+                "gabarito": [
+                  "estos",
+                  "estas"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "____ casa es de Juan. (muy lejos)",
+                "gabarito": [
+                  "aquella"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "aquella",
+                  "este",
+                  "esas",
+                  "estos"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "9) Interrogativos",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "____ estudias español? (razón)",
+                "tipo": "mc",
+                "opcoes": [
+                  "porqué",
+                  "por qué",
+                  "porque"
+                ],
+                "gabarito": [
+                  "por qué"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "____ es tu profesor? (persona)",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "quién",
+                  "quiénes",
+                  "qué"
+                ],
+                "gabarito": [
+                  "quién"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Se escribe 'dónde' con tilde en preguntas directas.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "____ libros quieres? (elección)",
+                "gabarito": [
+                  "cuáles",
+                  "cuales"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "cuáles",
+                  "cuales",
+                  "por qué",
+                  "quién"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "10) Preposiciones de lugar",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "El gato está ____ la cama.",
+                "tipo": "mc",
+                "opcoes": [
+                  "encima de",
+                  "debajo de",
+                  "delante de"
+                ],
+                "gabarito": [
+                  "debajo de"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "La ventana está ____ la pared.",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "en",
+                  "sobre",
+                  "dentro de"
+                ],
+                "gabarito": [
+                  "en"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "'Al lado de' y 'junto a' pueden ser sinónimos.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "El banco está ____ la plaza.",
+                "gabarito": [
+                  "al lado de",
+                  "junto a"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "al lado de",
+                  "junto a",
+                  "debajo de",
+                  "en"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "11) Formal e informal",
+            "badge": "Clasificar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "¿Podría usted repetir?",
+                "tipo": "mc",
+                "opcoes": [
+                  "formal",
+                  "informal"
+                ],
+                "gabarito": [
+                  "formal"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Cómo te llamas?",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "formal",
+                  "informal"
+                ],
+                "gabarito": [
+                  "informal"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "'Usted' se usa para trato formal.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "Clasifica: '¿Me ayudas con esto?': ____",
+                "gabarito": [
+                  "informal",
+                  "tú",
+                  "tu"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "informal",
+                  "tú",
+                  "tu",
+                  "formal"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "12) Profesiones",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Persona que cura animales:",
+                "tipo": "mc",
+                "opcoes": [
+                  "veterano",
+                  "vendedor",
+                  "veterinario"
+                ],
+                "gabarito": [
+                  "veterinario"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "Persona que prepara pan:",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "panadero",
+                  "pandero",
+                  "pastelero"
+                ],
+                "gabarito": [
+                  "panadero"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Un 'periodista' puede ser hombre o mujer.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "Persona que enseña en la escuela:",
+                "gabarito": [
+                  "profesor",
+                  "profesora"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "profesor",
+                  "profesora",
+                  "veterinario",
+                  "panadero"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "13) Familia",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "El padre de mi esposo es mi ____.",
+                "tipo": "mc",
+                "opcoes": [
+                  "suegro",
+                  "cuñado",
+                  "tío"
+                ],
+                "gabarito": [
+                  "suegro"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "La hija de mi tía es mi ____.",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "prima",
+                  "sobrina",
+                  "hermana"
+                ],
+                "gabarito": [
+                  "prima"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "El esposo de mi hija es mi yerno.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "La pareja de mi hermano es mi ____.",
+                "gabarito": [
+                  "cuñada"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "cuñada",
+                  "suegro",
+                  "prima",
+                  "V"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "14) Países y nacionalidades",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Selecciona las nacionalidades correctas para Perú:",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "peruano",
+                  "peruense",
+                  "peruana",
+                  "perusí"
+                ],
+                "gabarito": [
+                  "peruano",
+                  "peruana"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 2,
+                "enunciado": "Alemania →",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "alemán",
+                  "alemano",
+                  "alemaina"
+                ],
+                "gabarito": [
+                  "alemán"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "De Portugal → portugués/portuguesa.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "Francia → ____ (nacionalidad fem.)",
+                "gabarito": [
+                  "francesa",
+                  "francesa"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "francesa",
+                  "peruano",
+                  "alemán",
+                  "V"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "15) Vocabulario de la casa",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Objeto para iluminar una habitación:",
+                "tipo": "mc",
+                "opcoes": [
+                  "lampara",
+                  "lámpara",
+                  "candela"
+                ],
+                "gabarito": [
+                  "lámpara"
+                ],
+                "mensagem": "Con tilde"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Lugar para comer en casa:",
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "comedor",
+                  "cena",
+                  "cocino"
+                ],
+                "gabarito": [
+                  "comedor"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 3,
+                "enunciado": "Una 'nevera' sirve para enfriar comida.",
+                "tipo": "vf",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 4,
+                "enunciado": "Selecciona los muebles:",
+                "tipo": "checkbox",
+                "opcoes": [
+                  "mesa",
+                  "ventana",
+                  "silla",
+                  "suelo"
+                ],
+                "gabarito": [
+                  "mesa",
+                  "silla"
+                ],
+                "mensagem": null
+              },
+              {
+                "numero": 5,
+                "enunciado": "Aparato para calentar comida rápidamente: ____",
+                "gabarito": [
+                  "microondas"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "microondas",
+                  "lámpara",
+                  "comedor",
+                  "pizarra"
+                ],
+                "tipo": "mc"
+              }
+            ]
           }
         ],
-        "gabarito": [
-          "trece",
-          "treinta",
-          "setenta"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "Selecciona la opción correcta para 16:",
-        "tipo": "mc",
-        "opcoes": [
-          "dieciséis",
-          "diez y seis",
-          "dieciseis"
-        ],
-        "gabarito": [
-          "dieciséis"
-        ],
-        "mensagem": "Forma preferida: dieciséis"
-      },
-      {
-        "numero": 5,
-        "enunciado": "75 → escribe en palabras",
-        "gabarito": [
-          "setenta y cinco"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "3) Posesivos",
-    "badge": "Completar",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "___ abuelos viven aquí. (ella)",
-        "tipo": "mc",
-        "opcoes": [
-          "mi",
-          "su",
-          "sus"
-        ],
-        "gabarito": [
-          "sus"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "___ casas son antiguas. (nosotros)",
-        "gabarito": [
-          "nuestras"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "La oración 'Tu amiga es simpática' usa posesivo de segunda persona singular.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "Completa: ¿Dónde está ___ mochila? (tú)",
-        "tipo": "select",
-        "opcoes": [
-          "tu",
-          "tus",
-          "su"
-        ],
-        "gabarito": [
-          "tu"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "4) La hora",
-    "badge": "Responde",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "2:05",
-        "tipo": "select",
-        "opcoes": [
-          "son las dos y cinco",
-          "es la una y cinco",
-          "son las dos y cuarto"
-        ],
-        "gabarito": [
-          "son las dos y cinco"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "1:30",
-        "tipo": "mc",
-        "opcoes": [
-          "es la una y media",
-          "son la una y media",
-          "es las una y media"
-        ],
-        "gabarito": [
-          "es la una y media"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "Las 12:45 puede decirse 'la una menos cuarto'.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "9:40",
-        "gabarito": [
-          "son las diez menos veinte"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "5) Letras → palabra",
-    "badge": "Escribir",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "b – i – c – i – c – l – e – t – a",
-        "gabarito": [
-          "bicicleta"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "f – o – t – o",
-        "tipo": "mc",
-        "opcoes": [
-          "foto",
-          "fota",
-          "feto"
-        ],
-        "gabarito": [
-          "foto"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "c – i – e – l – o",
-        "tipo": "select",
-        "opcoes": [
-          "cielo",
-          "ciello",
-          "cile"
-        ],
-        "gabarito": [
-          "cielo"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "La secuencia n – i – ñ – o corresponde a 'niño'.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "6) Plurales",
-    "badge": "Transformar",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "avión →",
-        "gabarito": [
-          "aviones"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "color →",
-        "tipo": "mc",
-        "opcoes": [
-          "colores",
-          "coloreses",
-          "coloros"
-        ],
-        "gabarito": [
-          "colores"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "El plural de 'mes' es 'meses'.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "papá →",
-        "tipo": "select",
-        "opcoes": [
-          "papás",
-          "papases",
-          "papáes"
-        ],
-        "gabarito": [
-          "papás"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "7) Femenino",
-    "badge": "Transformar",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "el gallo →",
-        "gabarito": [
-          "la gallina"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "el príncipe →",
-        "tipo": "mc",
-        "opcoes": [
-          "la princesa",
-          "la príncipe",
-          "la principa"
-        ],
-        "gabarito": [
-          "la princesa"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "'la artista' puede ser femenino sin cambiar la palabra.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "el héroe →",
-        "tipo": "select",
-        "opcoes": [
-          "la heroína",
-          "la heroina",
-          "la héroa"
-        ],
-        "gabarito": [
-          "la heroína"
-        ],
-        "mensagem": "Con tilde"
-      }
-    ]
-  },
-  {
-    "title": "8) Demostrativos",
-    "badge": "Completar",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "____ libro es interesante. (cerca)",
-        "tipo": "select",
-        "opcoes": [
-          "este",
-          "ese",
-          "aquel"
-        ],
-        "gabarito": [
-          "este"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "____ chicas bailan bien. (lejos)",
-        "tipo": "mc",
-        "opcoes": [
-          "esas",
-          "estas",
-          "aquellas"
-        ],
-        "gabarito": [
-          "esas"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "Marca los demostrativos plurales:",
-        "tipo": "checkbox",
-        "opcoes": [
-          "este",
-          "estos",
-          "estas",
-          "esa"
-        ],
-        "gabarito": [
-          "estos",
-          "estas"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "____ casa es de Juan. (muy lejos)",
-        "gabarito": [
-          "aquella"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "9) Interrogativos",
-    "badge": "Completar",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "____ estudias español? (razón)",
-        "tipo": "mc",
-        "opcoes": [
-          "porqué",
-          "por qué",
-          "porque"
-        ],
-        "gabarito": [
-          "por qué"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "____ es tu profesor? (persona)",
-        "tipo": "select",
-        "opcoes": [
-          "quién",
-          "quiénes",
-          "qué"
-        ],
-        "gabarito": [
-          "quién"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "Se escribe 'dónde' con tilde en preguntas directas.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "____ libros quieres? (elección)",
-        "gabarito": [
-          "cuáles",
-          "cuales"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "10) Preposiciones de lugar",
-    "badge": "Completar",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "El gato está ____ la cama.",
-        "tipo": "mc",
-        "opcoes": [
-          "encima de",
-          "debajo de",
-          "delante de"
-        ],
-        "gabarito": [
-          "debajo de"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "La ventana está ____ la pared.",
-        "tipo": "select",
-        "opcoes": [
-          "en",
-          "sobre",
-          "dentro de"
-        ],
-        "gabarito": [
-          "en"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "'Al lado de' y 'junto a' pueden ser sinónimos.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "El banco está ____ la plaza.",
-        "gabarito": [
-          "al lado de",
-          "junto a"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "11) Formal e informal",
-    "badge": "Clasificar",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "¿Podría usted repetir?",
-        "tipo": "mc",
-        "opcoes": [
-          "formal",
-          "informal"
-        ],
-        "gabarito": [
-          "formal"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "¿Cómo te llamas?",
-        "tipo": "select",
-        "opcoes": [
-          "formal",
-          "informal"
-        ],
-        "gabarito": [
-          "informal"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "'Usted' se usa para trato formal.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "Clasifica: '¿Me ayudas con esto?': ____",
-        "gabarito": [
-          "informal",
-          "tú",
-          "tu"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "12) Profesiones",
-    "badge": "Completar",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "Persona que cura animales:",
-        "tipo": "mc",
-        "opcoes": [
-          "veterano",
-          "vendedor",
-          "veterinario"
-        ],
-        "gabarito": [
-          "veterinario"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "Persona que prepara pan:",
-        "tipo": "select",
-        "opcoes": [
-          "panadero",
-          "pandero",
-          "pastelero"
-        ],
-        "gabarito": [
-          "panadero"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "Un 'periodista' puede ser hombre o mujer.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "Persona que enseña en la escuela:",
-        "gabarito": [
-          "profesor",
-          "profesora"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "13) Familia",
-    "badge": "Completar",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "El padre de mi esposo es mi ____.",
-        "tipo": "mc",
-        "opcoes": [
-          "suegro",
-          "cuñado",
-          "tío"
-        ],
-        "gabarito": [
-          "suegro"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "La hija de mi tía es mi ____.",
-        "tipo": "select",
-        "opcoes": [
-          "prima",
-          "sobrina",
-          "hermana"
-        ],
-        "gabarito": [
-          "prima"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "El esposo de mi hija es mi yerno.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "La pareja de mi hermano es mi ____.",
-        "gabarito": [
-          "cuñada"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "14) Países y nacionalidades",
-    "badge": "Completar",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "Selecciona las nacionalidades correctas para Perú:",
-        "tipo": "checkbox",
-        "opcoes": [
-          "peruano",
-          "peruense",
-          "peruana",
-          "perusí"
-        ],
-        "gabarito": [
-          "peruano",
-          "peruana"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 2,
-        "enunciado": "Alemania →",
-        "tipo": "select",
-        "opcoes": [
-          "alemán",
-          "alemano",
-          "alemaina"
-        ],
-        "gabarito": [
-          "alemán"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "De Portugal → portugués/portuguesa.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "Francia → ____ (nacionalidad fem.)",
-        "gabarito": [
-          "francesa",
-          "francesa"
-        ],
-        "mensagem": null
-      }
-    ]
-  },
-  {
-    "title": "15) Vocabulario de la casa",
-    "badge": "Completar",
-    "perguntas": [
-      {
-        "numero": 1,
-        "enunciado": "Objeto para iluminar una habitación:",
-        "tipo": "mc",
-        "opcoes": [
-          "lampara",
-          "lámpara",
-          "candela"
-        ],
-        "gabarito": [
-          "lámpara"
-        ],
-        "mensagem": "Con tilde"
-      },
-      {
-        "numero": 2,
-        "enunciado": "Lugar para comer en casa:",
-        "tipo": "select",
-        "opcoes": [
-          "comedor",
-          "cena",
-          "cocino"
-        ],
-        "gabarito": [
-          "comedor"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 3,
-        "enunciado": "Una 'nevera' sirve para enfriar comida.",
-        "tipo": "vf",
-        "gabarito": [
-          "V"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 4,
-        "enunciado": "Selecciona los muebles:",
-        "tipo": "checkbox",
-        "opcoes": [
-          "mesa",
-          "ventana",
-          "silla",
-          "suelo"
-        ],
-        "gabarito": [
-          "mesa",
-          "silla"
-        ],
-        "mensagem": null
-      },
-      {
-        "numero": 5,
-        "enunciado": "Aparato para calentar comida rápidamente: ____",
-        "gabarito": [
-          "microondas"
-        ],
-        "mensagem": null
-      }
-    ]
-  }
-]
-      ]
-    },
-    {
-      "title": "Exemplo – Tipos de perguntas",
-      "slug": "mc-exemplo",
-      "groups": [
-        {
-          "title": "Exercícios de exemplo",
-          "badge": "Demo",
-          "items": [
-            {
-              "numero": 1,
-              "enunciado": "¿Cuál es la capital de España?",
-              "tipo": "mc",
-              "opcoes": [
-                "Barcelona",
-                "Madrid",
-                "Sevilla"
-              ],
-              "gabarito": [
-                "Madrid"
-              ],
-              "mensagem": "Geografía"
-            },
-            {
-              "numero": 2,
-              "enunciado": "Selecciona la forma correcta de 'SER' para 'yo':",
-              "tipo": "select",
-              "opcoes": [
-                "es",
-                "soy",
-                "eres"
-              ],
-              "gabarito": [
-                "soy"
-              ],
-              "mensagem": "Verbo SER"
-            },
-            {
-              "numero": 3,
-              "enunciado": "La afirmación 'El sol es una estrella' es:",
-              "tipo": "vf",
-              "gabarito": [
-                "V"
-              ],
-              "mensagem": "Ciencias"
-            },
-            {
-              "numero": 4,
-              "enunciado": "Traduce al español: 'house'",
-              "gabarito": [
-                "casa"
-              ],
-              "mensagem": "Traducción"
-            },
-            {
-              "numero": 5,
-              "enunciado": "Asocia los números de la columna A con la columna B:",
-              "tipo": "assoc",
-              "pares": [
-                {
-                  "a": "Uno",
-                  "b": "1"
-                },
-                {
-                  "a": "Dos",
-                  "b": "2"
-                },
-                {
-                  "a": "Tres",
-                  "b": "3"
-                }
-              ],
-              "gabarito": [
-                "1",
-                "2",
-                "3"
-              ],
-              "mensagem": "Elige el número correspondiente para cada palabra."
-            },
-            {
-              "numero": 6,
-              "enunciado": "Selecciona todas las palabras que son colores:",
-              "tipo": "checkbox",
-              "opcoes": [
-                "casa",
-                "rojo",
-                "verde",
-                "mesa",
-                "azul"
-              ],
-              "gabarito": [
-                "rojo",
-                "verde",
-                "azul"
-              ],
-              "mensagem": "Múltipla selección"
-            }
-          ]
-        }
+        [
+          {
+            "title": "1) Presente de indicativo (verbos variados)",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Mis hermanos ____ en la universidad. (ESTUDIAR)",
+                "gabarito": [
+                  "estudian"
+                ],
+                "mensagem": "ESTUDIAR – ellos",
+                "opcoes": [
+                  "Seleccione...",
+                  "estudian",
+                  "estudiamos",
+                  "estudia",
+                  "estudias"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Usted ____ café por la mañana? (TOMAR)",
+                "gabarito": [
+                  "toma"
+                ],
+                "mensagem": "TOMAR – usted",
+                "opcoes": [
+                  "toma",
+                  "tomo",
+                  "toman",
+                  "tomáis"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Yo siempre ____ la verdad. (DECIR)",
+                "gabarito": [
+                  "digo"
+                ],
+                "mensagem": "DECIR – yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Selecciona todas las formas correctas del verbo IR:",
+                "gabarito": [
+                  "voy",
+                  "vas",
+                  "va",
+                  "vamos"
+                ],
+                "mensagem": "Recuerda las formas del presente",
+                "opcoes": [
+                  "voy",
+                  "vas",
+                  "va",
+                  "vamos",
+                  "viene"
+                ],
+                "tipo": "checkbox"
+              },
+              {
+                "numero": 5,
+                "enunciado": "La frase 'Ellos tiene un perro' está correcta.",
+                "gabarito": [
+                  "F"
+                ],
+                "mensagem": "Debe ser 'tienen'.",
+                "tipo": "vf"
+              }
+            ]
+          },
+          {
+            "title": "2) Números",
+            "badge": "Escribir en palabras",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "1307",
+                "gabarito": [
+                  "mil trescientos siete"
+                ],
+                "mensagem": null,
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Selecciona la forma correcta para 2480:",
+                "gabarito": [
+                  "dos mil cuatrocientos ochenta"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "dos mil cuatrocientos ochenta",
+                  "dos mil ochocientos cuarenta",
+                  "dos mil cuatrocientos dieciocho",
+                  "dos mil cincuenta y ocho"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 3,
+                "enunciado": "¿Cómo se escribe 560 en palabras?",
+                "gabarito": [
+                  "quinientos sesenta"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "quinientos sesenta",
+                  "quinientos y sesenta",
+                  "quinientos sesentia",
+                  "quinientos sesent"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 4,
+                "enunciado": "9035",
+                "gabarito": [
+                  "nueve mil treinta y cinco"
+                ],
+                "mensagem": null,
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Elige la forma correcta para 711:",
+                "gabarito": [
+                  "setecientos once"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "setecientos once",
+                  "setecientos diez y uno",
+                  "setenta y once",
+                  "siete once"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "3) Posesivos",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "___ bicicleta es roja. (yo)",
+                "gabarito": [
+                  "mi"
+                ],
+                "mensagem": "Posesivo singular",
+                "opcoes": [
+                  "Mi",
+                  "Tu",
+                  "Su",
+                  "Nuestra"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 2,
+                "enunciado": "___ profesores son pacientes. (nosotros)",
+                "gabarito": [
+                  "nuestros"
+                ],
+                "mensagem": "Plural masculino",
+                "opcoes": [
+                  "Seleccione...",
+                  "nuestros",
+                  "nuestras",
+                  "sus",
+                  "vuestros"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Completa: ¿Dónde están ___ llaves? (tú)",
+                "gabarito": [
+                  "tus"
+                ],
+                "mensagem": "Tú + plural",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "La forma posesiva para 'ustedes' es 'su'.",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null,
+                "tipo": "vf"
+              }
+            ]
+          },
+          {
+            "title": "4) La hora",
+            "badge": "Responde",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "6:45",
+                "gabarito": [
+                  "son las siete menos cuarto"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "son las siete menos cuarto",
+                  "son las seis y cuarenta y cinco",
+                  "son las seis menos cuarto",
+                  "son las siete y cuarto"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 2,
+                "enunciado": "3:20",
+                "gabarito": [
+                  "son las tres y veinte"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "son las tres y veinte",
+                  "son las tres veinte",
+                  "son las veinte con tres",
+                  "son las tres menos veinte"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 3,
+                "enunciado": "12:00 (mediodía)",
+                "gabarito": [
+                  "es mediodía"
+                ],
+                "mensagem": null,
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "4:05",
+                "gabarito": [
+                  "son las cuatro y cinco"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "son las cuatro y cinco",
+                  "son las cuatro menos cinco",
+                  "son las cinco y cuatro",
+                  "son las cinco menos cinco"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "5) Letras → palabra",
+            "badge": "Escribir",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "c – a – m – i – ó – n",
+                "gabarito": [
+                  "camión",
+                  "camion"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "camión",
+                  "camion",
+                  "camino",
+                  "camina"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 2,
+                "enunciado": "s – i – l – l – a",
+                "gabarito": [
+                  "silla"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "silla",
+                  "silo",
+                  "salón",
+                  "sal"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 3,
+                "enunciado": "p – e – r – r – o",
+                "gabarito": [
+                  "perro"
+                ],
+                "mensagem": null,
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "h – e – l – a – d – o",
+                "gabarito": [
+                  "helado"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "helado",
+                  "helada",
+                  "heladera",
+                  "helad"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "6) Plurales",
+            "badge": "Transformar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "balón →",
+                "gabarito": [
+                  "balones"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "balones",
+                  "balonez",
+                  "balónes",
+                  "balon"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 2,
+                "enunciado": "pez →",
+                "gabarito": [
+                  "peces"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "peces",
+                  "pezes",
+                  "pecez",
+                  "peceses"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 3,
+                "enunciado": "crisis →",
+                "gabarito": [
+                  "crisis"
+                ],
+                "mensagem": "Palabra invariable",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "papel →",
+                "gabarito": [
+                  "papeles"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "papeles",
+                  "papelés",
+                  "papele",
+                  "papel"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "7) Femenino",
+            "badge": "Transformar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "el poeta →",
+                "gabarito": [
+                  "la poeta",
+                  "la poetisa"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "la poeta",
+                  "la poetisa",
+                  "la poetaa",
+                  "la poetas"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 2,
+                "enunciado": "el héroe →",
+                "gabarito": [
+                  "la heroína"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "la heroína",
+                  "la héroe",
+                  "la heroia",
+                  "el heroína"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 3,
+                "enunciado": "el toro →",
+                "gabarito": [
+                  "la vaca"
+                ],
+                "mensagem": null,
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "el emperador →",
+                "gabarito": [
+                  "la emperatriz"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "la emperatriz",
+                  "la emperadora",
+                  "la emperatrizas",
+                  "la emperad"
+                ],
+                "tipo": "select"
+              }
+            ]
+          },
+          {
+            "title": "8) Demostrativos",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "____ casa está aquí mismo. (cerca)",
+                "gabarito": [
+                  "esta",
+                  "Esta"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "esta",
+                  "esa",
+                  "aquella",
+                  "esas"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 2,
+                "enunciado": "____ montañas se ven allá lejos. (lejos)",
+                "gabarito": [
+                  "aquellas"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "aquellas",
+                  "esas",
+                  "estas",
+                  "aquellos"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 3,
+                "enunciado": "____ bolígrafo es del profesor. (distancia media)",
+                "gabarito": [
+                  "ese"
+                ],
+                "mensagem": null,
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "El demostrativo 'esta' corresponde al plural femenino.",
+                "gabarito": [
+                  "F"
+                ],
+                "mensagem": "'Esta' es singular.",
+                "tipo": "vf"
+              }
+            ]
+          },
+          {
+            "title": "9) Interrogativos",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "____ vienes al curso? (tiempo)",
+                "gabarito": [
+                  "cuándo",
+                  "cuando",
+                  "Cuándo",
+                  "Cuando"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Cuándo",
+                  "Cómo",
+                  "Dónde",
+                  "Cuál"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 2,
+                "enunciado": "____ es tu materia favorita? (selección)",
+                "gabarito": [
+                  "cuál",
+                  "Cuál"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "Cuál",
+                  "Qué",
+                  "Quién",
+                  "Cuánto"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 3,
+                "enunciado": "____ libro es este? (posesión)",
+                "gabarito": [
+                  "de quién",
+                  "de quien",
+                  "De quién",
+                  "De quien"
+                ],
+                "mensagem": null,
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Se usa 'Dónde' para preguntar por lugares.",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null,
+                "tipo": "vf"
+              }
+            ]
+          },
+          {
+            "title": "10) Preposiciones de lugar",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "El cuaderno está ____ la mochila.",
+                "gabarito": [
+                  "dentro de"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "dentro de",
+                  "sobre",
+                  "entre",
+                  "hacia"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 2,
+                "enunciado": "La lámpara cuelga ____ la mesa.",
+                "gabarito": [
+                  "sobre"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "sobre",
+                  "debajo de",
+                  "lejos de",
+                  "delante de"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 3,
+                "enunciado": "El perro duerme ____ mi cama.",
+                "gabarito": [
+                  "debajo de"
+                ],
+                "mensagem": null,
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Selecciona las preposiciones de lugar:",
+                "gabarito": [
+                  "entre",
+                  "bajo",
+                  "frente a"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "entre",
+                  "hacia",
+                  "bajo",
+                  "rápido",
+                  "frente a"
+                ],
+                "tipo": "checkbox"
+              }
+            ]
+          },
+          {
+            "title": "11) Formal e informal",
+            "badge": "Clasificar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Elige la opción adecuada para hablar con un director:",
+                "gabarito": [
+                  "Buenos días, ¿podría atenderme?"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Buenos días, ¿podría atenderme?",
+                  "¿Qué onda, profe?",
+                  "¡Ey, jefe!",
+                  "¿Todo bien, amigo?"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Saludo informal para un amigo:",
+                "gabarito": [
+                  "hola, ¿qué tal?",
+                  "Hola, ¿qué tal?"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "Hola, ¿qué tal?",
+                  "Buenas tardes, señor.",
+                  "Mucho gusto en conocerlo.",
+                  "Disculpe, ¿podría ayudarme?"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Usar 'usted' es forma informal.",
+                "gabarito": [
+                  "F"
+                ],
+                "mensagem": null,
+                "tipo": "vf"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Selecciona las expresiones formales:",
+                "gabarito": [
+                  "Disculpe, ¿podría ayudarme?",
+                  "Buenas tardes, profesor.",
+                  "Mucho gusto en conocerlo."
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Disculpe, ¿podría ayudarme?",
+                  "¿Qué tal?",
+                  "Buenas tardes, profesor.",
+                  "¿Todo bien?",
+                  "Mucho gusto en conocerlo."
+                ],
+                "tipo": "checkbox"
+              }
+            ]
+          },
+          {
+            "title": "12) Profesiones",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Persona que diseña edificios:",
+                "gabarito": [
+                  "arquitecto",
+                  "arquitecta"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "arquitecto",
+                  "médico",
+                  "cocinero",
+                  "cartero"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Elige la profesión de quien vuela aviones:",
+                "gabarito": [
+                  "piloto"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "piloto",
+                  "carpintero",
+                  "mecánico",
+                  "barbero"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Persona que enseña en la escuela:",
+                "gabarito": [
+                  "profesor",
+                  "profesora"
+                ],
+                "mensagem": null,
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "El odontólogo cuida de los dientes.",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null,
+                "tipo": "vf"
+              }
+            ]
+          },
+          {
+            "title": "13) Familia",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "El hijo de mi hermano es mi ____.",
+                "gabarito": [
+                  "sobrino"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "sobrino",
+                  "primo",
+                  "nieto",
+                  "tío"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 2,
+                "enunciado": "La madre de mi madre es mi ____.",
+                "gabarito": [
+                  "abuela"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "abuela",
+                  "hija",
+                  "madrastra",
+                  "tía"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 3,
+                "enunciado": "La esposa de mi hijo es mi ____.",
+                "gabarito": [
+                  "nuera"
+                ],
+                "mensagem": null,
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Los primos son hijos de tus tíos.",
+                "gabarito": [
+                  "V"
+                ],
+                "mensagem": null,
+                "tipo": "vf"
+              }
+            ]
+          },
+          {
+            "title": "14) Países y nacionalidades",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Argentina →",
+                "gabarito": [
+                  "argentino / argentina"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "argentino / argentina",
+                  "argentiniano / argentiniana",
+                  "argentinés / argentinésa",
+                  "argentí / argentina"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 2,
+                "enunciado": "La capital de México es:",
+                "gabarito": [
+                  "Ciudad de México"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Ciudad de México",
+                  "Guadalajara",
+                  "Monterrey",
+                  "Tijuana"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Asocia el país con su nacionalidad:",
+                "gabarito": [
+                  "uruguayo / uruguaya",
+                  "colombiano / colombiana",
+                  "boliviano / boliviana"
+                ],
+                "mensagem": null,
+                "pares": [
+                  {
+                    "a": "Uruguay",
+                    "b": "uruguayo / uruguaya"
+                  },
+                  {
+                    "a": "Colombia",
+                    "b": "colombiano / colombiana"
+                  },
+                  {
+                    "a": "Bolivia",
+                    "b": "boliviano / boliviana"
+                  }
+                ],
+                "tipo": "assoc"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Selecciona las nacionalidades correctas para España:",
+                "gabarito": [
+                  "español",
+                  "española"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "español",
+                  "española",
+                  "españolito",
+                  "españo",
+                  "españolés"
+                ],
+                "tipo": "checkbox"
+              }
+            ]
+          },
+          {
+            "title": "15) Vocabulario del aula",
+            "badge": "Completar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Objeto para escribir en la pizarra: ____",
+                "gabarito": [
+                  "tiza"
+                ],
+                "mensagem": null,
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Selecciona el elemento que se usa para borrar la pizarra:",
+                "gabarito": [
+                  "borrador"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "Seleccione...",
+                  "borrador",
+                  "regla",
+                  "cuaderno",
+                  "marcador"
+                ],
+                "tipo": "select"
+              },
+              {
+                "numero": 3,
+                "enunciado": "¿Cuál de los siguientes objetos pertenece al aula?",
+                "gabarito": [
+                  "escritorio"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "escritorio",
+                  "horno",
+                  "sofá",
+                  "lavadora"
+                ],
+                "tipo": "mc"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Selecciona los objetos que sirven para guardar papeles:",
+                "gabarito": [
+                  "carpeta",
+                  "archivador"
+                ],
+                "mensagem": null,
+                "opcoes": [
+                  "carpeta",
+                  "archivador",
+                  "plato",
+                  "toalla",
+                  "almohada"
+                ],
+                "tipo": "checkbox"
+              },
+              {
+                "numero": 5,
+                "enunciado": "El lugar donde se sientan los alumnos es el ____.",
+                "gabarito": [
+                  "pupitre"
+                ],
+                "mensagem": null,
+                "tipo": "text"
+              }
+            ]
+          }
+        ]
       ]
     }
   ]
