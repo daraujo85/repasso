@@ -156,9 +156,17 @@
     }
 
     // UI: renderiza seletor de simulados sem poluir a tela
+    let selectorChangeHandler = null;
     function renderSimuladosSelector(simulados, selectedSlug) {
       const sel = document.getElementById('simSelect');
       if (!sel) return;
+      
+      // Remove event listener anterior se existir
+      if (selectorChangeHandler) {
+        sel.removeEventListener('change', selectorChangeHandler);
+        selectorChangeHandler = null;
+      }
+      
       sel.innerHTML = '';
       const placeholder = document.createElement('option');
       placeholder.value = '';
@@ -167,17 +175,23 @@
       placeholder.selected = !selectedSlug;
       sel.appendChild(placeholder);
 
-      (simulados || []).forEach(s => {
+      // Adiciona todas as opções de simulados
+      console.log('Populando seletor com', simulados?.length || 0, 'simulados');
+      (simulados || []).forEach((s, idx) => {
         const opt = document.createElement('option');
         opt.value = (s.slug || '').toLowerCase();
         opt.textContent = s.title || s.slug || 'Simulado';
+        console.log(`  Adicionando opção ${idx + 1}: ${opt.textContent} (${opt.value})`);
         if (selectedSlug && opt.value === String(selectedSlug).toLowerCase()) {
           opt.selected = true;
+          placeholder.selected = false;
         }
         sel.appendChild(opt);
       });
+      console.log('Total de opções no seletor:', sel.options.length);
 
-      sel.addEventListener('change', () => {
+      // Adiciona event listener
+      selectorChangeHandler = () => {
         const val = sel.value;
         if (val) {
           const url = new URL(location.href);
@@ -191,15 +205,25 @@
           url.searchParams.delete('set');
           location.href = url.toString();
         }
-      });
+      };
+      sel.addEventListener('change', selectorChangeHandler);
     }
 
     async function loadSimulado() {
       try {
-        const res = await fetch('questoes.json');
+        // Adiciona timestamp para evitar cache
+        const res = await fetch('questoes.json?v=' + Date.now());
         const data = await res.json();
         const slug = getSlugParam();
         let simulado = null;
+
+        // Debug: verificar simulados carregados
+        console.log('Simulados carregados:', data.simulados?.length || 0);
+        if (data.simulados) {
+          data.simulados.forEach(s => {
+            console.log(`  - ${s.title} (slug: ${s.slug})`);
+          });
+        }
 
         // popula seletor com todos os simulados, já destacando o atual (se houver)
         renderSimuladosSelector((data.simulados || []), slug);

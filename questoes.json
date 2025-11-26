@@ -5801,6 +5801,606 @@
           }
         ]
       ]
+    },
+    {
+      "title": "Repaso II",
+      "slug": "repaso-ii",
+      "groupsSets": [
+        [
+          {
+            "title": "1) Verbo GUSTAR en presente de indicativo",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "¿A vosotros no ___________________________ los juegos de mesa?",
+                "gabarito": ["os gustan"],
+                "mensagem": "GUSTAR - vosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "A los alumnos ____________________________ las excursiones.",
+                "gabarito": ["les gustan"],
+                "mensagem": "GUSTAR - ellos/ellas",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "A mí no ____________________________ nada el frío riguroso.",
+                "gabarito": ["me gusta"],
+                "mensagem": "GUSTAR - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "A ti ________________________________ las películas de horror.",
+                "gabarito": ["te gustan"],
+                "mensagem": "GUSTAR - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "A las niñas _______________________________ tomar el sol en la playa.",
+                "gabarito": ["les gusta"],
+                "mensagem": "GUSTAR - ellas",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "A Cristiano ______________________________ los deportes.",
+                "gabarito": ["le gustan"],
+                "mensagem": "GUSTAR - él",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "A Cristiano ______________________________ practicar deportes.",
+                "gabarito": ["le gusta"],
+                "mensagem": "GUSTAR - él",
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "A nosotros _______________________________ los fines de semana con los amigos.",
+                "gabarito": ["nos gustan"],
+                "mensagem": "GUSTAR - nosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 9,
+                "enunciado": "A Pedro y a mí no ________________________________ viajar por la noche.",
+                "gabarito": ["nos gusta"],
+                "mensagem": "GUSTAR - nosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 10,
+                "enunciado": "A mí _______________________________ los ritmos latinos.",
+                "gabarito": ["me gustan"],
+                "mensagem": "GUSTAR - yo",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "2) Verbos regulares en imperativo afirmativo",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Antes de comprar algo, _______________________ sobre si realmente necesitas comprarlo. (reflexionar)",
+                "gabarito": ["reflexiona"],
+                "mensagem": "Imperativo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "____________________________ durante las rebajas. (comprar – usted)",
+                "g": ["compre"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "En las rebajas, ___________________________ las compras por impulso. (evitar – usted)",
+                "gabarito": ["evite"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "___________________________ los platos entre los invitados. (repartir – usted)",
+                "gabarito": ["reparta"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "___________________________ en el campo, será mejor para tu salud. (residir – tú)",
+                "gabarito": ["reside"],
+                "mensagem": "Imperativo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "___________________________ en ti. (creer – tú)",
+                "gabarito": ["cree"],
+                "mensagem": "Imperativo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "___________________________ su coche lo más pronto posible. (vender – usted)",
+                "gabarito": ["venda"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "3) Verbos reflexivos en presente de indicativo",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Ella _________________________ María. (llamarse)",
+                "gabarito": ["se llama"],
+                "mensagem": "Reflexivo - ella",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Yo __________________________ por la mañana. (ducharse)",
+                "gabarito": ["me ducho"],
+                "mensagem": "Reflexivo - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Ellos _________________________ todos los días. (afeitarse)",
+                "gabarito": ["se afeitan"],
+                "mensagem": "Reflexivo - ellos",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "_______________________ muy tarde. (acostarse – tú)",
+                "gabarito": ["te acuestas"],
+                "mensagem": "Reflexivo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "_______________________ temprano. (despertarse – nosotros)",
+                "gabarito": ["nos despertamos"],
+                "mensagem": "Reflexivo - nosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "¿________________________ varias veces al día? (peinarse – vosotros)",
+                "gabarito": ["os peináis"],
+                "mensagem": "Reflexivo - vosotros",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "4) Verbos irregulares en presente de indicativo",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "La próxima clase ______________________ en 15 minutos. (EMPEZAR)",
+                "gabarito": ["empieza"],
+                "mensagem": "EMPEZAR - ella",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Tú ___________________ a casa muy cansado. (VOLVER)",
+                "gabarito": ["vuelves"],
+                "mensagem": "VOLVER - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "__________________ a tu casa por la noche. (IR – YO)",
+                "gabarito": ["voy"],
+                "mensagem": "IR - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "¿Adónde ___________________? (IR – TÚ)",
+                "gabarito": ["vas"],
+                "mensagem": "IR - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Yo ______________________ de casa a las siete en punto. (SALIR)",
+                "gabarito": ["salgo"],
+                "mensagem": "SALIR - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "¿A qué hora _______________________ del trabajo? (SALIR – VOSOTROS)",
+                "gabarito": ["salís"],
+                "mensagem": "SALIR - vosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "_____________________ a trabajar dentro de quince minutos. (EMPEZAR – NOSOTROS)",
+                "gabarito": ["empezamos"],
+                "mensagem": "EMPEZAR - nosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Paco y María _______________________ del trabajo a pie. (VOLVER)",
+                "gabarito": ["vuelven"],
+                "mensagem": "VOLVER - ellos",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "5) ¿Qué desayunas normalmente?",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "¿Qué desayunas normalmente?",
+                "gabarito": [],
+                "mensagem": "Resposta livre",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "6) Días de la semana",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "¿Qué día de la semana es hoy?",
+                "gabarito": [],
+                "mensagem": "Resposta livre",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Qué día de la semana fue ayer?",
+                "gabarito": [],
+                "mensagem": "Resposta livre",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "¿Qué día de la semana fue anteayer?",
+                "gabarito": [],
+                "mensagem": "Resposta livre",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "¿Qué día de la semana será mañana?",
+                "gabarito": [],
+                "mensagem": "Resposta livre",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "¿Qué día de la semana será pasado mañana?",
+                "gabarito": [],
+                "mensagem": "Resposta livre",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "7) HAY o ESTÁ",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "¿Dónde ________________ el cuarto de baño?",
+                "gabarito": ["está"],
+                "mensagem": "ESTÁ - ubicación",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Cerca de aquí _____________ muchos bares.",
+                "gabarito": ["hay"],
+                "mensagem": "HAY - existencia",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "¿_________________ un banco en esta calle?",
+                "gabarito": ["hay"],
+                "mensagem": "HAY - existencia",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "El banco _____________ cerca de la farmacia.",
+                "gabarito": ["está"],
+                "mensagem": "ESTÁ - ubicación",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "8) Artículos determinados, indeterminados y contracciones",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Ana vio a ________ hombre cerca de su casa.",
+                "gabarito": ["un"],
+                "mensagem": "Artículo indeterminado",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "_________ mesa está sucia.",
+                "gabarito": ["la"],
+                "mensagem": "Artículo determinado",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "_________ zapatos son marrones.",
+                "gabarito": ["los"],
+                "mensagem": "Artículo determinado",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Voy _____________ cine.",
+                "gabarito": ["al"],
+                "mensagem": "Contracción a + el",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Ella sale ___________ trabajo con prisa.",
+                "gabarito": ["del"],
+                "mensagem": "Contracción de + el",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Hay _________ coches aparcados allí.",
+                "gabarito": ["muchos", "unos"],
+                "mensagem": "Artículo indeterminado",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "_________ coche de Juan es rojo.",
+                "gabarito": ["el"],
+                "mensagem": "Artículo determinado",
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "En mi salón hay _______ alfombras muy bellas.",
+                "gabarito": ["unas"],
+                "mensagem": "Artículo indeterminado",
+                "tipo": "text"
+              },
+              {
+                "numero": 9,
+                "enunciado": "________ llaves están ________ lado ________ teléfono.",
+                "gabarito": ["las", "al", "del"],
+                "mensagem": "Artículos y contracciones",
+                "tipo": "text"
+              },
+              {
+                "numero": 10,
+                "enunciado": "En estas vacaciones iré __________ campo.",
+                "gabarito": ["al"],
+                "mensagem": "Contracción a + el",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "9) Números ordinales",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "María vive en el ______________________ piso. (5°)",
+                "gabarito": ["quinto"],
+                "mensagem": "Ordinal 5°",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Paco es el _____________________ alumno de la clase. (1°)",
+                "gabarito": ["primero"],
+                "mensagem": "Ordinal 1°",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Jorge es el ______________________ de la cola. (3°)",
+                "gabarito": ["tercero"],
+                "mensagem": "Ordinal 3°",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Me clasifiqué en _____________________ lugar. (8°)",
+                "gabarito": ["octavo"],
+                "mensagem": "Ordinal 8°",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "10) Preposiciones",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Trabaja ______________ las 7 ___________ la noche.",
+                "gabarito": ["desde", "hasta"],
+                "mensagem": "Preposiciones de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Estudio ____________ la tarde.",
+                "gabarito": ["por", "en"],
+                "mensagem": "Preposición de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Estudia __________ las 7 ___________ las 12.",
+                "gabarito": ["de", "a", "desde", "hasta"],
+                "mensagem": "Preposiciones de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Sale de casa ___________ las 5 __________ la mañana.",
+                "gabarito": ["a", "de"],
+                "mensagem": "Preposiciones de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "No le gusta salir ___________ la noche.",
+                "gabarito": ["por", "en", "de"],
+                "mensagem": "Preposición de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "____________ tiene mucho sueño.",
+                "gabarito": ["por la noche", "en la noche", "de noche"],
+                "mensagem": "Preposición de tiempo",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "11) Muebles y objetos de la casa",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Guardo los alimentos fríos en la ______________________________.",
+                "gabarito": ["nevera", "heladera", "refrigerador"],
+                "mensagem": "Electrodoméstico",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Preparo la comida en el ____________________________.",
+                "gabarito": ["fogón", "horno", "cocina"],
+                "mensagem": "Electrodoméstico",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Para almorzar nos sentamos en la ___________________________.",
+                "gabarito": ["mesa"],
+                "mensagem": "Mueble",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Para asistir la tele nos sentamos en el _____________________ o en el ________________________.",
+                "gabarito": ["sofá", "sillón"],
+                "mensagem": "Muebles",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Lavamos las vajillas en el _______________________ o en el _______________________.",
+                "gabarito": ["fregadero", "lavabo"],
+                "mensagem": "Muebles",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Nos miramos en el ___________________________.",
+                "gabarito": ["espejo"],
+                "mensagem": "Objeto",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Ponemos los libros en la _________________________.",
+                "gabarito": ["estantería", "biblioteca"],
+                "mensagem": "Mueble",
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Guardamos las ropas en el ________________________.",
+                "gabarito": ["armario", "closet"],
+                "mensagem": "Mueble",
+                "tipo": "text"
+              },
+              {
+                "numero": 9,
+                "enunciado": "En el suelo del salón hay una _________________________ muy bonita.",
+                "gabarito": ["alfombra"],
+                "mensagem": "Objeto",
+                "tipo": "text"
+              },
+              {
+                "numero": 10,
+                "enunciado": "En mi dormitorio hay una _______________________ para que pueda encender por la noche.",
+                "gabarito": ["lámpara"],
+                "mensagem": "Objeto",
+                "tipo": "text"
+              },
+              {
+                "numero": 11,
+                "enunciado": "En mi dormitorio hay un despertador encima de la ______________________________.",
+                "gabarito": ["mesita", "mesa de noche"],
+                "mensagem": "Mueble",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "12) Coincidir en gustos",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "No me gusta la falsedad. _________________________________________________________________",
+                "gabarito": ["a mí tampoco", "a mí no"],
+                "mensagem": "Coincidir en desacuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "No me gusta la carne roja. _______________________________________________________________",
+                "gabarito": ["a mí tampoco", "a mí no"],
+                "mensagem": "Coincidir en desacuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Me gusta la pizza de ajo. _________________________________________________________________",
+                "gabarito": ["a mí también", "a mí sí"],
+                "mensagem": "Coincidir en acuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Me gusta escuchar música. _______________________________________________________________",
+                "gabarito": ["a mí también", "a mí sí"],
+                "mensagem": "Coincidir en acuerdo",
+                "tipo": "text"
+              }
+            ]
+          }
+        ]
+      ]
     }
   ]
 }
