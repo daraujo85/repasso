@@ -38,6 +38,7 @@ wheels/
 *.tmp
 *.temp
 ~*
+*.zip
 
 # OS
 Thumbs.db

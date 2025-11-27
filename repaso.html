@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Simulado Interactivo – Repaso I (JSON)</title>
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="" id="og-url">
+  <meta property="og:title" content="Simulado Interactivo de Espanhol" id="og-title">
+  <meta property="og:description" content="Pratique espanhol com simulados interativos. Exercícios de gramática, vocabulário e compreensão auditiva com feedback imediato." id="og-description">
+  <meta property="og:image" content="" id="og-image">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="" id="twitter-url">
+  <meta property="twitter:title" content="Simulado Interactivo de Espanhol" id="twitter-title">
+  <meta property="twitter:description" content="Pratique espanhol com simulados interativos. Exercícios de gramática, vocabulário e compreensão auditiva com feedback imediato." id="twitter-description">
+  <meta property="twitter:image" content="" id="twitter-image">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body { font-family: Arial, sans-serif; background:#f8fafc; color:#222; margin:0; padding:0; font-size:18px; line-height:1.6; }
@@ -298,6 +310,66 @@
       return idx;
     }
 
+    // Atualizar meta tags Open Graph dinamicamente
+    function updateOGTags(title, slug, simulado) {
+      try {
+        const baseUrl = window.location.origin + window.location.pathname;
+        const url = new URL(baseUrl);
+        if (slug) {
+          url.searchParams.set('slug', slug);
+        }
+        const fullUrl = url.toString();
+        const pageTitle = `Simulado Interactivo – ${title}`;
+        const description = `Pratique espanhol com o simulado "${title}". Exercícios interativos com feedback imediato.`;
+        
+        // Atualizar título da página
+        document.title = pageTitle;
+        
+        // Atualizar meta tags Open Graph
+        const ogUrl = document.getElementById('og-url');
+        const ogTitle = document.getElementById('og-title');
+        const ogDescription = document.getElementById('og-description');
+        const ogImage = document.getElementById('og-image');
+        const twitterUrl = document.getElementById('twitter-url');
+        const twitterTitle = document.getElementById('twitter-title');
+        const twitterDescription = document.getElementById('twitter-description');
+        const twitterImage = document.getElementById('twitter-image');
+        
+        if (ogUrl) ogUrl.setAttribute('content', fullUrl);
+        if (ogTitle) ogTitle.setAttribute('content', pageTitle);
+        if (ogDescription) ogDescription.setAttribute('content', description);
+        if (twitterUrl) twitterUrl.setAttribute('content', fullUrl);
+        if (twitterTitle) twitterTitle.setAttribute('content', pageTitle);
+        if (twitterDescription) twitterDescription.setAttribute('content', description);
+        
+        // Tentar encontrar uma imagem do simulado ou grupo
+        let imageUrl = '';
+        if (simulado) {
+          // Verificar se há imagem no primeiro grupo
+          const firstGroup = (simulado.groups || [])[0] || (simulado.groupsSets || [])[0]?.[0];
+          if (firstGroup?.imagem) {
+            imageUrl = new URL(firstGroup.imagem, baseUrl).toString();
+          } else if (simulado.groupsSets && simulado.groupsSets[0]) {
+            const firstSetGroup = simulado.groupsSets[0].find(g => g.imagem);
+            if (firstSetGroup?.imagem) {
+              imageUrl = new URL(firstSetGroup.imagem, baseUrl).toString();
+            }
+          }
+        }
+        
+        // Se não encontrou imagem, usar bandeira da Espanha como padrão
+        if (!imageUrl) {
+          // Usar bandeira da Espanha da Wikipedia (URL pública confiável)
+          imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_España.svg/800px-Bandera_de_España.svg.png';
+        }
+        
+        if (ogImage) ogImage.setAttribute('content', imageUrl);
+        if (twitterImage) twitterImage.setAttribute('content', imageUrl);
+      } catch (e) {
+        console.error('Erro ao atualizar meta tags OG:', e);
+      }
+    }
+
     // Compartilhar via WhatsApp o simulado atual
     function shareWhatsApp() {
       try {
@@ -511,9 +583,13 @@
     
         // atualiza título no header
         const headerTitle = document.querySelector('header h1');
+        const simuladoTitle = simulado.title || 'Repaso I';
         if (headerTitle) {
-          headerTitle.textContent = `Simulado – ${simulado.title || 'Repaso I'}`;
+          headerTitle.textContent = `Simulado – ${simuladoTitle}`;
         }
+        
+        // Atualizar meta tags Open Graph para compartilhamento no WhatsApp
+        updateOGTags(simuladoTitle, simulado.slug || '', simulado);
         // garante que o seletor reflita o simulado carregado
         renderSimuladosSelector((data.simulados || []), simulado?.slug || slug || '');
     

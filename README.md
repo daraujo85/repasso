@@ -38,6 +38,7 @@ O servidor simples do Python expoe todos os arquivos da pasta atual; mantenha ap
 - `start_server.sh`: script auxiliar para Linux/Mac que inicia o servidor HTTP local.
 - `verificar_projeto.py`: script de validação que verifica se o projeto está configurado corretamente.
 - `.gitignore`: arquivo que define quais arquivos devem ser ignorados pelo Git.
+- `.htaccess`: arquivo de configuração do Apache para redirecionar erros 404 para `repaso.html` (apenas para servidores Apache).
 - `media/`: diretório para armazenar recursos multimídia (áudio, imagens, vídeos).
 
 ## Tecnologias e Bibliotecas
@@ -792,6 +793,20 @@ O player de áudio foi customizado com um visual moderno e minimalista:
 - Perguntas podem incluir audio adicionando o campo audio (URL) no questoes.json.
 - Grupos podem ter imagem e audio no cabeçalho adicionando os campos imagem, altImagem e audio no objeto do grupo.
 - Para parar o servidor HTTP, pressione Ctrl+C na janela em que ele foi iniciado.
+
+### Configuração do Servidor (Apache)
+
+O arquivo `.htaccess` está configurado para:
+- Redirecionar erros 404 para `repaso.html`
+- Definir `repaso.html` como arquivo padrão (index) do diretório
+- Preservar parâmetros de query string ao redirecionar
+
+**Nota:** O arquivo `.htaccess` funciona apenas em servidores Apache. O servidor Python HTTP simples (`python -m http.server`) não suporta `.htaccess`. Para produção, use Apache, Nginx ou outro servidor que suporte essas configurações.
+
+**Para usar em produção:**
+1. Certifique-se de que o servidor Apache está configurado para permitir `.htaccess`
+2. O arquivo `.htaccess` já está pronto e funcionará automaticamente
+3. Qualquer URL não encontrada será redirecionada para `repaso.html`
 
 ## Organização de Recursos
 

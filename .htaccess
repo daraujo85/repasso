@@ -1,0 +1,17 @@
+# Redirecionar erros 404 para repaso.html
+ErrorDocument 404 /repaso.html
+
+# Opcional: Redirecionar também para index.html se não existir
+DirectoryIndex repaso.html index.html
+
+# Habilitar rewrite engine (se necessário)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Redirecionar 404 para repaso.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ repaso.html [L,QSA]
+</IfModule>
+

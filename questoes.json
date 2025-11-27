@@ -5809,6 +5809,7 @@
         [
           {
             "title": "1) Verbo GUSTAR en presente de indicativo",
+            "imagem": "media/images/gustar-presente-indicativo.png",
             "perguntas": [
               {
                 "numero": 1,
@@ -5820,15 +5821,15 @@
               {
                 "numero": 1,
                 "enunciado": "¿A vosotros ___________________________ mucho la música clásica?",
-                "gabarito": ["os encanta", "os encantan"],
-                "mensagem": "ENCANTAR - vosotros",
+                "gabarito": ["os gusta", "os gustan"],
+                "mensagem": "GUSTAR - vosotros",
                 "tipo": "text"
               },
               {
                 "numero": 1,
                 "enunciado": "¿A vosotros ___________________________ los problemas de matemáticas?",
-                "gabarito": ["os interesan"],
-                "mensagem": "INTERESAR - vosotros",
+                "gabarito": ["os gustan"],
+                "mensagem": "GUSTAR - vosotros",
                 "tipo": "text"
               },
               {
@@ -5841,15 +5842,15 @@
               {
                 "numero": 2,
                 "enunciado": "A los alumnos ____________________________ mucho los museos.",
-                "gabarito": ["les encantan"],
-                "mensagem": "ENCANTAR - ellos/ellas",
+                "gabarito": ["les gustan"],
+                "mensagem": "GUSTAR - ellos/ellas",
                 "tipo": "text"
               },
               {
                 "numero": 2,
                 "enunciado": "A los alumnos ____________________________ las clases de historia.",
-                "gabarito": ["les interesan"],
-                "mensagem": "INTERESAR - ellos/ellas",
+                "gabarito": ["les gustan"],
+                "mensagem": "GUSTAR - ellos/ellas",
                 "tipo": "text"
               },
               {
@@ -5862,15 +5863,15 @@
               {
                 "numero": 3,
                 "enunciado": "A mí ____________________________ mucho el verano.",
-                "gabarito": ["me encanta"],
-                "mensagem": "ENCANTAR - yo",
+                "gabarito": ["me gusta"],
+                "mensagem": "GUSTAR - yo",
                 "tipo": "text"
               },
               {
                 "numero": 3,
                 "enunciado": "A mí no ____________________________ nada el ruido.",
-                "gabarito": ["me molesta"],
-                "mensagem": "MOLESTAR - yo",
+                "gabarito": ["me gusta"],
+                "mensagem": "GUSTAR - yo",
                 "tipo": "text"
               },
               {
@@ -5883,15 +5884,15 @@
               {
                 "numero": 4,
                 "enunciado": "A ti ________________________________ mucho los videojuegos.",
-                "gabarito": ["te encantan"],
-                "mensagem": "ENCANTAR - tú",
+                "gabarito": ["te gustan"],
+                "mensagem": "GUSTAR - tú",
                 "tipo": "text"
               },
               {
                 "numero": 4,
                 "enunciado": "A ti ________________________________ los libros de ciencia ficción.",
-                "gabarito": ["te interesan"],
-                "mensagem": "INTERESAR - tú",
+                "gabarito": ["te gustan"],
+                "mensagem": "GUSTAR - tú",
                 "tipo": "text"
               },
               {
@@ -5904,15 +5905,15 @@
               {
                 "numero": 5,
                 "enunciado": "A las niñas _______________________________ mucho bailar.",
-                "gabarito": ["les encanta"],
-                "mensagem": "ENCANTAR - ellas",
+                "gabarito": ["les gusta"],
+                "mensagem": "GUSTAR - ellas",
                 "tipo": "text"
               },
               {
                 "numero": 5,
                 "enunciado": "A las niñas _______________________________ la moda.",
-                "gabarito": ["les interesa"],
-                "mensagem": "INTERESAR - ellas",
+                "gabarito": ["les gusta"],
+                "mensagem": "GUSTAR - ellas",
                 "tipo": "text"
               },
               {
@@ -5925,15 +5926,15 @@
               {
                 "numero": 6,
                 "enunciado": "A Cristiano ______________________________ mucho el fútbol.",
-                "gabarito": ["le encanta"],
-                "mensagem": "ENCANTAR - él",
+                "gabarito": ["le gusta"],
+                "mensagem": "GUSTAR - él",
                 "tipo": "text"
               },
               {
                 "numero": 6,
                 "enunciado": "A Cristiano ______________________________ los documentales deportivos.",
-                "gabarito": ["le interesan"],
-                "mensagem": "INTERESAR - él",
+                "gabarito": ["le gustan"],
+                "mensagem": "GUSTAR - él",
                 "tipo": "text"
               },
               {
@@ -5946,15 +5947,15 @@
               {
                 "numero": 7,
                 "enunciado": "A Cristiano ______________________________ correr por las mañanas.",
-                "gabarito": ["le encanta"],
-                "mensagem": "ENCANTAR - él",
+                "gabarito": ["le gusta"],
+                "mensagem": "GUSTAR - él",
                 "tipo": "text"
               },
               {
                 "numero": 7,
                 "enunciado": "A Cristiano no ______________________________ hacer ejercicio.",
-                "gabarito": ["le molesta"],
-                "mensagem": "MOLESTAR - él",
+                "gabarito": ["le gusta"],
+                "mensagem": "GUSTAR - él",
                 "tipo": "text"
               },
               {
@@ -5967,15 +5968,15 @@
               {
                 "numero": 8,
                 "enunciado": "A nosotros _______________________________ mucho las vacaciones.",
-                "gabarito": ["nos encantan"],
-                "mensagem": "ENCANTAR - nosotros",
+                "gabarito": ["nos gustan"],
+                "mensagem": "GUSTAR - nosotros",
                 "tipo": "text"
               },
               {
                 "numero": 8,
                 "enunciado": "A nosotros _______________________________ los viajes.",
-                "gabarito": ["nos interesan"],
-                "mensagem": "INTERESAR - nosotros",
+                "gabarito": ["nos gustan"],
+                "mensagem": "GUSTAR - nosotros",
                 "tipo": "text"
               },
               {
@@ -5988,8 +5989,8 @@
               {
                 "numero": 9,
                 "enunciado": "A Pedro y a mí ________________________________ mucho leer.",
-                "gabarito": ["nos encanta"],
-                "mensagem": "ENCANTAR - nosotros",
+                "gabarito": ["nos gusta"],
+                "mensagem": "GUSTAR - nosotros",
                 "tipo": "text"
               },
               {
@@ -6009,15 +6010,15 @@
               {
                 "numero": 10,
                 "enunciado": "A mí _______________________________ mucho la música rock.",
-                "gabarito": ["me encanta"],
-                "mensagem": "ENCANTAR - yo",
+                "gabarito": ["me gusta"],
+                "mensagem": "GUSTAR - yo",
                 "tipo": "text"
               },
               {
                 "numero": 10,
                 "enunciado": "A mí _______________________________ los conciertos en vivo.",
-                "gabarito": ["me interesan"],
-                "mensagem": "INTERESAR - yo",
+                "gabarito": ["me gustan"],
+                "mensagem": "GUSTAR - yo",
                 "tipo": "text"
               }
             ]
@@ -6032,13 +6033,14 @@
                 "mensagem": "NAVEGAR – él",
                 "opcoes": ["Seleccione...","navega","navego","navegas","navegan"],
                 "tipo": "select",
-                "imagem": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
+                "imagem": "https://lunetas.com.br/wp-content/uploads/2024/02/estudantes-criam-projetos-para-uma-internet-segura-portal-lunetas.jpg",
                 "altImagem": "Pessoa usando computador"
               }
             ]
           },
           {
             "title": "2) Verbos regulares en imperativo afirmativo",
+            "imagem": "media/images/imperativo-afirmativo.png",
             "perguntas": [
               {
                 "numero": 1,
@@ -6156,28 +6158,28 @@
                 "numero": 5,
                 "enunciado": "___________________________ en el campo, será mejor para tu salud. (residir – tú)",
                 "gabarito": ["reside"],
-                "mensagem": "Imperativo - tú",
+                "mensagem": "Imperativo afirmativo - tú (reside, sin 's')",
                 "tipo": "text"
               },
               {
                 "numero": 5,
                 "enunciado": "___________________________ en una zona tranquila. (vivir – tú)",
                 "gabarito": ["vive"],
-                "mensagem": "Imperativo - tú",
+                "mensagem": "Imperativo afirmativo - tú (vive, sin 's')",
                 "tipo": "text"
               },
               {
                 "numero": 5,
                 "enunciado": "___________________________ cerca del trabajo. (trabajar – tú)",
                 "gabarito": ["trabaja"],
-                "mensagem": "Imperativo - tú",
+                "mensagem": "Imperativo afirmativo - tú: 'trabaja' (sin 's'). Nota: En presente de indicativo sería 'trabajas' (con 's'), pero aquí es imperativo.",
                 "tipo": "text"
               },
               {
                 "numero": 5,
                 "enunciado": "___________________________ en un lugar seguro. (habitar – tú)",
                 "gabarito": ["habita"],
-                "mensagem": "Imperativo - tú",
+                "mensagem": "Imperativo afirmativo - tú (habita, sin 's')",
                 "tipo": "text"
               },
               {
@@ -6240,6 +6242,7 @@
           },
           {
             "title": "3) Verbos reflexivos en presente de indicativo",
+            "imagem": "media/images/verbos-reflexivos.png",
             "perguntas": [
               {
                 "numero": 1,
@@ -6690,6 +6693,7 @@
           },
           {
             "title": "6) Días de la semana",
+            "imagem": "media/images/dias-semana.png",
             "perguntas": [
               {
                 "numero": 1,
@@ -6753,8 +6757,9 @@
               }
             ]
           },
-          {           
+          {
             "title": "7) HAY o ESTÁ",
+            "imagem": "media/images/hay-esta-estan.png",
             "perguntas": [
               {
                 "numero": 1,
@@ -6872,6 +6877,7 @@
           },
           {
             "title": "8) Artículos determinados, indeterminados y contracciones",
+            "imagem": "media/images/articulos-definidos-indefinidos.png",
             "perguntas": [
               {
                 "numero": 1,
@@ -7157,6 +7163,7 @@
           },
           {
             "title": "9) Números ordinales",
+            "imagem": "media/images/numeros-ordinales.png",
             "perguntas": [
               {
                 "numero": 1,
@@ -7274,6 +7281,7 @@
           },
           {
             "title": "10) Preposiciones",
+            "imagem": "media/images/preposiciones.png",
             "perguntas": [
               {
                 "numero": 1,
@@ -7447,6 +7455,7 @@
           },
           {
             "title": "11) Muebles y objetos de la casa",
+            "imagem": "media/images/muebles.png",
             "perguntas": [
               {
                 "numero": 1,
@@ -7909,6 +7918,7 @@
           },
           {
             "title": "14) Vocabulario: comida básica",
+            "imagem": "media/images/comidas-basicas.png",
             "perguntas": [
               {"numero": 1, "enunciado": "Grano básico en muchos países: ____", "gabarito": ["arroz"], "mensagem": null, "tipo": "text"},
               {"numero": 2, "enunciado": "Producto de panadería hecho con harina: ____", "gabarito": ["pan"], "mensagem": null, "tipo": "text"},
@@ -7925,6 +7935,7 @@
           },
           {
             "title": "15) Vocabulario: bebidas",
+            "imagem": "media/images/bebidas.png",
             "perguntas": [
               {"numero": 1, "enunciado": "Bebida natural sin gas: ____", "gabarito": ["agua"], "tipo": "text"},
               {"numero": 2, "enunciado": "Bebida alcohólica de uvas: ____", "gabarito": ["vino"], "tipo": "text"},
@@ -7935,6 +7946,7 @@
           },
           {
             "title": "16) Actividades de tiempo libre",
+            "imagem": "media/images/actividades-tiempo-libre.png",
             "perguntas": [
               {"numero": 1, "enunciado": "Moverse al ritmo de música: ____", "gabarito": ["bailar"], "tipo": "text"},
               {"numero": 2, "enunciado": "Escuchar canciones: ____", "gabarito": ["escuchar música","escuchar musica"], "tipo": "text"},
