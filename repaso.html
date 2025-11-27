@@ -51,7 +51,74 @@
     }
     header p i { font-size:14px; }
     main { max-width:1000px; margin:20px auto; padding:10px; }
-    .card { background:#fff; border:1px solid #ddd; border-radius:10px; padding:50px; margin:25px 0; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
+    .card { background:#fff; border:1px solid #ddd; border-radius:10px; padding:50px; margin:25px 0; box-shadow:0 2px 5px rgba(0,0,0,0.05); transition:all 0.3s ease; position:relative; overflow:hidden; }
+    .card.group-completed { 
+      border:3px solid #10b981; 
+      background:linear-gradient(135deg, #fff 0%, #f0fdf4 100%);
+      box-shadow:0 4px 20px rgba(16,185,129,0.3);
+      animation:groupSuccess 0.6s ease;
+    }
+    .card.group-completed::before {
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      height:4px;
+      background:linear-gradient(90deg, #10b981, #34d399, #10b981);
+      animation:shimmer 2s infinite;
+    }
+    @keyframes groupSuccess {
+      0% { transform:scale(1); }
+      50% { transform:scale(1.02); }
+      100% { transform:scale(1); }
+    }
+    @keyframes shimmer {
+      0% { transform:translateX(-100%); }
+      100% { transform:translateX(100%); }
+    }
+    .group-success-message {
+      display:none;
+      background:linear-gradient(135deg, #10b981 0%, #34d399 100%);
+      color:#fff;
+      padding:15px 20px;
+      border-radius:8px;
+      margin:15px 0;
+      text-align:center;
+      font-weight:bold;
+      font-size:18px;
+      box-shadow:0 4px 12px rgba(16,185,129,0.3);
+      animation:slideDown 0.5s ease;
+    }
+    .group-success-message.show {
+      display:block;
+    }
+    @keyframes slideDown {
+      from {
+        opacity:0;
+        transform:translateY(-10px);
+      }
+      to {
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+    .card.group-completed h2 {
+      color:#059669;
+      position:relative;
+    }
+    .card.group-completed h2::after {
+      content:'\f058';
+      font-family:'Font Awesome 6 Free';
+      font-weight:900;
+      margin-left:10px;
+      color:#10b981;
+      animation:bounce 0.6s ease;
+    }
+    @keyframes bounce {
+      0%, 100% { transform:translateY(0); }
+      50% { transform:translateY(-5px); }
+    }
     h2 { font-size:22px; margin:0 0 15px; color:#333; }
     label { display:block; margin:12px 0 6px; font-weight:bold; }
     .row { display:flex; gap:12px; align-items:flex-start; margin-top:10px; }
@@ -60,13 +127,78 @@
     .feedback { margin-top:6px; }
     .ok { color:#065f46; background:#d1fae5; padding:8px; border-radius:6px; }
     .bad { color:#991b1b; background:#fee2e2; padding:8px; border-radius:6px; }
+    .row.error-shake {
+      animation:shakeError 0.5s ease;
+    }
+    @keyframes shakeError {
+      0%, 100% { transform:translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform:translateX(-5px); }
+      20%, 40%, 60%, 80% { transform:translateX(5px); }
+    }
+    .row.error-highlight {
+      border-left:4px solid #dc2626;
+      padding-left:8px;
+      background-color:#fef2f2;
+      border-radius:4px;
+      transition:all 0.3s ease;
+    }
+    body.dark-mode .row.error-highlight {
+      background-color:#7f1d1d;
+      border-left-color:#ef4444;
+    }
     .actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; justify-content:flex-end; }
     button { font-size:18px; padding:12px 20px; border:none; border-radius:6px; cursor:pointer; }
     #btnCheck { background:#4f46e5; color:#fff; }
     #btnClear { background:#e5e7eb; }
     #scoreBox { text-align:right; font-weight:bold; margin-bottom:15px; font-size:20px; }
-    .progress-bar { background:#e5e7eb; border-radius:6px; overflow:hidden; height:25px; margin:8px; }
-    .progress-fill { background:linear-gradient(to right,#4f46e5,#3b82f6); height:100%; width:0%; transition:width .2s ease; }
+    .progress-bar { 
+      background:#e5e7eb; 
+      border-radius:6px; 
+      overflow:visible; 
+      height:35px; 
+      margin:8px; 
+      position:relative;
+      border:2px solid #cbd5e1;
+    }
+    .progress-fill { 
+      background:linear-gradient(to right,#4f46e5,#3b82f6); 
+      height:100%; 
+      width:0%; 
+      transition:width .3s ease;
+      border-radius:4px;
+      position:relative;
+    }
+    .progress-runner {
+      position:absolute;
+      top:50%;
+      left:0;
+      transform:translate(-50%, -50%);
+      font-size:24px;
+      z-index:10;
+      transition:left .3s ease;
+      filter:drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+      color:#fff;
+      text-shadow:0 1px 2px rgba(0,0,0,0.5);
+    }
+    .progress-finish {
+      position:absolute;
+      top:50%;
+      right:2px;
+      transform:translate(0, -50%);
+      font-size:18px;
+      z-index:10;
+      filter:drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+      color:#10b981;
+      line-height:1;
+    }
+    @keyframes running {
+      0%, 100% { transform:translate(-50%, -50%) rotate(0deg); }
+      25% { transform:translate(-50%, -50%) rotate(-8deg); }
+      75% { transform:translate(-50%, -50%) rotate(8deg); }
+    }
+    .progress-runner.running {
+      animation:running 0.6s ease-in-out infinite;
+    }
     .badge { display:inline-block; background:#fff7ed; color:#c2410c; border:1px solid #fdba74; padding:2px 8px; border-radius:999px; font-size:12px; margin-left:10px; }
     .prompt-media { margin:0 0 12px; }
     .prompt-media img { max-width:100%; height:auto; display:block; border-radius:6px; }
@@ -148,7 +280,9 @@
     }
     /* sticky container para manter nota e progresso visíveis */
     .sticky-top { position: sticky; top: 72px; z-index: 999; padding: 8px 0; background: #f8fafc; box-shadow: 0 2px 5px rgba(0,0,0,0.06); }
-    .sticky-top #scoreBox { margin: 10px; }
+    .sticky-top #scoreBox { margin: 0; }
+    .sticky-top #timerBox { margin: 0; }
+    body.dark-mode #timerBox { color:#818cf8; }
     
     /* seletor de simulados, discreto e à direita */
     .sim-selector { display:flex; justify-content:flex-end; align-items:center; gap:8px; margin: 6px 10px 0; }
@@ -160,6 +294,9 @@
     .report-btn { background:#dc2626; color:#fff; }
     /* botão Imprimir */
     #btnPrint { background:#6366f1; color:#fff; }
+    /* botão Teste */
+    .test-btn { background:#f59e0b; color:#fff; }
+    .test-btn:hover { background:#d97706; }
     /* Footer */
     footer { background:#1e293b; color:#e2e8f0; padding:30px 20px; margin-top:40px; text-align:center; font-size:14px; }
     footer a { color:#60a5fa; text-decoration:none; }
@@ -177,19 +314,147 @@
       box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     }
     body.dark-mode .card { background:#1f2937; border-color:#374151; color:#e5e7eb; }
+    body.dark-mode .card.group-completed { 
+      border-color:#10b981; 
+      background:linear-gradient(135deg, #1f2937 0%, #064e3b 100%);
+      box-shadow:0 4px 20px rgba(16,185,129,0.4);
+    }
     body.dark-mode .card h2 { color:#f3f4f6; }
+    body.dark-mode .card.group-completed h2 { color:#34d399; }
+    body.dark-mode .group-success-message {
+      background:linear-gradient(135deg, #059669 0%, #10b981 100%);
+    }
+    /* Modal de sucesso completo */
+    .success-modal {
+      display:none;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.7);
+      z-index:10000;
+      justify-content:center;
+      align-items:center;
+      animation:fadeIn 0.3s ease;
+      overflow:hidden;
+    }
+    .firework {
+      position:absolute;
+      width:4px;
+      height:4px;
+      border-radius:50%;
+      pointer-events:none;
+      z-index:10001;
+    }
+    @keyframes firework {
+      0% {
+        transform:translate(var(--x), var(--initialY));
+        width:var(--initialSize);
+        opacity:1;
+      }
+      50% {
+        width:0.5vmin;
+        opacity:1;
+      }
+      100% {
+        width:var(--finalSize);
+        transform:translate(var(--x), var(--finalY));
+        opacity:0;
+      }
+    }
+    .success-modal.show {
+      display:flex;
+    }
+    @keyframes fadeIn {
+      from { opacity:0; }
+      to { opacity:1; }
+    }
+    .success-modal-content {
+      background:#fff;
+      border-radius:20px;
+      padding:30px;
+      max-width:500px;
+      text-align:center;
+      box-shadow:0 10px 40px rgba(0,0,0,0.3);
+      animation:scaleIn 0.4s ease;
+    }
+    @keyframes scaleIn {
+      from { transform:scale(0.8); opacity:0; }
+      to { transform:scale(1); opacity:1; }
+    }
+    .success-modal-content img {
+      max-width:100%;
+      height:auto;
+      border-radius:10px;
+      margin-bottom:20px;
+    }
+    .success-modal-content h3 {
+      margin:0 0 10px 0;
+      color:#10b981;
+      font-size:28px;
+    }
+    .success-modal-content p {
+      margin:0;
+      color:#666;
+      font-size:18px;
+    }
+    .success-modal-close {
+      position:absolute;
+      top:20px;
+      right:20px;
+      background:rgba(255,255,255,0.9);
+      border:none;
+      border-radius:50%;
+      width:40px;
+      height:40px;
+      cursor:pointer;
+      font-size:20px;
+      color:#333;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transition:all 0.3s ease;
+    }
+    .success-modal-close:hover {
+      background:#fff;
+      transform:scale(1.1);
+    }
+    body.dark-mode .success-modal-content {
+      background:#1f2937;
+      color:#e5e7eb;
+    }
+    body.dark-mode .success-modal-content h3 {
+      color:#34d399;
+    }
+    body.dark-mode .success-modal-content p {
+      color:#9ca3af;
+    }
+    body.dark-mode .success-modal-close {
+      background:rgba(31,41,55,0.9);
+      color:#e5e7eb;
+    }
     body.dark-mode .sticky-top { background:#111827; }
     body.dark-mode input.inp, body.dark-mode select.sel, body.dark-mode select { background:#374151; border-color:#4b5563; color:#e5e7eb; }
     body.dark-mode input.inp:focus, body.dark-mode select:focus { border-color:#6366f1; outline:none; }
     body.dark-mode .badge { background:#4b5563; color:#fbbf24; border-color:#6b7280; }
     body.dark-mode .ok { background:#064e3b; color:#6ee7b7; }
     body.dark-mode .bad { background:#7f1d1d; color:#fca5a5; }
-    body.dark-mode .progress-bar { background:#374151; }
+    body.dark-mode .progress-bar { 
+      background:#374151; 
+      border-color:#4b5563;
+    }
+    body.dark-mode .progress-runner,
+    body.dark-mode .progress-finish {
+      filter:drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+    }
     body.dark-mode .sim-select { background:#374151; border-color:#4b5563; color:#e5e7eb; }
     body.dark-mode #btnClear { background:#374151; color:#e5e7eb; }
     body.dark-mode #btnClear:hover { background:#4b5563; }
     body.dark-mode .report-btn { background:#991b1b; }
     body.dark-mode .report-btn:hover { background:#b91c1c; }
+    body.dark-mode .test-btn { background:#b45309; }
+    body.dark-mode .test-btn:hover { background:#d97706; }
     body.dark-mode footer { background:#0f172a; }
     body.dark-mode #btnTopo { background:linear-gradient(135deg,#374151,#4b5563); }
     body.dark-mode #btnTopo:hover { background:linear-gradient(135deg,#4b5563,#6b7280); }
@@ -217,8 +482,15 @@
 
   <main>
     <div class="sticky-top">
-      <div id="scoreBox"><i class="fas fa-star"></i> Nota: 0%</div>
-      <div class="progress-bar"><div id="progress" class="progress-fill"></div></div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin: 10px;">
+        <div id="timerBox" style="font-weight:bold; font-size:18px; color:#6366f1;"><i class="fas fa-clock"></i> <span id="timer">00:00</span></div>
+        <div id="scoreBox" style="font-weight:bold; font-size:20px;"><i class="fas fa-star"></i> Nota: 0%</div>
+      </div>
+      <div class="progress-bar">
+        <div id="progress" class="progress-fill"></div>
+        <div id="progressRunner" class="progress-runner"><i class="fas fa-running"></i></div>
+        <div class="progress-finish"><i class="fas fa-flag-checkered"></i></div>
+      </div>
       <div class="sim-selector">
         <span style="font-weight:normal; font-size:14px; color:#555;"><i class="fas fa-list"></i> Simulado:</span>
         <select id="simSelect" class="sim-select">
@@ -228,12 +500,24 @@
     </div>
     <!-- container das seções geradas dinamicamente -->
     <div id="quiz"></div>
+    
+    <!-- Modal de sucesso completo -->
+    <div id="successModal" class="success-modal" onclick="if(event.target.id === 'successModal') closeSuccessModal()">
+      <button class="success-modal-close" onclick="closeSuccessModal()"><i class="fas fa-times"></i></button>
+      <div class="success-modal-content">
+        <img id="successGif" src="" alt="¡Felicitaciones!">
+        <h3><i class="fas fa-trophy"></i> ¡Perfecto!</h3>
+        <p>Has completado todas las preguntas correctamente.</p>
+        <p id="timeResult" style="margin-top:15px; font-size:20px; font-weight:bold; color:#6366f1;"><i class="fas fa-clock"></i> Tiempo: <span id="finalTime">00:00</span></p>
+      </div>
+    </div>
 
     <div class="actions">      
       <button id="btnClear" onclick="location.reload()"><i class="fas fa-redo"></i> Novo Simulado</button>
       <button id="btnShare" class="wa-btn" onclick="shareWhatsApp()"><i class="fab fa-whatsapp"></i> Compartilhar no WhatsApp</button>
       <button id="btnReport" class="report-btn" onclick="reportError()"><i class="fas fa-bug"></i> Reportar Erro</button>
       <button id="btnPrint" onclick="window.print()"><i class="fas fa-print"></i> Imprimir / Salvar PDF</button>
+      <!-- <button id="btnTest" class="test-btn" onclick="testFeatures()"><i class="fas fa-flask"></i> Teste</button> -->
     </div>
   </main>
 
@@ -251,6 +535,9 @@
 
   <script>
     let totalQuestions = 0;
+    let startTime = null;
+    let timerInterval = null;
+    let elapsedTime = 0; // em segundos
 
     // util: embaralhar array
     function shuffle(arr) {
@@ -430,6 +717,20 @@
         alert('Erro ao abrir WhatsApp. Por favor, entre em contato manualmente: 5521995278672');
       }
     }
+    
+    function testFeatures() {
+      // Função para testar funcionalidades do sistema
+      const modal = document.getElementById('successModal');
+      if (modal) {
+        // Resetar flag para permitir teste múltiplo
+        modal.dataset.shown = 'false';
+        // Simular tempo decorrido para teste (30 segundos)
+        elapsedTime = 30;
+        showSuccessModal();
+      } else {
+        alert('Modal de sucesso não encontrado. Verifique se o HTML está correto.');
+      }
+    }
 
     // UI: renderiza seletor de simulados sem poluir a tela
     let selectorChangeHandler = null;
@@ -604,6 +905,10 @@
     function renderQuiz(simulado) {
       const quiz = document.getElementById('quiz');
       quiz.innerHTML = '';
+      
+      // Resetar e iniciar timer
+      stopTimer();
+      startTimer();
 
       let count = 0;
 
@@ -617,12 +922,12 @@
           const wrap = document.createElement('div');
           wrap.className = 'row';
           const number = q.numero ?? (idx + 1);
-            wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
-            wrap.dataset.msg = q.mensagem || '';
+          wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
+          wrap.dataset.msg = q.mensagem || '';
             if (q.validacao || q.validacion) {
               wrap.dataset.validacao = JSON.stringify(q.validacao || q.validacion);
             }
-            const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
+          const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
           wrap.dataset.type = t;
           const imgSrc = q.imagem || q.image || q.imageUrl;
           const altText = q.altImagem || q.alt || q.legenda || ("Imagem da questao " + number);
@@ -757,12 +1062,12 @@
           const wrap = document.createElement('div');
           wrap.className = 'row';
           const number = q.numero ?? (idx + 1);
-            wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
-            wrap.dataset.msg = q.mensagem || '';
+          wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
+          wrap.dataset.msg = q.mensagem || '';
             if (q.validacao || q.validacion) {
               wrap.dataset.validacao = JSON.stringify(q.validacao || q.validacion);
             }
-            const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
+          const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
           wrap.dataset.type = t;
           const imgSrc = q.imagem || q.image || q.imageUrl;
           const altText = q.altImagem || q.alt || q.legenda || ("Imagem da questao " + number);
@@ -812,6 +1117,16 @@
       }
 
       totalQuestions = count;
+      
+      // Resetar modal de sucesso ao carregar novo quiz
+      const modal = document.getElementById('successModal');
+      if (modal) {
+        modal.dataset.shown = 'false';
+        modal.classList.remove('show');
+      }
+      
+      // Inicializar progresso
+      updateProgress(0);
 
       // Eventos dos inputs
       // substituir por eventos por tipo
@@ -876,11 +1191,17 @@
         feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
       } else {
         isCorrect = ans.some(a => normalize(a) === val);
-        if (isCorrect) {
+      if (isCorrect) {
           feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Correto</div>';
-        } else {
-          const corr = ans[0];
+      } else {
+        const corr = ans[0];
           feedback.innerHTML = `<div class="bad"><i class="fas fa-times-circle"></i> Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+          // Encontrar a row pai para aplicar efeito visual
+          const row = el.closest('.row');
+          if (row) {
+            playErrorSound();
+            showErrorEffect(row);
+          }
         }
       }
       el.dataset.checked = 'true';
@@ -895,13 +1216,71 @@
       el.dataset.correct = '0';
     }
 
+    function updateProgress(pct) {
+      const progressBar = document.querySelector('.progress-bar');
+      const progressFill = document.getElementById('progress');
+      const runner = document.getElementById('progressRunner');
+      
+      if (progressFill && runner && progressBar) {
+        // Limitar porcentagem entre 0 e 100
+        pct = Math.max(0, Math.min(100, pct));
+        
+        // Atualizar largura da barra
+        progressFill.style.width = pct + '%';
+        
+        // Usar requestAnimationFrame para garantir que o layout está atualizado
+        requestAnimationFrame(() => {
+          // Calcular posição do atleta (baseado na largura da barra)
+          const barWidth = progressBar.offsetWidth || progressBar.getBoundingClientRect().width;
+          
+          if (barWidth > 0) {
+            let runnerPosition = (barWidth * pct / 100);
+            
+            // Limitar posição para não sair da barra
+            if (runnerPosition < 12) runnerPosition = 12; // Metade do tamanho do ícone
+            if (pct >= 100) {
+              runnerPosition = barWidth - 16; // Ajustar para ficar antes da bandeira
+            }
+            
+            runner.style.left = runnerPosition + 'px';
+            
+            // Adicionar animação de corrida se estiver progredindo
+            if (pct > 0 && pct < 100) {
+              runner.classList.add('running');
+            } else {
+              runner.classList.remove('running');
+            }
+            
+            // Se chegou ao final, parar animação após um tempo
+            if (pct >= 100) {
+              setTimeout(() => {
+                runner.classList.remove('running');
+              }, 500);
+            }
+          }
+        });
+      }
+    }
+
     function checkAll() {
       const rows = Array.from(document.querySelectorAll('section.card .row'));
       let correct = 0;
       rows.forEach(row => { if (checkRow(row)) correct++; });
       const pct = Math.round((correct / totalQuestions) * 100);
       document.getElementById('scoreBox').textContent = `Nota: ${pct}%`;
-      document.getElementById('progress').style.width = pct + '%';
+      updateProgress(pct);
+      
+      // Verificar se todas as questões estão corretas
+      const allRows = Array.from(document.querySelectorAll('section.card .row'));
+      const allChecked = allRows.every(row => row.dataset.checked === 'true');
+      const allCorrect = allRows.every(row => row.dataset.correct === '1');
+      
+      if (allChecked && allCorrect && totalQuestions > 0) {
+        showSuccessModal();
+      }
+      
+      // Verificar conclusão de grupos
+      checkGroupCompletion();
     }
 
     function updateScore() {
@@ -909,7 +1288,342 @@
       const correct = rows.filter(row => row.dataset.correct === '1').length;
       const pct = Math.round((correct / totalQuestions) * 100);
       document.getElementById('scoreBox').textContent = `Nota: ${pct}%`;
-      document.getElementById('progress').style.width = pct + '%';
+      updateProgress(pct);
+      
+      // Verificar se todas as questões estão corretas
+      const allRows = Array.from(document.querySelectorAll('section.card .row'));
+      const allChecked = allRows.every(row => row.dataset.checked === 'true');
+      const allCorrect = allRows.every(row => row.dataset.correct === '1');
+      
+      if (allChecked && allCorrect && totalQuestions > 0) {
+        showSuccessModal();
+      }
+      
+      // Verificar conclusão de grupos
+      checkGroupCompletion();
+    }
+    
+    function formatTime(seconds) {
+      const mins = Math.floor(seconds / 60);
+      const secs = seconds % 60;
+      return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+    
+    function updateTimer() {
+      if (startTime === null) return;
+      
+      const now = Date.now();
+      elapsedTime = Math.floor((now - startTime) / 1000);
+      
+      const timerElement = document.getElementById('timer');
+      if (timerElement) {
+        timerElement.textContent = formatTime(elapsedTime);
+      }
+    }
+    
+    function startTimer() {
+      startTime = Date.now();
+      elapsedTime = 0;
+      
+      // Atualizar imediatamente
+      updateTimer();
+      
+      // Atualizar a cada segundo
+      if (timerInterval) {
+        clearInterval(timerInterval);
+      }
+      timerInterval = setInterval(updateTimer, 1000);
+    }
+    
+    function stopTimer() {
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+    }
+    
+    function showSuccessModal() {
+      const modal = document.getElementById('successModal');
+      if (!modal || modal.dataset.shown === 'true') {
+        return; // Já foi mostrado
+      }
+      
+      // Parar o timer
+      stopTimer();
+      
+      // Marcar como mostrado
+      modal.dataset.shown = 'true';
+      
+      // Escolher GIF aleatório (1 a 2)
+      const gifNumber = Math.floor(Math.random() * 2) + 1;
+      const gifFile = `media/videos/success/success${String(gifNumber).padStart(2, '0')}.gif`;
+      
+      // Definir o GIF
+      const gifImg = document.getElementById('successGif');
+      if (gifImg) {
+        gifImg.src = gifFile;
+      }
+      
+      // Mostrar tempo final
+      const finalTimeElement = document.getElementById('finalTime');
+      if (finalTimeElement) {
+        finalTimeElement.textContent = formatTime(elapsedTime);
+      }
+      
+      // Tocar som de conclusão
+      playCompleteSound();
+      
+      // Mostrar modal
+      modal.classList.add('show');
+      
+      // Criar efeitos de fogos de artifício
+      createFireworks(modal);
+      
+      // Fechar automaticamente após 20 segundos
+      setTimeout(() => {
+        closeSuccessModal();
+      }, 20000);
+    }
+    
+    function createFireworks(container) {
+      // Criar múltiplas explosões de fogos de artifício
+      const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ff8800', '#ff0088', '#88ff00', '#0088ff'];
+      const fireworkCount = 50; // Número de partículas por explosão
+      const explosionCount = 20; // Número de explosões (aumentado para 20 segundos)
+      
+      // Primeira onda de explosões
+      for (let i = 0; i < explosionCount; i++) {
+        setTimeout(() => {
+          createFireworkExplosion(container, colors, fireworkCount);
+        }, i * 200); // Espaçar as explosões iniciais
+      }
+      
+      // Segunda onda de explosões (após 8 segundos)
+      setTimeout(() => {
+        for (let i = 0; i < explosionCount; i++) {
+          setTimeout(() => {
+            createFireworkExplosion(container, colors, fireworkCount);
+          }, i * 200);
+        }
+      }, 8000);
+    }
+    
+    function createFireworkExplosion(container, colors, particleCount) {
+      // Posição aleatória para a explosão
+      const x = Math.random() * window.innerWidth;
+      const y = Math.random() * window.innerHeight;
+      
+      // Criar partículas em todas as direções
+      for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'firework';
+        
+        // Cor aleatória
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        particle.style.backgroundColor = color;
+        particle.style.boxShadow = `0 0 6px ${color}, 0 0 12px ${color}`;
+        
+        // Ângulo aleatório (360 graus)
+        const angle = (Math.PI * 2 * i) / particleCount;
+        const velocity = 50 + Math.random() * 100;
+        const finalX = Math.cos(angle) * velocity;
+        const finalY = Math.sin(angle) * velocity;
+        
+        // Tamanhos variados
+        const initialSize = 2 + Math.random() * 3;
+        const finalSize = 0.5 + Math.random() * 1;
+        
+        // CSS variables para animação
+        particle.style.setProperty('--x', finalX + 'px');
+        particle.style.setProperty('--initialY', '0px');
+        particle.style.setProperty('--finalY', finalY + 'px');
+        particle.style.setProperty('--initialSize', initialSize + 'px');
+        particle.style.setProperty('--finalSize', finalSize + 'px');
+        
+        // Posição inicial
+        particle.style.left = x + 'px';
+        particle.style.top = y + 'px';
+        
+        // Adicionar ao container
+        container.appendChild(particle);
+        
+        // Animação
+        particle.style.animation = `firework ${0.8 + Math.random() * 0.4}s ease-out forwards`;
+        
+        // Remover após animação
+        setTimeout(() => {
+          if (particle.parentNode) {
+            particle.remove();
+          }
+        }, 1500);
+      }
+    }
+    
+    function playCompleteSound() {
+      // Tocar som de conclusão completa
+      const soundFile = `media/audio/complete/complete.mp3`;
+      
+      // Criar elemento de áudio e reproduzir
+      const audio = new Audio(soundFile);
+      audio.volume = 0.7; // Volume moderado
+      audio.play().catch(err => {
+        // Ignorar erros de autoplay (alguns navegadores bloqueiam)
+        console.log('Não foi possível reproduzir o som de conclusão:', err);
+      });
+    }
+    
+    function closeSuccessModal() {
+      const modal = document.getElementById('successModal');
+      if (modal) {
+        modal.classList.remove('show');
+      }
+    }
+    
+    function checkGroupCompletion() {
+      const groups = Array.from(document.querySelectorAll('section.card'));
+      
+      groups.forEach((group, index) => {
+        const rows = Array.from(group.querySelectorAll('.row'));
+        
+        if (rows.length === 0) return;
+        
+        // Verificar se todas as questões foram respondidas e estão corretas
+        const allChecked = rows.every(row => row.dataset.checked === 'true');
+        const allCorrect = rows.every(row => row.dataset.correct === '1');
+        
+        if (allChecked && allCorrect && !group.classList.contains('group-completed')) {
+          // Grupo completado pela primeira vez!
+          group.classList.add('group-completed');
+          
+          // Adicionar mensagem de sucesso se não existir
+          let successMsg = group.querySelector('.group-success-message');
+          if (!successMsg) {
+            successMsg = document.createElement('div');
+            successMsg.className = 'group-success-message';
+            successMsg.innerHTML = '<i class="fas fa-trophy"></i> ¡Excelente! Has completado este grupo correctamente. <i class="fas fa-star"></i>';
+            
+            // Inserir após o h2 ou após os elementos de mídia do grupo
+            const h2 = group.querySelector('h2');
+            if (h2) {
+              // Procurar o primeiro elemento .row ou inserir após o último elemento de mídia
+              const firstRow = group.querySelector('.row');
+              if (firstRow) {
+                group.insertBefore(successMsg, firstRow);
+              } else {
+                // Se não há rows ainda, inserir após o h2
+                h2.parentNode.insertBefore(successMsg, h2.nextSibling);
+              }
+            }
+          }
+          
+          // Mostrar mensagem com animação
+          setTimeout(() => {
+            successMsg.classList.add('show');
+          }, 100);
+          
+          // Tocar som de sucesso aleatório
+          playSuccessSound();
+          
+          // Criar efeito de confetes simples
+          createConfetti(group);
+        } else if (!allCorrect || !allChecked) {
+          // Se não está mais completo, remover classe
+          group.classList.remove('group-completed');
+          const successMsg = group.querySelector('.group-success-message');
+          if (successMsg) {
+            successMsg.classList.remove('show');
+          }
+        }
+      });
+    }
+    
+    function playSuccessSound() {
+      // Escolher um som de sucesso aleatório (1 a 5)
+      const soundNumber = Math.floor(Math.random() * 5) + 1;
+      const soundFile = `media/audio/success/success${String(soundNumber).padStart(2, '0')}.mp3`;
+      
+      // Criar elemento de áudio e reproduzir
+      const audio = new Audio(soundFile);
+      audio.volume = 0.7; // Volume moderado
+      audio.play().catch(err => {
+        // Ignorar erros de autoplay (alguns navegadores bloqueiam)
+        console.log('Não foi possível reproduzir o som de sucesso:', err);
+      });
+    }
+    
+    function playErrorSound() {
+      // Escolher um som de erro aleatório (1 a 10)
+      const soundNumber = Math.floor(Math.random() * 10) + 1;
+      const soundFile = `media/audio/error/error${String(soundNumber).padStart(2, '0')}.mp3`;
+      
+      // Criar elemento de áudio e reproduzir
+      const audio = new Audio(soundFile);
+      audio.volume = 0.6; // Volume um pouco mais baixo que o de sucesso
+      audio.play().catch(err => {
+        // Ignorar erros de autoplay (alguns navegadores bloqueiam)
+        console.log('Não foi possível reproduzir o som de erro:', err);
+      });
+    }
+    
+    function showErrorEffect(row) {
+      // Adicionar efeito visual de erro
+      row.classList.add('error-shake', 'error-highlight');
+      
+      // Remover animação de shake após terminar
+      setTimeout(() => {
+        row.classList.remove('error-shake');
+      }, 500);
+      
+      // Manter highlight por um tempo maior
+      setTimeout(() => {
+        row.classList.remove('error-highlight');
+      }, 2000);
+    }
+    
+    function createConfetti(container) {
+      // Criar confetes simples usando emojis/ícones
+      const confettiCount = 20;
+      const colors = ['#10b981', '#34d399', '#fbbf24', '#f59e0b', '#3b82f6', '#6366f1'];
+      
+      for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.style.position = 'absolute';
+        confetti.style.width = '12px';
+        confetti.style.height = '12px';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+        confetti.style.left = Math.random() * 100 + '%';
+        confetti.style.top = '-10px';
+        confetti.style.opacity = '0';
+        confetti.style.pointerEvents = 'none';
+        confetti.style.zIndex = '1000';
+        
+        container.style.position = 'relative';
+        container.appendChild(confetti);
+        
+        // Animação
+        const angle = Math.random() * Math.PI * 2;
+        const velocity = 50 + Math.random() * 50;
+        const x = Math.cos(angle) * velocity;
+        const y = Math.sin(angle) * velocity + 100;
+        const rotation = Math.random() * 360;
+        
+        confetti.animate([
+          { 
+            transform: 'translate(0, 0) rotate(0deg)',
+            opacity: 1
+          },
+          { 
+            transform: `translate(${x}px, ${y}px) rotate(${rotation}deg)`,
+            opacity: 0
+          }
+        ], {
+          duration: 1500 + Math.random() * 500,
+          easing: 'ease-out'
+        }).onfinish = () => {
+          confetti.remove();
+        };
+      }
     }
 
     function checkRow(row) {
@@ -927,7 +1641,7 @@
       
       // Obter validação do dataset (se existir)
       const validacao = row.dataset.validacao ? JSON.parse(row.dataset.validacao) : null;
-      
+  
       if (type === 'text') {
         const inp = row.querySelector('input.inp');
         val = inp ? inp.value : '';
@@ -957,18 +1671,22 @@
         if (isFreeAnswer) {
           // Para respostas livres, aceita qualquer resposta não vazia
           isCorrect = valsNorm.every(v => v.length > 0);
-          if (isCorrect) {
+        if (isCorrect) {
             feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
           } else {
             feedback.innerHTML = '<div class="bad"><i class="fas fa-times-circle"></i> Complete todas as associações</div>';
+            playErrorSound();
+            showErrorEffect(row);
           }
         } else {
           isCorrect = ansArr.length === valsNorm.length && ansArr.every((a, i) => a === valsNorm[i]);
           if (isCorrect) {
             feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Correto</div>';
-          } else {
-            const corr = (ans || []).join(', ');
+        } else {
+          const corr = (ans || []).join(', ');
             feedback.innerHTML = `<div class=\"bad\"><i class="fas fa-times-circle"></i> Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+            playErrorSound();
+            showErrorEffect(row);
           }
         }
         row.dataset.checked = 'true';
@@ -993,18 +1711,22 @@
         if (isFreeAnswer) {
           // Para respostas livres, aceita qualquer seleção não vazia
           isCorrect = vals.length > 0;
-          if (isCorrect) {
+        if (isCorrect) {
             feedback.innerHTML = '<div class=\"ok\"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
           } else {
             feedback.innerHTML = '<div class=\"bad\"><i class="fas fa-times-circle"></i> Selecione pelo menos uma opção</div>';
+            playErrorSound();
+            showErrorEffect(row);
           }
         } else {
           isCorrect = ansArr.length === valsNorm.length && ansArr.every((a, i) => a === valsNorm[i]);
           if (isCorrect) {
             feedback.innerHTML = '<div class=\"ok\"><i class="fas fa-check-circle"></i> Correto</div>';
-          } else {
-            const corr = (ans || []).join(', ');
+        } else {
+          const corr = (ans || []).join(', ');
             feedback.innerHTML = `<div class=\"bad\"><i class="fas fa-times-circle"></i> Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+            playErrorSound();
+            showErrorEffect(row);
           }
         }
         row.dataset.checked = 'true';
@@ -1027,7 +1749,7 @@
       let isCorrect;
       if (isFreeAnswer) {
         // Para respostas livres, aceita qualquer resposta não vazia
-        if (!nval) {
+      if (!nval) {
           return false; // Ainda precisa ter algo digitado
         }
         
@@ -1125,6 +1847,10 @@
                     feedback.innerHTML = `<div class="bad"><i class="fas fa-times-circle"></i> ${errorMsg}</div>`;
                     row.dataset.checked = 'true';
                     row.dataset.correct = '0';
+                    playErrorSound();
+                    showErrorEffect(row);
+                    playErrorSound();
+                    showErrorEffect(row);
                   } else {
                     isCorrect = true;
                     feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
@@ -1159,7 +1885,9 @@
             feedback.innerHTML = `<div class="bad"><i class="fas fa-times-circle"></i> ${errorMsg}</div>`;
             row.dataset.checked = 'true';
             row.dataset.correct = '0';
-            return false;
+            playErrorSound();
+            showErrorEffect(row);
+        return false;
           }
         }
         
@@ -1170,11 +1898,13 @@
           return false;
         }
         isCorrect = (ans || []).some(a => normalize(String(a)) === nval);
-        if (isCorrect) {
+      if (isCorrect) {
           feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Correto</div>';
-        } else {
-          const corr = (ans || [])[0] ?? '';
+      } else {
+        const corr = (ans || [])[0] ?? '';
           feedback.innerHTML = `<div class="bad"><i class="fas fa-times-circle"></i> Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+          playErrorSound();
+          showErrorEffect(row);
         }
       }
       row.dataset.checked = 'true';
@@ -1328,7 +2058,7 @@
     btnTopo.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-    
+  
     btnFinal.addEventListener('click', () => {
       window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
     });

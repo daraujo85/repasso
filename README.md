@@ -685,6 +685,95 @@ sequenceDiagram
 
 ## Funcionalidades Adicionais
 
+### Sistema de Gamificação e Feedback Visual
+
+O sistema inclui diversos elementos de gamificação para tornar a experiência de aprendizado mais envolvente e motivadora.
+
+#### Contador de Tempo
+
+Um contador de tempo é exibido no topo da página, ao lado da nota, mostrando o tempo decorrido desde o início do simulado.
+
+**Características:**
+- Formato MM:SS (ex: 05:23)
+- Inicia automaticamente quando o quiz é carregado
+- Para automaticamente quando todas as questões estão corretas
+- Tempo final é exibido no modal de sucesso
+
+#### Progressbar com Atleta Correndo
+
+A barra de progresso inclui um atleta correndo que se move conforme o progresso aumenta.
+
+**Características:**
+- Ícone de atleta que se move dinamicamente
+- Animação de corrida enquanto progride
+- Bandeira de chegada no final do progressbar
+- Para na linha de chegada quando completa 100%
+
+#### Destaque Visual de Grupos Completados
+
+Quando todas as questões de um grupo estão corretas, o grupo recebe destaque visual especial.
+
+**Características:**
+- Borda verde brilhante
+- Fundo com gradiente verde claro
+- Animação de "pulso" ao completar
+- Barra brilhante no topo com animação shimmer
+- Ícone de check (✓) no título com animação bounce
+- Mensagem de sucesso: "¡Excelente! Has completado este grupo correctamente."
+- Efeito de confetes (20 partículas coloridas)
+- Som de sucesso aleatório (5 variações disponíveis)
+
+#### Feedback Visual de Erros
+
+Quando uma resposta está incorreta, o sistema fornece feedback visual imediato.
+
+**Características:**
+- Animação de shake (tremor) na linha da questão
+- Highlight vermelho temporário (borda esquerda e fundo)
+- Som de erro aleatório (10 variações disponíveis)
+- Duração: shake por 0.5s, highlight por 2s
+
+#### Modal de Sucesso Completo
+
+Quando todas as questões do simulado estão corretas, um modal de celebração é exibido.
+
+**Características:**
+- GIF de sucesso aleatório (2 variações disponíveis)
+- Som de conclusão (`complete.mp3`)
+- Efeitos de fogos de artifício animados
+- Exibição do tempo final decorrido
+- Fecha automaticamente após 20 segundos
+- Pode ser fechado manualmente clicando no X ou fora do modal
+
+**Efeitos de Fogos de Artifício:**
+- 8 explosões iniciais espaçadas em 200ms
+- 8 explosões adicionais após 8 segundos
+- 50 partículas coloridas por explosão
+- 10 cores diferentes com efeito de brilho
+- Animação radial em 360 graus
+- Duração total de 20 segundos
+
+#### Sons de Feedback
+
+O sistema inclui sons para diferentes eventos:
+
+**Sons de Sucesso:**
+- 5 variações aleatórias (`success01.mp3` a `success05.mp3`)
+- Reproduzido quando um grupo é completado
+- Volume: 0.7
+
+**Sons de Erro:**
+- 10 variações aleatórias (`error01.mp3` a `error10.mp3`)
+- Reproduzido quando uma resposta está incorreta
+- Volume: 0.6
+
+**Som de Conclusão:**
+- `complete.mp3`
+- Reproduzido quando todas as questões estão corretas
+- Volume: 0.7
+
+**Nota:** Alguns navegadores podem bloquear autoplay de áudio. Os erros são tratados silenciosamente para não interromper a experiência.
+
 ### Modo Dark (Tema Escuro)
 
 O sistema inclui um modo dark opcional que pode ser ativado a qualquer momento.
@@ -815,8 +904,12 @@ Os recursos multimídia devem ser organizados na pasta `media/`:
 ```
 media/
 ├── audio/          # Arquivos de áudio (.mp3, .wav, etc.)
+│   ├── success/    # Sons de sucesso (success01.mp3 a success05.mp3)
+│   ├── error/      # Sons de erro (error01.mp3 a error10.mp3)
+│   └── complete/   # Som de conclusão (complete.mp3)
 ├── images/         # Imagens (.png, .jpg, .gif, etc.)
 └── videos/         # Vídeos (.mp4, .webm, etc.)
+    └── success/    # GIFs de sucesso (success01.gif, success02.gif)
 ```
 
 **Exemplo de uso:**
@@ -891,6 +984,9 @@ Apresente as imagens como a última etapa de cada processo criativo."
 9. **Validações:** Use o sistema de validação genérico para garantir qualidade nas respostas livres. O tipo `spellcheck` é especialmente útil para questões de produção escrita.
 10. **Respostas Livres:** Perguntas com `gabarito` vazio e `mensagem` contendo "Resposta livre" aceitam qualquer resposta não vazia, mas você pode adicionar validações para garantir qualidade.
 11. **Spellcheck do Navegador:** O atributo `spellcheck="true" lang="es"` está habilitado em todos os campos de texto, mas isso apenas mostra sublinhados. Use `validacion` tipo `spellcheck` para validação real.
+12. **Gamificação:** O sistema inclui elementos de gamificação (contador de tempo, progressbar animado, fogos de artifício, confetes) para tornar a experiência mais envolvente. Todos os efeitos são automáticos e não requerem configuração.
+13. **Sons de Feedback:** Os sons de sucesso, erro e conclusão são reproduzidos automaticamente. Certifique-se de que os arquivos estão na pasta `media/audio/` correspondente.
+14. **Modal de Sucesso:** O modal de sucesso aparece automaticamente quando todas as questões estão corretas. O tempo de exibição é de 20 segundos, com fogos de artifício contínuos.
 
 ## Créditos
 
