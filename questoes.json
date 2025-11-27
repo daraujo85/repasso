@@ -5818,10 +5818,38 @@
                 "tipo": "text"
               },
               {
+                "numero": 1,
+                "enunciado": "¿A vosotros ___________________________ mucho la música clásica?",
+                "gabarito": ["os encanta", "os encantan"],
+                "mensagem": "ENCANTAR - vosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "¿A vosotros ___________________________ los problemas de matemáticas?",
+                "gabarito": ["os interesan"],
+                "mensagem": "INTERESAR - vosotros",
+                "tipo": "text"
+              },
+              {
                 "numero": 2,
                 "enunciado": "A los alumnos ____________________________ las excursiones.",
                 "gabarito": ["les gustan"],
                 "mensagem": "GUSTAR - ellos/ellas",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "A los alumnos ____________________________ mucho los museos.",
+                "gabarito": ["les encantan"],
+                "mensagem": "ENCANTAR - ellos/ellas",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "A los alumnos ____________________________ las clases de historia.",
+                "gabarito": ["les interesan"],
+                "mensagem": "INTERESAR - ellos/ellas",
                 "tipo": "text"
               },
               {
@@ -5832,10 +5860,38 @@
                 "tipo": "text"
               },
               {
+                "numero": 3,
+                "enunciado": "A mí ____________________________ mucho el verano.",
+                "gabarito": ["me encanta"],
+                "mensagem": "ENCANTAR - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "A mí no ____________________________ nada el ruido.",
+                "gabarito": ["me molesta"],
+                "mensagem": "MOLESTAR - yo",
+                "tipo": "text"
+              },
+              {
                 "numero": 4,
                 "enunciado": "A ti ________________________________ las películas de horror.",
                 "gabarito": ["te gustan"],
                 "mensagem": "GUSTAR - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "A ti ________________________________ mucho los videojuegos.",
+                "gabarito": ["te encantan"],
+                "mensagem": "ENCANTAR - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "A ti ________________________________ los libros de ciencia ficción.",
+                "gabarito": ["te interesan"],
+                "mensagem": "INTERESAR - tú",
                 "tipo": "text"
               },
               {
@@ -5846,10 +5902,38 @@
                 "tipo": "text"
               },
               {
+                "numero": 5,
+                "enunciado": "A las niñas _______________________________ mucho bailar.",
+                "gabarito": ["les encanta"],
+                "mensagem": "ENCANTAR - ellas",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "A las niñas _______________________________ la moda.",
+                "gabarito": ["les interesa"],
+                "mensagem": "INTERESAR - ellas",
+                "tipo": "text"
+              },
+              {
                 "numero": 6,
                 "enunciado": "A Cristiano ______________________________ los deportes.",
                 "gabarito": ["le gustan"],
                 "mensagem": "GUSTAR - él",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "A Cristiano ______________________________ mucho el fútbol.",
+                "gabarito": ["le encanta"],
+                "mensagem": "ENCANTAR - él",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "A Cristiano ______________________________ los documentales deportivos.",
+                "gabarito": ["le interesan"],
+                "mensagem": "INTERESAR - él",
                 "tipo": "text"
               },
               {
@@ -5860,10 +5944,38 @@
                 "tipo": "text"
               },
               {
+                "numero": 7,
+                "enunciado": "A Cristiano ______________________________ correr por las mañanas.",
+                "gabarito": ["le encanta"],
+                "mensagem": "ENCANTAR - él",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "A Cristiano no ______________________________ hacer ejercicio.",
+                "gabarito": ["le molesta"],
+                "mensagem": "MOLESTAR - él",
+                "tipo": "text"
+              },
+              {
                 "numero": 8,
                 "enunciado": "A nosotros _______________________________ los fines de semana con los amigos.",
                 "gabarito": ["nos gustan"],
                 "mensagem": "GUSTAR - nosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "A nosotros _______________________________ mucho las vacaciones.",
+                "gabarito": ["nos encantan"],
+                "mensagem": "ENCANTAR - nosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "A nosotros _______________________________ los viajes.",
+                "gabarito": ["nos interesan"],
+                "mensagem": "INTERESAR - nosotros",
                 "tipo": "text"
               },
               {
@@ -5874,11 +5986,54 @@
                 "tipo": "text"
               },
               {
+                "numero": 9,
+                "enunciado": "A Pedro y a mí ________________________________ mucho leer.",
+                "gabarito": ["nos encanta"],
+                "mensagem": "ENCANTAR - nosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 9,
+                "enunciado": "A Pedro y a mí no ________________________________ madrugar.",
+                "gabarito": ["nos gusta"],
+                "mensagem": "GUSTAR - nosotros",
+                "tipo": "text"
+              },
+              {
                 "numero": 10,
                 "enunciado": "A mí _______________________________ los ritmos latinos.",
                 "gabarito": ["me gustan"],
                 "mensagem": "GUSTAR - yo",
                 "tipo": "text"
+              },
+              {
+                "numero": 10,
+                "enunciado": "A mí _______________________________ mucho la música rock.",
+                "gabarito": ["me encanta"],
+                "mensagem": "ENCANTAR - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 10,
+                "enunciado": "A mí _______________________________ los conciertos en vivo.",
+                "gabarito": ["me interesan"],
+                "mensagem": "INTERESAR - yo",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "Imagen: presente (con imagen)",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Observa la imagen y completa: El chico ____ en internet. (NAVEGAR – ÉL)",
+                "gabarito": ["navega"],
+                "mensagem": "NAVEGAR – él",
+                "opcoes": ["Seleccione...","navega","navego","navegas","navegan"],
+                "tipo": "select",
+                "imagem": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
+                "altImagem": "Pessoa usando computador"
               }
             ]
           },
@@ -5893,15 +6048,78 @@
                 "tipo": "text"
               },
               {
+                "numero": 1,
+                "enunciado": "_______________________ bien antes de tomar una decisión. (pensar – tú)",
+                "gabarito": ["piensa"],
+                "mensagem": "Imperativo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "_______________________ con cuidado al cruzar la calle. (caminar – tú)",
+                "gabarito": ["camina"],
+                "mensagem": "Imperativo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "_______________________ más agua durante el día. (beber – tú)",
+                "gabarito": ["bebe"],
+                "mensagem": "Imperativo - tú",
+                "tipo": "text"
+              },
+              {
                 "numero": 2,
                 "enunciado": "____________________________ durante las rebajas. (comprar – usted)",
-                "g": ["compre"],
+                "gabarito": ["compre"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "____________________________ más frutas y verduras. (comer – usted)",
+                "gabarito": ["coma"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "____________________________ ejercicio regularmente. (hacer – usted)",
+                "gabarito": ["haga"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "____________________________ descansar después del trabajo. (intentar – usted)",
+                "gabarito": ["intente"],
                 "mensagem": "Imperativo - usted",
                 "tipo": "text"
               },
               {
                 "numero": 3,
                 "enunciado": "En las rebajas, ___________________________ las compras por impulso. (evitar – usted)",
+                "gabarito": ["evite"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "___________________________ el consumo excesivo de azúcar. (evitar – usted)",
+                "gabarito": ["evite"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "___________________________ llegar tarde a las citas. (evitar – usted)",
+                "gabarito": ["evite"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "___________________________ situaciones de riesgo. (evitar – usted)",
                 "gabarito": ["evite"],
                 "mensagem": "Imperativo - usted",
                 "tipo": "text"
@@ -5914,9 +6132,51 @@
                 "tipo": "text"
               },
               {
+                "numero": 4,
+                "enunciado": "___________________________ el tiempo de manera equilibrada. (distribuir – usted)",
+                "gabarito": ["distribuya"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "___________________________ las tareas entre todos. (dividir – usted)",
+                "gabarito": ["divida"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "___________________________ la información con el equipo. (compartir – usted)",
+                "gabarito": ["comparta"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
                 "numero": 5,
                 "enunciado": "___________________________ en el campo, será mejor para tu salud. (residir – tú)",
                 "gabarito": ["reside"],
+                "mensagem": "Imperativo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "___________________________ en una zona tranquila. (vivir – tú)",
+                "gabarito": ["vive"],
+                "mensagem": "Imperativo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "___________________________ cerca del trabajo. (trabajar – tú)",
+                "gabarito": ["trabaja"],
+                "mensagem": "Imperativo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "___________________________ en un lugar seguro. (habitar – tú)",
+                "gabarito": ["habita"],
                 "mensagem": "Imperativo - tú",
                 "tipo": "text"
               },
@@ -5928,9 +6188,51 @@
                 "tipo": "text"
               },
               {
+                "numero": 6,
+                "enunciado": "___________________________ en tus capacidades. (confiar – tú)",
+                "gabarito": ["confía"],
+                "mensagem": "Imperativo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "___________________________ en tus sueños. (soñar – tú)",
+                "gabarito": ["sueña"],
+                "mensagem": "Imperativo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "___________________________ en el futuro. (pensar – tú)",
+                "gabarito": ["piensa"],
+                "mensagem": "Imperativo - tú",
+                "tipo": "text"
+              },
+              {
                 "numero": 7,
                 "enunciado": "___________________________ su coche lo más pronto posible. (vender – usted)",
                 "gabarito": ["venda"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "___________________________ su casa antes de mudarse. (vender – usted)",
+                "gabarito": ["venda"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "___________________________ los productos con descuento. (ofrecer – usted)",
+                "gabarito": ["ofrezca"],
+                "mensagem": "Imperativo - usted",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "___________________________ sus servicios profesionalmente. (prestar – usted)",
+                "gabarito": ["preste"],
                 "mensagem": "Imperativo - usted",
                 "tipo": "text"
               }
@@ -5947,8 +6249,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 1,
+                "enunciado": "Él _________________________ Juan. (llamarse)",
+                "gabarito": ["se llama"],
+                "mensagem": "Reflexivo - él",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Ella _________________________ todos los días. (levantarse)",
+                "gabarito": ["se levanta"],
+                "mensagem": "Reflexivo - ella",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Él _________________________ temprano. (despertarse)",
+                "gabarito": ["se despierta"],
+                "mensagem": "Reflexivo - él",
+                "tipo": "text"
+              },
+              {
                 "numero": 2,
                 "enunciado": "Yo __________________________ por la mañana. (ducharse)",
+                "gabarito": ["me ducho"],
+                "mensagem": "Reflexivo - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Yo __________________________ antes de dormir. (lavarse)",
+                "gabarito": ["me lavo"],
+                "mensagem": "Reflexivo - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Yo __________________________ los dientes después de comer. (cepillarse)",
+                "gabarito": ["me cepillo"],
+                "mensagem": "Reflexivo - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Yo __________________________ después del gimnasio. (ducharse)",
                 "gabarito": ["me ducho"],
                 "mensagem": "Reflexivo - yo",
                 "tipo": "text"
@@ -5961,9 +6305,51 @@
                 "tipo": "text"
               },
               {
+                "numero": 3,
+                "enunciado": "Ellos _________________________ por la mañana. (vestirse)",
+                "gabarito": ["se visten"],
+                "mensagem": "Reflexivo - ellos",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Ellos _________________________ antes de salir. (prepararse)",
+                "gabarito": ["se preparan"],
+                "mensagem": "Reflexivo - ellos",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Ellos _________________________ en el espejo. (mirarse)",
+                "gabarito": ["se miran"],
+                "mensagem": "Reflexivo - ellos",
+                "tipo": "text"
+              },
+              {
                 "numero": 4,
                 "enunciado": "_______________________ muy tarde. (acostarse – tú)",
                 "gabarito": ["te acuestas"],
+                "mensagem": "Reflexivo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "_______________________ temprano para descansar. (acostarse – tú)",
+                "gabarito": ["te acuestas"],
+                "mensagem": "Reflexivo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "_______________________ en la cama. (tumbarse – tú)",
+                "gabarito": ["te tumbas"],
+                "mensagem": "Reflexivo - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "_______________________ cuando estás cansado. (relajarse – tú)",
+                "gabarito": ["te relajas"],
                 "mensagem": "Reflexivo - tú",
                 "tipo": "text"
               },
@@ -5975,9 +6361,51 @@
                 "tipo": "text"
               },
               {
+                "numero": 5,
+                "enunciado": "_______________________ a las siete. (levantarse – nosotros)",
+                "gabarito": ["nos levantamos"],
+                "mensagem": "Reflexivo - nosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "_______________________ juntos para desayunar. (reunirse – nosotros)",
+                "gabarito": ["nos reunimos"],
+                "mensagem": "Reflexivo - nosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "_______________________ en el parque. (encontrarse – nosotros)",
+                "gabarito": ["nos encontramos"],
+                "mensagem": "Reflexivo - nosotros",
+                "tipo": "text"
+              },
+              {
                 "numero": 6,
                 "enunciado": "¿________________________ varias veces al día? (peinarse – vosotros)",
                 "gabarito": ["os peináis"],
+                "mensagem": "Reflexivo - vosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "¿________________________ antes de salir? (arreglarse – vosotros)",
+                "gabarito": ["os arregláis"],
+                "mensagem": "Reflexivo - vosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "¿________________________ en el gimnasio? (entrenarse – vosotros)",
+                "gabarito": ["os entrenáis"],
+                "mensagem": "Reflexivo - vosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "¿________________________ bien cada día? (cuidarse – vosotros)",
+                "gabarito": ["os cuidáis"],
                 "mensagem": "Reflexivo - vosotros",
                 "tipo": "text"
               }
@@ -5994,8 +6422,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 1,
+                "enunciado": "La película ______________________ a las ocho. (EMPEZAR)",
+                "gabarito": ["empieza"],
+                "mensagem": "EMPEZAR - ella",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "La reunión ______________________ ahora. (COMENZAR)",
+                "gabarito": ["comienza"],
+                "mensagem": "COMENZAR - ella",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "La fiesta ______________________ esta noche. (EMPEZAR)",
+                "gabarito": ["empieza"],
+                "mensagem": "EMPEZAR - ella",
+                "tipo": "text"
+              },
+              {
                 "numero": 2,
                 "enunciado": "Tú ___________________ a casa muy cansado. (VOLVER)",
+                "gabarito": ["vuelves"],
+                "mensagem": "VOLVER - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Tú ___________________ del trabajo a las seis. (VOLVER)",
+                "gabarito": ["vuelves"],
+                "mensagem": "VOLVER - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Tú ___________________ de vacaciones mañana. (REGRESAR)",
+                "gabarito": ["regresas"],
+                "mensagem": "REGRESAR - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Tú ___________________ a España el próximo mes. (VOLVER)",
                 "gabarito": ["vuelves"],
                 "mensagem": "VOLVER - tú",
                 "tipo": "text"
@@ -6008,8 +6478,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 3,
+                "enunciado": "__________________ al cine esta tarde. (IR – YO)",
+                "gabarito": ["voy"],
+                "mensagem": "IR - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "__________________ a la universidad todos los días. (IR – YO)",
+                "gabarito": ["voy"],
+                "mensagem": "IR - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "__________________ de compras el sábado. (IR – YO)",
+                "gabarito": ["voy"],
+                "mensagem": "IR - yo",
+                "tipo": "text"
+              },
+              {
                 "numero": 4,
                 "enunciado": "¿Adónde ___________________? (IR – TÚ)",
+                "gabarito": ["vas"],
+                "mensagem": "IR - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "¿Adónde ___________________ de vacaciones? (IR – TÚ)",
+                "gabarito": ["vas"],
+                "mensagem": "IR - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "¿Adónde ___________________ esta noche? (IR – TÚ)",
+                "gabarito": ["vas"],
+                "mensagem": "IR - tú",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "¿Adónde ___________________ mañana? (IR – TÚ)",
                 "gabarito": ["vas"],
                 "mensagem": "IR - tú",
                 "tipo": "text"
@@ -6022,8 +6534,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 5,
+                "enunciado": "Yo ______________________ del trabajo a las cinco. (SALIR)",
+                "gabarito": ["salgo"],
+                "mensagem": "SALIR - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Yo ______________________ de la universidad temprano. (SALIR)",
+                "gabarito": ["salgo"],
+                "mensagem": "SALIR - yo",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Yo ______________________ a pasear por las tardes. (SALIR)",
+                "gabarito": ["salgo"],
+                "mensagem": "SALIR - yo",
+                "tipo": "text"
+              },
+              {
                 "numero": 6,
                 "enunciado": "¿A qué hora _______________________ del trabajo? (SALIR – VOSOTROS)",
+                "gabarito": ["salís"],
+                "mensagem": "SALIR - vosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "¿A qué hora _______________________ de casa? (SALIR – VOSOTROS)",
+                "gabarito": ["salís"],
+                "mensagem": "SALIR - vosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "¿A qué hora _______________________ de clase? (SALIR – VOSOTROS)",
+                "gabarito": ["salís"],
+                "mensagem": "SALIR - vosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "¿A qué hora _______________________ esta noche? (SALIR – VOSOTROS)",
                 "gabarito": ["salís"],
                 "mensagem": "SALIR - vosotros",
                 "tipo": "text"
@@ -6036,8 +6590,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 7,
+                "enunciado": "_____________________ las clases a las nueve. (EMPEZAR – NOSOTROS)",
+                "gabarito": ["empezamos"],
+                "mensagem": "EMPEZAR - nosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "_____________________ el proyecto hoy. (COMENZAR – NOSOTROS)",
+                "gabarito": ["comenzamos"],
+                "mensagem": "COMENZAR - nosotros",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "_____________________ a estudiar ahora. (EMPEZAR – NOSOTROS)",
+                "gabarito": ["empezamos"],
+                "mensagem": "EMPEZAR - nosotros",
+                "tipo": "text"
+              },
+              {
                 "numero": 8,
                 "enunciado": "Paco y María _______________________ del trabajo a pie. (VOLVER)",
+                "gabarito": ["vuelven"],
+                "mensagem": "VOLVER - ellos",
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Ellos _______________________ a casa en coche. (VOLVER)",
+                "gabarito": ["vuelven"],
+                "mensagem": "VOLVER - ellos",
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Ellos _______________________ de las vacaciones mañana. (REGRESAR)",
+                "gabarito": ["regresan"],
+                "mensagem": "REGRESAR - ellos",
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Ellos _______________________ del viaje el viernes. (VOLVER)",
                 "gabarito": ["vuelven"],
                 "mensagem": "VOLVER - ellos",
                 "tipo": "text"
@@ -6052,7 +6648,43 @@
                 "enunciado": "¿Qué desayunas normalmente?",
                 "gabarito": [],
                 "mensagem": "Resposta livre",
-                "tipo": "text"
+                "tipo": "text",
+                "validacion": {
+                  "tipo": "spellcheck",
+                  "mensagem": "Se detectaron posibles errores ortográficos. Por favor, revise su respuesta."
+                }
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Qué NO se come en el desayuno?",
+                "gabarito": ["cucaracha"],
+                "mensagem": "Las cucarachas no son comida para el desayuno.",
+                "tipo": "mc",
+                "opcoes": ["cucaracha", "pan", "huevos", "café"]
+              },
+              {
+                "numero": 2,
+                "enunciado": "Selecciona lo que NO se come en el desayuno:",
+                "gabarito": ["raton"],
+                "mensagem": "Los ratones no son comida para el desayuno.",
+                "tipo": "mc",
+                "opcoes": ["raton", "leche", "frutas", "cereal"]
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Cuál de estos NO se come en el desayuno?",
+                "gabarito": ["cucaracha"],
+                "mensagem": "Las cucarachas definitivamente no son comida.",
+                "tipo": "select",
+                "opcoes": ["Seleccione...", "cucaracha", "yogur", "mantequilla", "mermelada"]
+              },
+              {
+                "numero": 2,
+                "enunciado": "Elige lo que NO es comida para el desayuno:",
+                "gabarito": ["raton"],
+                "mensagem": "Los ratones no son alimento.",
+                "tipo": "select",
+                "opcoes": ["Seleccione...", "raton", "tostadas", "queso", "jamón"]
               }
             ]
           },
@@ -6064,44 +6696,90 @@
                 "enunciado": "¿Qué día de la semana es hoy?",
                 "gabarito": [],
                 "mensagem": "Resposta livre",
-                "tipo": "text"
+                "tipo": "text",
+                "validacion": {
+                  "tipo": "lista",
+                  "valores": ["lunes", "martes", "miércoles", "miercoles", "jueves", "viernes", "sábado", "sabado", "domingo"],
+                  "mensagem": "Por favor, escriba un día de la semana válido (lunes, martes, miércoles, jueves, viernes, sábado, domingo)."
+                }
               },
               {
                 "numero": 2,
                 "enunciado": "¿Qué día de la semana fue ayer?",
                 "gabarito": [],
                 "mensagem": "Resposta livre",
-                "tipo": "text"
+                "tipo": "text",
+                "validacion": {
+                  "tipo": "lista",
+                  "valores": ["lunes", "martes", "miércoles", "miercoles", "jueves", "viernes", "sábado", "sabado", "domingo"],
+                  "mensagem": "Por favor, escriba un día de la semana válido (lunes, martes, miércoles, jueves, viernes, sábado, domingo)."
+                }
               },
               {
                 "numero": 3,
                 "enunciado": "¿Qué día de la semana fue anteayer?",
                 "gabarito": [],
                 "mensagem": "Resposta livre",
-                "tipo": "text"
+                "tipo": "text",
+                "validacion": {
+                  "tipo": "lista",
+                  "valores": ["lunes", "martes", "miércoles", "miercoles", "jueves", "viernes", "sábado", "sabado", "domingo"],
+                  "mensagem": "Por favor, escriba un día de la semana válido (lunes, martes, miércoles, jueves, viernes, sábado, domingo)."
+                }
               },
               {
                 "numero": 4,
                 "enunciado": "¿Qué día de la semana será mañana?",
                 "gabarito": [],
                 "mensagem": "Resposta livre",
-                "tipo": "text"
+                "tipo": "text",
+                "validacion": {
+                  "tipo": "lista",
+                  "valores": ["lunes", "martes", "miércoles", "miercoles", "jueves", "viernes", "sábado", "sabado", "domingo"],
+                  "mensagem": "Por favor, escriba un día de la semana válido (lunes, martes, miércoles, jueves, viernes, sábado, domingo)."
+                }
               },
               {
                 "numero": 5,
                 "enunciado": "¿Qué día de la semana será pasado mañana?",
                 "gabarito": [],
                 "mensagem": "Resposta livre",
-                "tipo": "text"
+                "tipo": "text",
+                "validacion": {
+                  "tipo": "lista",
+                  "valores": ["lunes", "martes", "miércoles", "miercoles", "jueves", "viernes", "sábado", "sabado", "domingo"],
+                  "mensagem": "Por favor, escriba un día de la semana válido (lunes, martes, miércoles, jueves, viernes, sábado, domingo)."
+                }
               }
             ]
           },
-          {
+          {           
             "title": "7) HAY o ESTÁ",
             "perguntas": [
               {
                 "numero": 1,
                 "enunciado": "¿Dónde ________________ el cuarto de baño?",
+                "gabarito": ["está"],
+                "mensagem": "ESTÁ - ubicación",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "¿Dónde ________________ la cocina?",
+                "gabarito": ["está"],
+                "mensagem": "ESTÁ - ubicación",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "¿Dónde ________________ el supermercado?",
+                "gabarito": ["está"],
+                "mensagem": "ESTÁ - ubicación",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "¿Dónde ________________ la estación de tren?",
                 "gabarito": ["está"],
                 "mensagem": "ESTÁ - ubicación",
                 "tipo": "text"
@@ -6114,6 +6792,27 @@
                 "tipo": "text"
               },
               {
+                "numero": 2,
+                "enunciado": "En esta zona _____________ varios restaurantes.",
+                "gabarito": ["hay"],
+                "mensagem": "HAY - existencia",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "En el centro _____________ muchas tiendas.",
+                "gabarito": ["hay"],
+                "mensagem": "HAY - existencia",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Aquí _____________ varios parques.",
+                "gabarito": ["hay"],
+                "mensagem": "HAY - existencia",
+                "tipo": "text"
+              },
+              {
                 "numero": 3,
                 "enunciado": "¿_________________ un banco en esta calle?",
                 "gabarito": ["hay"],
@@ -6121,8 +6820,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 3,
+                "enunciado": "¿_________________ una farmacia cerca?",
+                "gabarito": ["hay"],
+                "mensagem": "HAY - existencia",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "¿_________________ un cajero automático aquí?",
+                "gabarito": ["hay"],
+                "mensagem": "HAY - existencia",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "¿_________________ un hospital en esta ciudad?",
+                "gabarito": ["hay"],
+                "mensagem": "HAY - existencia",
+                "tipo": "text"
+              },
+              {
                 "numero": 4,
                 "enunciado": "El banco _____________ cerca de la farmacia.",
+                "gabarito": ["está"],
+                "mensagem": "ESTÁ - ubicación",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "La tienda _____________ al lado del restaurante.",
+                "gabarito": ["está"],
+                "mensagem": "ESTÁ - ubicación",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "El museo _____________ en el centro de la ciudad.",
+                "gabarito": ["está"],
+                "mensagem": "ESTÁ - ubicación",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "La biblioteca _____________ frente al parque.",
                 "gabarito": ["está"],
                 "mensagem": "ESTÁ - ubicación",
                 "tipo": "text"
@@ -6140,8 +6881,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 1,
+                "enunciado": "Compré ________ libro interesante.",
+                "gabarito": ["un"],
+                "mensagem": "Artículo indeterminado",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Necesito ________ coche nuevo.",
+                "gabarito": ["un"],
+                "mensagem": "Artículo indeterminado",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Vi ________ perro en el parque.",
+                "gabarito": ["un"],
+                "mensagem": "Artículo indeterminado",
+                "tipo": "text"
+              },
+              {
                 "numero": 2,
                 "enunciado": "_________ mesa está sucia.",
+                "gabarito": ["la"],
+                "mensagem": "Artículo determinado",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "_________ puerta está abierta.",
+                "gabarito": ["la"],
+                "mensagem": "Artículo determinado",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "_________ ventana está cerrada.",
+                "gabarito": ["la"],
+                "mensagem": "Artículo determinado",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "_________ silla está rota.",
                 "gabarito": ["la"],
                 "mensagem": "Artículo determinado",
                 "tipo": "text"
@@ -6154,8 +6937,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 3,
+                "enunciado": "_________ libros están en la estantería.",
+                "gabarito": ["los"],
+                "mensagem": "Artículo determinado",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "_________ niños juegan en el parque.",
+                "gabarito": ["los"],
+                "mensagem": "Artículo determinado",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "_________ estudiantes estudian mucho.",
+                "gabarito": ["los"],
+                "mensagem": "Artículo determinado",
+                "tipo": "text"
+              },
+              {
                 "numero": 4,
                 "enunciado": "Voy _____________ cine.",
+                "gabarito": ["al"],
+                "mensagem": "Contracción a + el",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Voy _____________ mercado.",
+                "gabarito": ["al"],
+                "mensagem": "Contracción a + el",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Voy _____________ hospital.",
+                "gabarito": ["al"],
+                "mensagem": "Contracción a + el",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Voy _____________ aeropuerto.",
                 "gabarito": ["al"],
                 "mensagem": "Contracción a + el",
                 "tipo": "text"
@@ -6168,8 +6993,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 5,
+                "enunciado": "Vengo ___________ supermercado.",
+                "gabarito": ["del"],
+                "mensagem": "Contracción de + el",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Soy ___________ norte de España.",
+                "gabarito": ["del"],
+                "mensagem": "Contracción de + el",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "El libro es ___________ profesor.",
+                "gabarito": ["del"],
+                "mensagem": "Contracción de + el",
+                "tipo": "text"
+              },
+              {
                 "numero": 6,
                 "enunciado": "Hay _________ coches aparcados allí.",
+                "gabarito": ["muchos", "unos"],
+                "mensagem": "Artículo indeterminado",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Hay _________ personas en la fiesta.",
+                "gabarito": ["muchas", "unas"],
+                "mensagem": "Artículo indeterminado",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Hay _________ flores en el jardín.",
+                "gabarito": ["muchas", "unas"],
+                "mensagem": "Artículo indeterminado",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Hay _________ estudiantes en la clase.",
                 "gabarito": ["muchos", "unos"],
                 "mensagem": "Artículo indeterminado",
                 "tipo": "text"
@@ -6182,8 +7049,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 7,
+                "enunciado": "_________ casa de María es grande.",
+                "gabarito": ["la"],
+                "mensagem": "Artículo determinado",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "_________ perro de Pedro es muy amigable.",
+                "gabarito": ["el"],
+                "mensagem": "Artículo determinado",
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "_________ libro de la biblioteca es interesante.",
+                "gabarito": ["el"],
+                "mensagem": "Artículo determinado",
+                "tipo": "text"
+              },
+              {
                 "numero": 8,
                 "enunciado": "En mi salón hay _______ alfombras muy bellas.",
+                "gabarito": ["unas"],
+                "mensagem": "Artículo indeterminado",
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "En mi cocina hay _______ sillas modernas.",
+                "gabarito": ["unas"],
+                "mensagem": "Artículo indeterminado",
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "En mi habitación hay _______ ventanas grandes.",
+                "gabarito": ["unas"],
+                "mensagem": "Artículo indeterminado",
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "En mi jardín hay _______ plantas bonitas.",
                 "gabarito": ["unas"],
                 "mensagem": "Artículo indeterminado",
                 "tipo": "text"
@@ -6196,8 +7105,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 9,
+                "enunciado": "________ libros están ________ lado ________ estantería.",
+                "gabarito": ["los", "al", "del"],
+                "mensagem": "Artículos y contracciones",
+                "tipo": "text"
+              },
+              {
+                "numero": 9,
+                "enunciado": "________ flores están ________ lado ________ ventana.",
+                "gabarito": ["las", "al", "del"],
+                "mensagem": "Artículos y contracciones",
+                "tipo": "text"
+              },
+              {
+                "numero": 9,
+                "enunciado": "________ zapatos están ________ lado ________ cama.",
+                "gabarito": ["los", "al", "del"],
+                "mensagem": "Artículos y contracciones",
+                "tipo": "text"
+              },
+              {
                 "numero": 10,
                 "enunciado": "En estas vacaciones iré __________ campo.",
+                "gabarito": ["al"],
+                "mensagem": "Contracción a + el",
+                "tipo": "text"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Mañana iré __________ médico.",
+                "gabarito": ["al"],
+                "mensagem": "Contracción a + el",
+                "tipo": "text"
+              },
+              {
+                "numero": 10,
+                "enunciado": "El domingo iré __________ parque.",
+                "gabarito": ["al"],
+                "mensagem": "Contracción a + el",
+                "tipo": "text"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Esta tarde iré __________ gimnasio.",
                 "gabarito": ["al"],
                 "mensagem": "Contracción a + el",
                 "tipo": "text"
@@ -6215,8 +7166,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 1,
+                "enunciado": "El apartamento está en el ______________________ piso. (5°)",
+                "gabarito": ["quinto"],
+                "mensagem": "Ordinal 5°",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "La oficina está en el ______________________ piso. (5°)",
+                "gabarito": ["quinto"],
+                "mensagem": "Ordinal 5°",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Vivo en el ______________________ piso del edificio. (5°)",
+                "gabarito": ["quinto"],
+                "mensagem": "Ordinal 5°",
+                "tipo": "text"
+              },
+              {
                 "numero": 2,
                 "enunciado": "Paco es el _____________________ alumno de la clase. (1°)",
+                "gabarito": ["primero"],
+                "mensagem": "Ordinal 1°",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Ella es la _____________________ en llegar. (1°)",
+                "gabarito": ["primera"],
+                "mensagem": "Ordinal 1°",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Este es el _____________________ día del mes. (1°)",
+                "gabarito": ["primero"],
+                "mensagem": "Ordinal 1°",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Es el _____________________ lugar en la competencia. (1°)",
                 "gabarito": ["primero"],
                 "mensagem": "Ordinal 1°",
                 "tipo": "text"
@@ -6229,8 +7222,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 3,
+                "enunciado": "Ella es la ______________________ en la fila. (3°)",
+                "gabarito": ["tercera"],
+                "mensagem": "Ordinal 3°",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Este es el ______________________ intento. (3°)",
+                "gabarito": ["tercero"],
+                "mensagem": "Ordinal 3°",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Vivo en el ______________________ piso. (3°)",
+                "gabarito": ["tercero"],
+                "mensagem": "Ordinal 3°",
+                "tipo": "text"
+              },
+              {
                 "numero": 4,
                 "enunciado": "Me clasifiqué en _____________________ lugar. (8°)",
+                "gabarito": ["octavo"],
+                "mensagem": "Ordinal 8°",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Ella quedó en _____________________ posición. (8°)",
+                "gabarito": ["octava"],
+                "mensagem": "Ordinal 8°",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Este es el _____________________ mes del año. (8°)",
+                "gabarito": ["octavo"],
+                "mensagem": "Ordinal 8°",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Vivo en el _____________________ piso. (8°)",
                 "gabarito": ["octavo"],
                 "mensagem": "Ordinal 8°",
                 "tipo": "text"
@@ -6248,8 +7283,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 1,
+                "enunciado": "Estudia ______________ las 8 ___________ las 10.",
+                "gabarito": ["desde", "hasta"],
+                "mensagem": "Preposiciones de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "La tienda abre ______________ las 9 ___________ las 20.",
+                "gabarito": ["desde", "hasta"],
+                "mensagem": "Preposiciones de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "El banco funciona ______________ las 10 ___________ las 14.",
+                "gabarito": ["desde", "hasta"],
+                "mensagem": "Preposiciones de tiempo",
+                "tipo": "text"
+              },
+              {
                 "numero": 2,
                 "enunciado": "Estudio ____________ la tarde.",
+                "gabarito": ["por", "en"],
+                "mensagem": "Preposición de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Trabajo ____________ la mañana.",
+                "gabarito": ["por", "en"],
+                "mensagem": "Preposición de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Descanso ____________ el mediodía.",
+                "gabarito": ["por", "en"],
+                "mensagem": "Preposición de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Hago ejercicio ____________ la tarde.",
                 "gabarito": ["por", "en"],
                 "mensagem": "Preposición de tiempo",
                 "tipo": "text"
@@ -6262,8 +7339,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 3,
+                "enunciado": "Trabaja __________ las 9 ___________ las 18.",
+                "gabarito": ["de", "a", "desde", "hasta"],
+                "mensagem": "Preposiciones de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Duerme __________ las 11 ___________ las 7.",
+                "gabarito": ["de", "a", "desde", "hasta"],
+                "mensagem": "Preposiciones de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Come __________ las 13 ___________ las 14.",
+                "gabarito": ["de", "a", "desde", "hasta"],
+                "mensagem": "Preposiciones de tiempo",
+                "tipo": "text"
+              },
+              {
                 "numero": 4,
                 "enunciado": "Sale de casa ___________ las 5 __________ la mañana.",
+                "gabarito": ["a", "de"],
+                "mensagem": "Preposiciones de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Llega al trabajo ___________ las 8 __________ la mañana.",
+                "gabarito": ["a", "de"],
+                "mensagem": "Preposiciones de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Vuelve a casa ___________ las 6 __________ la tarde.",
+                "gabarito": ["a", "de"],
+                "mensagem": "Preposiciones de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Se acuesta ___________ las 11 __________ la noche.",
                 "gabarito": ["a", "de"],
                 "mensagem": "Preposiciones de tiempo",
                 "tipo": "text"
@@ -6276,8 +7395,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 5,
+                "enunciado": "Prefiere trabajar ___________ la mañana.",
+                "gabarito": ["por", "en", "de"],
+                "mensagem": "Preposición de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Le encanta pasear ___________ la tarde.",
+                "gabarito": ["por", "en", "de"],
+                "mensagem": "Preposición de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Suele leer ___________ la noche.",
+                "gabarito": ["por", "en", "de"],
+                "mensagem": "Preposición de tiempo",
+                "tipo": "text"
+              },
+              {
                 "numero": 6,
                 "enunciado": "____________ tiene mucho sueño.",
+                "gabarito": ["por la noche", "en la noche", "de noche"],
+                "mensagem": "Preposición de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "____________ estudia mejor.",
+                "gabarito": ["por la noche", "en la noche", "de noche"],
+                "mensagem": "Preposición de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "____________ trabaja más.",
+                "gabarito": ["por la noche", "en la noche", "de noche"],
+                "mensagem": "Preposición de tiempo",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "____________ descansa mejor.",
                 "gabarito": ["por la noche", "en la noche", "de noche"],
                 "mensagem": "Preposición de tiempo",
                 "tipo": "text"
@@ -6367,11 +7528,106 @@
             ]
           },
           {
+            "title": "11b) Objetos de la casa (con imágenes)",
+            "badge": "Vocabulario visual",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Observa la imagen y elige: Es una ____.",
+                "opcoes": ["sofá","silla","mesa","armario"],
+                "gabarito": ["mesa"],
+                "tipo": "mc",
+                "imagem": "https://www.meumoveldemadeira.com.br/cdn/shop/files/Mesa_de_Jantar_Extensivel_Euro_Nozes_no_fundo_branco_vista_de_frente_sem_extensor_600x400.jpg?v=1763129582",
+                "altImagem": "Mesa de madera"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Observa la imagen y elige: Es un ____.",
+                "opcoes": ["sofá","silla","mesa","armario"],
+                "gabarito": ["sofá"],
+                "tipo": "mc",
+                "imagem": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800",
+                "altImagem": "Sofá moderno"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Observa la imagen y elige: Es una ____.",
+                "opcoes": ["sofá","silla","mesa","armario"],
+                "gabarito": ["silla"],
+                "tipo": "mc",
+                "imagem": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800",
+                "altImagem": "Silla de madera"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Observa la imagen y elige: Es un ____.",
+                "opcoes": ["sofá","silla","mesa","armario"],
+                "gabarito": ["armario"],
+                "tipo": "mc",
+                "imagem": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800",
+                "altImagem": "Armario de madera"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Observa la imagen y completa: En la imagen se ve un ____.",
+                "gabarito": ["sofá"],
+                "tipo": "text",
+                "imagem": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800",
+                "altImagem": "Sofá moderno"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Observa la imagen y completa: En la imagen se ve una ____.",
+                "gabarito": ["silla"],
+                "tipo": "text",
+                "imagem": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800",
+                "altImagem": "Silla de madera"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Observa la imagen y completa: En la imagen se ve una ____.",
+                "gabarito": ["mesa"],
+                "tipo": "text",
+                "imagem": "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800",
+                "altImagem": "Mesa de madera"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Observa la imagen y completa: En la imagen se ve un ____.",
+                "gabarito": ["armario"],
+                "tipo": "text",
+                "imagem": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800",
+                "altImagem": "Armario de madera"
+              }
+            ]
+          },
+          {
             "title": "12) Coincidir en gustos",
             "perguntas": [
               {
                 "numero": 1,
                 "enunciado": "No me gusta la falsedad. _________________________________________________________________",
+                "gabarito": ["a mí tampoco", "a mí no"],
+                "mensagem": "Coincidir en desacuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "No me gusta la mentira. _________________________________________________________________",
+                "gabarito": ["a mí tampoco", "a mí no"],
+                "mensagem": "Coincidir en desacuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "No me gusta el ruido. _________________________________________________________________",
+                "gabarito": ["a mí tampoco", "a mí no"],
+                "mensagem": "Coincidir en desacuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 1,
+                "enunciado": "No me gusta la violencia. _________________________________________________________________",
                 "gabarito": ["a mí tampoco", "a mí no"],
                 "mensagem": "Coincidir en desacuerdo",
                 "tipo": "text"
@@ -6384,8 +7640,50 @@
                 "tipo": "text"
               },
               {
+                "numero": 2,
+                "enunciado": "No me gusta el pescado. _______________________________________________________________",
+                "gabarito": ["a mí tampoco", "a mí no"],
+                "mensagem": "Coincidir en desacuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "No me gusta el brócoli. _______________________________________________________________",
+                "gabarito": ["a mí tampoco", "a mí no"],
+                "mensagem": "Coincidir en desacuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "No me gusta el café. _______________________________________________________________",
+                "gabarito": ["a mí tampoco", "a mí no"],
+                "mensagem": "Coincidir en desacuerdo",
+                "tipo": "text"
+              },
+              {
                 "numero": 3,
                 "enunciado": "Me gusta la pizza de ajo. _________________________________________________________________",
+                "gabarito": ["a mí también", "a mí sí"],
+                "mensagem": "Coincidir en acuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Me gusta el chocolate. _________________________________________________________________",
+                "gabarito": ["a mí también", "a mí sí"],
+                "mensagem": "Coincidir en acuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Me gusta el helado. _________________________________________________________________",
+                "gabarito": ["a mí también", "a mí sí"],
+                "mensagem": "Coincidir en acuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Me gusta la música rock. _________________________________________________________________",
                 "gabarito": ["a mí también", "a mí sí"],
                 "mensagem": "Coincidir en acuerdo",
                 "tipo": "text"
@@ -6396,6 +7694,1439 @@
                 "gabarito": ["a mí también", "a mí sí"],
                 "mensagem": "Coincidir en acuerdo",
                 "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Me gusta leer libros. _______________________________________________________________",
+                "gabarito": ["a mí también", "a mí sí"],
+                "mensagem": "Coincidir en acuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Me gusta viajar. _______________________________________________________________",
+                "gabarito": ["a mí también", "a mí sí"],
+                "mensagem": "Coincidir en acuerdo",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Me gusta hacer deporte. _______________________________________________________________",
+                "gabarito": ["a mí también", "a mí sí"],
+                "mensagem": "Coincidir en acuerdo",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "13) Verbo QUERER (presente)",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Yo ____ un helado.",
+                "gabarito": ["quiero"],
+                "mensagem": "QUERER - yo",
+                "opcoes": ["Seleccione...","quiero","quieres","quiere","queremos"],
+                "tipo": "select"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Yo ____ un café.",
+                "gabarito": ["quiero"],
+                "mensagem": "QUERER - yo",
+                "opcoes": ["Seleccione...","quiero","quieres","quiere","queremos"],
+                "tipo": "select"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Yo ____ un libro nuevo.",
+                "gabarito": ["quiero"],
+                "mensagem": "QUERER - yo",
+                "opcoes": ["Seleccione...","quiero","quieres","quiere","queremos"],
+                "tipo": "select"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Yo ____ un coche nuevo.",
+                "gabarito": ["quiero"],
+                "mensagem": "QUERER - yo",
+                "opcoes": ["Seleccione...","quiero","quieres","quiere","queremos"],
+                "tipo": "select"
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Tú ____ ir al cine?",
+                "gabarito": ["quieres"],
+                "mensagem": "QUERER - tú",
+                "opcoes": ["quieres","quiero","quiere","queremos"],
+                "tipo": "mc"
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Tú ____ venir conmigo?",
+                "gabarito": ["quieres"],
+                "mensagem": "QUERER - tú",
+                "opcoes": ["quieres","quiero","quiere","queremos"],
+                "tipo": "mc"
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Tú ____ estudiar más?",
+                "gabarito": ["quieres"],
+                "mensagem": "QUERER - tú",
+                "opcoes": ["quieres","quiero","quiere","queremos"],
+                "tipo": "mc"
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Tú ____ comer ahora?",
+                "gabarito": ["quieres"],
+                "mensagem": "QUERER - tú",
+                "opcoes": ["quieres","quiero","quiere","queremos"],
+                "tipo": "mc"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Él ____ pasta, no pizza.",
+                "gabarito": ["quiere"],
+                "mensagem": "QUERER - él",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Él ____ agua, no refresco.",
+                "gabarito": ["quiere"],
+                "mensagem": "QUERER - él",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Él ____ un café con leche.",
+                "gabarito": ["quiere"],
+                "mensagem": "QUERER - él",
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Él ____ descansar un poco.",
+                "gabarito": ["quiere"],
+                "mensagem": "QUERER - él",
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Nosotros ____ viajar este verano.",
+                "gabarito": ["queremos"],
+                "mensagem": "QUERER - nosotros",
+                "opcoes": ["Seleccione...","queremos","quiero","quieren","queréis"],
+                "tipo": "select"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Nosotros ____ aprender inglés.",
+                "gabarito": ["queremos"],
+                "mensagem": "QUERER - nosotros",
+                "opcoes": ["Seleccione...","queremos","quiero","quieren","queréis"],
+                "tipo": "select"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Nosotros ____ comprar una casa.",
+                "gabarito": ["queremos"],
+                "mensagem": "QUERER - nosotros",
+                "opcoes": ["Seleccione...","queremos","quiero","quieren","queréis"],
+                "tipo": "select"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Nosotros ____ ir al teatro.",
+                "gabarito": ["queremos"],
+                "mensagem": "QUERER - nosotros",
+                "opcoes": ["Seleccione...","queremos","quiero","quieren","queréis"],
+                "tipo": "select"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Vosotros ____ aprender español.",
+                "gabarito": ["queréis","quereis"],
+                "mensagem": "QUERER - vosotros",
+                "opcoes": ["queréis","quereis","queremos","quieren"],
+                "tipo": "mc"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Vosotros ____ practicar más.",
+                "gabarito": ["queréis","quereis"],
+                "mensagem": "QUERER - vosotros",
+                "opcoes": ["queréis","quereis","queremos","quieren"],
+                "tipo": "mc"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Vosotros ____ mejorar vuestro nivel.",
+                "gabarito": ["queréis","quereis"],
+                "mensagem": "QUERER - vosotros",
+                "opcoes": ["queréis","quereis","queremos","quieren"],
+                "tipo": "mc"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Vosotros ____ estudiar juntos.",
+                "gabarito": ["queréis","quereis"],
+                "mensagem": "QUERER - vosotros",
+                "opcoes": ["queréis","quereis","queremos","quieren"],
+                "tipo": "mc"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Ellos ____ ver la película.",
+                "gabarito": ["quieren"],
+                "mensagem": "QUERER - ellos",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Ellos ____ ir de vacaciones.",
+                "gabarito": ["quieren"],
+                "mensagem": "QUERER - ellos",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Ellos ____ comprar un coche.",
+                "gabarito": ["quieren"],
+                "mensagem": "QUERER - ellos",
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Ellos ____ cambiar de trabajo.",
+                "gabarito": ["quieren"],
+                "mensagem": "QUERER - ellos",
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "14) Vocabulario: comida básica",
+            "perguntas": [
+              {"numero": 1, "enunciado": "Grano básico en muchos países: ____", "gabarito": ["arroz"], "mensagem": null, "tipo": "text"},
+              {"numero": 2, "enunciado": "Producto de panadería hecho con harina: ____", "gabarito": ["pan"], "mensagem": null, "tipo": "text"},
+              {"numero": 3, "enunciado": "Proteína animal general: ____", "gabarito": ["carne"], "mensagem": null, "tipo": "text"},
+              {"numero": 4, "enunciado": "Plato con hojas y verduras: ____", "gabarito": ["ensalada"], "mensagem": null, "tipo": "text"},
+              {"numero": 5, "enunciado": "Alimento del mar: ____", "gabarito": ["pescado"], "mensagem": null, "tipo": "text"},
+              {"numero": 6, "enunciado": "Grupo general que incluye manzana y plátano: ____", "gabarito": ["fruta"], "mensagem": null, "tipo": "text"},
+              {"numero": 7, "enunciado": "Se obtiene de gallinas: ____", "gabarito": ["huevos"], "mensagem": null, "tipo": "text"},
+              {"numero": 8, "enunciado": "Lácteo sólido: ____", "gabarito": ["queso"], "mensagem": null, "tipo": "text"},
+              {"numero": 9, "enunciado": "Tubérculo muy común: ____", "gabarito": ["patatas"], "mensagem": null, "tipo": "text"},
+              {"numero": 10, "enunciado": "Para sazonar dulce: ____", "gabarito": ["azúcar","azucar"], "mensagem": null, "tipo": "text"},
+              {"numero": 11, "enunciado": "Para sazonar salado: ____", "gabarito": ["sal"], "mensagem": null, "tipo": "text"}
+            ]
+          },
+          {
+            "title": "15) Vocabulario: bebidas",
+            "perguntas": [
+              {"numero": 1, "enunciado": "Bebida natural sin gas: ____", "gabarito": ["agua"], "tipo": "text"},
+              {"numero": 2, "enunciado": "Bebida alcohólica de uvas: ____", "gabarito": ["vino"], "tipo": "text"},
+              {"numero": 3, "enunciado": "Bebida alcohólica de malta y lúpulo: ____", "gabarito": ["cerveza"], "tipo": "text"},
+              {"numero": 4, "enunciado": "Bebida con gas y azúcar: ____", "gabarito": ["refresco"], "tipo": "text"},
+              {"numero": 5, "enunciado": "Bebida hecha de fruta exprimida: ____", "gabarito": ["zumo"], "tipo": "text"}
+            ]
+          },
+          {
+            "title": "16) Actividades de tiempo libre",
+            "perguntas": [
+              {"numero": 1, "enunciado": "Moverse al ritmo de música: ____", "gabarito": ["bailar"], "tipo": "text"},
+              {"numero": 2, "enunciado": "Escuchar canciones: ____", "gabarito": ["escuchar música","escuchar musica"], "tipo": "text"},
+              {"numero": 3, "enunciado": "Navegar por sitios web: ____", "gabarito": ["navegar en internet"], "tipo": "text"},
+              {"numero": 4, "enunciado": "Ver una obra: ____", "gabarito": ["ir al teatro"], "tipo": "text"},
+              {"numero": 5, "enunciado": "Comprar ropa u objetos: ____", "gabarito": ["ir de compras"], "tipo": "text"},
+              {"numero": 6, "enunciado": "Salir a bailar: ____", "gabarito": ["ir a la discoteca"], "tipo": "text"},
+              {"numero": 7, "enunciado": "Usar bicicleta: ____", "gabarito": ["montar en bicicleta"], "tipo": "text"},
+              {"numero": 8, "enunciado": "Visitar otros lugares: ____", "gabarito": ["viajar"], "tipo": "text"},
+              {"numero": 9, "enunciado": "Practicar deporte: ____", "gabarito": ["hacer deporte"], "tipo": "text"},
+              {"numero": 10, "enunciado": "Desplazarse a pie: ____", "gabarito": ["andar"], "tipo": "text"}
+            ]
+          },
+          {
+            "title": "17) Objetos de cocina",
+            "badge": "Vocabulario visual",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Observa la imagen y elige el nombre correcto del utensilio.",
+                "gabarito": ["tenedor"],
+                "mensagem": "Se usa para pinchar alimentos.",
+                "opcoes": ["Seleccione...","tenedor","cuchillo","taza","servilleta"],
+                "tipo": "select",
+                "imagem": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Tenedor_%285227350230%29.jpg",
+                "altImagem": "Tenedor de metal sobre plato"
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Cómo se llama este utensilio para tomar sopas?",
+                "gabarito": ["cuchara"],
+                "mensagem": "Utensilio para líquidos.",
+                "opcoes": ["cuchara","tenedor","vaso","copa"],
+                "tipo": "mc",
+                "imagem": "https://http2.mlstatic.com/D_NQ_NP_840646-MLU73748019430_012024-O.webp",
+                "altImagem": "Cuchara de metal brillante"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Selecciona la palabra adecuada para este objeto afilado.",
+                "gabarito": ["cuchillo"],
+                "mensagem": "Sirve para cortar.",
+                "opcoes": ["Seleccione...","cuchillo","taza","cuchara","servilleta"],
+                "tipo": "select",
+                "imagem": "https://es.bebergner.com/cdn/shop/products/PR4430BI40279_100270_CHEF_KNIFE_20CM_SS_WOLFSBURG_BG_SZ4_55050c4d-c987-43df-9cf4-3859442a92d4.jpg?v=1699619301",
+                "altImagem": "Cuchillo de cocina sobre tabla"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Elige el nombre correcto para este recipiente con asa.",
+                "gabarito": ["taza"],
+                "mensagem": "Usado para café o té.",
+                "opcoes": ["taza","vaso","copa","tenedor"],
+                "tipo": "mc",
+                "imagem": "https://www.kitchencenter.cl/cdn/shop/files/taza-te-cappuccino-profile-churchill-blanca-churchill.jpg?v=1731342679",
+                "altImagem": "Taza blanca con café"
+              },
+              {
+                "numero": 5,
+                "enunciado": "¿Qué palabra identifica esta imagen?",
+                "gabarito": ["copa"],
+                "mensagem": "Recipiente estilizado para bebidas.",
+                "opcoes": ["Seleccione...","copa","vaso","taza","cuchara"],
+                "tipo": "select",
+                "imagem": "https://tienda.cristar.com.co/cdn/shop/files/5414_LLENO.jpg?v=1757009557&width=1214",
+                "altImagem": "Copa de vino con líquido"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Observa la imagen y marca la palabra correcta para este objeto transparente.",
+                "gabarito": ["vaso"],
+                "mensagem": "Recipiente sin asa para agua o jugo.",
+                "opcoes": ["vaso","copa","taza","tenedor"],
+                "tipo": "mc",
+                "imagem": "https://media.istockphoto.com/id/803155598/pt/foto/close-up-the-pouring-purified-fresh-drink-water-from-the-bottle-on-table-in-living-room.jpg?s=612x612&w=0&k=20&c=poAzWQVuYcbvkHB286wDtyonIEXjSzCEOVhTORJCoUM=",
+                "altImagem": "Vaso de vidrio con agua"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Completa: En la imagen se ve una __________________.",
+                "gabarito": ["servilleta"],
+                "mensagem": "Objeto para limpiar la boca.",
+                "opcoes": ["Seleccione...","servilleta","cuchillo","copa","cuchara"],
+                "tipo": "select",
+                "imagem": "https://st2.depositphotos.com/1000504/7363/i/450/depositphotos_73636193-stock-photo-white-paper-napkins.jpg",
+                "altImagem": "Servilletas dobladas sobre plato"
+              }
+            ]
+          },
+          {
+            "title": "18) Escucha y escribe el objeto",
+            "badge": "Comprensión auditiva",
+            "imagem": "media/images/objetos-cocina.png",
+            "altImagem": "Objetos de cocina",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Escucha el audio y escribe el nombre del objeto que se menciona:",
+                "gabarito": ["silla"],
+                "mensagem": "Objeto de mobiliario para sentarse.",
+                "tipo": "text",
+                "audio": "media/audio/silla.mp3",
+                "altImagem": "Audio sobre objeto de la casa"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Escucha el audio y completa: El objeto mencionado es una _______________.",
+                "gabarito": ["silla"],
+                "mensagem": "Mueble para sentarse.",
+                "tipo": "text",
+                "audio": "media/audio/silla.mp3",
+                "altImagem": "Audio sobre objeto de la casa"
+              },
+              {
+                "numero": 1,
+                "enunciado": "¿Qué objeto se menciona en el audio? Escribe su nombre:",
+                "gabarito": ["silla"],
+                "mensagem": "Objeto de mobiliario.",
+                "tipo": "text",
+                "audio": "media/audio/silla.mp3",
+                "altImagem": "Audio sobre objeto de la casa"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha el audio y escribe el nombre del objeto:",
+                "gabarito": ["taza"],
+                "mensagem": "Recipiente con asa para beber.",
+                "tipo": "text",
+                "audio": "media/audio/taza.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha y completa: El objeto mencionado es una _______________.",
+                "gabarito": ["taza"],
+                "mensagem": "Usado para café o té.",
+                "tipo": "text",
+                "audio": "media/audio/taza.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 2,
+                "enunciado": "¿Qué objeto de cocina se menciona? Escribe su nombre:",
+                "gabarito": ["taza"],
+                "mensagem": "Recipiente para bebidas calientes.",
+                "tipo": "text",
+                "audio": "media/audio/taza.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha el audio y elige el objeto correcto:",
+                "gabarito": ["taza"],
+                "mensagem": "Recipiente con asa.",
+                "opcoes": ["taza","vaso","copa","plato"],
+                "tipo": "mc",
+                "audio": "media/audio/taza.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Escucha el audio y escribe el nombre del objeto:",
+                "gabarito": ["tenedor"],
+                "mensagem": "Utensilio para pinchar alimentos.",
+                "tipo": "text",
+                "audio": "media/audio/tenedor.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Escucha y completa: El objeto mencionado es un _______________.",
+                "gabarito": ["tenedor"],
+                "mensagem": "Utensilio de mesa.",
+                "tipo": "text",
+                "audio": "media/audio/tenedor.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 3,
+                "enunciado": "¿Qué utensilio se menciona en el audio? Escribe su nombre:",
+                "gabarito": ["tenedor"],
+                "mensagem": "Se usa para comer.",
+                "tipo": "text",
+                "audio": "media/audio/tenedor.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Escucha el audio y elige el objeto correcto:",
+                "gabarito": ["tenedor"],
+                "mensagem": "Utensilio para pinchar.",
+                "opcoes": ["tenedor","cuchillo","cuchara","cuchara"],
+                "tipo": "mc",
+                "audio": "media/audio/tenedor.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Escucha el audio y escribe el nombre del objeto:",
+                "gabarito": ["olla"],
+                "mensagem": "Recipiente para cocinar.",
+                "tipo": "text",
+                "audio": "media/audio/olla.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Escucha y completa: El objeto mencionado es una _______________.",
+                "gabarito": ["olla"],
+                "mensagem": "Utensilio de cocina.",
+                "tipo": "text",
+                "audio": "media/audio/olla.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 4,
+                "enunciado": "¿Qué objeto de cocina se menciona? Escribe su nombre:",
+                "gabarito": ["olla"],
+                "mensagem": "Se usa para cocinar sopas y guisos.",
+                "tipo": "text",
+                "audio": "media/audio/olla.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Escucha el audio y elige el objeto correcto:",
+                "gabarito": ["olla"],
+                "mensagem": "Recipiente para cocinar.",
+                "opcoes": ["olla","sartén","cacerola","cazuela"],
+                "tipo": "mc",
+                "audio": "media/audio/olla.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Escucha el audio y escribe el nombre del objeto:",
+                "gabarito": ["nevera"],
+                "mensagem": "Electrodoméstico para conservar alimentos.",
+                "tipo": "text",
+                "audio": "media/audio/nevera.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Escucha y completa: El objeto mencionado es una _______________.",
+                "gabarito": ["nevera"],
+                "mensagem": "Electrodoméstico de cocina.",
+                "tipo": "text",
+                "audio": "media/audio/nevera.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 5,
+                "enunciado": "¿Qué electrodoméstico se menciona? Escribe su nombre:",
+                "gabarito": ["nevera"],
+                "mensagem": "Mantiene los alimentos fríos.",
+                "tipo": "text",
+                "audio": "media/audio/nevera.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Escucha el audio y elige el objeto correcto:",
+                "gabarito": ["nevera"],
+                "mensagem": "Electrodoméstico para conservar.",
+                "opcoes": ["nevera","horno","microondas","lavadora"],
+                "tipo": "mc",
+                "audio": "media/audio/nevera.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Escucha el audio y escribe el nombre del objeto:",
+                "gabarito": ["platos"],
+                "mensagem": "Utensilios para servir comida.",
+                "tipo": "text",
+                "audio": "media/audio/platos.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Escucha y completa: El objeto mencionado son los _______________.",
+                "gabarito": ["platos"],
+                "mensagem": "Utensilios de mesa.",
+                "tipo": "text",
+                "audio": "media/audio/platos.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 6,
+                "enunciado": "¿Qué objetos de mesa se mencionan? Escribe su nombre:",
+                "gabarito": ["platos"],
+                "mensagem": "Se usan para servir comida.",
+                "tipo": "text",
+                "audio": "media/audio/platos.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Escucha el audio y elige el objeto correcto:",
+                "gabarito": ["platos"],
+                "mensagem": "Utensilios para servir.",
+                "opcoes": ["platos","vasos","copas","cubiertos"],
+                "tipo": "mc",
+                "audio": "media/audio/platos.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Escucha el audio y escribe el nombre del objeto:",
+                "gabarito": ["cuchara"],
+                "mensagem": "Utensilio para tomar líquidos y alimentos.",
+                "tipo": "text",
+                "audio": "media/audio/cuchara.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Escucha y completa: El objeto mencionado es una _______________.",
+                "gabarito": ["cuchara"],
+                "mensagem": "Utensilio de mesa.",
+                "tipo": "text",
+                "audio": "media/audio/cuchara.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 7,
+                "enunciado": "¿Qué utensilio se menciona en el audio? Escribe su nombre:",
+                "gabarito": ["cuchara"],
+                "mensagem": "Se usa para sopas y postres.",
+                "tipo": "text",
+                "audio": "media/audio/cuchara.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Escucha el audio y elige el objeto correcto:",
+                "gabarito": ["cuchara"],
+                "mensagem": "Utensilio para líquidos.",
+                "opcoes": ["cuchara","tenedor","cuchillo","cucharilla"],
+                "tipo": "mc",
+                "audio": "media/audio/cuchara.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Escucha el audio y escribe el nombre del objeto:",
+                "gabarito": ["sartén"],
+                "mensagem": "Utensilio para freír y cocinar.",
+                "tipo": "text",
+                "audio": "media/audio/sarten.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Escucha y completa: El objeto mencionado es una _______________.",
+                "gabarito": ["sartén"],
+                "mensagem": "Utensilio de cocina.",
+                "tipo": "text",
+                "audio": "media/audio/sarten.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 8,
+                "enunciado": "¿Qué objeto de cocina se menciona? Escribe su nombre:",
+                "gabarito": ["sartén"],
+                "mensagem": "Se usa para freír alimentos.",
+                "tipo": "text",
+                "audio": "media/audio/sarten.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Escucha el audio y elige el objeto correcto:",
+                "gabarito": ["sartén"],
+                "mensagem": "Utensilio para freír.",
+                "opcoes": ["sartén","olla","cacerola","cazuela"],
+                "tipo": "mc",
+                "audio": "media/audio/sarten.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 9,
+                "enunciado": "Escucha el audio y escribe el nombre del objeto:",
+                "gabarito": ["tazón"],
+                "mensagem": "Recipiente para servir alimentos.",
+                "tipo": "text",
+                "audio": "media/audio/tazon.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 9,
+                "enunciado": "Escucha y completa: El objeto mencionado es un _______________.",
+                "gabarito": ["tazón"],
+                "mensagem": "Recipiente de cocina.",
+                "tipo": "text",
+                "audio": "media/audio/tazon.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 9,
+                "enunciado": "¿Qué recipiente se menciona en el audio? Escribe su nombre:",
+                "gabarito": ["tazón"],
+                "mensagem": "Se usa para servir sopas y cereales.",
+                "tipo": "text",
+                "audio": "media/audio/tazon.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 9,
+                "enunciado": "Escucha el audio y elige el objeto correcto:",
+                "gabarito": ["tazón"],
+                "mensagem": "Recipiente para servir.",
+                "opcoes": ["tazón","plato","bol","cuenco"],
+                "tipo": "mc",
+                "audio": "media/audio/tazon.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Escucha el audio y escribe el nombre del objeto:",
+                "gabarito": ["vaso"],
+                "mensagem": "Recipiente para beber líquidos.",
+                "tipo": "text",
+                "audio": "media/audio/vaso.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Escucha y completa: El objeto mencionado es un _______________.",
+                "gabarito": ["vaso"],
+                "mensagem": "Recipiente sin asa.",
+                "tipo": "text",
+                "audio": "media/audio/vaso.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 10,
+                "enunciado": "¿Qué recipiente se menciona en el audio? Escribe su nombre:",
+                "gabarito": ["vaso"],
+                "mensagem": "Se usa para agua y otras bebidas.",
+                "tipo": "text",
+                "audio": "media/audio/vaso.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Escucha el audio y elige el objeto correcto:",
+                "gabarito": ["vaso"],
+                "mensagem": "Recipiente para beber.",
+                "opcoes": ["vaso","copa","taza","jarra"],
+                "tipo": "mc",
+                "audio": "media/audio/vaso.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 11,
+                "enunciado": "Escucha el audio y escribe el nombre del objeto:",
+                "gabarito": ["cuchillo"],
+                "mensagem": "Utensilio afilado para cortar.",
+                "tipo": "text",
+                "audio": "media/audio/cuchillo.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 11,
+                "enunciado": "Escucha y completa: El objeto mencionado es un _______________.",
+                "gabarito": ["cuchillo"],
+                "mensagem": "Utensilio de cocina.",
+                "tipo": "text",
+                "audio": "media/audio/cuchillo.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 11,
+                "enunciado": "¿Qué utensilio se menciona en el audio? Escribe su nombre:",
+                "gabarito": ["cuchillo"],
+                "mensagem": "Se usa para cortar alimentos.",
+                "tipo": "text",
+                "audio": "media/audio/cuchillo.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              },
+              {
+                "numero": 11,
+                "enunciado": "Escucha el audio y elige el objeto correcto:",
+                "gabarito": ["cuchillo"],
+                "mensagem": "Utensilio para cortar.",
+                "opcoes": ["cuchillo","tenedor","cuchara","cuchara"],
+                "tipo": "mc",
+                "audio": "media/audio/cuchillo.mp3",
+                "altImagem": "Audio sobre objeto de cocina"
+              }
+            ]
+          },
+          {
+            "title": "19) Diálogo: Diego y Carmen hablan sobre la casa",
+            "badge": "Comprensión auditiva",
+            "imagem": "media/images/dialogo-diego-carmen.png",
+            "audio": "media/audio/dialogo-diego-carmen.mp3",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Escucha el diálogo y responde: ¿Cuántos dormitorios tiene la casa de Carmen?",
+                "gabarito": ["tres", "3"],
+                "mensagem": "Carmen menciona que tiene tres dormitorios.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Según el diálogo, la casa de Carmen tiene _______________ dormitorios.",
+                "gabarito": ["tres", "3"],
+                "mensagem": "Carmen dice que tiene tres dormitorios.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Escucha y completa: La casa tiene _______________ dormitorios.",
+                "gabarito": ["tres", "3"],
+                "mensagem": "Número de dormitorios mencionado.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha el diálogo: ¿Cómo es la cocina de Carmen?",
+                "gabarito": ["grande", "bastante grande", "es grande"],
+                "mensagem": "Carmen dice que la cocina es bastante grande.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Según el diálogo, la cocina es _______________.",
+                "gabarito": ["grande", "bastante grande"],
+                "mensagem": "Descripción de la cocina.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha y completa: La cocina es _______________.",
+                "gabarito": ["bastante grande", "grande"],
+                "mensagem": "Tamaño de la cocina.",
+                "tipo": "text",                
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Escucha el diálogo: ¿Qué hay al lado de la cocina?",
+                "gabarito": ["comedor", "un comedor", "el comedor"],
+                "mensagem": "Carmen menciona que hay un comedor al lado de la cocina.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Al lado de la cocina hay _______________.",
+                "gabarito": ["un comedor", "comedor", "el comedor"],
+                "mensagem": "Habitación al lado de la cocina.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Escucha y completa: Al lado de la cocina está el _______________.",
+                "gabarito": ["comedor"],
+                "mensagem": "Habitación mencionada.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Escucha el diálogo: ¿Dónde está el salón?",
+                "gabarito": ["al lado del pasillo", "al lado del pasillo"],
+                "mensagem": "Carmen dice que el salón está al lado del pasillo.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 4,
+                "enunciado": "El salón está _______________.",
+                "gabarito": ["al lado del pasillo"],
+                "mensagem": "Ubicación del salón.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Escucha y completa: El salón está _______________ pasillo.",
+                "gabarito": ["al lado del"],
+                "mensagem": "Preposición de ubicación.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Escucha el diálogo: ¿Cuántos baños tiene la casa?",
+                "gabarito": ["dos", "2"],
+                "mensagem": "Carmen menciona que tiene dos baños completos.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 5,
+                "enunciado": "La casa tiene _______________ baños.",
+                "gabarito": ["dos", "2"],
+                "mensagem": "Número de baños mencionado.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Escucha y completa: Tienen _______________ baños completos.",
+                "gabarito": ["dos", "2"],
+                "mensagem": "Cantidad de baños.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Escucha el diálogo: ¿Dónde está uno de los baños?",
+                "gabarito": ["cerca del dormitorio principal", "cerca del dormitorio principal"],
+                "mensagem": "Carmen dice que un baño está cerca del dormitorio principal.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Uno de los baños está _______________.",
+                "gabarito": ["cerca del dormitorio principal"],
+                "mensagem": "Ubicación de uno de los baños.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Escucha y completa: Un baño está _______________ dormitorio principal.",
+                "gabarito": ["cerca del"],
+                "mensagem": "Preposición de ubicación.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Escucha el diálogo: ¿Qué tiene la casa, jardín o balcón?",
+                "gabarito": ["balcón", "un balcón"],
+                "mensagem": "Carmen dice que tienen un balcón pequeño.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 7,
+                "enunciado": "La casa tiene un _______________.",
+                "gabarito": ["balcón"],
+                "mensagem": "Espacio exterior mencionado.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Escucha y completa: Tienen un _______________ pequeño.",
+                "gabarito": ["balcón"],
+                "mensagem": "Espacio exterior de la casa.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Escucha el diálogo: ¿Qué hay en el balcón?",
+                "gabarito": ["plantas", "muchas plantas"],
+                "mensagem": "Carmen menciona que el balcón tiene muchas plantas.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 8,
+                "enunciado": "En el balcón hay _______________.",
+                "gabarito": ["muchas plantas", "plantas"],
+                "mensagem": "Elementos en el balcón.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Escucha y completa: El balcón tiene _______________ plantas.",
+                "gabarito": ["muchas"],
+                "mensagem": "Cantidad de plantas.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 9,
+                "enunciado": "Escucha el diálogo: ¿Qué dice Carmen sobre el salón?",
+                "gabarito": ["es mi lugar favorito", "es su lugar favorito"],
+                "mensagem": "Carmen dice que el salón es su lugar favorito.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 9,
+                "enunciado": "Para Carmen, el salón es _______________.",
+                "gabarito": ["su lugar favorito", "mi lugar favorito"],
+                "mensagem": "Opinión de Carmen sobre el salón.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 9,
+                "enunciado": "Escucha y completa: El salón es _______________ lugar favorito.",
+                "gabarito": ["mi", "su"],
+                "mensagem": "Posesivo usado por Carmen.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Escucha el diálogo: ¿Qué quiere hacer Diego?",
+                "gabarito": ["visitar", "visitarte", "visitar a Carmen"],
+                "mensagem": "Diego dice que le gustaría visitar a Carmen.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Diego quiere _______________ a Carmen.",
+                "gabarito": ["visitar"],
+                "mensagem": "Intención de Diego.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Escucha y completa: Diego _______________ visitar a Carmen.",
+                "gabarito": ["quiere", "le gustaría"],
+                "mensagem": "Expresión de deseo.",
+                "tipo": "text",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 11,
+                "enunciado": "Escucha el diálogo y elige: ¿Cuántos dormitorios tiene la casa?",
+                "gabarito": ["tres"],
+                "mensagem": "Número de dormitorios mencionado.",
+                "opcoes": ["uno","dos","tres","cuatro"],
+                "tipo": "mc",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 11,
+                "enunciado": "Según el diálogo, selecciona: ¿Cuántos dormitorios?",
+                "gabarito": ["tres"],
+                "mensagem": "Cantidad de dormitorios.",
+                "opcoes": ["Seleccione...","uno","dos","tres","cuatro"],
+                "tipo": "select",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 12,
+                "enunciado": "Escucha y elige: ¿Qué tiene la casa, jardín o balcón?",
+                "gabarito": ["balcón"],
+                "mensagem": "Espacio exterior de la casa.",
+                "opcoes": ["jardín","balcón","terraza","patio"],
+                "tipo": "mc",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 12,
+                "enunciado": "Selecciona: ¿Qué espacio exterior tiene la casa?",
+                "gabarito": ["balcón"],
+                "mensagem": "Espacio exterior mencionado.",
+                "opcoes": ["Seleccione...","jardín","balcón","terraza","patio"],
+                "tipo": "select",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 13,
+                "enunciado": "Escucha y elige: ¿Cuántos baños tiene la casa?",
+                "gabarito": ["dos"],
+                "mensagem": "Número de baños mencionado.",
+                "opcoes": ["uno","dos","tres","cuatro"],
+                "tipo": "mc",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 13,
+                "enunciado": "Selecciona: ¿Cuántos baños completos tiene la casa?",
+                "gabarito": ["dos"],
+                "mensagem": "Cantidad de baños.",
+                "opcoes": ["Seleccione...","uno","dos","tres","cuatro"],
+                "tipo": "select",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 14,
+                "enunciado": "Escucha y elige: ¿Dónde está el salón?",
+                "gabarito": ["al lado del pasillo"],
+                "mensagem": "Ubicación del salón.",
+                "opcoes": ["al lado del pasillo","cerca de la cocina","frente al comedor","al lado del baño"],
+                "tipo": "mc",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 14,
+                "enunciado": "Selecciona: ¿Dónde está ubicado el salón?",
+                "gabarito": ["al lado del pasillo"],
+                "mensagem": "Ubicación mencionada.",
+                "opcoes": ["Seleccione...","al lado del pasillo","cerca de la cocina","frente al comedor","al lado del baño"],
+                "tipo": "select",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 15,
+                "enunciado": "Escucha y elige: ¿Quién dice que el salón es su lugar favorito?",
+                "gabarito": ["Carmen"],
+                "mensagem": "Personaje que expresa la opinión.",
+                "opcoes": ["Diego","Carmen","ambos","ninguno"],
+                "tipo": "mc",
+                "altImagem": "Diálogo sobre la casa"
+              },
+              {
+                "numero": 15,
+                "enunciado": "Selecciona: ¿Quién menciona que el salón es su lugar favorito?",
+                "gabarito": ["Carmen"],
+                "mensagem": "Personaje del diálogo.",
+                "opcoes": ["Seleccione...","Diego","Carmen","ambos","ninguno"],
+                "tipo": "select",
+                "altImagem": "Diálogo sobre la casa"
+              }
+            ]
+          },
+          {
+            "title": "20) Monólogo: El desayuno familiar",
+            "badge": "Comprensión auditiva",
+            "imagem": "media/images/monologo-desayuno.png",
+            "altImagem": "Monólogo sobre el desayuno",
+            "audio": "media/audio/monologo-desayuno.mp3",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Escucha el monólogo: ¿Cuántas personas hay en la familia?",
+                "gabarito": ["cinco", "5"],
+                "mensagem": "Hay cinco personas: la persona que habla, Manuel, Sofía, Mateo y Ricardo.",
+                "tipo": "text",                
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Según el monólogo, en la familia hay _______________ personas.",
+                "gabarito": ["cinco", "5"],
+                "mensagem": "La persona que habla más los cuatro mencionados (Manuel, Sofía, Mateo, Ricardo).",
+                "tipo": "text",                
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 1,
+                "enunciado": "Escucha y completa: En la familia hay _______________ personas en total.",
+                "gabarito": ["cinco", "5"],
+                "mensagem": "Incluyendo a la persona que habla.",
+                "tipo": "text",                
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha el monólogo: ¿Qué quiere Manuel para desayunar?",
+                "gabarito": ["café y plátano", "café y plátanos", "café con plátano"],
+                "mensagem": "Manuel quiere café y plátano.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Manuel quiere _______________ para desayunar.",
+                "gabarito": ["café y plátano", "café y plátanos"],
+                "mensagem": "Desayuno de Manuel.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha y completa: Manuel solo quiere su _______________ y _______________.",
+                "gabarito": ["café", "plátano"],
+                "mensagem": "Alimentos que quiere Manuel.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Escucha el monólogo: ¿Qué problema hay con el desayuno de Manuel hoy?",
+                "gabarito": ["no hay plátanos", "no tiene plátanos", "no tengo plátanos"],
+                "mensagem": "Hoy no hay plátanos disponibles.",
+                "tipo": "text",                
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 3,
+                "enunciado": "El problema con el desayuno de Manuel es que _______________.",
+                "gabarito": ["no hay plátanos", "no tiene plátanos"],
+                "mensagem": "Problema mencionado.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Escucha y completa: Hoy no _______________ plátanos.",
+                "gabarito": ["tengo", "hay"],
+                "mensagem": "Falta de plátanos.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Escucha el monólogo: ¿Qué quiere Sofía para desayunar?",
+                "gabarito": ["avena con chía", "avena y chía"],
+                "mensagem": "Sofía quiere avena con chía.",
+                "tipo": "text",                
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Sofía pide _______________ para desayunar.",
+                "gabarito": ["avena con chía", "avena y chía"],
+                "mensagem": "Desayuno de Sofía.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Escucha y completa: Sofía pide _______________ con _______________.",
+                "gabarito": ["avena", "chía"],
+                "mensagem": "Alimentos que quiere Sofía.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Escucha el monólogo: ¿Qué problema hay con el desayuno de Sofía?",
+                "gabarito": ["se terminó la chía", "no hay chía", "la chía se terminó"],
+                "mensagem": "La chía se terminó.",
+                "tipo": "text",                
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 5,
+                "enunciado": "El problema con el desayuno de Sofía es que _______________.",
+                "gabarito": ["se terminó la chía", "no hay chía"],
+                "mensagem": "Problema mencionado.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Escucha y completa: La _______________ se terminó.",
+                "gabarito": ["chía"],
+                "mensagem": "Ingrediente que falta.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Escucha el monólogo: ¿Qué quiere Mateo para desayunar?",
+                "gabarito": ["tortitas con sirope de chocolate", "tortitas con sirope"],
+                "mensagem": "Mateo quiere tortitas con mucho sirope de chocolate.",
+                "tipo": "text",                
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Mateo quiere _______________ para desayunar.",
+                "gabarito": ["tortitas con sirope de chocolate", "tortitas"],
+                "mensagem": "Desayuno de Mateo.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Escucha y completa: Mateo quiere _______________ con mucho _______________ de chocolate.",
+                "gabarito": ["tortitas", "sirope"],
+                "mensagem": "Alimentos que quiere Mateo.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Escucha el monólogo: ¿Qué dice sobre el desayuno de Mateo?",
+                "gabarito": ["es un desastre para la cocina", "es un desastre"],
+                "mensagem": "El desayuno de Mateo es un desastre para la cocina.",
+                "tipo": "text",                
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 7,
+                "enunciado": "El desayuno de Mateo es _______________.",
+                "gabarito": ["un desastre para la cocina", "un desastre"],
+                "mensagem": "Descripción del desayuno.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Escucha y completa: ¡Es un _______________ para la cocina!",
+                "gabarito": ["desastre"],
+                "mensagem": "Descripción negativa.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Escucha el monólogo: ¿Qué quiere Ricardo para desayunar?",
+                "gabarito": ["huevos revueltos", "huevos"],
+                "mensagem": "Ricardo solo come huevos revueltos.",
+                "tipo": "text",                
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Ricardo solo come _______________ para desayunar.",
+                "gabarito": ["huevos revueltos", "huevos"],
+                "mensagem": "Desayuno de Ricardo.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Escucha y completa: Ricardo solo come _______________ _______________.",
+                "gabarito": ["huevos", "revueltos"],
+                "mensagem": "Tipo de huevos que quiere.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 9,
+                "enunciado": "Escucha el monólogo: ¿Cómo tienen que ser los huevos de Ricardo?",
+                "gabarito": ["perfectos", "ni secos ni líquidos", "perfectos, ni secos ni líquidos"],
+                "mensagem": "Los huevos tienen que ser perfectos, ni secos ni líquidos.",
+                "tipo": "text",                
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 9,
+                "enunciado": "Los huevos de Ricardo tienen que ser _______________.",
+                "gabarito": ["perfectos", "ni secos ni líquidos"],
+                "mensagem": "Condición de los huevos.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 9,
+                "enunciado": "Escucha y completa: Los huevos tienen que ser perfectos. ¡Ni _______________, ni _______________!",
+                "gabarito": ["secos", "líquidos"],
+                "mensagem": "Condiciones que no deben tener.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Escucha el monólogo: ¿Por dónde empieza a preparar el desayuno?",
+                "gabarito": ["por los huevos", "con los huevos", "los huevos"],
+                "mensagem": "Empieza por los huevos.",
+                "tipo": "text",                
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Empieza a preparar el desayuno _______________.",
+                "gabarito": ["por los huevos", "con los huevos"],
+                "mensagem": "Orden de preparación.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Escucha y completa: Empezaré por los _______________.",
+                "gabarito": ["huevos"],
+                "mensagem": "Primer alimento a preparar.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 11,
+                "enunciado": "Escucha el monólogo: ¿Qué tomará Manuel hoy?",
+                "gabarito": ["solo café", "café", "solo tomará café"],
+                "mensagem": "Hoy Manuel solo tomará café.",
+                "tipo": "text",                
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 11,
+                "enunciado": "Hoy Manuel solo _______________ café.",
+                "gabarito": ["tomará", "toma"],
+                "mensagem": "Acción de Manuel.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 11,
+                "enunciado": "Escucha y completa: Hoy, Manuel solo _______________ café.",
+                "gabarito": ["tomará"],
+                "mensagem": "Verbo de acción.",
+                "tipo": "text",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 12,
+                "enunciado": "Escucha el monólogo y elige: ¿Cuántas personas hay en la familia?",
+                "gabarito": ["cinco"],
+                "mensagem": "La persona que habla más los cuatro mencionados.",
+                "opcoes": ["dos","tres","cuatro","cinco"],
+                "tipo": "mc",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 12,
+                "enunciado": "Selecciona: ¿Cuántas personas hay en la familia?",
+                "gabarito": ["cinco"],
+                "mensagem": "Incluyendo a la persona que habla.",
+                "opcoes": ["Seleccione...","dos","tres","cuatro","cinco"],
+                "tipo": "select",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 13,
+                "enunciado": "Escucha y elige: ¿Qué quiere Manuel para desayunar?",
+                "gabarito": ["café y plátano"],
+                "mensagem": "Desayuno de Manuel.",
+                "opcoes": ["café y plátano","café y pan","tortitas","huevos"],
+                "tipo": "mc",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 13,
+                "enunciado": "Selecciona: ¿Qué quiere Manuel?",
+                "gabarito": ["café y plátano"],
+                "mensagem": "Preferencia de Manuel.",
+                "opcoes": ["Seleccione...","café y plátano","café y pan","tortitas","huevos"],
+                "tipo": "select",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 14,
+                "enunciado": "Escucha y elige: ¿Qué quiere Sofía para desayunar?",
+                "gabarito": ["avena con chía"],
+                "mensagem": "Desayuno de Sofía.",
+                "opcoes": ["avena con chía","tortitas","huevos","café"],
+                "tipo": "mc",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 14,
+                "enunciado": "Selecciona: ¿Qué quiere Sofía?",
+                "gabarito": ["avena con chía"],
+                "mensagem": "Preferencia de Sofía.",
+                "opcoes": ["Seleccione...","avena con chía","tortitas","huevos","café"],
+                "tipo": "select",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 15,
+                "enunciado": "Escucha y elige: ¿Qué quiere Mateo para desayunar?",
+                "gabarito": ["tortitas con sirope de chocolate"],
+                "mensagem": "Desayuno de Mateo.",
+                "opcoes": ["tortitas con sirope de chocolate","huevos","avena","café"],
+                "tipo": "mc",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 15,
+                "enunciado": "Selecciona: ¿Qué quiere Mateo?",
+                "gabarito": ["tortitas con sirope de chocolate"],
+                "mensagem": "Preferencia de Mateo.",
+                "opcoes": ["Seleccione...","tortitas con sirope de chocolate","huevos","avena","café"],
+                "tipo": "select",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 16,
+                "enunciado": "Escucha y elige: ¿Qué quiere Ricardo para desayunar?",
+                "gabarito": ["huevos revueltos"],
+                "mensagem": "Desayuno de Ricardo.",
+                "opcoes": ["huevos revueltos","tortitas","avena","café"],
+                "tipo": "mc",
+                "altImagem": "Monólogo sobre el desayuno"
+              },
+              {
+                "numero": 16,
+                "enunciado": "Selecciona: ¿Qué quiere Ricardo?",
+                "gabarito": ["huevos revueltos"],
+                "mensagem": "Preferencia de Ricardo.",
+                "opcoes": ["Seleccione...","huevos revueltos","tortitas","avena","café"],
+                "tipo": "select",
+                "altImagem": "Monólogo sobre el desayuno"
               }
             ]
           }

@@ -4,10 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Simulado Interactivo – Repaso I (JSON)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body { font-family: Arial, sans-serif; background:#f8fafc; color:#222; margin:0; padding:0; font-size:18px; line-height:1.6; }
-    header { background:#4f46e5; color:#fff; padding:20px; text-align:center; position: sticky; top: 0; z-index: 1000; }
-    header h1 { margin:0; font-size:28px; }
+    header { 
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); 
+      color:#fff; 
+      padding:30px 20px; 
+      text-align:center; 
+      position: sticky; 
+      top: 0; 
+      z-index: 1000; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 { 
+      margin:0 0 8px 0; 
+      font-size:32px; 
+      font-weight:700;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+    }
+    header h1 i { font-size:28px; }
+    header p { 
+      margin:0; 
+      font-size:16px; 
+      opacity:0.95;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+    }
+    header p i { font-size:14px; }
     main { max-width:1000px; margin:20px auto; padding:10px; }
     .card { background:#fff; border:1px solid #ddd; border-radius:10px; padding:50px; margin:25px 0; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
     h2 { font-size:22px; margin:0 0 15px; color:#333; }
@@ -28,8 +58,82 @@
     .badge { display:inline-block; background:#fff7ed; color:#c2410c; border:1px solid #fdba74; padding:2px 8px; border-radius:999px; font-size:12px; margin-left:10px; }
     .prompt-media { margin:0 0 12px; }
     .prompt-media img { max-width:100%; height:auto; display:block; border-radius:6px; }
-    .prompt-audio { margin:0 0 12px; }
-    .prompt-audio audio { width:100%; max-width:320px; }
+    .prompt-audio { margin:0 0 12px; width:100%; }
+    .prompt-audio audio { 
+      width:100%; 
+      max-width:100%; 
+      height:50px;
+      border-radius:12px;
+      background:linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      outline:none;
+    }
+    .prompt-audio audio::-webkit-media-controls-panel {
+      background:linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+      border-radius:12px;
+    }
+    .prompt-audio audio::-webkit-media-controls-play-button {
+      background-color:#4f46e5;
+      border-radius:50%;
+      margin-right:10px;
+    }
+    .prompt-audio audio::-webkit-media-controls-current-time-display,
+    .prompt-audio audio::-webkit-media-controls-time-remaining-display {
+      color:#1e293b;
+      font-weight:500;
+      font-size:13px;
+    }
+    .prompt-audio audio::-webkit-media-controls-timeline {
+      background:#cbd5e1;
+      border-radius:2px;
+      height:4px;
+    }
+    .prompt-audio audio::-webkit-media-controls-timeline::-webkit-slider-thumb {
+      background:#4f46e5;
+      border-radius:50%;
+      width:12px;
+      height:12px;
+    }
+    .prompt-audio audio::-webkit-media-controls-volume-slider {
+      background:#cbd5e1;
+      border-radius:2px;
+      height:4px;
+    }
+    .prompt-audio audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
+      background:#4f46e5;
+      border-radius:50%;
+      width:10px;
+      height:10px;
+    }
+    .prompt-audio audio::-webkit-media-controls-mute-button {
+      background-color:transparent;
+    }
+    /* Dark mode para audio */
+    body.dark-mode .prompt-audio audio {
+      background:linear-gradient(135deg, #1f2937 0%, #374151 100%);
+    }
+    body.dark-mode .prompt-audio audio::-webkit-media-controls-panel {
+      background:linear-gradient(135deg, #1f2937 0%, #374151 100%);
+    }
+    body.dark-mode .prompt-audio audio::-webkit-media-controls-play-button {
+      background-color:#6366f1;
+    }
+    body.dark-mode .prompt-audio audio::-webkit-media-controls-current-time-display,
+    body.dark-mode .prompt-audio audio::-webkit-media-controls-time-remaining-display {
+      color:#e5e7eb;
+    }
+    body.dark-mode .prompt-audio audio::-webkit-media-controls-timeline {
+      background:#4b5563;
+    }
+    body.dark-mode .prompt-audio audio::-webkit-media-controls-timeline::-webkit-slider-thumb {
+      background:#6366f1;
+    }
+    body.dark-mode .prompt-audio audio::-webkit-media-controls-volume-slider {
+      background:#4b5563;
+    }
+    body.dark-mode .prompt-audio audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
+      background:#6366f1;
+    }
     /* sticky container para manter nota e progresso visíveis */
     .sticky-top { position: sticky; top: 72px; z-index: 999; padding: 8px 0; background: #f8fafc; box-shadow: 0 2px 5px rgba(0,0,0,0.06); }
     .sticky-top #scoreBox { margin: 10px; }
@@ -40,20 +144,71 @@
     
     /* botão WhatsApp */
     .wa-btn { background:#25D366; color:#fff; }
+    /* botão Reportar Erro */
+    .report-btn { background:#dc2626; color:#fff; }
+    /* botão Imprimir */
+    #btnPrint { background:#6366f1; color:#fff; }
+    /* Footer */
+    footer { background:#1e293b; color:#e2e8f0; padding:30px 20px; margin-top:40px; text-align:center; font-size:14px; }
+    footer a { color:#60a5fa; text-decoration:none; }
+    footer a:hover { text-decoration:underline; }
+    footer .credits { margin:10px 0; }
+    footer .credits i { margin:0 5px; }
+    /* Botão Dark Mode */
+    #btnDarkMode { position:fixed; top:20px; right:20px; z-index:1001; background:#374151; color:#fff; border:none; border-radius:50%; width:50px; height:50px; cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,0.2); transition:all 0.3s ease; display:flex; align-items:center; justify-content:center; }
+    #btnDarkMode:hover { background:#4b5563; transform:scale(1.1); }
+    #btnDarkMode i { font-size:20px; line-height:1; }
+    /* Dark Mode Styles */
+    body.dark-mode { background:#111827; color:#e5e7eb; }
+    body.dark-mode header { 
+      background: linear-gradient(135deg, #1f2937 0%, #374151 100%); 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    body.dark-mode .card { background:#1f2937; border-color:#374151; color:#e5e7eb; }
+    body.dark-mode .card h2 { color:#f3f4f6; }
+    body.dark-mode .sticky-top { background:#111827; }
+    body.dark-mode input.inp, body.dark-mode select.sel, body.dark-mode select { background:#374151; border-color:#4b5563; color:#e5e7eb; }
+    body.dark-mode input.inp:focus, body.dark-mode select:focus { border-color:#6366f1; outline:none; }
+    body.dark-mode .badge { background:#4b5563; color:#fbbf24; border-color:#6b7280; }
+    body.dark-mode .ok { background:#064e3b; color:#6ee7b7; }
+    body.dark-mode .bad { background:#7f1d1d; color:#fca5a5; }
+    body.dark-mode .progress-bar { background:#374151; }
+    body.dark-mode .sim-select { background:#374151; border-color:#4b5563; color:#e5e7eb; }
+    body.dark-mode #btnClear { background:#374151; color:#e5e7eb; }
+    body.dark-mode #btnClear:hover { background:#4b5563; }
+    body.dark-mode .report-btn { background:#991b1b; }
+    body.dark-mode .report-btn:hover { background:#b91c1c; }
+    body.dark-mode footer { background:#0f172a; }
+    body.dark-mode #btnTopo { background:linear-gradient(135deg,#374151,#4b5563); }
+    body.dark-mode #btnTopo:hover { background:linear-gradient(135deg,#4b5563,#6b7280); }
+    body.dark-mode #btnFinal { background:linear-gradient(135deg,#4b5563,#6b7280); }
+    body.dark-mode #btnFinal:hover { background:linear-gradient(135deg,#6b7280,#9ca3af); }
+    /* Estilos para impressão */
+    @media print {
+      header, .sticky-top, .actions, #btnTopo, #btnFinal, footer { display:none !important; }
+      .card { page-break-inside:avoid; margin:10px 0; }
+      body { background:#fff; }
+      .feedback { display:none !important; }
+      input, select { border:1px solid #000 !important; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Simulado Interactivo – Repaso I</h1>
-    <p>Responda e veja o feedback imediato.</p>
+    <h1><i class="fas fa-graduation-cap"></i> Simulado Interactivo – Repaso I</h1>
+    <p><i class="fas fa-check-double"></i> Responda e veja o feedback imediato.</p>
   </header>
+
+  <button id="btnDarkMode" onclick="toggleDarkMode()" title="Alternar modo escuro/claro" aria-label="Alternar modo escuro">
+    <i class="fas fa-moon"></i>
+  </button>
 
   <main>
     <div class="sticky-top">
-      <div id="scoreBox">Nota: 0%</div>
+      <div id="scoreBox"><i class="fas fa-star"></i> Nota: 0%</div>
       <div class="progress-bar"><div id="progress" class="progress-fill"></div></div>
       <div class="sim-selector">
-        <span style="font-weight:normal; font-size:14px; color:#555;">Simulado:</span>
+        <span style="font-weight:normal; font-size:14px; color:#555;"><i class="fas fa-list"></i> Simulado:</span>
         <select id="simSelect" class="sim-select">
           <option value="">Carregando simulados...</option>
         </select>
@@ -63,10 +218,24 @@
     <div id="quiz"></div>
 
     <div class="actions">      
-      <button id="btnClear" onclick="location.reload()">Novo Simulado</button>
-      <button id="btnShare" class="wa-btn" onclick="shareWhatsApp()">Compartilhar no WhatsApp</button>
+      <button id="btnClear" onclick="location.reload()"><i class="fas fa-redo"></i> Novo Simulado</button>
+      <button id="btnShare" class="wa-btn" onclick="shareWhatsApp()"><i class="fab fa-whatsapp"></i> Compartilhar no WhatsApp</button>
+      <button id="btnReport" class="report-btn" onclick="reportError()"><i class="fas fa-bug"></i> Reportar Erro</button>
+      <button id="btnPrint" onclick="window.print()"><i class="fas fa-print"></i> Imprimir / Salvar PDF</button>
     </div>
   </main>
+
+  <footer>
+    <div class="credits">
+      <p><strong>Desenvolvido por Diego Araujo</strong></p>
+      <p>
+        <a href="mailto:diegoaraujo@devysnc.com.br"><i class="fas fa-envelope"></i> diegoaraujo@devysnc.com.br</a> | 
+        <a href="https://devysnc.com.br" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> devysnc.com.br</a> | 
+        <a href="https://wa.me/5521995278672" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a> | 
+        <a href="https://instagram.com/diegoaraujo85" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+      </p>
+    </div>
+  </footer>
 
   <script>
     let totalQuestions = 0;
@@ -152,6 +321,41 @@
       } catch (e) {
         console.error('Falha ao compartilhar no WhatsApp', e);
         alert('Não foi possível abrir o compartilhamento.');
+      }
+    }
+
+    // Reportar erro ou bug via WhatsApp
+    function reportError() {
+      try {
+        const sel = document.getElementById('simSelect');
+        const currentSlug = sel ? (sel.value || 'N/A') : 'N/A';
+        const currentUrl = window.location.href;
+        const timestamp = new Date().toLocaleString('pt-BR');
+        const title = (document.querySelector('header h1')?.textContent || 'Simulado').trim();
+        
+        // Construir mensagem usando símbolos ASCII simples para melhor compatibilidade
+        const messageText = 
+          '*REPORTE DE ERRO - Simulado de Espanhol*\n\n' +
+          '*Simulado:* ' + title + ' (' + currentSlug + ')\n' +
+          '*URL:* ' + currentUrl + '\n' +
+          '*Data/Hora:* ' + timestamp + '\n\n' +
+          '*Tipo de problema:*\n' +
+          '[ ] Erro na formulação da pergunta\n' +
+          '[ ] Bug no sistema\n' +
+          '[ ] Problema com mídia (áudio/imagem/vídeo)\n' +
+          '[ ] Outro problema\n\n' +
+          '*Descrição do problema:*\n' +
+          '(Descreva o problema encontrado aqui)\n\n' +
+          '*Sugestão de correção (opcional):*\n' +
+          '(Se tiver uma sugestão, descreva aqui)';
+        
+        // Usar encodeURIComponent para codificar corretamente
+        const encodedMessage = encodeURIComponent(messageText);
+        
+        window.open('https://wa.me/5521995278672?text=' + encodedMessage, '_blank');
+      } catch (e) {
+        console.error('Falha ao abrir WhatsApp para reportar erro', e);
+        alert('Erro ao abrir WhatsApp. Por favor, entre em contato manualmente: 5521995278672');
       }
     }
 
@@ -265,7 +469,7 @@
           const normalizedSets = (simulado.groupsSets || []).map(set =>
             (set || []).map(g => ({
               ...g,
-              items: sortByNumero((g.items || g.perguntas || g.questions || []))
+              items: chooseVariants((g.items || g.perguntas || g.questions || []))
             }))
           );
           if (normalizedSets.length > 0) {
@@ -282,7 +486,7 @@
             ...simulado,
             groups: (simulado.groups || []).map(g => ({
               ...g,
-              items: sortByNumero((g.items || g.perguntas || g.questions || []))
+              items: chooseVariants((g.items || g.perguntas || g.questions || []))
             }))
           };
           // Seleciona group por parâmetro (index 1-based ou parte do título); se não houver, escolhe aleatoriamente
@@ -337,9 +541,12 @@
           const wrap = document.createElement('div');
           wrap.className = 'row';
           const number = q.numero ?? (idx + 1);
-          wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
-          wrap.dataset.msg = q.mensagem || '';
-          const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
+            wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
+            wrap.dataset.msg = q.mensagem || '';
+            if (q.validacao || q.validacion) {
+              wrap.dataset.validacao = JSON.stringify(q.validacao || q.validacion);
+            }
+            const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
           wrap.dataset.type = t;
           const imgSrc = q.imagem || q.image || q.imageUrl;
           const altText = q.altImagem || q.alt || q.legenda || ("Imagem da questao " + number);
@@ -371,7 +578,7 @@
             const name = `q-questions-${number}`;
             inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="checkbox" name="${name}" value="${opt}"> ${opt}</label>`).join('');
           } else {
-            inputHtml = `<input class="inp" type="text">`;
+            inputHtml = `<input class="inp" type="text" spellcheck="true" lang="es">`;
           }
           wrap.innerHTML = `
             <div class="num">${number}.</div>
@@ -394,7 +601,12 @@
           section.className = 'card';
           const title = group.title || `Seção ${gidx + 1}`;
           const badge = group.badge || '';
-          section.innerHTML = `<h2>${title}${badge ? ` <span class="badge">${badge}</span>` : ''}</h2>`;
+          const groupImgSrc = group.imagem || group.image || group.imageUrl || '';
+          const groupImgAlt = group.altImagem || group.alt || group.legenda || (title + ' - Imagem');
+          const groupImgHtml = groupImgSrc ? `<figure class="prompt-media" style="margin-bottom: 20px;"><img src="${groupImgSrc}" alt="${groupImgAlt}" loading="lazy" style="max-width: 100%; height: auto; border-radius: 6px;"></figure>` : '';
+          const groupAudioSrc = group.audio || group.audioUrl || group.audioLink || group.som || '';
+          const groupAudioHtml = groupAudioSrc ? `<figure class="prompt-audio" style="margin-bottom: 20px; width: 100%;"><audio controls preload="none" src="${groupAudioSrc}" style="width: 100%; max-width: 100%;"></audio></figure>` : '';
+          section.innerHTML = `<h2>${title}${badge ? ` <span class="badge">${badge}</span>` : ''}</h2>${groupImgHtml}${groupAudioHtml}`;
 
           const groupItems = group.items || group.perguntas || group.questions || [];
           groupItems.forEach((q, idx) => {
@@ -404,6 +616,9 @@
             const number = q.numero ?? idx + 1;
             wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
             wrap.dataset.msg = q.mensagem || '';
+            if (q.validacao || q.validacion) {
+              wrap.dataset.validacao = JSON.stringify(q.validacao || q.validacion);
+            }
             const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
             wrap.dataset.type = t;
             const imgSrc = q.imagem || q.image || q.imageUrl;
@@ -436,7 +651,7 @@
               const name = `q-${gidx}-${number}`;
               inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="checkbox" name="${name}" value="${opt}"> ${opt}</label>`).join('');
             } else {
-              inputHtml = `<input class="inp" type="text">`;
+              inputHtml = `<input class="inp" type="text" spellcheck="true" lang="es">`;
             }
 
             wrap.innerHTML = `
@@ -466,9 +681,12 @@
           const wrap = document.createElement('div');
           wrap.className = 'row';
           const number = q.numero ?? (idx + 1);
-          wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
-          wrap.dataset.msg = q.mensagem || '';
-          const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
+            wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
+            wrap.dataset.msg = q.mensagem || '';
+            if (q.validacao || q.validacion) {
+              wrap.dataset.validacao = JSON.stringify(q.validacao || q.validacion);
+            }
+            const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
           wrap.dataset.type = t;
           const imgSrc = q.imagem || q.image || q.imageUrl;
           const altText = q.altImagem || q.alt || q.legenda || ("Imagem da questao " + number);
@@ -500,7 +718,7 @@
               const name = `q-legacy-${number}`;
               inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="checkbox" name="${name}" value="${opt}"> ${opt}</label>`).join('');
             } else {
-              inputHtml = `<input class="inp" type="text">`;
+              inputHtml = `<input class="inp" type="text" spellcheck="true" lang="es">`;
             }
           wrap.innerHTML = `
             <div class="num">${number}.</div>
@@ -569,13 +787,25 @@
         return;
       }
 
-      const isCorrect = ans.some(a => normalize(a) === val);
-      if (isCorrect) {
-        feedback.innerHTML = '<div class="ok">✅ Correto</div>';
+      const msg = el.dataset.msg || '';
+      const isFreeAnswer = (ans || []).length === 0 || 
+                          normalize(msg).includes('resposta livre') || 
+                          normalize(msg).includes('respuesta libre') ||
+                          normalize(msg).includes('free answer');
+      
+      let isCorrect;
+      if (isFreeAnswer) {
+        // Para respostas livres, aceita qualquer resposta não vazia
+        isCorrect = true;
+        feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
       } else {
-        const corr = ans[0];
-        const msg = el.dataset.msg || '';
-        feedback.innerHTML = `<div class="bad">❌ Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+        isCorrect = ans.some(a => normalize(a) === val);
+        if (isCorrect) {
+          feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Correto</div>';
+        } else {
+          const corr = ans[0];
+          feedback.innerHTML = `<div class="bad"><i class="fas fa-times-circle"></i> Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+        }
       }
       el.dataset.checked = 'true';
       el.dataset.correct = isCorrect ? '1' : '0';
@@ -612,12 +842,26 @@
       const type = row.dataset.type || 'text';
       let val = '';
   
+      // Verificar se é resposta livre ANTES de processar a resposta
+      const msg = row.dataset.msg || '';
+      const isFreeAnswer = (ans || []).length === 0 || 
+                          normalize(msg).includes('resposta livre') || 
+                          normalize(msg).includes('respuesta libre') ||
+                          normalize(msg).includes('free answer');
+      
+      // Obter validação do dataset (se existir)
+      const validacao = row.dataset.validacao ? JSON.parse(row.dataset.validacao) : null;
+      
       if (type === 'text') {
         const inp = row.querySelector('input.inp');
         val = inp ? inp.value : '';
       } else if (type === 'select') {
         const sel = row.querySelector('select.sel') || row.querySelector('select');
         val = sel ? (sel.value || sel.options[sel.selectedIndex]?.text || '') : '';
+        // Remove "Seleccione..." se presente
+        if (val && (normalize(val) === normalize('Seleccione...') || normalize(val) === normalize('Selecione...'))) {
+          val = '';
+        }
       } else if (type === 'assoc') {
         const sels = Array.from(row.querySelectorAll('select.assoc-sel'));
         const vals = sels.map(sel => sel ? (sel.value || '') : '');
@@ -627,13 +871,29 @@
         }
         const valsNorm = vals.map(v => normalize(String(v)));
         const ansArr = (ans || []).map(a => normalize(String(a)));
-        const isCorrect = ansArr.length === valsNorm.length && ansArr.every((a, i) => a === valsNorm[i]);
-        if (isCorrect) {
-          feedback.innerHTML = '<div class="ok">✅ Correto</div>';
+        const msg = row.dataset.msg || '';
+        const isFreeAnswer = (ans || []).length === 0 || 
+                            normalize(msg).includes('resposta livre') || 
+                            normalize(msg).includes('respuesta libre') ||
+                            normalize(msg).includes('free answer');
+        
+        let isCorrect;
+        if (isFreeAnswer) {
+          // Para respostas livres, aceita qualquer resposta não vazia
+          isCorrect = valsNorm.every(v => v.length > 0);
+          if (isCorrect) {
+            feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
+          } else {
+            feedback.innerHTML = '<div class="bad"><i class="fas fa-times-circle"></i> Complete todas as associações</div>';
+          }
         } else {
-          const corr = (ans || []).join(', ');
-          const msg = row.dataset.msg || '';
-          feedback.innerHTML = `<div class=\"bad\">❌ Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+          isCorrect = ansArr.length === valsNorm.length && ansArr.every((a, i) => a === valsNorm[i]);
+          if (isCorrect) {
+            feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Correto</div>';
+          } else {
+            const corr = (ans || []).join(', ');
+            feedback.innerHTML = `<div class=\"bad\"><i class="fas fa-times-circle"></i> Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+          }
         }
         row.dataset.checked = 'true';
         row.dataset.correct = isCorrect ? '1' : '0';
@@ -647,34 +907,199 @@
         }
         const valsNorm = vals.map(v => normalize(String(v))).sort();
         const ansArr = (ans || []).map(a => normalize(String(a))).sort();
-        const isCorrect = ansArr.length === valsNorm.length && ansArr.every((a, i) => a === valsNorm[i]);
-        if (isCorrect) {
-          feedback.innerHTML = '<div class=\"ok\">✅ Correto</div>';
+        const msg = row.dataset.msg || '';
+        const isFreeAnswer = (ans || []).length === 0 || 
+                            normalize(msg).includes('resposta livre') || 
+                            normalize(msg).includes('respuesta libre') ||
+                            normalize(msg).includes('free answer');
+        
+        let isCorrect;
+        if (isFreeAnswer) {
+          // Para respostas livres, aceita qualquer seleção não vazia
+          isCorrect = vals.length > 0;
+          if (isCorrect) {
+            feedback.innerHTML = '<div class=\"ok\"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
+          } else {
+            feedback.innerHTML = '<div class=\"bad\"><i class="fas fa-times-circle"></i> Selecione pelo menos uma opção</div>';
+          }
         } else {
-          const corr = (ans || []).join(', ');
-          const msg = row.dataset.msg || '';
-          feedback.innerHTML = `<div class=\"bad\">❌ Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+          isCorrect = ansArr.length === valsNorm.length && ansArr.every((a, i) => a === valsNorm[i]);
+          if (isCorrect) {
+            feedback.innerHTML = '<div class=\"ok\"><i class="fas fa-check-circle"></i> Correto</div>';
+          } else {
+            const corr = (ans || []).join(', ');
+            feedback.innerHTML = `<div class=\"bad\"><i class="fas fa-times-circle"></i> Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+          }
         }
         row.dataset.checked = 'true';
         row.dataset.correct = isCorrect ? '1' : '0';
         return isCorrect;
+      } else if (type === 'select') {
+        const sel = row.querySelector('select.sel') || row.querySelector('select');
+        val = sel ? (sel.value || sel.options[sel.selectedIndex]?.text || '') : '';
+        // Remove "Seleccione..." se presente
+        if (normalize(val) === normalize('Seleccione...') || normalize(val) === normalize('Selecione...')) {
+          val = '';
+        }
       } else { // mc ou vf
         const checked = row.querySelector('input[type=radio]:checked');
         val = checked ? checked.value : '';
       }
 
       const nval = normalize(val);
-      if (!nval) {
-        return false;
-      }
-
-      const isCorrect = (ans || []).some(a => normalize(String(a)) === nval);
-      if (isCorrect) {
-        feedback.innerHTML = '<div class="ok">✅ Correto</div>';
+      
+      let isCorrect;
+      if (isFreeAnswer) {
+        // Para respostas livres, aceita qualquer resposta não vazia
+        if (!nval) {
+          return false; // Ainda precisa ter algo digitado
+        }
+        
+        // Validação genérica se configurada no JSON
+        if (validacao) {
+          let isValid = false;
+          let errorMsg = '';
+          
+          if (validacao.tipo === 'lista' && Array.isArray(validacao.valores)) {
+            // Validação por lista de valores válidos
+            isValid = validacao.valores.some(v => {
+              const vNorm = normalize(String(v));
+              return vNorm === nval || nval.includes(vNorm) || vNorm.includes(nval);
+            });
+            if (!isValid) {
+              errorMsg = validacao.mensagem || `Por favor, escriba una respuesta válida. Opciones: ${validacao.valores.join(', ')}`;
+            }
+          } else if (validacao.tipo === 'minLength' && validacao.min) {
+            // Validação por tamanho mínimo
+            isValid = nval.length >= validacao.min;
+            if (!isValid) {
+              errorMsg = validacao.mensagem || `La respuesta debe tener al menos ${validacao.min} caracteres.`;
+            }
+          } else if (validacao.tipo === 'regex' && validacao.patron) {
+            // Validação por expressão regular
+            try {
+              const regex = new RegExp(validacao.patron, validacao.flags || 'i');
+              isValid = regex.test(val);
+              if (!isValid) {
+                errorMsg = validacao.mensagem || 'La respuesta no cumple con el formato requerido.';
+              }
+            } catch (e) {
+              console.error('Error en regex de validación:', e);
+              isValid = true; // Se houver erro no regex, aceita
+            }
+          } else if (validacao.tipo === 'spellcheck') {
+            // Validação ortográfica usando LanguageTool API (assíncrona)
+            // Mostrar feedback de "verificando" e fazer validação em background
+            feedback.innerHTML = '<div class="info"><i class="fas fa-spinner fa-spin"></i> Verificando ortografía...</div>';
+            
+            // Validação assíncrona
+            (async () => {
+              try {
+                const words = val.trim().split(/\s+/).filter(w => w.length > 2);
+                if (words.length === 0) {
+                  isCorrect = true;
+                  feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
+                  row.dataset.checked = 'true';
+                  row.dataset.correct = '1';
+                  updateScore();
+                  return;
+                }
+                
+                // Usar API pública do LanguageTool (gratuita, com limite de requisições)
+                const response = await fetch(`https://api.languagetool.org/v2/check`, {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                  },
+                  body: `text=${encodeURIComponent(val)}&language=es&enabledOnly=false`
+                });
+                
+                if (response.ok) {
+                  const data = await response.json();
+                  const errors = data.matches || [];
+                  
+                  // Filtrar apenas erros ortográficos (não gramaticais)
+                  const spellingErrors = errors.filter(e => 
+                    e.rule && e.rule.category && 
+                    (e.rule.category.id === 'TYPOS' || e.rule.category.id === 'SPELLING')
+                  );
+                  
+                  if (spellingErrors.length > 0) {
+                    // Detalhar cada erro com palavra, contexto e sugestões
+                    const errorDetails = spellingErrors.map(e => {
+                      const word = val.substring(e.offset, e.offset + e.length);
+                      const context = val.substring(Math.max(0, e.offset - 10), Math.min(val.length, e.offset + e.length + 10));
+                      const suggestions = (e.replacements || []).slice(0, 3).map(r => r.value).join(', ');
+                      const message = e.message || e.rule?.description || 'Error ortográfico';
+                      
+                      let detail = `<strong>"${word}"</strong>`;
+                      if (suggestions) {
+                        detail += ` → Sugerencias: ${suggestions}`;
+                      }
+                      if (message) {
+                        detail += ` (${message})`;
+                      }
+                      return detail;
+                    });
+                    
+                    isCorrect = false;
+                    const baseMsg = validacao.mensagem || 'Se detectaron errores ortográficos:';
+                    errorMsg = `${baseMsg}<br><small style="display: block; margin-top: 8px; line-height: 1.6;">${errorDetails.join('<br>')}</small>`;
+                    
+                    feedback.innerHTML = `<div class="bad"><i class="fas fa-times-circle"></i> ${errorMsg}</div>`;
+                    row.dataset.checked = 'true';
+                    row.dataset.correct = '0';
+                  } else {
+                    isCorrect = true;
+                    feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
+                    row.dataset.checked = 'true';
+                    row.dataset.correct = '1';
+                  }
+                } else {
+                  // Se a API falhar, aceita a resposta (não bloqueia)
+                  isCorrect = true;
+                  feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
+                  row.dataset.checked = 'true';
+                  row.dataset.correct = '1';
+                }
+              } catch (e) {
+                console.error('Error en verificación ortográfica:', e);
+                // Se a API falhar, aceita a resposta (não bloqueia)
+                isCorrect = true;
+                feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
+                row.dataset.checked = 'true';
+                row.dataset.correct = '1';
+              }
+              
+              updateScore();
+            })();
+            
+            // Retornar true temporariamente enquanto verifica (será atualizado assincronamente)
+            return true;
+          }
+          
+          if (!isValid && errorMsg && validacao.tipo !== 'spellcheck') {
+            isCorrect = false;
+            feedback.innerHTML = `<div class="bad"><i class="fas fa-times-circle"></i> ${errorMsg}</div>`;
+            row.dataset.checked = 'true';
+            row.dataset.correct = '0';
+            return false;
+          }
+        }
+        
+        isCorrect = true;
+        feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
       } else {
-        const corr = (ans || [])[0] ?? '';
-        const msg = row.dataset.msg || '';
-        feedback.innerHTML = `<div class="bad">❌ Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+        if (!nval) {
+          return false;
+        }
+        isCorrect = (ans || []).some(a => normalize(String(a)) === nval);
+        if (isCorrect) {
+          feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Correto</div>';
+        } else {
+          const corr = (ans || [])[0] ?? '';
+          feedback.innerHTML = `<div class="bad"><i class="fas fa-times-circle"></i> Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
+        }
       }
       row.dataset.checked = 'true';
       row.dataset.correct = isCorrect ? '1' : '0';
@@ -682,6 +1107,43 @@
     }
 
     loadSimulado();
+    
+    // Dark Mode Toggle
+    function toggleDarkMode() {
+      const body = document.body;
+      const btn = document.getElementById('btnDarkMode');
+      const icon = btn.querySelector('i');
+      
+      body.classList.toggle('dark-mode');
+      const isDark = body.classList.contains('dark-mode');
+      
+      if (isDark) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    }
+    
+    // Carregar preferência de dark mode
+    function loadDarkModePreference() {
+      const darkMode = localStorage.getItem('darkMode');
+      const body = document.body;
+      const btn = document.getElementById('btnDarkMode');
+      const icon = btn.querySelector('i');
+      
+      if (darkMode === 'enabled') {
+        body.classList.add('dark-mode');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      }
+    }
+    
+    // Carregar preferência ao iniciar
+    loadDarkModePreference();
   </script>
   <script>
   // Ajuste dinâmico: posiciona a barra de progresso sticky logo abaixo do header
@@ -697,20 +1159,20 @@
     window.addEventListener('resize', updateStickyTop);
   })();
   </script>
-  <!-- Botão flutuante: Ir ao topo -->
+  <!-- Botões flutuantes: Ir ao topo e Ir ao final -->
   <script>
   (function(){
-    const btn = document.createElement('button');
-    btn.id = 'btnTopo';
-    btn.type = 'button';
-    btn.setAttribute('aria-label', 'Ir ao topo');
-    btn.title = 'Ir ao topo';
-    // Ícone SVG seta para cima
-    btn.innerHTML = '<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z" fill="currentColor"></path></svg>';
-    Object.assign(btn.style, {
+    // Botão Ir ao Topo
+    const btnTopo = document.createElement('button');
+    btnTopo.id = 'btnTopo';
+    btnTopo.type = 'button';
+    btnTopo.setAttribute('aria-label', 'Ir ao topo');
+    btnTopo.title = 'Ir ao topo';
+    btnTopo.innerHTML = '<i class="fas fa-arrow-up" aria-hidden="true"></i>';
+    Object.assign(btnTopo.style, {
       position: 'fixed',
       right: '20px',
-      bottom: '20px',
+      bottom: '80px',
       zIndex: '9999',
       width: '56px',
       height: '56px',
@@ -723,15 +1185,56 @@
       cursor: 'pointer',
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      transition: 'all 0.3s ease'
     });
-    // Mostrar apenas após rolar um pouco
-    btn.style.display = 'none';
+    
+    // Botão Ir ao Final
+    const btnFinal = document.createElement('button');
+    btnFinal.id = 'btnFinal';
+    btnFinal.type = 'button';
+    btnFinal.setAttribute('aria-label', 'Ir ao final');
+    btnFinal.title = 'Ir ao final';
+    btnFinal.innerHTML = '<i class="fas fa-arrow-down" aria-hidden="true"></i>';
+    Object.assign(btnFinal.style, {
+      position: 'fixed',
+      right: '20px',
+      bottom: '20px',
+      zIndex: '9999',
+      width: '56px',
+      height: '56px',
+      padding: '0',
+      borderRadius: '50%',
+      background: 'linear-gradient(135deg,#6366f1,#8b5cf6)',
+      color: '#fff',
+      border: 'none',
+      boxShadow: '0 6px 14px rgba(0,0,0,0.2)',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      transition: 'all 0.3s ease'
+    });
+    
+    // Mostrar botões apenas após rolar um pouco
+    btnTopo.style.display = 'none';
+    btnFinal.style.display = 'none';
+    
     let ticking = false;
     const onScroll = () => {
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          btn.style.display = window.scrollY > 200 ? 'block' : 'none';
+          const scrollY = window.scrollY;
+          const windowHeight = window.innerHeight;
+          const documentHeight = document.documentElement.scrollHeight;
+          const isNearBottom = (scrollY + windowHeight) >= (documentHeight - 100);
+          
+          // Mostrar botão topo se rolou mais de 200px
+          btnTopo.style.display = scrollY > 200 ? 'flex' : 'none';
+          
+          // Mostrar botão final se não estiver perto do final
+          btnFinal.style.display = !isNearBottom && scrollY > 200 ? 'flex' : 'none';
+          
           ticking = false;
         });
         ticking = true;
@@ -739,14 +1242,23 @@
     };
     window.addEventListener('scroll', onScroll, { passive: true });
   
-    btn.addEventListener('mouseenter', () => { btn.style.transform = 'scale(1.06)'; });
-    btn.addEventListener('mouseleave', () => { btn.style.transform = 'scale(1)'; });
+    // Efeitos hover
+    btnTopo.addEventListener('mouseenter', () => { btnTopo.style.transform = 'scale(1.06)'; });
+    btnTopo.addEventListener('mouseleave', () => { btnTopo.style.transform = 'scale(1)'; });
+    btnFinal.addEventListener('mouseenter', () => { btnFinal.style.transform = 'scale(1.06)'; });
+    btnFinal.addEventListener('mouseleave', () => { btnFinal.style.transform = 'scale(1)'; });
   
-    btn.addEventListener('click', () => {
+    // Ações dos botões
+    btnTopo.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+    
+    btnFinal.addEventListener('click', () => {
+      window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+    });
   
-    document.body.appendChild(btn);
+    document.body.appendChild(btnTopo);
+    document.body.appendChild(btnFinal);
   })();
   </script>
 </body>
