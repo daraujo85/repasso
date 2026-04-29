@@ -310,6 +310,7 @@
     <div class="sticky-top" style="position: sticky; top: 0; background: #f8fafc; z-index: 100; padding: 10px 0;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin: 10px;">
         <div id="timerBox" style="font-weight:bold; font-size:18px; color:#6366f1;"><i class="fas fa-clock"></i> <span id="timer">00:00</span></div>
+        <div id="topPlayer" class="top-player-badge"></div>
         <div id="scoreBox" style="font-weight:bold; font-size:20px;"><i class="fas fa-star"></i> Nota: 0%</div>
       </div>
       <div class="progress-bar">
@@ -705,7 +706,8 @@ ${errorSummary}`;
     function showSuccessModal() {
       const modal = document.getElementById('successModal'); if (modal.dataset.shown === 'true') return;
       modal.dataset.shown = 'true'; stopTimer();
-      document.getElementById('finalTime').innerText = formatTime(Math.floor((Date.now()-startTime)/1000));
+      elapsedTime = Math.floor((Date.now()-startTime)/1000);
+      document.getElementById('finalTime').innerText = formatTime(elapsedTime);
       
       // Pre-encher dados do ranking se existirem no localStorage
       const savedName = localStorage.getItem('rankName');
@@ -846,7 +848,26 @@ ${errorSummary}`;
       sel.onchange = () => { location.href = `?slug=${sel.value}`; };
     }
 
-    loadDarkModePreference(); loadSimulado();
+    async function updateTopPlayerDisplay() {
+      const slug = getSlugParam();
+      const badge = document.getElementById('topPlayer');
+      if (!badge) return;
+      try {
+        const response = await fetch(`ranking.php?action=get_top_player&slug=${encodeURIComponent(slug)}`);
+        const data = await response.json();
+        if (data.success && data.top) {
+          badge.innerHTML = `<i class="fas fa-crown" style="color:#f59e0b;"></i> <span>Top: <strong>${data.top.name}</strong> (${data.top.accuracy}%)</span>`;
+          badge.style.display = 'flex';
+        } else {
+          badge.style.display = 'none';
+        }
+      } catch (e) {
+        console.error('Error al cargar top player:', e);
+        badge.style.display = 'none';
+      }
+    }
+
+    loadDarkModePreference(); loadSimulado(); updateTopPlayerDisplay();
   </script>
 </body>
 </html>

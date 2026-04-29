@@ -30,6 +30,12 @@ if exist "questoes.json" (
     echo ⚠️  questoes.json não encontrado
 )
 
+if exist "ranking.php" (
+    copy "ranking.php" "%TEMP_DIR%\" >nul
+) else (
+    echo ⚠️  ranking.php não encontrado
+)
+
 if exist ".htaccess" (
     copy ".htaccess" "%TEMP_DIR%\" >nul
 ) else (
@@ -58,6 +64,7 @@ echo.
 echo 📊 Arquivos incluídos no ZIP:
 echo    - repaso.html
 echo    - questoes.json
+echo    - ranking.php
 echo    - .htaccess
 echo    - media/ (pasta completa)
 echo.
@@ -68,11 +75,12 @@ echo    - start_server.bat
 echo    - verificar_projeto.py
 echo    - deploy.sh
 echo    - deploy.bat
+echo    - Dockerfile
+echo    - docker-compose.yml
 echo    - .gitignore
 echo.
 echo 💡 Próximos passos:
 echo    1. Descompacte %ZIP_NAME% no servidor
-echo    2. Certifique-se de que o servidor suporta .htaccess (Apache)
+echo    2. Certifique-se de que o servidor suporta .htaccess (Apache) e PHP
 
 pause
-
