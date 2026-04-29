@@ -11367,7 +11367,8 @@
                   "está",
                   "esta"
                 ],
-                "tipo": "text"
+                "tipo": "text",
+                "imagem": "https://st.depositphotos.com/1074442/1909/i/450/depositphotos_19098265-stock-photo-dirty-dishes.jpg"	
               },
               {
                 "numero": 2,
@@ -11382,7 +11383,8 @@
                   "está",
                   "es",
                   "están"
-                ]
+                ],
+                "imagem": "https://netdiario.com.br/wp-content/uploads/2024/07/zcontrata-professores-faetec.jpg"
               },
               {
                 "numero": 3,
@@ -11478,7 +11480,1358 @@
                 "gabarito": [
                   "son"
                 ],
+                "tipo": "text",
+                "imagem": "https://imagens.ebc.com.br/HB0Pt0cz_R65Z_hAM5fOC-AzAR8=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2020-10-26t105904z_1_lynxmpeg9p0v1_rtroptp_4_chile-plebiscito-constituicao.jpg?itok=wWj7moUm"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "1) Imperativo afirmativo de los verbos regulares",
+            "badge": "Imperativo",
+            "imagem": "media/images/imperativo-afirmativo.png",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "CANTAR (tú)",
+                "gabarito": [
+                  "canta"
+                ],
                 "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "CANTAR (usted)",
+                "gabarito": [
+                  "cante"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "canta",
+                  "cante",
+                  "cantas"
+                ]
+              },
+              {
+                "numero": 3,
+                "enunciado": "LEER (tú)",
+                "gabarito": [
+                  "lee"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "lee",
+                  "lea",
+                  "lees"
+                ]
+              },
+              {
+                "numero": 4,
+                "enunciado": "LEER (usted)",
+                "gabarito": [
+                  "lea"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "VIVIR (tú)",
+                "gabarito": [
+                  "vive"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "vive",
+                  "viva",
+                  "vives"
+                ]
+              },
+              {
+                "numero": 6,
+                "enunciado": "VIVIR (usted)",
+                "gabarito": [
+                  "viva"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "vive",
+                  "viva",
+                  "vivas"
+                ]
+              },
+              {
+                "numero": 7,
+                "enunciado": "ESCRIBIR (tú)",
+                "gabarito": [
+                  "escribe"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "ESCRIBIR (usted)",
+                "gabarito": [
+                  "escriba"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "escribe",
+                  "escriba",
+                  "escribes"
+                ]
+              },
+              {
+                "numero": 9,
+                "enunciado": "ESCUCHAR (tú)",
+                "gabarito": [
+                  "escucha"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "escucha",
+                  "escuche",
+                  "escuchas"
+                ]
+              },
+              {
+                "numero": 10,
+                "enunciado": "ESCUCHAR (usted)",
+                "gabarito": [
+                  "escuche"
+                ],
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "2) Completa la tabla de imperativos",
+            "badge": "Imperativo",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "(tú) sal / (Ud.) ________",
+                "gabarito": [
+                  "salga"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "di / ________",
+                "gabarito": [
+                  "diga"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "diga",
+                  "dice",
+                  "dices"
+                ]
+              },
+              {
+                "numero": 3,
+                "enunciado": "ten / ________",
+                "gabarito": [
+                  "tenga"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "tenga",
+                  "tiene",
+                  "ten"
+                ]
+              },
+              {
+                "numero": 4,
+                "enunciado": "ve / ________",
+                "gabarito": [
+                  "vaya"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "pon / ________",
+                "gabarito": [
+                  "ponga"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "ponga",
+                  "pone",
+                  "pon"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "3) Forma el imperativo",
+            "badge": "Imperativo",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Salir / de casa. (tú)",
+                "gabarito": [
+                  "Sal de casa"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Leer / el texto. (usted)",
+                "gabarito": [
+                  "Lea el texto"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Escribir / una carta. (tú)",
+                "gabarito": [
+                  "Escribe una carta"
+                ],
+                "tipo": "text",
+                "imagem": "https://img.freepik.com/fotos-gratis/mulher-caucasiana-escrevendo-uma-carta_53876-47106.jpg"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Escuchar / música. (usted)",
+                "gabarito": [
+                  "Escuche música",
+                  "Escuche musica"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Estudiar / para el examen. (tú)",
+                "gabarito": [
+                  "Estudia para el examen"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Abrir / la puerta. (usted)",
+                "gabarito": [
+                  "Abra la puerta"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Cerrar / la ventana. (tú)",
+                "gabarito": [
+                  "Cierra la ventana"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Traer / un café. (usted)",
+                "gabarito": [
+                  "Traiga un café",
+                  "Traiga un cafe"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 9,
+                "enunciado": "Ir / al supermercado. (tú)",
+                "gabarito": [
+                  "Ve al supermercado"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Venir / pronto. (tú)",
+                "gabarito": [
+                  "Ven pronto"
+                ],
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "4) Completa las frases con el imperativo afirmativo",
+            "badge": "Imperativo",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Por favor, __________ el libro en la página 10. (abrir – usted)",
+                "gabarito": [
+                  "Abra"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "__________ la comida ahora. (preparar – tú)",
+                "gabarito": [
+                  "Prepara"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "Prepara",
+                  "Prepare",
+                  "Preparas"
+                ]
+              },
+              {
+                "numero": 3,
+                "enunciado": "__________ la basura. (sacar – tú)",
+                "gabarito": [
+                  "Saca"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "Saca",
+                  "Saque",
+                  "Sacas"
+                ]
+              },
+              {
+                "numero": 4,
+                "enunciado": "__________ el coche. (lavar – usted)",
+                "gabarito": [
+                  "Lave"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "__________ la ropa. (planchar – usted)",
+                "gabarito": [
+                  "Planche"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "Planche",
+                  "Plancha",
+                  "Planchas"
+                ]
+              },
+              {
+                "numero": 6,
+                "enunciado": "__________ las luces. (apagar – tú)",
+                "gabarito": [
+                  "Apaga"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "Apaga",
+                  "Apague",
+                  "Apagas"
+                ]
+              },
+              {
+                "numero": 7,
+                "enunciado": "Juan, __________ la mesa. (poner)",
+                "gabarito": [
+                  "pon"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Señor, __________ el regalo. (traer)",
+                "gabarito": [
+                  "traiga"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "traiga",
+                  "trae",
+                  "traes"
+                ]
+              },
+              {
+                "numero": 9,
+                "enunciado": "Chica, __________ el informe. (escribir)",
+                "gabarito": [
+                  "escribe"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "escribe",
+                  "escriba",
+                  "escribes"
+                ]
+              },
+              {
+                "numero": 10,
+                "enunciado": "Clara, __________ el problema. (resolver - usted)",
+                "gabarito": [
+                  "resuelva"
+                ],
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "5) Transforma las frases (¿Puedes...?)",
+            "badge": "Imperativo",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Lee el libro. / ¿________________________________?",
+                "gabarito": [
+                  "Puedes leer el libro",
+                  "¿Puedes leer el libro?"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escriba la carta, por favor. / ¿________________________________?",
+                "gabarito": [
+                  "Puede escribir la carta, por favor",
+                  "¿Puede escribir la carta, por favor?"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Abre la puerta. / ¿________________________________?",
+                "gabarito": [
+                  "Puedes abrir la puerta",
+                  "¿Puedes abrir la puerta?"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Cierre la ventana. / ¿________________________________?",
+                "gabarito": [
+                  "Puede cerrar la ventana",
+                  "¿Puede cerrar la ventana?"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Traiga un café. / ¿________________________________?",
+                "gabarito": [
+                  "Puede traer un café",
+                  "¿Puede traer un cafe?"
+                ],
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "6) Completa con ESTAR (presente) + GERUNDIO",
+            "badge": "Gerundio",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "María ____________________ un libro. (leer)",
+                "gabarito": [
+                  "está leyendo",
+                  "esta leyendo"
+                ],
+                "tipo": "text",
+                "imagem": "https://media.istockphoto.com/id/2128519716/es/foto/una-ni%C3%B1a-est%C3%A1-leyendo-un-libro-en-una-mesa.jpg?s=612x612&w=0&k=20&c=3HBzZCjw3PInYhDmXclh8fkVYgY84CYL_7pUvknGJV8="
+              },
+              {
+                "numero": 2,
+                "enunciado": "Los niños ____________________ la televisión. (ver)",
+                "gabarito": [
+                  "están viendo",
+                  "estan viendo"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "están viendo",
+                  "estoy viendo",
+                  "está viendo"
+                ],
+                "imagem": "https://jennyzegarra.wordpress.com/wp-content/uploads/2015/06/opciones-de-tv-para-ninos-de-2-a-12-anos_4x3.jpg"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Yo ____________________ música. (escuchar)",
+                "gabarito": [
+                  "estoy escuchando"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "estoy escuchando",
+                  "está escuchando",
+                  "están escuchando"
+                ],
+                "imagem": "https://muyinteresante.okdiario.com/wp-content/uploads/sites/5/2023/08/11/64d643b536f12.jpeg"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Nosotros ____________________ fútbol. (jugar)",
+                "gabarito": [
+                  "estamos jugando"
+                ],
+                "tipo": "text",
+                "imagem": "https://img.freepik.com/fotos-gratis/perto-da-bola-de-futebol-no-campo-verde-os-jogadores-vao-jogar-juntos_496169-597.jpg?semt=ais_hybrid&w=740&q=80"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Tú ____________________ una carta. (escribir)",
+                "gabarito": [
+                  "estás escribiendo",
+                  "estas escribiendo"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "estás escribiendo",
+                  "está escribiendo",
+                  "están escribiendo"
+                ]
+              },
+              {
+                "numero": 6,
+                "enunciado": "Ellos ____________________ por teléfono. (hablar)",
+                "gabarito": [
+                  "están hablando",
+                  "estan hablando"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "están hablando",
+                  "estamos hablando",
+                  "está hablando"
+                ]
+              },
+              {
+                "numero": 7,
+                "enunciado": "El gato ____________________ en el sofá. (dormir)",
+                "gabarito": [
+                  "está durmiendo",
+                  "esta durmiendo"
+                ],
+                "tipo": "text",
+                "imagem": "https://www.tiendanimal.es/articulos/wp-content/uploads/2020/10/por-que-mi-gato-orina-en-el-sofa-y-como-evitarlo.jpg"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Ella ____________________ un cuento. (contar)",
+                "gabarito": [
+                  "está contando",
+                  "esta contando"
+                ],
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "7) Completa con el verbo SER o ESTAR",
+            "badge": "Ser o Estar",
+            "imagem": "media/images/hay-esta-estan.png",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "La sopa __________ muy caliente.",
+                "gabarito": [
+                  "está",
+                  "esta"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Mi amigo __________ de España.",
+                "gabarito": [
+                  "es"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "es",
+                  "está",
+                  "son"
+                ]
+              },
+              {
+                "numero": 3,
+                "enunciado": "Los libros __________ en la estantería.",
+                "gabarito": [
+                  "están",
+                  "estan"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "están",
+                  "son",
+                  "es"
+                ]
+              },
+              {
+                "numero": 4,
+                "enunciado": "Esta película __________ muy interesante.",
+                "gabarito": [
+                  "es"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "La ventana __________ abierta.",
+                "gabarito": [
+                  "está",
+                  "esta"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "está",
+                  "es",
+                  "están"
+                ],
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_le3ZrcBdnvUpKAQj8F-uPqIRFHQLjjn7YQ&s"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Nosotros __________ cansados después del trabajo.",
+                "gabarito": [
+                  "estamos"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "estamos",
+                  "somos",
+                  "están"
+                ],
+                "imagem": "https://hips.hearstapps.com/hmg-prod/images/cansancio-cronico-causas-tratamiento-1637066561.jpg?crop=1.00xw:0.847xh;0,0"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Tú __________ muy inteligente.",
+                "gabarito": [
+                  "eres"
+                ],
+                "tipo": "text",
+                "imagem": "https://c.files.bbci.co.uk/0D11/production/_100354330_inteligente02.png"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Ellos __________ en el cine ahora.",
+                "gabarito": [
+                  "están",
+                  "estan"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "están",
+                  "son",
+                  "es"
+                ],
+                "imagem": "https://img.freepik.com/fotos-premium/exibicao-noturna-de-filmes-um-grupo-de-pessoas-assistindo-a-um-filme-em-uma-elegante-sala-de-cinema_307890-10611.jpg"
+              },
+              {
+                "numero": 9,
+                "enunciado": "El cielo __________ azul hoy.",
+                "gabarito": [
+                  "está",
+                  "esta"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "está",
+                  "es",
+                  "están"
+                ],
+                "imagem": "https://img.freepik.com/fotos-gratis/nuvem-branca-no-ceu-azul_1203-9362.jpg?semt=ais_hybrid&w=740&q=80"
+              },
+              {
+                "numero": 10,
+                "enunciado": "La mesa __________ de madera.",
+                "gabarito": [
+                  "es"
+                ],
+                "tipo": "text",
+                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0e3ORtZtwTr6t4EmLTAaL4bUE_evxReQmHQ&s"	
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "1) Imperativo afirmativo de los verbos regulares",
+            "badge": "Imperativo",
+            "imagem": "media/images/imperativo-afirmativo.png",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "HABLAR (tú)",
+                "gabarito": [
+                  "habla"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "HABLAR (usted)",
+                "gabarito": [
+                  "hable"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "habla",
+                  "hable",
+                  "hablas"
+                ]
+              },
+              {
+                "numero": 3,
+                "enunciado": "COMER (tú)",
+                "gabarito": [
+                  "come"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "come",
+                  "coma",
+                  "comes"
+                ]
+              },
+              {
+                "numero": 4,
+                "enunciado": "COMER (usted)",
+                "gabarito": [
+                  "coma"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "SUBIR (tú)",
+                "gabarito": [
+                  "sube"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "sube",
+                  "suba",
+                  "subes"
+                ]
+              },
+              {
+                "numero": 6,
+                "enunciado": "SUBIR (usted)",
+                "gabarito": [
+                  "suba"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "sube",
+                  "suba",
+                  "subas"
+                ]
+              },
+              {
+                "numero": 7,
+                "enunciado": "LIMPIAR (tú)",
+                "gabarito": [
+                  "limpia"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "LIMPIAR (usted)",
+                "gabarito": [
+                  "limpie"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "limpia",
+                  "limpie",
+                  "limpias"
+                ]
+              },
+              {
+                "numero": 9,
+                "enunciado": "APRENDER (tú)",
+                "gabarito": [
+                  "aprende"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "aprende",
+                  "aprenda",
+                  "aprendes"
+                ]
+              },
+              {
+                "numero": 10,
+                "enunciado": "APRENDER (usted)",
+                "gabarito": [
+                  "aprenda"
+                ],
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "2) Completa la tabla de imperativos",
+            "badge": "Imperativo",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "(tú) haz / (Ud.) ________",
+                "gabarito": [
+                  "haga"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "pon / ________",
+                "gabarito": [
+                  "ponga"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "ponga",
+                  "pone",
+                  "pon"
+                ]
+              },
+              {
+                "numero": 3,
+                "enunciado": "ven / ________",
+                "gabarito": [
+                  "venga"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "venga",
+                  "viene",
+                  "ven"
+                ]
+              },
+              {
+                "numero": 4,
+                "enunciado": "oye / ________",
+                "gabarito": [
+                  "oiga"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "trae / ________",
+                "gabarito": [
+                  "traiga"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "traiga",
+                  "trae",
+                  "traes"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "3) Forma el imperativo",
+            "badge": "Imperativo",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Comer / la manzana. (tú)",
+                "gabarito": [
+                  "Come la manzana"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Beber / el agua. (usted)",
+                "gabarito": [
+                  "Beba el agua"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Limpiar / el cuarto. (tú)",
+                "gabarito": [
+                  "Limpia el cuarto"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Subir / las escaleras. (usted)",
+                "gabarito": [
+                  "Suba las escaleras"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Cantar / una canción. (tú)",
+                "gabarito": [
+                  "Canta una canción",
+                  "Canta una cancion"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Esperar / un momento. (usted)",
+                "gabarito": [
+                  "Espere un momento"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Mirar / la foto. (tú)",
+                "gabarito": [
+                  "Mira la foto"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Buscar / las llaves. (usted)",
+                "gabarito": [
+                  "Busque las llaves"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 9,
+                "enunciado": "Hacer / la tarea. (tú)",
+                "gabarito": [
+                  "Haz la tarea"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Poner / la radio. (tú)",
+                "gabarito": [
+                  "Pon la radio"
+                ],
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "4) Completa las frases con el imperativo afirmativo",
+            "badge": "Imperativo",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "__________ el ejercicio 5. (hacer – tú)",
+                "gabarito": [
+                  "Haz"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "__________ el vino. (probar – usted)",
+                "gabarito": [
+                  "Pruebe"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "Pruebe",
+                  "Prueba",
+                  "Pruebas"
+                ]
+              },
+              {
+                "numero": 3,
+                "enunciado": "__________ la verdad. (decir – tú)",
+                "gabarito": [
+                  "Di"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "Di",
+                  "Diga",
+                  "Dices"
+                ]
+              },
+              {
+                "numero": 4,
+                "enunciado": "__________ a la derecha. (girar – usted)",
+                "gabarito": [
+                  "Gire"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "__________ el autobús. (coger – usted)",
+                "gabarito": [
+                  "Coja"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "Coja",
+                  "Coge",
+                  "Coges"
+                ]
+              },
+              {
+                "numero": 6,
+                "enunciado": "__________ cuidado. (tener – tú)",
+                "gabarito": [
+                  "Ten"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "Ten",
+                  "Tenga",
+                  "Tienes"
+                ]
+              },
+              {
+                "numero": 7,
+                "enunciado": "Ana, __________ los platos. (lavar)",
+                "gabarito": [
+                  "lava"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Señor, __________ su nombre aquí. (escribir)",
+                "gabarito": [
+                  "escriba"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "escriba",
+                  "escribe",
+                  "escribes"
+                ]
+              },
+              {
+                "numero": 9,
+                "enunciado": "Pedro, __________ la televisión. (apagar)",
+                "gabarito": [
+                  "apaga"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "apaga",
+                  "apague",
+                  "apagas"
+                ]
+              },
+              {
+                "numero": 10,
+                "enunciado": "Doctor, __________ a mi oficina. (pasar)",
+                "gabarito": [
+                  "pase"
+                ],
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "5) Transforma las frases (¿Puedes...?)",
+            "badge": "Imperativo",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Come todo. / ¿________________________________?",
+                "gabarito": [
+                  "Puedes comer todo",
+                  "¿Puedes comer todo?"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Hable más alto, por favor. / ¿________________________________?",
+                "gabarito": [
+                  "Puede hablar más alto, por favor",
+                  "¿Puede hablar mas alto, por favor?"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Pasa el azúcar. / ¿________________________________?",
+                "gabarito": [
+                  "Puedes pasar el azúcar",
+                  "¿Puedes pasar el azucar?"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Siéntese aquí. / ¿________________________________?",
+                "gabarito": [
+                  "Puede sentarse aquí",
+                  "¿Puede sentarse aqui?"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Ayúdame con esto. / ¿________________________________?",
+                "gabarito": [
+                  "Puedes ayudarme con esto",
+                  "¿Puedes ayudarme con esto?"
+                ],
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "6) Completa con ESTAR (presente) + GERUNDIO",
+            "badge": "Gerundio",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Nosotros ____________________ el almuerzo. (preparar)",
+                "gabarito": [
+                  "estamos preparando"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Tú ____________________ muy rápido. (correr)",
+                "gabarito": [
+                  "estás corriendo",
+                  "estas corriendo"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "estás corriendo",
+                  "está corriendo",
+                  "están corriendo"
+                ]
+              },
+              {
+                "numero": 3,
+                "enunciado": "Ellos ____________________ en la piscina. (nadar)",
+                "gabarito": [
+                  "están nadando",
+                  "estan nadando"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "están nadando",
+                  "estamos nadando",
+                  "está nadando"
+                ]
+              },
+              {
+                "numero": 4,
+                "enunciado": "Yo ____________________ un correo. (escribir)",
+                "gabarito": [
+                  "estoy escribiendo"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 5,
+                "enunciado": "El niño ____________________. (llorar)",
+                "gabarito": [
+                  "está llorando",
+                  "esta llorando"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "está llorando",
+                  "estoy llorando",
+                  "están llorando"
+                ]
+              },
+              {
+                "numero": 6,
+                "enunciado": "Ustedes ____________________ mucho hoy. (trabajar)",
+                "gabarito": [
+                  "están trabajando",
+                  "estan trabajando"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "están trabajando",
+                  "estamos trabajando",
+                  "está trabajando"
+                ]
+              },
+              {
+                "numero": 7,
+                "enunciado": "Mi madre ____________________ las plantas. (regar)",
+                "gabarito": [
+                  "está regando",
+                  "esta regando"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Nosotras ____________________ para el examen. (estudiar)",
+                "gabarito": [
+                  "estamos estudiando"
+                ],
+                "tipo": "text"
+              }
+            ]
+          },
+          {
+            "title": "7) Completa con el verbo SER o ESTAR",
+            "badge": "Ser o Estar",
+            "imagem": "media/images/hay-esta-estan.png",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "El profesor __________ en el aula.",
+                "gabarito": [
+                  "está",
+                  "esta"
+                ],
+                "tipo": "text"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Mis padres __________ médicos.",
+                "gabarito": [
+                  "son"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "son",
+                  "están",
+                  "es"
+                ],
+                "imagem": "https://static.wixstatic.com/media/796bb6_5627471495b548c7b09c89363deebcd7~mv2.jpg/v1/fill/w_568,h_302,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/796bb6_5627471495b548c7b09c89363deebcd7~mv2.jpg"
+              },
+              {
+                "numero": 3,
+                "enunciado": "¿Tú __________ contento?",
+                "gabarito": [
+                  "estás",
+                  "estas"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "estás",
+                  "eres",
+                  "está"
+                ],
+                "imagem": "https://static.vecteezy.com/system/resources/thumbnails/043/179/969/small/smiling-toddler-boy-in-white-shirt-against-grey-background-free-photo.jpeg"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Hoy __________ lunes.",
+                "gabarito": [
+                  "es"
+                ],
+                "tipo": "text",
+                "imagem": "https://media.istockphoto.com/id/1190690652/photo/lunes-calendar-with-computer-laptop-spanish-word-chalkboard-background-3d-rendering.jpg?s=170667a&w=0&k=20&c=2l1ZDxBagAJIQa6O6gunsqyXh2ifIF3trbm8UV9jRX0="
+              },
+              {
+                "numero": 5,
+                "enunciado": "La puerta __________ cerrada.",
+                "gabarito": [
+                  "está",
+                  "esta"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "está",
+                  "es",
+                  "están"
+                ],
+                "imagem": "https://live.staticflickr.com/3075/2756274076_3a044452a0_b.jpg"
+              },
+              {
+                "numero": 6,
+                "enunciado": "Nosotros __________ en la playa.",
+                "gabarito": [
+                  "estamos"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "estamos",
+                  "somos",
+                  "están"
+                ],
+                "imagem": "https://img.freepik.com/fotos-premium/gente-relajandose-playa-grupo-seis-amigos-estan-pasando-dia-playa-estan-nadando-tomando-sol-relajando-arena_36682-183222.jpg"
+              },
+              {
+                "numero": 7,
+                "enunciado": "Este coche __________ de mi hermano.",
+                "gabarito": [
+                  "es"
+                ],
+                "tipo": "text",
+                "imagem": "/media/images/coche.png"
+              },
+              {
+                "numero": 8,
+                "enunciado": "Ellas __________ muy altas.",
+                "gabarito": [
+                  "son"
+                ],
+                "tipo": "select",
+                "opcoes": [
+                  "Seleccione...",
+                  "son",
+                  "están",
+                  "es"
+                ],
+                "imagem": "https://uvn-brightspot.s3.amazonaws.com/assets/vixes/imj/imujer/m/mejeres_altas2.jpg"
+              },
+              {
+                "numero": 9,
+                "enunciado": "La comida __________ deliciosa.",
+                "gabarito": [
+                  "está",
+                  "esta"
+                ],
+                "tipo": "mc",
+                "opcoes": [
+                  "está",
+                  "es",
+                  "están"
+                ],
+                "imagem": "https://media.hellofresh.com/q_100,w_3840,f_auto,c_limit,fl_lossy/recipes/image/HF_Y24_R21_W19_ES_ESSAB21128-2_edit_meat_Main_high-da717520.jpg"
+              },
+              {
+                "numero": 10,
+                "enunciado": "Ustedes __________ de Brasil.",
+                "gabarito": [
+                  "son"
+                ],
+                "tipo": "text",
+                "imagem": "https://s1.static.brasilescola.uol.com.br/be/vestibular/-5ad753e530e27.jpg"
               }
             ]
           }

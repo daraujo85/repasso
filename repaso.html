@@ -18,6 +18,7 @@
   <meta property="twitter:image" content="" id="twitter-image">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
+    * { box-sizing: border-box; }
     body { font-family: Arial, sans-serif; background:#f8fafc; color:#222; margin:0; padding:0; font-size:18px; line-height:1.6; }
     header { 
       background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); 
@@ -146,7 +147,7 @@
       background-color:#7f1d1d;
       border-left-color:#ef4444;
     }
-    .actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; justify-content:flex-end; }
+    .actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; justify-content:space-between; }
     button { font-size:18px; padding:12px 20px; border:none; border-radius:6px; cursor:pointer; }
     #btnCheck { background:#4f46e5; color:#fff; }
     #btnClear { background:#e5e7eb; }
@@ -200,8 +201,8 @@
       animation:running 0.6s ease-in-out infinite;
     }
     .badge { display:inline-block; background:#fff7ed; color:#c2410c; border:1px solid #fdba74; padding:2px 8px; border-radius:999px; font-size:12px; margin-left:10px; }
-    .prompt-media { margin:0 0 12px; }
-    .prompt-media img { max-width:100%; height:auto; display:block; border-radius:6px; }
+    .prompt-media { margin:0 0 12px; width: 100%; }
+    .prompt-media img { width:100%; height:auto; display:block; border-radius:6px; }
     .prompt-audio { margin:0 0 12px; width:100%; }
     .prompt-audio audio { 
       width:100%; 
@@ -212,118 +213,29 @@
       box-shadow:0 2px 8px rgba(0,0,0,0.1);
       outline:none;
     }
-    .prompt-audio audio::-webkit-media-controls-panel {
-      background:linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
-      border-radius:12px;
-    }
-    .prompt-audio audio::-webkit-media-controls-play-button {
-      background-color:#4f46e5;
-      border-radius:50%;
-      margin-right:10px;
-    }
-    .prompt-audio audio::-webkit-media-controls-current-time-display,
-    .prompt-audio audio::-webkit-media-controls-time-remaining-display {
-      color:#1e293b;
-      font-weight:500;
-      font-size:13px;
-    }
-    .prompt-audio audio::-webkit-media-controls-timeline {
-      background:#cbd5e1;
-      border-radius:2px;
-      height:4px;
-    }
-    .prompt-audio audio::-webkit-media-controls-timeline::-webkit-slider-thumb {
-      background:#4f46e5;
-      border-radius:50%;
-      width:12px;
-      height:12px;
-    }
-    .prompt-audio audio::-webkit-media-controls-volume-slider {
-      background:#cbd5e1;
-      border-radius:2px;
-      height:4px;
-    }
-    .prompt-audio audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
-      background:#4f46e5;
-      border-radius:50%;
-      width:10px;
-      height:10px;
-    }
-    .prompt-audio audio::-webkit-media-controls-mute-button {
-      background-color:transparent;
-    }
-    /* Dark mode para audio */
-    body.dark-mode .prompt-audio audio {
-      background:linear-gradient(135deg, #1f2937 0%, #374151 100%);
-    }
-    body.dark-mode .prompt-audio audio::-webkit-media-controls-panel {
-      background:linear-gradient(135deg, #1f2937 0%, #374151 100%);
-    }
-    body.dark-mode .prompt-audio audio::-webkit-media-controls-play-button {
-      background-color:#6366f1;
-    }
-    body.dark-mode .prompt-audio audio::-webkit-media-controls-current-time-display,
-    body.dark-mode .prompt-audio audio::-webkit-media-controls-time-remaining-display {
-      color:#e5e7eb;
-    }
-    body.dark-mode .prompt-audio audio::-webkit-media-controls-timeline {
-      background:#4b5563;
-    }
-    body.dark-mode .prompt-audio audio::-webkit-media-controls-timeline::-webkit-slider-thumb {
-      background:#6366f1;
-    }
-    body.dark-mode .prompt-audio audio::-webkit-media-controls-volume-slider {
-      background:#4b5563;
-    }
-    body.dark-mode .prompt-audio audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
-      background:#6366f1;
-    }
-    /* sticky container para manter nota e progresso visíveis */
-    .sticky-top { position: sticky; top: 72px; z-index: 999; padding: 8px 0; background: #f8fafc; box-shadow: 0 2px 5px rgba(0,0,0,0.06); }
-    .sticky-top #scoreBox { margin: 0; }
-    .sticky-top #timerBox { margin: 0; }
-    body.dark-mode #timerBox { color:#818cf8; }
+    /* Dark mode adjustments */
+    body.dark-mode { background:#111827; color:#e5e7eb; }
+    body.dark-mode .card { background:#1f2937; border-color:#374151; color:#e5e7eb; }
+    body.dark-mode input.inp, body.dark-mode select.sel, body.dark-mode select { background:#374151; border-color:#4b5563; color:#e5e7eb; }
+    body.dark-mode .ok { background:#064e3b; color:#6ee7b7; }
+    body.dark-mode .bad { background:#7f1d1d; color:#fca5a5; }
     
-    /* seletor de simulados, discreto e à direita */
-    .sim-selector { display:flex; justify-content:flex-end; align-items:center; gap:8px; margin: 6px 10px 0; }
-    .sim-select { font-size:14px; padding:6px 8px; border:1px solid #ddd; border-radius:6px; background:#fff; }
-    
-    /* botão WhatsApp */
-    .wa-btn { background:#25D366; color:#fff; }
-    /* botão Reportar Erro */
-    .report-btn { background:#dc2626; color:#fff; }
-    /* botão Imprimir */
-    #btnPrint { background:#6366f1; color:#fff; }
-    /* botão Teste */
-    .test-btn { background:#f59e0b; color:#fff; }
-    .test-btn:hover { background:#d97706; }
     /* Footer */
     footer { background:#1e293b; color:#e2e8f0; padding:30px 20px; margin-top:40px; text-align:center; font-size:14px; }
     footer a { color:#60a5fa; text-decoration:none; }
     footer a:hover { text-decoration:underline; }
-    footer .credits { margin:10px 0; }
-    footer .credits i { margin:0 5px; }
+
+    /* seletor de simulados, discreto e à direita */
+    .sim-selector { display:flex; justify-content:flex-end; align-items:center; gap:8px; margin: 6px 10px 0; }
+    .sim-select { font-size:14px; padding:6px 8px; border:1px solid #ddd; border-radius:6px; background:#fff; }
+    
+    .wa-btn { background:#25D366; color:#fff; }
+    .report-btn { background:#dc2626; color:#fff; }
+    .test-btn { background:#f59e0b; color:#fff; border-radius: 6px; padding: 12px 20px; cursor: pointer; border: none; font-size: 18px; }
+
     /* Botão Dark Mode */
     #btnDarkMode { position:fixed; top:20px; right:20px; z-index:1001; background:#374151; color:#fff; border:none; border-radius:50%; width:50px; height:50px; cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,0.2); transition:all 0.3s ease; display:flex; align-items:center; justify-content:center; }
-    #btnDarkMode:hover { background:#4b5563; transform:scale(1.1); }
-    #btnDarkMode i { font-size:20px; line-height:1; }
-    /* Dark Mode Styles */
-    body.dark-mode { background:#111827; color:#e5e7eb; }
-    body.dark-mode header { 
-      background: linear-gradient(135deg, #1f2937 0%, #374151 100%); 
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    }
-    body.dark-mode .card { background:#1f2937; border-color:#374151; color:#e5e7eb; }
-    body.dark-mode .card.group-completed { 
-      border-color:#10b981; 
-      background:linear-gradient(135deg, #1f2937 0%, #064e3b 100%);
-      box-shadow:0 4px 20px rgba(16,185,129,0.4);
-    }
-    body.dark-mode .card h2 { color:#f3f4f6; }
-    body.dark-mode .card.group-completed h2 { color:#34d399; }
-    body.dark-mode .group-success-message {
-      background:linear-gradient(135deg, #059669 0%, #10b981 100%);
-    }
+
     /* Modal de sucesso completo */
     .success-modal {
       display:none;
@@ -336,39 +248,9 @@
       z-index:10000;
       justify-content:center;
       align-items:center;
-      animation:fadeIn 0.3s ease;
-      overflow:hidden;
-    }
-    .firework {
-      position:absolute;
-      width:4px;
-      height:4px;
-      border-radius:50%;
-      pointer-events:none;
-      z-index:10001;
-    }
-    @keyframes firework {
-      0% {
-        transform:translate(var(--x), var(--initialY));
-        width:var(--initialSize);
-        opacity:1;
-      }
-      50% {
-        width:0.5vmin;
-        opacity:1;
-      }
-      100% {
-        width:var(--finalSize);
-        transform:translate(var(--x), var(--finalY));
-        opacity:0;
-      }
     }
     .success-modal.show {
       display:flex;
-    }
-    @keyframes fadeIn {
-      from { opacity:0; }
-      to { opacity:1; }
     }
     .success-modal-content {
       background:#fff;
@@ -376,97 +258,12 @@
       padding:30px;
       max-width:500px;
       text-align:center;
-      box-shadow:0 10px 40px rgba(0,0,0,0.3);
-      animation:scaleIn 0.4s ease;
-    }
-    @keyframes scaleIn {
-      from { transform:scale(0.8); opacity:0; }
-      to { transform:scale(1); opacity:1; }
     }
     .success-modal-content img {
       max-width:100%;
       height:auto;
       border-radius:10px;
       margin-bottom:20px;
-    }
-    .success-modal-content h3 {
-      margin:0 0 10px 0;
-      color:#10b981;
-      font-size:28px;
-    }
-    .success-modal-content p {
-      margin:0;
-      color:#666;
-      font-size:18px;
-    }
-    .success-modal-close {
-      position:absolute;
-      top:20px;
-      right:20px;
-      background:rgba(255,255,255,0.9);
-      border:none;
-      border-radius:50%;
-      width:40px;
-      height:40px;
-      cursor:pointer;
-      font-size:20px;
-      color:#333;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      transition:all 0.3s ease;
-    }
-    .success-modal-close:hover {
-      background:#fff;
-      transform:scale(1.1);
-    }
-    body.dark-mode .success-modal-content {
-      background:#1f2937;
-      color:#e5e7eb;
-    }
-    body.dark-mode .success-modal-content h3 {
-      color:#34d399;
-    }
-    body.dark-mode .success-modal-content p {
-      color:#9ca3af;
-    }
-    body.dark-mode .success-modal-close {
-      background:rgba(31,41,55,0.9);
-      color:#e5e7eb;
-    }
-    body.dark-mode .sticky-top { background:#111827; }
-    body.dark-mode input.inp, body.dark-mode select.sel, body.dark-mode select { background:#374151; border-color:#4b5563; color:#e5e7eb; }
-    body.dark-mode input.inp:focus, body.dark-mode select:focus { border-color:#6366f1; outline:none; }
-    body.dark-mode .badge { background:#4b5563; color:#fbbf24; border-color:#6b7280; }
-    body.dark-mode .ok { background:#064e3b; color:#6ee7b7; }
-    body.dark-mode .bad { background:#7f1d1d; color:#fca5a5; }
-    body.dark-mode .progress-bar { 
-      background:#374151; 
-      border-color:#4b5563;
-    }
-    body.dark-mode .progress-runner,
-    body.dark-mode .progress-finish {
-      filter:drop-shadow(0 2px 4px rgba(0,0,0,0.5));
-    }
-    body.dark-mode .sim-select { background:#374151; border-color:#4b5563; color:#e5e7eb; }
-    body.dark-mode #btnClear { background:#374151; color:#e5e7eb; }
-    body.dark-mode #btnClear:hover { background:#4b5563; }
-    body.dark-mode .report-btn { background:#991b1b; }
-    body.dark-mode .report-btn:hover { background:#b91c1c; }
-    body.dark-mode .test-btn { background:#b45309; }
-    body.dark-mode .test-btn:hover { background:#d97706; }
-    body.dark-mode footer { background:#0f172a; }
-    body.dark-mode #btnTopo { background:linear-gradient(135deg,#374151,#4b5563); }
-    body.dark-mode #btnTopo:hover { background:linear-gradient(135deg,#4b5563,#6b7280); }
-    body.dark-mode #btnFinal { background:linear-gradient(135deg,#4b5563,#6b7280); }
-    body.dark-mode #btnFinal:hover { background:linear-gradient(135deg,#6b7280,#9ca3af); }
-    /* Estilos para impressão */
-    @media print {
-      header, .sticky-top, .actions, #btnTopo, #btnFinal, footer { display:none !important; }
-      .card { page-break-inside:avoid; margin:10px 0; }
-      body { background:#fff; }
-      .feedback { display:none !important; }
-      input, select { border:1px solid #000 !important; }
     }
   </style>
 </head>
@@ -481,15 +278,15 @@
   </button>
 
   <main>
-    <div class="sticky-top">
+    <div class="sticky-top" style="position: sticky; top: 0; background: #f8fafc; z-index: 100; padding: 10px 0;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin: 10px;">
         <div id="timerBox" style="font-weight:bold; font-size:18px; color:#6366f1;"><i class="fas fa-clock"></i> <span id="timer">00:00</span></div>
         <div id="scoreBox" style="font-weight:bold; font-size:20px;"><i class="fas fa-star"></i> Nota: 0%</div>
       </div>
       <div class="progress-bar">
         <div id="progress" class="progress-fill"></div>
-        <div id="progressRunner" class="progress-runner"><i class="fas fa-running"></i></div>
-        <div class="progress-finish"><i class="fas fa-flag-checkered"></i></div>
+        <div id="progressRunner" class="progress-runner" style="position: absolute; transition: left 0.3s ease;"><i class="fas fa-running"></i></div>
+        <div class="progress-finish" style="position: absolute; right: 10px;"><i class="fas fa-flag-checkered"></i></div>
       </div>
       <div class="sim-selector">
         <span style="font-weight:normal; font-size:14px; color:#555;"><i class="fas fa-list"></i> Simulado:</span>
@@ -498,38 +295,30 @@
         </select>
       </div>
     </div>
-    <!-- container das seções geradas dinamicamente -->
+    
     <div id="quiz"></div>
     
     <!-- Modal de sucesso completo -->
-    <div id="successModal" class="success-modal" onclick="if(event.target.id === 'successModal') closeSuccessModal()">
-      <button class="success-modal-close" onclick="closeSuccessModal()"><i class="fas fa-times"></i></button>
+    <div id="successModal" class="success-modal" onclick="closeSuccessModal()">
       <div class="success-modal-content">
         <img id="successGif" src="" alt="¡Felicitaciones!">
         <h3><i class="fas fa-trophy"></i> ¡Perfecto!</h3>
-        <p>Has completado todas las preguntas correctamente.</p>
-        <p id="timeResult" style="margin-top:15px; font-size:20px; font-weight:bold; color:#6366f1;"><i class="fas fa-clock"></i> Tiempo: <span id="finalTime">00:00</span></p>
+        <p>Has completado todas las perguntas correctamente.</p>
+        <p style="margin-top:15px; font-size:20px; font-weight:bold; color:#6366f1;"><i class="fas fa-clock"></i> Tiempo: <span id="finalTime">00:00</span></p>
       </div>
     </div>
 
     <div class="actions">      
-      <button id="btnClear" onclick="location.reload()"><i class="fas fa-redo"></i> Novo Simulado</button>
+      <button id="btnClear" onclick="clearErrors(); location.reload()"><i class="fas fa-redo"></i> Novo Simulado</button>
       <button id="btnShare" class="wa-btn" onclick="shareWhatsApp()"><i class="fab fa-whatsapp"></i> Compartilhar no WhatsApp</button>
       <button id="btnReport" class="report-btn" onclick="reportError()"><i class="fas fa-bug"></i> Reportar Erro</button>
-      <button id="btnPrint" onclick="window.print()"><i class="fas fa-print"></i> Imprimir / Salvar PDF</button>
-      <!-- <button id="btnTest" class="test-btn" onclick="testFeatures()"><i class="fas fa-flask"></i> Teste</button> -->
+      <button id="btnPrint" onclick="window.print()"><i class="fas fa-print"></i> Imprimir</button>
     </div>
   </main>
 
   <footer>
     <div class="credits">
       <p><strong>Desenvolvido por Diego Araujo</strong></p>
-      <p>
-        <a href="mailto:diegoaraujo@devysnc.com.br"><i class="fas fa-envelope"></i> diegoaraujo@devysnc.com.br</a> | 
-        <a href="https://devysnc.com.br" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> devysnc.com.br</a> | 
-        <a href="https://wa.me/5521995278672" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a> | 
-        <a href="https://instagram.com/diegoaraujo85" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
-      </p>
     </div>
   </footer>
 
@@ -538,1534 +327,337 @@
     let startTime = null;
     let timerInterval = null;
     let elapsedTime = 0; // em segundos
+    let mistakeHistory = []; // Volátil: armazena TODOS os erros cometidos, mesmo que corrigidos
+    let audioPlayed = false;
 
-    // util: embaralhar array
-    function shuffle(arr) {
-      const a = arr.slice();
-      for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
+    function clearErrors() {
+      mistakeHistory = [];
+      const container = document.getElementById('aiFeedbackContainer');
+      if (container) container.style.display = 'none';
+      audioPlayed = false;
+    }
+
+    // UI: Container para o feedback da IA
+    function renderAIFeedbackUI() {
+      let container = document.getElementById('aiFeedbackContainer');
+      const isDebug = getDebugParam();
+      const rows = Array.from(document.querySelectorAll('.row'));
+      const allChecked = rows.length > 0 && rows.every(r => r.dataset.checked === 'true');
+      
+      if (!isDebug && !allChecked) return;
+
+      if (!container) {
+        container = document.createElement('div');
+        container.id = 'aiFeedbackContainer';
+        container.className = 'card';
+        container.style.cssText = 'border: 3px solid #f59e0b; background: linear-gradient(135deg, #fffbeb 0%, #fff 100%); display: none; margin-top: 30px; padding-top: 60px; position: relative;';
+        
+        const badge = document.createElement('div');
+        badge.className = 'badge';
+        badge.style.cssText = 'position: absolute; top: 15px; right: 20px; background: #f59e0b; color: #fff; padding: 8px 20px; font-size: 16px; border-radius: 50px; font-weight: bold; border: none; box-shadow: 0 4px 10px rgba(245, 158, 11, 0.3); z-index: 10;';
+        badge.innerHTML = '<i class="fas fa-robot"></i> Tutor de IA';
+        container.appendChild(badge);
+
+        const content = document.createElement('div');
+        content.id = 'aiFeedbackContent';
+        container.appendChild(content);
+
+        const btnRow = document.createElement('div');
+        btnRow.id = 'aiFeedbackBtnRow';
+        btnRow.style.cssText = 'margin-top: 20px; text-align: center;';
+        
+        const btn = document.createElement('button');
+        btn.id = 'btnGetAIFeedback';
+        btn.className = 'test-btn';
+        btn.style.cssText = 'padding: 15px 30px; font-size: 20px; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);';
+        btn.innerHTML = '<i class="fas fa-magic"></i> ¡Necesito ajuda com meus erros!';
+        btn.onclick = getAIFeedback;
+        btnRow.appendChild(btn);
+        
+        container.appendChild(btnRow);
+        
+        const quiz = document.getElementById('quiz');
+        quiz.parentNode.insertBefore(container, quiz.nextSibling);
       }
-      return a;
+
+      if (mistakeHistory.length > 0) {
+        container.style.display = 'block';
+        document.getElementById('aiFeedbackContent').innerHTML = `
+          <h2 style="color: #d97706; margin-bottom: 10px;"><i class="fas fa-chalkboard-teacher"></i> Feedback Personalizado</h2>
+          <p style="font-size: 18px;">Durante tu práctica has cometido <strong>${mistakeHistory.length}</strong> errores. ¿Quieres que tu profesor de español te explique estos temas para que no vuelvas a fallar?</p>
+        `;
+        document.getElementById('aiFeedbackBtnRow').style.display = 'block';
+      } else if (isDebug) {
+         container.style.display = 'block';
+         document.getElementById('aiFeedbackContent').innerHTML = `
+          <h2 style="color: #d97706; margin-bottom: 10px;"><i class="fas fa-chalkboard-teacher"></i> Debug Mode</h2>
+          <p style="font-size: 18px;">No hay errores registrados, pero puedes probar o feedback con datos de exemplo.</p>
+        `;
+        document.getElementById('aiFeedbackBtnRow').style.display = 'block';
+      }
     }
 
-    // util: ordenar por numero ascendente
-    function sortByNumero(items) {
-      return (items || []).slice().sort((a, b) => {
-        const na = Number(a?.numero);
-        const nb = Number(b?.numero);
-        const va = Number.isFinite(na) ? na : Number.MAX_SAFE_INTEGER;
-        const vb = Number.isFinite(nb) ? nb : Number.MAX_SAFE_INTEGER;
-        return va - vb;
-      });
+    function formatAIResponse(text) {
+      let html = text
+        .replace(/### (.*?)\n/g, '<h3 style="color: #4f46e5; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;"><i class="fas fa-file-alt"></i> $1</h3>')
+        .replace(/- ❌ \*\*Tu resposta:\*\* (.*?)\n/g, '<div style="background: #fee2e2; color: #991b1b; padding: 12px; border-radius: 8px; margin: 8px 0; border-left: 5px solid #ef4444;"><strong>Tu respuesta:</strong> $1</div>')
+        .replace(/- ✅ \*\*Resposta correcta:\*\* (.*?)\n/g, '<div style="background: #d1fae5; color: #065f46; padding: 12px; border-radius: 8px; margin: 8px 0; border-left: 5px solid #10b981;"><strong>Respuesta correcta:</strong> $1</div>')
+        .replace(/- 💡 \*\*Explicación:\*\* (.*?)\n/g, '<div style="background: #eff6ff; color: #1e40af; padding: 18px; border-radius: 8px; border-left: 5px solid #3b82f6; margin: 15px 0; font-weight: bold;"><i class="fas fa-lightbulb"></i> <strong>Explicación:</strong> $1</div>')
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\n\n/g, '<br><br>')
+        .replace(/\n/g, '<br>');
+      return html;
     }
 
-    // Escolhe aleatoriamente uma variante por número, mantendo ordem numérica
-    function chooseVariants(items) {
-      const byNum = {};
-      (items || []).forEach(it => {
-        const n = Number(it?.numero);
-        const key = Number.isFinite(n) ? n : (it?.numero ?? '');
-        if (!byNum[key]) byNum[key] = [];
-        byNum[key].push(it);
-      });
-      const chosen = Object.keys(byNum).map(k => {
-        const arr = byNum[k];
-        return arr[Math.floor(Math.random() * arr.length)];
-      });
-      return sortByNumero(chosen);
-    }
+    async function getAIFeedback() {
+      const btn = document.getElementById('btnGetAIFeedback');
+      const content = document.getElementById('aiFeedbackContent');
+      const btnRow = document.getElementById('aiFeedbackBtnRow');
+      if (mistakeHistory.length === 0 && !getDebugParam()) return;
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Consultando ao professor...';
+      const errorsToAnalyze = mistakeHistory.length > 0 ? mistakeHistory : [
+        { question: 'Ellos _________ por teléfono. (hablar)', user_answer: 'está hablando', correct_answer: 'están hablando' },
+        { question: 'La sopa _________ muy caliente.', user_answer: 'es', correct_answer: 'está' }
+      ];
+      const errorSummary = errorsToAnalyze.map(err => `- Pregunta: "${err.question}" | Tu resposta: "${err.user_answer}" | Resposta correcta: "${err.correct_answer}"`).join('\n');
+      const promptText = `eres un profesor de español experimentado y motivador. Analiza mis errores en este simulado y explícame los temas gramaticales involucrados. Fala 100% en español. Usa EXACTAMENTE este formato Markdown para cada error:
+### Pregunta: [Enunciado]
+- ❌ **Tu resposta:** [User Answer]
+- ✅ **Resposta correcta:** [Correct Answer]
+- 💡 **Explicación:** [Breve explicación pedagógica]
 
-    // util: obter slug do query param (suporta ?slug=, ?s=, ?simulado=)
-    function getSlugParam() {
-      const params = new URLSearchParams(location.search);
-      return (params.get('slug') || params.get('s') || params.get('simulado') || '').toLowerCase();
-    }
-
-    // util: obter parâmetro de grupo (suporta ?group=, ?grupo=, ?section=)
-    function getGroupParam() {
-      const params = new URLSearchParams(location.search);
-      return (params.get('group') || params.get('grupo') || params.get('section') || '');
-    }
-
-    function getGroupSetParam() {
-      const params = new URLSearchParams(location.search);
-      const raw = params.get('groupset') || params.get('gs') || params.get('set');
-      if (!raw) return null;
-      const idx = Number(raw);
-      if (!Number.isInteger(idx) || idx < 0) return null;
-      return idx;
-    }
-
-    // Atualizar meta tags Open Graph dinamicamente
-    function updateOGTags(title, slug, simulado) {
+Mis errores:
+${errorSummary}`;
       try {
-        const baseUrl = window.location.origin + window.location.pathname;
-        const url = new URL(baseUrl);
-        if (slug) {
-          url.searchParams.set('slug', slug);
-        }
-        const fullUrl = url.toString();
-        const pageTitle = `Simulado Interactivo – ${title}`;
-        const description = `Pratique espanhol com o simulado "${title}". Exercícios interativos com feedback imediato.`;
-        
-        // Atualizar título da página
-        document.title = pageTitle;
-        
-        // Atualizar meta tags Open Graph
-        const ogUrl = document.getElementById('og-url');
-        const ogTitle = document.getElementById('og-title');
-        const ogDescription = document.getElementById('og-description');
-        const ogImage = document.getElementById('og-image');
-        const twitterUrl = document.getElementById('twitter-url');
-        const twitterTitle = document.getElementById('twitter-title');
-        const twitterDescription = document.getElementById('twitter-description');
-        const twitterImage = document.getElementById('twitter-image');
-        
-        if (ogUrl) ogUrl.setAttribute('content', fullUrl);
-        if (ogTitle) ogTitle.setAttribute('content', pageTitle);
-        if (ogDescription) ogDescription.setAttribute('content', description);
-        if (twitterUrl) twitterUrl.setAttribute('content', fullUrl);
-        if (twitterTitle) twitterTitle.setAttribute('content', pageTitle);
-        if (twitterDescription) twitterDescription.setAttribute('content', description);
-        
-        // Tentar encontrar uma imagem do simulado ou grupo
-        let imageUrl = '';
-        if (simulado) {
-          // Verificar se há imagem no primeiro grupo
-          const firstGroup = (simulado.groups || [])[0] || (simulado.groupsSets || [])[0]?.[0];
-          if (firstGroup?.imagem) {
-            imageUrl = new URL(firstGroup.imagem, baseUrl).toString();
-          } else if (simulado.groupsSets && simulado.groupsSets[0]) {
-            const firstSetGroup = simulado.groupsSets[0].find(g => g.imagem);
-            if (firstSetGroup?.imagem) {
-              imageUrl = new URL(firstSetGroup.imagem, baseUrl).toString();
-            }
+        const response = await fetch('https://audio.boletoazap.dev.br/ai', { method: 'POST', headers: { 'accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' }, body: `text=${encodeURIComponent(promptText)}&sanitize=false` });
+        if (response.ok) {
+          const data = await response.json();
+          const feedbackRaw = data.text_output || data.response || data.text || (typeof data === 'string' ? data : JSON.stringify(data));
+          btnRow.style.display = 'none';
+          content.innerHTML = `
+            <h2 style="color: #d97706; border-bottom: 2px solid #f59e0b; padding-bottom: 10px; margin-bottom: 20px;"><i class="fas fa-comment-dots"></i> Consejos de tu Profesor</h2>
+            <div style="background: #fff; padding: 30px; border-radius: 12px; line-height: 1.7; text-align: left; font-size: 17px; box-shadow: inset 0 2px 5px rgba(0,0,0,0.05); color: #374151;">
+              ${formatAIResponse(feedbackRaw + "\n")} 
+            </div>
+            <div style="margin-top: 25px; text-align: right;">
+               <button class="test-btn" style="background: #4f46e5;" onclick="location.reload()"><i class="fas fa-redo"></i> Intentar de nuevo</button>
+            </div>
+          `;
+        } else { throw new Error('Error al consultar la IA'); }
+      } catch (e) { console.error(e); content.innerHTML += `<p class="bad">No pude contactar al profesor en este momento.</p>`; btn.disabled = false; btn.innerHTML = '<i class="fas fa-redo"></i> Reintentar'; }
+    }
+
+    async function generateAndPlayFinalAudio(pct, mistakes, force = false) {
+      if (audioPlayed && !force) return;
+      if (!force) audioPlayed = true;
+      let msg = "";
+      const mins = Math.floor(elapsedTime / 60);
+      const secs = elapsedTime % 60;
+      const timeStr = mins > 0 ? `${mins} minutos y ${secs} segundos` : `${secs} segundos`;
+      
+      if (pct === 100 && mistakes === 0) {
+        msg = `¡Increíble! Has conseguido una puntuación perfecta del 100% a la primera en solo ${timeStr}. ¡Eres un maestro absoluto!`;
+      } else if (pct === 100) {
+        msg = `¡Excelente! Has completado todo correctamente en ${timeStr}. Aunque tuviste ${mistakes} errores durante la práctica, lograste corregirlos todos. ¡Buen trabajo!`;
+      } else if (pct >= 70) {
+        msg = `¡Muy bien! Has terminado con un ${pct}%. Tardaste ${timeStr}. Durante el ejercicio cometiste ${mistakes} errores. ¡Sigue practicando para llegar al cien por cien!`;
+      } else {
+        msg = `Has terminado el simulado. Tu puntuación final es de ${pct}% y has tenido un total de ${mistakes} errores durante tu entrenamiento. No te rindas, repasa los consejos del Tutor de IA y vuelve a intentarlo. ¡Ánimo!`;
+      }
+
+      try {
+        const response = await fetch('https://audio.boletoazap.dev.br/tts', {
+          method: 'POST',
+          headers: { 'accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: `text=${encodeURIComponent(msg)}&voice=es-ES-ElviraNeural&use_gemini=false&convert_to_ogg=false`
+        });
+        if (response.ok) {
+          const data = await response.json();
+          const audioBase64 = data.audio_base64;
+          const audioMime = data.audio_mime || "audio/mpeg";
+          if (audioBase64) {
+            const audio = new Audio(`data:${audioMime};base64,${audioBase64}`);
+            audio.play();
           }
         }
-        
-        // Se não encontrou imagem, usar bandeira da Espanha como padrão
-        if (!imageUrl) {
-          // Usar bandeira da Espanha da Wikipedia (URL pública confiável)
-          imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_España.svg/800px-Bandera_de_España.svg.png';
-        }
-        
-        if (ogImage) ogImage.setAttribute('content', imageUrl);
-        if (twitterImage) twitterImage.setAttribute('content', imageUrl);
-      } catch (e) {
-        console.error('Erro ao atualizar meta tags OG:', e);
-      }
+      } catch (e) { console.error("TTS Error:", e); }
     }
 
-    // Compartilhar via WhatsApp o simulado atual
-    function shareWhatsApp() {
-      try {
-        const sel = document.getElementById('simSelect');
-        const currentSlug = sel ? (sel.value || '') : '';
-        const url = new URL(location.href);
-        if (currentSlug) {
-          url.searchParams.set('slug', currentSlug);
-        }
-        // Remover parâmetros de grupo para link mais limpo
-        url.searchParams.delete('group');
-        url.searchParams.delete('grupo');
-        url.searchParams.delete('section');
-        url.searchParams.delete('groupset');
-        url.searchParams.delete('gs');
-        url.searchParams.delete('set');
-        const title = (document.querySelector('header h1')?.textContent || 'Simulado').trim();
-        const msg = `Vamos praticar? ${title}\n${url.toString()}`;
-        const shareUrl = 'https://wa.me/?text=' + encodeURIComponent(msg);
-        window.open(shareUrl, '_blank');
-      } catch (e) {
-        console.error('Falha ao compartilhar no WhatsApp', e);
-        alert('Não foi possível abrir o compartilhamento.');
-      }
-    }
+    function shuffle(arr) { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+    function sortByNumero(items) { return (items || []).slice().sort((a, b) => (Number(a.numero) || 0) - (Number(b.numero) || 0)); }
+    function chooseVariants(items) { const byNum = {}; (items || []).forEach(it => { const k = it.numero || ''; if (!byNum[k]) byNum[k] = []; byNum[k].push(it); }); return Object.keys(byNum).map(k => byNum[k][Math.floor(Math.random() * byNum[k].length)]); }
+    function getSlugParam() { return new URLSearchParams(location.search).get('slug')?.toLowerCase() || ''; }
+    function getGroupSetParam() { const raw = new URLSearchParams(location.search).get('groupset'); return raw ? Number(raw) : null; }
+    function getDebugParam() { return new URLSearchParams(location.search).get('debug') === 'true'; }
 
-    // Reportar erro ou bug via WhatsApp
-    function reportError() {
-      try {
-        const sel = document.getElementById('simSelect');
-        const currentSlug = sel ? (sel.value || 'N/A') : 'N/A';
-        const currentUrl = window.location.href;
-        const timestamp = new Date().toLocaleString('pt-BR');
-        const title = (document.querySelector('header h1')?.textContent || 'Simulado').trim();
-        
-        // Construir mensagem usando símbolos ASCII simples para melhor compatibilidade
-        const messageText = 
-          '*REPORTE DE ERRO - Simulado de Espanhol*\n\n' +
-          '*Simulado:* ' + title + ' (' + currentSlug + ')\n' +
-          '*URL:* ' + currentUrl + '\n' +
-          '*Data/Hora:* ' + timestamp + '\n\n' +
-          '*Tipo de problema:*\n' +
-          '[ ] Erro na formulação da pergunta\n' +
-          '[ ] Bug no sistema\n' +
-          '[ ] Problema com mídia (áudio/imagem/vídeo)\n' +
-          '[ ] Outro problema\n\n' +
-          '*Descrição do problema:*\n' +
-          '(Descreva o problema encontrado aqui)\n\n' +
-          '*Sugestão de correção (opcional):*\n' +
-          '(Se tiver uma sugestão, descreva aqui)';
-        
-        // Usar encodeURIComponent para codificar corretamente
-        const encodedMessage = encodeURIComponent(messageText);
-        
-        window.open('https://wa.me/5521995278672?text=' + encodedMessage, '_blank');
-      } catch (e) {
-        console.error('Falha ao abrir WhatsApp para reportar erro', e);
-        alert('Erro ao abrir WhatsApp. Por favor, entre em contato manualmente: 5521995278672');
-      }
-    }
-    
-    function testFeatures() {
-      // Função para testar funcionalidades do sistema
-      const modal = document.getElementById('successModal');
-      if (modal) {
-        // Resetar flag para permitir teste múltiplo
-        modal.dataset.shown = 'false';
-        // Simular tempo decorrido para teste (30 segundos)
-        elapsedTime = 30;
-        showSuccessModal();
-      } else {
-        alert('Modal de sucesso não encontrado. Verifique se o HTML está correto.');
-      }
-    }
-
-    // UI: renderiza seletor de simulados sem poluir a tela
-    let selectorChangeHandler = null;
-    function renderSimuladosSelector(simulados, selectedSlug) {
-      const sel = document.getElementById('simSelect');
-      if (!sel) return;
+    function renderDebugButton() {
+      if (!getDebugParam()) return;
+      const btn = document.createElement('button'); btn.className = 'test-btn'; btn.style.background = '#8b5cf6'; btn.style.marginLeft = '10px'; btn.innerHTML = '<i class="fas fa-vial"></i> Debug AI';
+      btn.onclick = () => { renderAIFeedbackUI(); const c = document.getElementById('aiFeedbackContainer'); if(c){ c.style.display='block'; window.scrollTo({top: c.offsetTop, behavior:'smooth'}); } };
+      document.querySelector('.actions').appendChild(btn);
       
-      // Remove event listener anterior se existir
-      if (selectorChangeHandler) {
-        sel.removeEventListener('change', selectorChangeHandler);
-        selectorChangeHandler = null;
-      }
-      
-      sel.innerHTML = '';
-      const placeholder = document.createElement('option');
-      placeholder.value = '';
-      placeholder.textContent = 'Selecione um simulado...';
-      placeholder.disabled = true;
-      placeholder.selected = !selectedSlug;
-      sel.appendChild(placeholder);
-
-      // Adiciona todas as opções de simulados
-      console.log('Populando seletor com', simulados?.length || 0, 'simulados');
-      (simulados || []).forEach((s, idx) => {
-        const opt = document.createElement('option');
-        opt.value = (s.slug || '').toLowerCase();
-        opt.textContent = s.title || s.slug || 'Simulado';
-        console.log(`  Adicionando opção ${idx + 1}: ${opt.textContent} (${opt.value})`);
-        if (selectedSlug && opt.value === String(selectedSlug).toLowerCase()) {
-          opt.selected = true;
-          placeholder.selected = false;
-        }
-        sel.appendChild(opt);
-      });
-      console.log('Total de opções no seletor:', sel.options.length);
-
-      // Adiciona event listener
-      selectorChangeHandler = () => {
-        const val = sel.value;
-        if (val) {
-          const url = new URL(location.href);
-          url.searchParams.set('slug', val);
-          // remover grupo se existir para evitar confusão
-          url.searchParams.delete('group');
-          url.searchParams.delete('grupo');
-          url.searchParams.delete('section');
-          url.searchParams.delete('groupset');
-          url.searchParams.delete('gs');
-          url.searchParams.delete('set');
-          location.href = url.toString();
-        }
+      const btnAudio = document.createElement('button'); btnAudio.className = 'test-btn'; btnAudio.style.background = '#ec4899'; btnAudio.style.marginLeft = '10px'; btnAudio.innerHTML = '<i class="fas fa-volume-up"></i> Final Audio';
+      btnAudio.onclick = () => {
+        const stats = getCurrentStats();
+        generateAndPlayFinalAudio(stats.pct, stats.mistakes, true);
       };
-      sel.addEventListener('change', selectorChangeHandler);
+      document.querySelector('.actions').appendChild(btnAudio);
+    }
+
+    function getCurrentStats() {
+      const rows = Array.from(document.querySelectorAll('.row')).filter(r => r.dataset.checked === 'true');
+      const correct = rows.filter(r => r.dataset.correct === '1').length;
+      const pct = totalQuestions > 0 ? Math.round((correct / totalQuestions) * 100) : 0;
+      return { pct, mistakes: mistakeHistory.length, finished: rows.length === totalQuestions };
     }
 
     async function loadSimulado() {
       try {
-        // Adiciona timestamp para evitar cache
         const res = await fetch('questoes.json?v=' + Date.now());
         const data = await res.json();
         const slug = getSlugParam();
-        let simulado = null;
-
-        // Debug: verificar simulados carregados
-        console.log('Simulados carregados:', data.simulados?.length || 0);
-        if (data.simulados) {
-          data.simulados.forEach(s => {
-            console.log(`  - ${s.title} (slug: ${s.slug})`);
-          });
+        let simulado = (data.simulados || []).find(s => (s.slug || '').toLowerCase() === slug) || data.simulados[0];
+        if (simulado.groupsSets) {
+           const paramIndex = getGroupSetParam();
+           const sets = simulado.groupsSets.map(set => set.map(g => ({ ...g, items: chooseVariants(g.perguntas || []) })));
+           const idx = (paramIndex !== null && paramIndex < sets.length) ? paramIndex : Math.floor(Math.random() * sets.length);
+           simulado = { ...simulado, groups: sets[idx] };
         }
-
-        // popula seletor com todos os simulados, já destacando o atual (se houver)
-        renderSimuladosSelector((data.simulados || []), slug);
-    
-        if (slug) {
-          simulado = (data.simulados || []).find(s => (s.slug || '').toLowerCase() === slug);
-        }
-    
-        // Se um slug foi informado mas não existe, mostra mensagem amigável e não faz fallback
-        if (slug && !simulado) {
-          const quiz = document.getElementById('quiz');
-          const headerTitle = document.querySelector('header h1');
-          if (headerTitle) {
-            headerTitle.textContent = 'Simulado – não disponível';
-          }
-          quiz.innerHTML = `
-            <section class="card">
-              <h2>Simulado indisponível</h2>
-              <p>😔 Desculpe, o simulado solicitado ainda não está disponível.</p>
-              <p>Verifique o endereço ou escolha outro simulado.</p>
-            </section>
-          `;
-          return;
-        }
-    
-        // Sem slug, escolhe um simulado aleatório como comportamento padrão
-        if (!slug) {
-          const sims = data.simulados || [];
-          simulado = sims[Math.floor(Math.random() * sims.length)];
-          // atualiza seletor para refletir o escolhido aleatoriamente
-          renderSimuladosSelector((data.simulados || []), simulado?.slug || '');
-        }
-    
-        // normaliza e ordena o conjunto de perguntas para o render (ordem numérica)
-        if (Array.isArray(simulado?.questions)) {
-          simulado = { ...simulado, questions: sortByNumero(simulado.questions) };
-        } else if (Array.isArray(simulado?.groupsSets)) {
-          // novo formato: groupsSets (array de conjuntos de grupos)
-          const normalizedSets = (simulado.groupsSets || []).map(set =>
-            (set || []).map(g => ({
-              ...g,
-              items: chooseVariants((g.items || g.perguntas || g.questions || []))
-            }))
-          );
-          if (normalizedSets.length > 0) {
-            const paramIndex = getGroupSetParam();
-            let chosenIndex = Math.floor(Math.random() * normalizedSets.length);
-            if (paramIndex !== null && paramIndex >= 0 && paramIndex < normalizedSets.length) {
-              chosenIndex = paramIndex;
-            }
-            const chosen = normalizedSets[chosenIndex];
-            simulado = { ...simulado, groupsSets: normalizedSets, groups: chosen, __fromGroupsSets: true, __groupSetIndex: chosenIndex };
-          }
-        } else if (Array.isArray(simulado?.groups)) {
-          simulado = {
-            ...simulado,
-            groups: (simulado.groups || []).map(g => ({
-              ...g,
-              items: chooseVariants((g.items || g.perguntas || g.questions || []))
-            }))
-          };
-          // Seleciona group por parâmetro (index 1-based ou parte do título); se não houver, escolhe aleatoriamente
-          const groupParam = getGroupParam();
-          if ((simulado.groups || []).length > 0 && !simulado.__fromGroupsSets) {
-            let selected = null;
-            if (groupParam) {
-              const gp = groupParam.trim().toLowerCase();
-              const asIndex = Number(gp);
-              if (Number.isFinite(asIndex) && asIndex >= 1 && asIndex <= simulado.groups.length) {
-                selected = simulado.groups[asIndex - 1];
-              } else {
-                selected = simulado.groups.find(g => (g.title || '').toLowerCase().includes(gp)) || null;
-              }
-            }
-            if (!selected) {
-              selected = simulado.groups[Math.floor(Math.random() * simulado.groups.length)];
-            }
-            simulado = { ...simulado, groups: [selected] };
-          }
-        }
-    
-        // atualiza título no header
-        const headerTitle = document.querySelector('header h1');
-        const simuladoTitle = simulado.title || 'Repaso I';
-        if (headerTitle) {
-          headerTitle.textContent = `Simulado – ${simuladoTitle}`;
-        }
-        
-        // Atualizar meta tags Open Graph para compartilhamento no WhatsApp
-        updateOGTags(simuladoTitle, simulado.slug || '', simulado);
-        // garante que o seletor reflita o simulado carregado
-        renderSimuladosSelector((data.simulados || []), simulado?.slug || slug || '');
-    
+        document.querySelector('header h1').textContent = `Simulado – ${simulado.title}`;
+        renderSimuladosSelector(data.simulados, simulado.slug);
         renderQuiz(simulado);
-      } catch (e) {
-        const quiz = document.getElementById('quiz');
-        quiz.innerHTML = '<div class="bad">Erro ao carregar questoes.json</div>';
-        console.error(e);
-      }
+        renderDebugButton();
+      } catch (e) { document.getElementById('quiz').innerHTML = '<div class="bad">Erro ao carregar simulado</div>'; }
     }
 
     function renderQuiz(simulado) {
-      const quiz = document.getElementById('quiz');
-      quiz.innerHTML = '';
-      
-      // Resetar e iniciar timer
-      stopTimer();
-      startTimer();
-
+      const quiz = document.getElementById('quiz'); quiz.innerHTML = '';
+      stopTimer(); startTimer();
       let count = 0;
+      (simulado.groups || []).forEach((group, gidx) => {
+        const section = document.createElement('section'); section.className = 'card';
+        const groupImgSrc = group.imagem || group.image || group.imageUrl || '';
+        const groupImgHtml = groupImgSrc ? `<figure class="prompt-media" style="margin-bottom: 20px;"><img src="${groupImgSrc}" loading="lazy" style="width: 100%; height: auto; border-radius: 6px;"></figure>` : '';
+        const groupAudioSrc = group.audio || group.audioUrl || group.audioLink || group.som || '';
+        const groupAudioHtml = groupAudioSrc ? `<figure class="prompt-audio" style="margin-bottom: 20px; width: 100%;"><audio controls preload="none" src="${groupAudioSrc}" style="width: 100%; max-width: 100%;"></audio></figure>` : '';
+        section.innerHTML = `<h2>${group.title} <span class="badge">${group.badge || ''}</span></h2>${groupImgHtml}${groupAudioHtml}`;
 
-      // novo formato preferido: questions (lista plana)
-      if (Array.isArray(simulado.questions)) {
-        const section = document.createElement('section');
-        section.className = 'card';
-        section.innerHTML = `<h2>${simulado.title || 'Simulado'}</h2>`;
-
-        (simulado.questions || []).forEach((q, idx) => {
-          const wrap = document.createElement('div');
-          wrap.className = 'row';
-          const number = q.numero ?? (idx + 1);
+        const groupItems = group.items || group.perguntas || group.questions || [];
+        groupItems.forEach((q, idx) => {
+          count++;
+          const wrap = document.createElement('div'); wrap.className = 'row';
+          const number = q.numero ?? count;
           wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
-          wrap.dataset.msg = q.mensagem || '';
-            if (q.validacao || q.validacion) {
-              wrap.dataset.validacao = JSON.stringify(q.validacao || q.validacion);
-            }
           const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
           wrap.dataset.type = t;
           const imgSrc = q.imagem || q.image || q.imageUrl;
-          const altText = q.altImagem || q.alt || q.legenda || ("Imagem da questao " + number);
-          const imgHtml = imgSrc ? '<figure class="prompt-media"><img src="' + imgSrc + '" alt="' + altText + '" loading="lazy"></figure>' : '';
+          const imgHtml = imgSrc ? '<figure class="prompt-media"><img src="' + imgSrc + '" loading="lazy" style="width: 100%; height: auto; border-radius: 6px;"></figure>' : '';
           const audioSrc = q.audio || q.audioUrl || q.audioLink || q.som;
           const audioHtml = audioSrc ? '<figure class="prompt-audio"><audio controls preload="none" src="' + audioSrc + '"></audio></figure>' : '';
 
           let inputHtml = '';
           if (t === 'mc' && Array.isArray(q.opcoes)) {
-            const name = `q-questions-${number}`;
+            const name = `q-${gidx}-${number}`;
             inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="${opt}"> ${opt}</label>`).join('');
-          } else if (t === 'vf') {
-            const name = `q-questions-${number}`;
-            inputHtml = `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="V"> Verdadeiro</label>` +
-                        `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="F"> Falso</label>`;
           } else if (t === 'select' && Array.isArray(q.opcoes)) {
-            inputHtml = `<select class="sel" style="width:100%; padding:12px; font-size:18px; border:1px solid #bbb; border-radius:6px;">` +
-                        q.opcoes.map(opt => `<option value="${opt}">${opt}</option>`).join('') +
-                        `</select>`;
-          } else if (t === 'assoc' && Array.isArray(q.pares)) {
-            const options = q.pares.map(p => p.b);
-            inputHtml = `<div class="assoc">` +
-                        q.pares.map((p, i) => `<div style="display:flex; gap:8px; align-items:center; margin:6px 0;"><div style="width:32px; font-weight:bold;">${i+1})</div><div style="flex:1;">${p.a}</div><div style="min-width:200px;"><select class="assoc-sel" style="width:100%; padding:10px; font-size:16px; border:1px solid #bbb; border-radius:6px;"><option value="" selected disabled>Seleccione...</option>` +
-                        options.map(opt => `<option value=\"${opt}\">${opt}</option>`).join('') +
-                        `</select></div></div>`).join('') + `</div>`;
-            // sobrescreve gabarito com ordem correta das correspondências
-            wrap.dataset.gabarito = JSON.stringify(options);
-          } else if (t === 'checkbox' && Array.isArray(q.opcoes)) {
-            const name = `q-questions-${number}`;
-            inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="checkbox" name="${name}" value="${opt}"> ${opt}</label>`).join('');
+            inputHtml = `<select class="sel" style="width:100%; padding:12px; font-size:18px; border:1px solid #bbb; border-radius:6px;"><option value="" selected disabled>Seleccione...</option>` +
+                        q.opcoes.map(opt => `<option value="${opt}">${opt}</option>`).join('') + `</select>`;
           } else {
             inputHtml = `<input class="inp" type="text" spellcheck="true" lang="es">`;
           }
-          wrap.innerHTML = `
-            <div class="num">${number}.</div>
-            <div style="flex:1">
-              ${imgHtml}${audioHtml}
-              <label class="label">${q.enunciado}</label>
-              ${inputHtml}
-              <div class="feedback"></div>
-            </div>
-          `;
+
+          wrap.innerHTML = `<div class="num">${number}.</div><div style="flex:1">${imgHtml}${audioHtml}<label class="label">${q.enunciado}</label>${inputHtml}<div class="feedback"></div></div>`;
           section.appendChild(wrap);
         });
-
         quiz.appendChild(section);
-        count = (simulado.questions || []).length;
-      } else if (Array.isArray(simulado.groups)) {
-        // grupos (seções)
-        simulado.groups.forEach((group, gidx) => {
-          const section = document.createElement('section');
-          section.className = 'card';
-          const title = group.title || `Seção ${gidx + 1}`;
-          const badge = group.badge || '';
-          const groupImgSrc = group.imagem || group.image || group.imageUrl || '';
-          const groupImgAlt = group.altImagem || group.alt || group.legenda || (title + ' - Imagem');
-          const groupImgHtml = groupImgSrc ? `<figure class="prompt-media" style="margin-bottom: 20px;"><img src="${groupImgSrc}" alt="${groupImgAlt}" loading="lazy" style="max-width: 100%; height: auto; border-radius: 6px;"></figure>` : '';
-          const groupAudioSrc = group.audio || group.audioUrl || group.audioLink || group.som || '';
-          const groupAudioHtml = groupAudioSrc ? `<figure class="prompt-audio" style="margin-bottom: 20px; width: 100%;"><audio controls preload="none" src="${groupAudioSrc}" style="width: 100%; max-width: 100%;"></audio></figure>` : '';
-          section.innerHTML = `<h2>${title}${badge ? ` <span class="badge">${badge}</span>` : ''}</h2>${groupImgHtml}${groupAudioHtml}`;
-
-          const groupItems = group.items || group.perguntas || group.questions || [];
-          groupItems.forEach((q, idx) => {
-            count++;
-            const wrap = document.createElement('div');
-            wrap.className = 'row';
-            const number = q.numero ?? idx + 1;
-            wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
-            wrap.dataset.msg = q.mensagem || '';
-            if (q.validacao || q.validacion) {
-              wrap.dataset.validacao = JSON.stringify(q.validacao || q.validacion);
-            }
-            const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
-            wrap.dataset.type = t;
-            const imgSrc = q.imagem || q.image || q.imageUrl;
-            const altText = q.altImagem || q.alt || q.legenda || ("Imagem da questao " + number);
-            const imgHtml = imgSrc ? '<figure class="prompt-media"><img src="' + imgSrc + '" alt="' + altText + '" loading="lazy"></figure>' : '';
-            const audioSrc = q.audio || q.audioUrl || q.audioLink || q.som;
-            const audioHtml = audioSrc ? '<figure class="prompt-audio"><audio controls preload="none" src="' + audioSrc + '"></audio></figure>' : '';
-
-            let inputHtml = '';
-            if (t === 'mc' && Array.isArray(q.opcoes)) {
-              const name = `q-${gidx}-${number}`;
-              inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="${opt}"> ${opt}</label>`).join('');
-            } else if (t === 'vf') {
-              const name = `q-${gidx}-${number}`;
-              inputHtml = `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="V"> Verdadeiro</label>` +
-                          `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="F"> Falso</label>`;
-            } else if (t === 'select' && Array.isArray(q.opcoes)) {
-              inputHtml = `<select class="sel" style="width:100%; padding:12px; font-size:18px; border:1px solid #bbb; border-radius:6px;">` +
-                          q.opcoes.map(opt => `<option value="${opt}">${opt}</option>`).join('') +
-                          `</select>`;
-            } else if (t === 'assoc' && Array.isArray(q.pares)) {
-              const options = q.pares.map(p => p.b);
-              inputHtml = `<div class="assoc">` +
-                          q.pares.map((p, i) => `<div style="display:flex; gap:8px; align-items:center; margin:6px 0;"><div style="width:32px; font-weight:bold;">${i+1})</div><div style="flex:1;">${p.a}</div><div style="min-width:200px;"><select class="assoc-sel" style="width:100%; padding:10px; font-size:16px; border:1px solid #bbb; border-radius:6px;"><option value="" selected disabled>Seleccione...</option>` +
-                          options.map(opt => `<option value=\"${opt}\">${opt}</option>`).join('') +
-                          `</select></div></div>`).join('') + `</div>`;
-              // sobrescreve gabarito com ordem correta das correspondências
-              wrap.dataset.gabarito = JSON.stringify(options);
-            } else if (t === 'checkbox' && Array.isArray(q.opcoes)) {
-              const name = `q-${gidx}-${number}`;
-              inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="checkbox" name="${name}" value="${opt}"> ${opt}</label>`).join('');
-            } else {
-              inputHtml = `<input class="inp" type="text" spellcheck="true" lang="es">`;
-            }
-
-            wrap.innerHTML = `
-              <div class="num">${number}.</div>
-              <div style="flex:1">
-                ${imgHtml}${audioHtml}
-                <label class="label">${q.enunciado}</label>
-                ${inputHtml}
-                <div class="feedback"></div>
-              </div>
-            `;
-            section.appendChild(wrap);
-          });
-
-          quiz.appendChild(section);
-        });
-      } else {
-        // legado plano: única seção
-        const items = Object.values(simulado);
-        count = items.length;
-
-        const section = document.createElement('section');
-        section.className = 'card';
-        section.innerHTML = `<h2>Simulado</h2>`;
-
-        items.forEach((q, idx) => {
-          const wrap = document.createElement('div');
-          wrap.className = 'row';
-          const number = q.numero ?? (idx + 1);
-          wrap.dataset.gabarito = JSON.stringify(q.gabarito || []);
-          wrap.dataset.msg = q.mensagem || '';
-            if (q.validacao || q.validacion) {
-              wrap.dataset.validacao = JSON.stringify(q.validacao || q.validacion);
-            }
-          const t = q.type || q.tipo || (Array.isArray(q.opcoes) ? 'mc' : 'text');
-          wrap.dataset.type = t;
-          const imgSrc = q.imagem || q.image || q.imageUrl;
-          const altText = q.altImagem || q.alt || q.legenda || ("Imagem da questao " + number);
-          const imgHtml = imgSrc ? '<figure class="prompt-media"><img src="' + imgSrc + '" alt="' + altText + '" loading="lazy"></figure>' : '';
-          const audioSrc = q.audio || q.audioUrl || q.audioLink || q.som;
-          const audioHtml = audioSrc ? '<figure class="prompt-audio"><audio controls preload="none" src="' + audioSrc + '"></audio></figure>' : '';
-
-            let inputHtml = '';
-            if (t === 'mc' && Array.isArray(q.opcoes)) {
-              const name = `q-legacy-${number}`;
-              inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="${opt}"> ${opt}</label>`).join('');
-            } else if (t === 'vf') {
-              const name = `q-legacy-${number}`;
-              inputHtml = `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="V"> Verdadeiro</label>` +
-                          `<label style="display:block; margin:6px 0;"><input type="radio" name="${name}" value="F"> Falso</label>`;
-            } else if (t === 'select' && Array.isArray(q.opcoes)) {
-              inputHtml = `<select class="sel" style="width:100%; padding:12px; font-size:18px; border:1px solid #bbb; border-radius:6px;">` +
-                          q.opcoes.map(opt => `<option value="${opt}">${opt}</option>`).join('') +
-                          `</select>`;
-            } else if (t === 'assoc' && Array.isArray(q.pares)) {
-              const options = q.pares.map(p => p.b);
-              inputHtml = `<div class="assoc">` +
-                          q.pares.map((p, i) => `<div style="display:flex; gap:8px; align-items:center; margin:6px 0;"><div style="width:32px; font-weight:bold;">${i+1})</div><div style="flex:1;">${p.a}</div><div style="min-width:200px;"><select class="assoc-sel" style="width:100%; padding:10px; font-size:16px; border:1px solid #bbb; border-radius:6px;"><option value="" selected disabled>Seleccione...</option>` +
-                          options.map(opt => `<option value=\"${opt}\">${opt}</option>`).join('') +
-                          `</select></div></div>`).join('') + `</div>`;
-              // sobrescreve gabarito com ordem correta das correspondências
-              wrap.dataset.gabarito = JSON.stringify(options);
-            } else if (t === 'checkbox' && Array.isArray(q.opcoes)) {
-              const name = `q-legacy-${number}`;
-              inputHtml = q.opcoes.map(opt => `<label style="display:block; margin:6px 0;"><input type="checkbox" name="${name}" value="${opt}"> ${opt}</label>`).join('');
-            } else {
-              inputHtml = `<input class="inp" type="text" spellcheck="true" lang="es">`;
-            }
-          wrap.innerHTML = `
-            <div class="num">${number}.</div>
-            <div style="flex:1">
-              ${imgHtml}${audioHtml}
-              <label class="label">${q.enunciado}</label>
-              ${inputHtml}
-              <div class="feedback"></div>
-            </div>
-          `;
-          section.appendChild(wrap);
-        });
-
-        quiz.appendChild(section);
-      }
-
+      });
       totalQuestions = count;
-      
-      // Resetar modal de sucesso ao carregar novo quiz
-      const modal = document.getElementById('successModal');
-      if (modal) {
-        modal.dataset.shown = 'false';
-        modal.classList.remove('show');
-      }
-      
-      // Inicializar progresso
-      updateProgress(0);
-
-      // Eventos dos inputs
-      // substituir por eventos por tipo
-      Array.from(document.querySelectorAll('section.card .row')).forEach(row => {
-        const type = row.dataset.type || 'text';
-        if (type === 'text') {
-          const inp = row.querySelector('input.inp');
-          if (inp) {
-            inp.addEventListener('blur', () => { checkRow(row); updateScore(); });
-            inp.addEventListener('input', () => {
-              const fb = row.querySelector('.feedback');
-              fb.innerHTML = '';
-              row.dataset.checked = 'false';
-              row.dataset.correct = '0';
-            });
-          }
-        } else if (type === 'select') {
-          const sel = row.querySelector('select.sel') || row.querySelector('select');
-          if (sel) {
-            sel.addEventListener('change', () => { checkRow(row); updateScore(); });
-          }
-        } else if (type === 'assoc') {
-          row.querySelectorAll('select.assoc-sel').forEach(sel => {
-            sel.addEventListener('change', () => { checkRow(row); updateScore(); });
-          });
-        } else if (type === 'checkbox') {
-          row.querySelectorAll('input[type=checkbox]').forEach(chk => {
-            chk.addEventListener('change', () => { checkRow(row); updateScore(); });
-          });
-        } else { // mc ou vf
-          row.querySelectorAll('input[type=radio]').forEach(radio => {
-            radio.addEventListener('change', () => { checkRow(row); updateScore(); });
-          });
-        }
-      });
+      document.querySelectorAll('.row input.inp').forEach(inp => inp.onblur = (e) => { checkRow(e.target.closest('.row')); updateScore(); });
+      document.querySelectorAll('.row select.sel').forEach(sel => sel.onchange = (e) => { checkRow(e.target.closest('.row')); updateScore(); });
+      document.querySelectorAll('.row input[type=radio]').forEach(rad => rad.onchange = (e) => { checkRow(e.target.closest('.row')); updateScore(); });
     }
 
-    function normalize(s) {
-      return s.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    }
-
-    function checkField(el) {
-      const feedback = el.parentElement.querySelector('.feedback');
-      const ans = JSON.parse(el.dataset.gabarito);
-      const val = normalize(el.value);
-      
-      if(!val)
-      {
-        return;
-      }
-
-      const msg = el.dataset.msg || '';
-      const isFreeAnswer = (ans || []).length === 0 || 
-                          normalize(msg).includes('resposta livre') || 
-                          normalize(msg).includes('respuesta libre') ||
-                          normalize(msg).includes('free answer');
-      
-      let isCorrect;
-      if (isFreeAnswer) {
-        // Para respostas livres, aceita qualquer resposta não vazia
-        isCorrect = true;
-        feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
-      } else {
-        isCorrect = ans.some(a => normalize(a) === val);
-      if (isCorrect) {
-          feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Correto</div>';
-      } else {
-        const corr = ans[0];
-          feedback.innerHTML = `<div class="bad"><i class="fas fa-times-circle"></i> Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
-          // Encontrar a row pai para aplicar efeito visual
-          const row = el.closest('.row');
-          if (row) {
-            playErrorSound();
-            showErrorEffect(row);
-          }
-        }
-      }
-      el.dataset.checked = 'true';
-      el.dataset.correct = isCorrect ? '1' : '0';
-      return isCorrect;
-    }
-
-    function clearFeedback(el) {
-      const fb = el.parentElement.querySelector('.feedback');
-      fb.innerHTML = '';
-      el.dataset.checked = 'false';
-      el.dataset.correct = '0';
-    }
-
-    function updateProgress(pct) {
-      const progressBar = document.querySelector('.progress-bar');
-      const progressFill = document.getElementById('progress');
-      const runner = document.getElementById('progressRunner');
-      
-      if (progressFill && runner && progressBar) {
-        // Limitar porcentagem entre 0 e 100
-        pct = Math.max(0, Math.min(100, pct));
-        
-        // Atualizar largura da barra
-        progressFill.style.width = pct + '%';
-        
-        // Usar requestAnimationFrame para garantir que o layout está atualizado
-        requestAnimationFrame(() => {
-          // Calcular posição do atleta (baseado na largura da barra)
-          const barWidth = progressBar.offsetWidth || progressBar.getBoundingClientRect().width;
-          
-          if (barWidth > 0) {
-            let runnerPosition = (barWidth * pct / 100);
-            
-            // Limitar posição para não sair da barra
-            if (runnerPosition < 12) runnerPosition = 12; // Metade do tamanho do ícone
-            if (pct >= 100) {
-              runnerPosition = barWidth - 16; // Ajustar para ficar antes da bandeira
-            }
-            
-            runner.style.left = runnerPosition + 'px';
-            
-            // Adicionar animação de corrida se estiver progredindo
-            if (pct > 0 && pct < 100) {
-              runner.classList.add('running');
-            } else {
-              runner.classList.remove('running');
-            }
-            
-            // Se chegou ao final, parar animação após um tempo
-            if (pct >= 100) {
-              setTimeout(() => {
-                runner.classList.remove('running');
-              }, 500);
-            }
-          }
-        });
-      }
-    }
-
-    function checkAll() {
-      const rows = Array.from(document.querySelectorAll('section.card .row'));
-      let correct = 0;
-      rows.forEach(row => { if (checkRow(row)) correct++; });
-      const pct = Math.round((correct / totalQuestions) * 100);
-      document.getElementById('scoreBox').textContent = `Nota: ${pct}%`;
-      updateProgress(pct);
-      
-      // Verificar se todas as questões estão corretas
-      const allRows = Array.from(document.querySelectorAll('section.card .row'));
-      const allChecked = allRows.every(row => row.dataset.checked === 'true');
-      const allCorrect = allRows.every(row => row.dataset.correct === '1');
-      
-      if (allChecked && allCorrect && totalQuestions > 0) {
-        showSuccessModal();
-      }
-      
-      // Verificar conclusão de grupos
-      checkGroupCompletion();
-    }
-
-    function updateScore() {
-      const rows = Array.from(document.querySelectorAll('section.card .row')).filter(row => row.dataset.checked === 'true');
-      const correct = rows.filter(row => row.dataset.correct === '1').length;
-      const pct = Math.round((correct / totalQuestions) * 100);
-      document.getElementById('scoreBox').textContent = `Nota: ${pct}%`;
-      updateProgress(pct);
-      
-      // Verificar se todas as questões estão corretas
-      const allRows = Array.from(document.querySelectorAll('section.card .row'));
-      const allChecked = allRows.every(row => row.dataset.checked === 'true');
-      const allCorrect = allRows.every(row => row.dataset.correct === '1');
-      
-      if (allChecked && allCorrect && totalQuestions > 0) {
-        showSuccessModal();
-      }
-      
-      // Verificar conclusão de grupos
-      checkGroupCompletion();
-    }
-    
-    function formatTime(seconds) {
-      const mins = Math.floor(seconds / 60);
-      const secs = seconds % 60;
-      return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-    }
-    
-    function updateTimer() {
-      if (startTime === null) return;
-      
-      const now = Date.now();
-      elapsedTime = Math.floor((now - startTime) / 1000);
-      
-      const timerElement = document.getElementById('timer');
-      if (timerElement) {
-        timerElement.textContent = formatTime(elapsedTime);
-      }
-    }
-    
-    function startTimer() {
-      startTime = Date.now();
-      elapsedTime = 0;
-      
-      // Atualizar imediatamente
-      updateTimer();
-      
-      // Atualizar a cada segundo
-      if (timerInterval) {
-        clearInterval(timerInterval);
-      }
-      timerInterval = setInterval(updateTimer, 1000);
-    }
-    
-    function stopTimer() {
-      if (timerInterval) {
-        clearInterval(timerInterval);
-        timerInterval = null;
-      }
-    }
-    
-    function showSuccessModal() {
-      const modal = document.getElementById('successModal');
-      if (!modal || modal.dataset.shown === 'true') {
-        return; // Já foi mostrado
-      }
-      
-      // Parar o timer
-      stopTimer();
-      
-      // Marcar como mostrado
-      modal.dataset.shown = 'true';
-      
-      // Escolher GIF aleatório (1 a 2)
-      const gifNumber = Math.floor(Math.random() * 2) + 1;
-      const gifFile = `media/videos/success/success${String(gifNumber).padStart(2, '0')}.gif`;
-      
-      // Definir o GIF
-      const gifImg = document.getElementById('successGif');
-      if (gifImg) {
-        gifImg.src = gifFile;
-      }
-      
-      // Mostrar tempo final
-      const finalTimeElement = document.getElementById('finalTime');
-      if (finalTimeElement) {
-        finalTimeElement.textContent = formatTime(elapsedTime);
-      }
-      
-      // Tocar som de conclusão
-      playCompleteSound();
-      
-      // Mostrar modal
-      modal.classList.add('show');
-      
-      // Criar efeitos de fogos de artifício
-      createFireworks(modal);
-      
-      // Fechar automaticamente após 20 segundos
-      setTimeout(() => {
-        closeSuccessModal();
-      }, 20000);
-    }
-    
-    function createFireworks(container) {
-      // Criar múltiplas explosões de fogos de artifício
-      const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ff8800', '#ff0088', '#88ff00', '#0088ff'];
-      const fireworkCount = 50; // Número de partículas por explosão
-      const explosionCount = 20; // Número de explosões (aumentado para 20 segundos)
-      
-      // Primeira onda de explosões
-      for (let i = 0; i < explosionCount; i++) {
-        setTimeout(() => {
-          createFireworkExplosion(container, colors, fireworkCount);
-        }, i * 200); // Espaçar as explosões iniciais
-      }
-      
-      // Segunda onda de explosões (após 8 segundos)
-      setTimeout(() => {
-        for (let i = 0; i < explosionCount; i++) {
-          setTimeout(() => {
-            createFireworkExplosion(container, colors, fireworkCount);
-          }, i * 200);
-        }
-      }, 8000);
-    }
-    
-    function createFireworkExplosion(container, colors, particleCount) {
-      // Posição aleatória para a explosão
-      const x = Math.random() * window.innerWidth;
-      const y = Math.random() * window.innerHeight;
-      
-      // Criar partículas em todas as direções
-      for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div');
-        particle.className = 'firework';
-        
-        // Cor aleatória
-        const color = colors[Math.floor(Math.random() * colors.length)];
-        particle.style.backgroundColor = color;
-        particle.style.boxShadow = `0 0 6px ${color}, 0 0 12px ${color}`;
-        
-        // Ângulo aleatório (360 graus)
-        const angle = (Math.PI * 2 * i) / particleCount;
-        const velocity = 50 + Math.random() * 100;
-        const finalX = Math.cos(angle) * velocity;
-        const finalY = Math.sin(angle) * velocity;
-        
-        // Tamanhos variados
-        const initialSize = 2 + Math.random() * 3;
-        const finalSize = 0.5 + Math.random() * 1;
-        
-        // CSS variables para animação
-        particle.style.setProperty('--x', finalX + 'px');
-        particle.style.setProperty('--initialY', '0px');
-        particle.style.setProperty('--finalY', finalY + 'px');
-        particle.style.setProperty('--initialSize', initialSize + 'px');
-        particle.style.setProperty('--finalSize', finalSize + 'px');
-        
-        // Posição inicial
-        particle.style.left = x + 'px';
-        particle.style.top = y + 'px';
-        
-        // Adicionar ao container
-        container.appendChild(particle);
-        
-        // Animação
-        particle.style.animation = `firework ${0.8 + Math.random() * 0.4}s ease-out forwards`;
-        
-        // Remover após animação
-        setTimeout(() => {
-          if (particle.parentNode) {
-            particle.remove();
-          }
-        }, 1500);
-      }
-    }
-    
-    function playCompleteSound() {
-      // Tocar som de conclusão completa
-      const soundFile = `media/audio/complete/complete.mp3`;
-      
-      // Criar elemento de áudio e reproduzir
-      const audio = new Audio(soundFile);
-      audio.volume = 0.7; // Volume moderado
-      audio.play().catch(err => {
-        // Ignorar erros de autoplay (alguns navegadores bloqueiam)
-        console.log('Não foi possível reproduzir o som de conclusão:', err);
-      });
-    }
-    
-    function closeSuccessModal() {
-      const modal = document.getElementById('successModal');
-      if (modal) {
-        modal.classList.remove('show');
-      }
-    }
-    
-    function checkGroupCompletion() {
-      const groups = Array.from(document.querySelectorAll('section.card'));
-      
-      groups.forEach((group, index) => {
-        const rows = Array.from(group.querySelectorAll('.row'));
-        
-        if (rows.length === 0) return;
-        
-        // Verificar se todas as questões foram respondidas e estão corretas
-        const allChecked = rows.every(row => row.dataset.checked === 'true');
-        const allCorrect = rows.every(row => row.dataset.correct === '1');
-        
-        if (allChecked && allCorrect && !group.classList.contains('group-completed')) {
-          // Grupo completado pela primeira vez!
-          group.classList.add('group-completed');
-          
-          // Adicionar mensagem de sucesso se não existir
-          let successMsg = group.querySelector('.group-success-message');
-          if (!successMsg) {
-            successMsg = document.createElement('div');
-            successMsg.className = 'group-success-message';
-            successMsg.innerHTML = '<i class="fas fa-trophy"></i> ¡Excelente! Has completado este grupo correctamente. <i class="fas fa-star"></i>';
-            
-            // Inserir após o h2 ou após os elementos de mídia do grupo
-            const h2 = group.querySelector('h2');
-            if (h2) {
-              // Procurar o primeiro elemento .row ou inserir após o último elemento de mídia
-              const firstRow = group.querySelector('.row');
-              if (firstRow) {
-                group.insertBefore(successMsg, firstRow);
-              } else {
-                // Se não há rows ainda, inserir após o h2
-                h2.parentNode.insertBefore(successMsg, h2.nextSibling);
-              }
-            }
-          }
-          
-          // Mostrar mensagem com animação
-          setTimeout(() => {
-            successMsg.classList.add('show');
-          }, 100);
-          
-          // Tocar som de sucesso aleatório
-          playSuccessSound();
-          
-          // Criar efeito de confetes simples
-          createConfetti(group);
-        } else if (!allCorrect || !allChecked) {
-          // Se não está mais completo, remover classe
-          group.classList.remove('group-completed');
-          const successMsg = group.querySelector('.group-success-message');
-          if (successMsg) {
-            successMsg.classList.remove('show');
-          }
-        }
-      });
-    }
-    
-    function playSuccessSound() {
-      // Escolher um som de sucesso aleatório (1 a 5)
-      const soundNumber = Math.floor(Math.random() * 5) + 1;
-      const soundFile = `media/audio/success/success${String(soundNumber).padStart(2, '0')}.mp3`;
-      
-      // Criar elemento de áudio e reproduzir
-      const audio = new Audio(soundFile);
-      audio.volume = 0.7; // Volume moderado
-      audio.play().catch(err => {
-        // Ignorar erros de autoplay (alguns navegadores bloqueiam)
-        console.log('Não foi possível reproduzir o som de sucesso:', err);
-      });
-    }
-    
-    function playErrorSound() {
-      // Escolher um som de erro aleatório (1 a 10)
-      const soundNumber = Math.floor(Math.random() * 10) + 1;
-      const soundFile = `media/audio/error/error${String(soundNumber).padStart(2, '0')}.mp3`;
-      
-      // Criar elemento de áudio e reproduzir
-      const audio = new Audio(soundFile);
-      audio.volume = 0.6; // Volume um pouco mais baixo que o de sucesso
-      audio.play().catch(err => {
-        // Ignorar erros de autoplay (alguns navegadores bloqueiam)
-        console.log('Não foi possível reproduzir o som de erro:', err);
-      });
-    }
-    
-    function showErrorEffect(row) {
-      // Adicionar efeito visual de erro
-      row.classList.add('error-shake', 'error-highlight');
-      
-      // Remover animação de shake após terminar
-      setTimeout(() => {
-        row.classList.remove('error-shake');
-      }, 500);
-      
-      // Manter highlight por um tempo maior
-      setTimeout(() => {
-        row.classList.remove('error-highlight');
-      }, 2000);
-    }
-    
-    function createConfetti(container) {
-      // Criar confetes simples usando emojis/ícones
-      const confettiCount = 20;
-      const colors = ['#10b981', '#34d399', '#fbbf24', '#f59e0b', '#3b82f6', '#6366f1'];
-      
-      for (let i = 0; i < confettiCount; i++) {
-        const confetti = document.createElement('div');
-        confetti.style.position = 'absolute';
-        confetti.style.width = '12px';
-        confetti.style.height = '12px';
-        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-        confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
-        confetti.style.left = Math.random() * 100 + '%';
-        confetti.style.top = '-10px';
-        confetti.style.opacity = '0';
-        confetti.style.pointerEvents = 'none';
-        confetti.style.zIndex = '1000';
-        
-        container.style.position = 'relative';
-        container.appendChild(confetti);
-        
-        // Animação
-        const angle = Math.random() * Math.PI * 2;
-        const velocity = 50 + Math.random() * 50;
-        const x = Math.cos(angle) * velocity;
-        const y = Math.sin(angle) * velocity + 100;
-        const rotation = Math.random() * 360;
-        
-        confetti.animate([
-          { 
-            transform: 'translate(0, 0) rotate(0deg)',
-            opacity: 1
-          },
-          { 
-            transform: `translate(${x}px, ${y}px) rotate(${rotation}deg)`,
-            opacity: 0
-          }
-        ], {
-          duration: 1500 + Math.random() * 500,
-          easing: 'ease-out'
-        }).onfinish = () => {
-          confetti.remove();
-        };
-      }
+    function normalize(s) { 
+      return (s || '')
+        .trim()
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^\w\s]|_/g, "")
+        .replace(/\s+/g, ' ');
     }
 
     function checkRow(row) {
       const feedback = row.querySelector('.feedback');
       const ans = JSON.parse(row.dataset.gabarito || '[]');
-      const type = row.dataset.type || 'text';
+      const type = row.dataset.type;
       let val = '';
-  
-      // Verificar se é resposta livre ANTES de processar a resposta
-      const msg = row.dataset.msg || '';
-      const isFreeAnswer = (ans || []).length === 0 || 
-                          normalize(msg).includes('resposta livre') || 
-                          normalize(msg).includes('respuesta libre') ||
-                          normalize(msg).includes('free answer');
+      if (type === 'mc') val = row.querySelector('input[type=radio]:checked')?.value || '';
+      else if (type === 'select') val = row.querySelector('select.sel')?.value || '';
+      else val = row.querySelector('input.inp')?.value || '';
       
-      // Obter validação do dataset (se existir)
-      const validacao = row.dataset.validacao ? JSON.parse(row.dataset.validacao) : null;
-  
-      if (type === 'text') {
-        const inp = row.querySelector('input.inp');
-        val = inp ? inp.value : '';
-      } else if (type === 'select') {
-        const sel = row.querySelector('select.sel') || row.querySelector('select');
-        val = sel ? (sel.value || sel.options[sel.selectedIndex]?.text || '') : '';
-        // Remove "Seleccione..." se presente
-        if (val && (normalize(val) === normalize('Seleccione...') || normalize(val) === normalize('Selecione...'))) {
-          val = '';
-        }
-      } else if (type === 'assoc') {
-        const sels = Array.from(row.querySelectorAll('select.assoc-sel'));
-        const vals = sels.map(sel => sel ? (sel.value || '') : '');
-        // se algum estiver vazio, não corrige ainda
-        if (vals.some(v => !normalize(String(v)))) {
-          return false;
-        }
-        const valsNorm = vals.map(v => normalize(String(v)));
-        const ansArr = (ans || []).map(a => normalize(String(a)));
-        const msg = row.dataset.msg || '';
-        const isFreeAnswer = (ans || []).length === 0 || 
-                            normalize(msg).includes('resposta livre') || 
-                            normalize(msg).includes('respuesta libre') ||
-                            normalize(msg).includes('free answer');
-        
-        let isCorrect;
-        if (isFreeAnswer) {
-          // Para respostas livres, aceita qualquer resposta não vazia
-          isCorrect = valsNorm.every(v => v.length > 0);
-        if (isCorrect) {
-            feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
-          } else {
-            feedback.innerHTML = '<div class="bad"><i class="fas fa-times-circle"></i> Complete todas as associações</div>';
-            playErrorSound();
-            showErrorEffect(row);
-          }
-        } else {
-          isCorrect = ansArr.length === valsNorm.length && ansArr.every((a, i) => a === valsNorm[i]);
-          if (isCorrect) {
-            feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Correto</div>';
-        } else {
-          const corr = (ans || []).join(', ');
-            feedback.innerHTML = `<div class=\"bad\"><i class="fas fa-times-circle"></i> Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
-            playErrorSound();
-            showErrorEffect(row);
-          }
-        }
-        row.dataset.checked = 'true';
-        row.dataset.correct = isCorrect ? '1' : '0';
-        return isCorrect;
-      } else if (type === 'checkbox') {
-        const checks = Array.from(row.querySelectorAll('input[type=checkbox]:checked'));
-        const vals = checks.map(ch => ch.value);
-        const expectedLen = (ans || []).length;
-        if (vals.length !== expectedLen) {
-          return false;
-        }
-        const valsNorm = vals.map(v => normalize(String(v))).sort();
-        const ansArr = (ans || []).map(a => normalize(String(a))).sort();
-        const msg = row.dataset.msg || '';
-        const isFreeAnswer = (ans || []).length === 0 || 
-                            normalize(msg).includes('resposta livre') || 
-                            normalize(msg).includes('respuesta libre') ||
-                            normalize(msg).includes('free answer');
-        
-        let isCorrect;
-        if (isFreeAnswer) {
-          // Para respostas livres, aceita qualquer seleção não vazia
-          isCorrect = vals.length > 0;
-        if (isCorrect) {
-            feedback.innerHTML = '<div class=\"ok\"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
-          } else {
-            feedback.innerHTML = '<div class=\"bad\"><i class="fas fa-times-circle"></i> Selecione pelo menos uma opção</div>';
-            playErrorSound();
-            showErrorEffect(row);
-          }
-        } else {
-          isCorrect = ansArr.length === valsNorm.length && ansArr.every((a, i) => a === valsNorm[i]);
-          if (isCorrect) {
-            feedback.innerHTML = '<div class=\"ok\"><i class="fas fa-check-circle"></i> Correto</div>';
-        } else {
-          const corr = (ans || []).join(', ');
-            feedback.innerHTML = `<div class=\"bad\"><i class="fas fa-times-circle"></i> Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
-            playErrorSound();
-            showErrorEffect(row);
-          }
-        }
-        row.dataset.checked = 'true';
-        row.dataset.correct = isCorrect ? '1' : '0';
-        return isCorrect;
-      } else if (type === 'select') {
-        const sel = row.querySelector('select.sel') || row.querySelector('select');
-        val = sel ? (sel.value || sel.options[sel.selectedIndex]?.text || '') : '';
-        // Remove "Seleccione..." se presente
-        if (normalize(val) === normalize('Seleccione...') || normalize(val) === normalize('Selecione...')) {
-          val = '';
-        }
-      } else { // mc ou vf
-        const checked = row.querySelector('input[type=radio]:checked');
-        val = checked ? checked.value : '';
-      }
-
-      const nval = normalize(val);
-      
-      let isCorrect;
-      if (isFreeAnswer) {
-        // Para respostas livres, aceita qualquer resposta não vazia
-      if (!nval) {
-          return false; // Ainda precisa ter algo digitado
-        }
-        
-        // Validação genérica se configurada no JSON
-        if (validacao) {
-          let isValid = false;
-          let errorMsg = '';
-          
-          if (validacao.tipo === 'lista' && Array.isArray(validacao.valores)) {
-            // Validação por lista de valores válidos
-            isValid = validacao.valores.some(v => {
-              const vNorm = normalize(String(v));
-              return vNorm === nval || nval.includes(vNorm) || vNorm.includes(nval);
-            });
-            if (!isValid) {
-              errorMsg = validacao.mensagem || `Por favor, escriba una respuesta válida. Opciones: ${validacao.valores.join(', ')}`;
-            }
-          } else if (validacao.tipo === 'minLength' && validacao.min) {
-            // Validação por tamanho mínimo
-            isValid = nval.length >= validacao.min;
-            if (!isValid) {
-              errorMsg = validacao.mensagem || `La respuesta debe tener al menos ${validacao.min} caracteres.`;
-            }
-          } else if (validacao.tipo === 'regex' && validacao.patron) {
-            // Validação por expressão regular
-            try {
-              const regex = new RegExp(validacao.patron, validacao.flags || 'i');
-              isValid = regex.test(val);
-              if (!isValid) {
-                errorMsg = validacao.mensagem || 'La respuesta no cumple con el formato requerido.';
-              }
-            } catch (e) {
-              console.error('Error en regex de validación:', e);
-              isValid = true; // Se houver erro no regex, aceita
-            }
-          } else if (validacao.tipo === 'spellcheck') {
-            // Validação ortográfica usando LanguageTool API (assíncrona)
-            // Mostrar feedback de "verificando" e fazer validação em background
-            feedback.innerHTML = '<div class="info"><i class="fas fa-spinner fa-spin"></i> Verificando ortografía...</div>';
-            
-            // Validação assíncrona
-            (async () => {
-              try {
-                const words = val.trim().split(/\s+/).filter(w => w.length > 2);
-                if (words.length === 0) {
-                  isCorrect = true;
-                  feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
-                  row.dataset.checked = 'true';
-                  row.dataset.correct = '1';
-                  updateScore();
-                  return;
-                }
-                
-                // Usar API pública do LanguageTool (gratuita, com limite de requisições)
-                const response = await fetch(`https://api.languagetool.org/v2/check`, {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                  },
-                  body: `text=${encodeURIComponent(val)}&language=es&enabledOnly=false`
-                });
-                
-                if (response.ok) {
-                  const data = await response.json();
-                  const errors = data.matches || [];
-                  
-                  // Filtrar apenas erros ortográficos (não gramaticais)
-                  const spellingErrors = errors.filter(e => 
-                    e.rule && e.rule.category && 
-                    (e.rule.category.id === 'TYPOS' || e.rule.category.id === 'SPELLING')
-                  );
-                  
-                  if (spellingErrors.length > 0) {
-                    // Detalhar cada erro com palavra, contexto e sugestões
-                    const errorDetails = spellingErrors.map(e => {
-                      const word = val.substring(e.offset, e.offset + e.length);
-                      const context = val.substring(Math.max(0, e.offset - 10), Math.min(val.length, e.offset + e.length + 10));
-                      const suggestions = (e.replacements || []).slice(0, 3).map(r => r.value).join(', ');
-                      const message = e.message || e.rule?.description || 'Error ortográfico';
-                      
-                      let detail = `<strong>"${word}"</strong>`;
-                      if (suggestions) {
-                        detail += ` → Sugerencias: ${suggestions}`;
-                      }
-                      if (message) {
-                        detail += ` (${message})`;
-                      }
-                      return detail;
-                    });
-                    
-                    isCorrect = false;
-                    const baseMsg = validacao.mensagem || 'Se detectaron errores ortográficos:';
-                    errorMsg = `${baseMsg}<br><small style="display: block; margin-top: 8px; line-height: 1.6;">${errorDetails.join('<br>')}</small>`;
-                    
-                    feedback.innerHTML = `<div class="bad"><i class="fas fa-times-circle"></i> ${errorMsg}</div>`;
-                    row.dataset.checked = 'true';
-                    row.dataset.correct = '0';
-                    playErrorSound();
-                    showErrorEffect(row);
-                    playErrorSound();
-                    showErrorEffect(row);
-                  } else {
-                    isCorrect = true;
-                    feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
-                    row.dataset.checked = 'true';
-                    row.dataset.correct = '1';
-                  }
-                } else {
-                  // Se a API falhar, aceita a resposta (não bloqueia)
-                  isCorrect = true;
-                  feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
-                  row.dataset.checked = 'true';
-                  row.dataset.correct = '1';
-                }
-              } catch (e) {
-                console.error('Error en verificación ortográfica:', e);
-                // Se a API falhar, aceita a resposta (não bloqueia)
-                isCorrect = true;
-                feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
-                row.dataset.checked = 'true';
-                row.dataset.correct = '1';
-              }
-              
-              updateScore();
-            })();
-            
-            // Retornar true temporariamente enquanto verifica (será atualizado assincronamente)
-            return true;
-          }
-          
-          if (!isValid && errorMsg && validacao.tipo !== 'spellcheck') {
-            isCorrect = false;
-            feedback.innerHTML = `<div class="bad"><i class="fas fa-times-circle"></i> ${errorMsg}</div>`;
-            row.dataset.checked = 'true';
-            row.dataset.correct = '0';
-            playErrorSound();
-            showErrorEffect(row);
-        return false;
-          }
-        }
-        
-        isCorrect = true;
-        feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Resposta recebida<br><small>' + msg + '</small></div>';
-      } else {
-        if (!nval) {
-          return false;
-        }
-        isCorrect = (ans || []).some(a => normalize(String(a)) === nval);
+      const questionLabel = (row.querySelector('.label')?.innerText || '').trim();
+      if (!val) return false;
+      const isCorrect = ans.some(a => normalize(a) === normalize(val));
       if (isCorrect) {
-          feedback.innerHTML = '<div class="ok"><i class="fas fa-check-circle"></i> Correto</div>';
+        feedback.innerHTML = '<div class="ok">Correto</div>';
       } else {
-        const corr = (ans || [])[0] ?? '';
-          feedback.innerHTML = `<div class="bad"><i class="fas fa-times-circle"></i> Incorrecto<br><small>Correto: ${corr}<br>${msg}</small></div>`;
-          playErrorSound();
-          showErrorEffect(row);
+        feedback.innerHTML = `<div class="bad">Incorrecto. Correto: ${ans[0]}</div>`;
+        // Adiciona ao histórico de erros toda vez que errar, sem remover
+        const alreadyTracked = mistakeHistory.some(err => err.question === questionLabel && normalize(err.user_answer) === normalize(val));
+        if (!alreadyTracked) {
+          mistakeHistory.push({ question: questionLabel, user_answer: val, correct_answer: ans[0] });
         }
       }
-      row.dataset.checked = 'true';
-      row.dataset.correct = isCorrect ? '1' : '0';
-      return isCorrect;
+      row.dataset.checked = 'true'; row.dataset.correct = isCorrect ? '1' : '0';
+      renderAIFeedbackUI(); return isCorrect;
     }
 
-    loadSimulado();
-    
-    // Dark Mode Toggle
-    function toggleDarkMode() {
-      const body = document.body;
-      const btn = document.getElementById('btnDarkMode');
-      const icon = btn.querySelector('i');
-      
-      body.classList.toggle('dark-mode');
-      const isDark = body.classList.contains('dark-mode');
-      
-      if (isDark) {
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
-        localStorage.setItem('darkMode', 'enabled');
-      } else {
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
-        localStorage.setItem('darkMode', 'disabled');
+    function updateScore() {
+      const stats = getCurrentStats();
+      document.getElementById('scoreBox').innerHTML = `<i class="fas fa-star"></i> Nota: ${stats.pct}%`;
+      updateProgress(stats.pct);
+      if (stats.finished) {
+        if (stats.pct === 100) showSuccessModal();
+        renderAIFeedbackUI();
+        generateAndPlayFinalAudio(stats.pct, stats.mistakes);
       }
     }
-    
-    // Carregar preferência de dark mode
-    function loadDarkModePreference() {
-      const darkMode = localStorage.getItem('darkMode');
-      const body = document.body;
-      const btn = document.getElementById('btnDarkMode');
-      const icon = btn.querySelector('i');
-      
-      if (darkMode === 'enabled') {
-        body.classList.add('dark-mode');
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
-      }
+
+    function updateProgress(pct) {
+      document.getElementById('progress').style.width = pct + '%';
+      document.getElementById('progressRunner').style.left = `calc(${pct}% - 12px)`;
     }
-    
-    // Carregar preferência ao iniciar
-    loadDarkModePreference();
-  </script>
-  <script>
-  // Ajuste dinâmico: posiciona a barra de progresso sticky logo abaixo do header
-  (function(){
-    function updateStickyTop(){
-      const header = document.querySelector('header');
-      const sticky = document.querySelector('.sticky-top');
-      if (!header || !sticky) return;
-      const h = header.offsetHeight;
-      sticky.style.top = h + 'px';
+
+    function startTimer() { startTime = Date.now(); timerInterval = setInterval(() => { elapsedTime = Math.floor((Date.now()-startTime)/1000); document.getElementById('timer').innerText = formatTime(elapsedTime); }, 1000); }
+    function stopTimer() { clearInterval(timerInterval); }
+    function formatTime(s) { return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`; }
+
+    function showSuccessModal() {
+      const modal = document.getElementById('successModal'); if (modal.dataset.shown === 'true') return;
+      modal.dataset.shown = 'true'; stopTimer();
+      document.getElementById('finalTime').innerText = formatTime(Math.floor((Date.now()-startTime)/1000));
+      modal.classList.add('show');
     }
-    window.addEventListener('load', updateStickyTop);
-    window.addEventListener('resize', updateStickyTop);
-  })();
-  </script>
-  <!-- Botões flutuantes: Ir ao topo e Ir ao final -->
-  <script>
-  (function(){
-    // Botão Ir ao Topo
-    const btnTopo = document.createElement('button');
-    btnTopo.id = 'btnTopo';
-    btnTopo.type = 'button';
-    btnTopo.setAttribute('aria-label', 'Ir ao topo');
-    btnTopo.title = 'Ir ao topo';
-    btnTopo.innerHTML = '<i class="fas fa-arrow-up" aria-hidden="true"></i>';
-    Object.assign(btnTopo.style, {
-      position: 'fixed',
-      right: '20px',
-      bottom: '80px',
-      zIndex: '9999',
-      width: '56px',
-      height: '56px',
-      padding: '0',
-      borderRadius: '50%',
-      background: 'linear-gradient(135deg,#4f46e5,#3b82f6)',
-      color: '#fff',
-      border: 'none',
-      boxShadow: '0 6px 14px rgba(0,0,0,0.2)',
-      cursor: 'pointer',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      transition: 'all 0.3s ease'
-    });
-    
-    // Botão Ir ao Final
-    const btnFinal = document.createElement('button');
-    btnFinal.id = 'btnFinal';
-    btnFinal.type = 'button';
-    btnFinal.setAttribute('aria-label', 'Ir ao final');
-    btnFinal.title = 'Ir ao final';
-    btnFinal.innerHTML = '<i class="fas fa-arrow-down" aria-hidden="true"></i>';
-    Object.assign(btnFinal.style, {
-      position: 'fixed',
-      right: '20px',
-      bottom: '20px',
-      zIndex: '9999',
-      width: '56px',
-      height: '56px',
-      padding: '0',
-      borderRadius: '50%',
-      background: 'linear-gradient(135deg,#6366f1,#8b5cf6)',
-      color: '#fff',
-      border: 'none',
-      boxShadow: '0 6px 14px rgba(0,0,0,0.2)',
-      cursor: 'pointer',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      transition: 'all 0.3s ease'
-    });
-    
-    // Mostrar botões apenas após rolar um pouco
-    btnTopo.style.display = 'none';
-    btnFinal.style.display = 'none';
-    
-    let ticking = false;
-    const onScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          const scrollY = window.scrollY;
-          const windowHeight = window.innerHeight;
-          const documentHeight = document.documentElement.scrollHeight;
-          const isNearBottom = (scrollY + windowHeight) >= (documentHeight - 100);
-          
-          // Mostrar botão topo se rolou mais de 200px
-          btnTopo.style.display = scrollY > 200 ? 'flex' : 'none';
-          
-          // Mostrar botão final se não estiver perto do final
-          btnFinal.style.display = !isNearBottom && scrollY > 200 ? 'flex' : 'none';
-          
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-  
-    // Efeitos hover
-    btnTopo.addEventListener('mouseenter', () => { btnTopo.style.transform = 'scale(1.06)'; });
-    btnTopo.addEventListener('mouseleave', () => { btnTopo.style.transform = 'scale(1)'; });
-    btnFinal.addEventListener('mouseenter', () => { btnFinal.style.transform = 'scale(1.06)'; });
-    btnFinal.addEventListener('mouseleave', () => { btnFinal.style.transform = 'scale(1)'; });
-  
-    // Ações dos botões
-    btnTopo.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  
-    btnFinal.addEventListener('click', () => {
-      window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
-    });
-  
-    document.body.appendChild(btnTopo);
-    document.body.appendChild(btnFinal);
-  })();
+    function closeSuccessModal() { document.getElementById('successModal').classList.remove('show'); }
+
+    function toggleDarkMode() { document.body.classList.toggle('dark-mode'); localStorage.setItem('darkMode', document.body.classList.contains('dark-mode') ? 'enabled' : 'disabled'); }
+    function loadDarkModePreference() { if (localStorage.getItem('darkMode') === 'enabled') document.body.classList.add('dark-mode'); }
+
+    function renderSimuladosSelector(simulados, selectedSlug) {
+      const sel = document.getElementById('simSelect');
+      sel.innerHTML = '<option value="" disabled>Selecione...</option>';
+      simulados.forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = s.slug; opt.textContent = s.title;
+        if (s.slug === selectedSlug) opt.selected = true;
+        sel.appendChild(opt);
+      });
+      sel.onchange = () => { location.href = `?slug=${sel.value}`; };
+    }
+
+    loadDarkModePreference(); loadSimulado();
   </script>
 </body>
 </html>
