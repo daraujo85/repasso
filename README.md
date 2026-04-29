@@ -5,8 +5,15 @@ Este repositorio reune o arquivo HTML interativo 'repaso.html' e os dados das qu
 ## Inicialização
 
 ### Pre-requisitos
-- Python 3 instalado e disponível no PATH.
+- Python 3 instalado (para o servidor básico) OU um servidor com suporte a **PHP + SQLite** (para usar o Ranking e Reporte de Erros).
 - Navegador web moderno (Chrome, Firefox, Edge, etc.)
+
+### Servidor PHP (Recomendado para Ranking)
+Para que o sistema de ranking e reporte de erros funcione, você deve usar um servidor que processe PHP.
+Exemplos:
+- **Built-in PHP:** Abra o terminal e rode `php -S localhost:8080`.
+- **XAMPP/WAMP/MAMP:** Coloque os arquivos na pasta `htdocs` ou `www`.
+- **Apache/Nginx:** Configure o processamento de arquivos `.php`.
 
 ### Primeira execução
 1. Clone ou baixe este repositório.

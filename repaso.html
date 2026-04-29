@@ -147,7 +147,33 @@
       background-color:#7f1d1d;
       border-left-color:#ef4444;
     }
-    .actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; justify-content:space-between; }
+    .report-q-btn {
+      background: none;
+      border: none;
+      color: #94a3b8;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 10px;
+      transition: color 0.2s;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .report-q-btn:hover { color: #ef4444; }
+    .top-player-badge {
+      font-size: 15px;
+      color: #9a3412;
+      background: #ffedd5;
+      padding: 6px 16px;
+      border-radius: 50px;
+      border: 2px solid #fb923c;
+      display: none;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 2px 4px rgba(251, 146, 60, 0.2);
+    }
+    .actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:30px; justify-content:space-between; width: 100%; }
     button { font-size:18px; padding:12px 20px; border:none; border-radius:6px; cursor:pointer; }
     #btnCheck { background:#4f46e5; color:#fff; }
     #btnClear { background:#e5e7eb; }
@@ -237,7 +263,7 @@
     #btnDarkMode { position:fixed; top:20px; right:20px; z-index:1001; background:#374151; color:#fff; border:none; border-radius:50%; width:50px; height:50px; cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,0.2); transition:all 0.3s ease; display:flex; align-items:center; justify-content:center; }
 
     /* Modal de sucesso completo */
-    .success-modal {
+    .success-modal, .ranking-modal {
       display:none;
       position:fixed;
       top:0;
@@ -248,23 +274,26 @@
       z-index:10000;
       justify-content:center;
       align-items:center;
+      overflow-y: auto;
     }
-    .success-modal.show {
+    .success-modal.show, .ranking-modal.show {
       display:flex;
     }
-    .success-modal-content {
+    .success-modal-content, .ranking-modal-content {
       background:#fff;
       border-radius:20px;
       padding:30px;
-      max-width:500px;
+      max-width:600px;
+      width: 90%;
       text-align:center;
+      position: relative;
     }
-    .success-modal-content img {
-      max-width:100%;
-      height:auto;
-      border-radius:10px;
-      margin-bottom:20px;
-    }
+    .ranking-table { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: left; }
+    .ranking-table th, .ranking-table td { padding: 10px; border-bottom: 1px solid #eee; }
+    .ranking-table th { background: #f8fafc; font-weight: bold; }
+    .ranking-table tr:nth-child(even) { background: #f9f9f9; }
+    .ranking-form { text-align: left; margin-top: 20px; background: #f1f5f9; padding: 20px; border-radius: 12px; }
+    .ranking-form input { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 6px; }
   </style>
 </head>
 <body>
@@ -288,23 +317,48 @@
         <div id="progressRunner" class="progress-runner" style="position: absolute; transition: left 0.3s ease;"><i class="fas fa-running"></i></div>
         <div class="progress-finish" style="position: absolute; right: 10px;"><i class="fas fa-flag-checkered"></i></div>
       </div>
-      <div class="sim-selector">
-        <span style="font-weight:normal; font-size:14px; color:#555;"><i class="fas fa-list"></i> Simulado:</span>
-        <select id="simSelect" class="sim-select">
-          <option value="">Carregando simulados...</option>
-        </select>
+      <div class="sim-selector" style="justify-content: space-between;">
+        <button onclick="showRanking()" class="test-btn" style="padding: 6px 12px; font-size: 14px; background: #10b981;"><i class="fas fa-list-ol"></i> Ver Ranking</button>
+        <div>
+          <span style="font-weight:normal; font-size:14px; color:#555;"><i class="fas fa-list"></i> Simulado:</span>
+          <select id="simSelect" class="sim-select">
+            <option value="">Carregando simulados...</option>
+          </select>
+        </div>
       </div>
     </div>
     
     <div id="quiz"></div>
     
     <!-- Modal de sucesso completo -->
-    <div id="successModal" class="success-modal" onclick="closeSuccessModal()">
+    <div id="successModal" class="success-modal">
       <div class="success-modal-content">
         <img id="successGif" src="" alt="¡Felicitaciones!">
         <h3><i class="fas fa-trophy"></i> ¡Perfecto!</h3>
         <p>Has completado todas las perguntas correctamente.</p>
         <p style="margin-top:15px; font-size:20px; font-weight:bold; color:#6366f1;"><i class="fas fa-clock"></i> Tiempo: <span id="finalTime">00:00</span></p>
+        
+        <div id="rankingRegistration" class="ranking-form">
+          <h4 style="margin-top:0;"><i class="fas fa-user-edit"></i> ¡Entra en el Ranking!</h4>
+          <label for="rankName">Nombre:</label>
+          <input type="text" id="rankName" placeholder="Tu nombre">
+          <label for="rankPhone">Celular:</label>
+          <input type="tel" id="rankPhone" placeholder="Tu celular (para buscar/salvar)">
+          <button id="btnSaveRanking" class="test-btn" style="width:100%; margin-top:10px; background:#4f46e5;" onclick="saveRankingData()"><i class="fas fa-save"></i> Guardar mi puntuación</button>
+        </div>
+        <button class="test-btn" style="margin-top:20px; background:#64748b; font-size: 14px; padding: 8px 16px;" onclick="closeSuccessModal()">Continuar sin guardar</button>
+      </div>
+    </div>
+
+    <!-- Modal do Ranking -->
+    <div id="rankingModal" class="ranking-modal" onclick="if(event.target==this) closeRankingModal()">
+      <div class="ranking-modal-content">
+        <button onclick="closeRankingModal()" style="position:absolute; top:15px; right:15px; background:none; border:none; font-size:24px; cursor:pointer; color:#64748b;"><i class="fas fa-times"></i></button>
+        <h2 style="color: #1e293b;"><i class="fas fa-trophy" style="color:#f59e0b;"></i> Ranking Global</h2>
+        <div id="rankingContent" style="max-height: 400px; overflow-y: auto;">
+          <p><i class="fas fa-spinner fa-spin"></i> Cargando ranking...</p>
+        </div>
+        <button class="test-btn" style="margin-top:20px; background:#4f46e5;" onclick="closeRankingModal()">Volver al simulado</button>
       </div>
     </div>
 
@@ -406,6 +460,9 @@
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
         .replace(/\n\n/g, '<br><br>')
         .replace(/\n/g, '<br>');
+      
+      // Ajuste para não duplicar ícones se a IA já enviou um emoji
+      html = html.replace(/<i class="fas fa-file-alt"><\/i> ([\uD800-\uDBFF][\uDC00-\uDFFF]|[\u2600-\u27BF])/g, '<i class="fas fa-file-alt"></i> ');
       return html;
     }
 
@@ -416,16 +473,27 @@
       if (mistakeHistory.length === 0 && !getDebugParam()) return;
       btn.disabled = true;
       btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Consultando ao professor...';
+      
+      const simuladoTitle = document.querySelector('header h1')?.innerText || 'Simulado de Espanhol';
+      
       const errorsToAnalyze = mistakeHistory.length > 0 ? mistakeHistory : [
         { question: 'Ellos _________ por teléfono. (hablar)', user_answer: 'está hablando', correct_answer: 'están hablando' },
         { question: 'La sopa _________ muy caliente.', user_answer: 'es', correct_answer: 'está' }
       ];
       const errorSummary = errorsToAnalyze.map(err => `- Pregunta: "${err.question}" | Tu resposta: "${err.user_answer}" | Resposta correcta: "${err.correct_answer}"`).join('\n');
-      const promptText = `eres un profesor de español experimentado y motivador. Analiza mis errores en este simulado y explícame los temas gramaticales involucrados. Fala 100% en español. Usa EXACTAMENTE este formato Markdown para cada error:
+      const promptText = `Eres un profesor de español experto y motivador. 
+Analiza mis errores en este simulado "${simuladoTitle}" e identifica los conceptos gramaticales y léxicos involucrados. 
+Además, identifica si hay patrones recurrentes en mis errores (por ejemplo: confusión ser/estar, problemas con géneros, tiempos verbales, léxico, etc.) y proporciona un análisis de la causa raíz para ayudarme a mejorar.
+
+Fala 100% en español. Usa EXACTAMENTE este formato Markdown para cada error:
 ### Pregunta: [Enunciado]
 - ❌ **Tu resposta:** [User Answer]
 - ✅ **Resposta correcta:** [Correct Answer]
 - 💡 **Explicación:** [Breve explicación pedagógica]
+
+Y al final, incluye una sección de resumen de patrones:
+### 🔍 Análisis de Patrones y Causa Raíz
+[Tu análisis detallado de por qué estoy cometiendo estos errores y consejos estratégicos]
 
 Mis errores:
 ${errorSummary}`;
@@ -638,9 +706,130 @@ ${errorSummary}`;
       const modal = document.getElementById('successModal'); if (modal.dataset.shown === 'true') return;
       modal.dataset.shown = 'true'; stopTimer();
       document.getElementById('finalTime').innerText = formatTime(Math.floor((Date.now()-startTime)/1000));
+      
+      // Pre-encher dados do ranking se existirem no localStorage
+      const savedName = localStorage.getItem('rankName');
+      const savedPhone = localStorage.getItem('rankPhone');
+      if (savedName) document.getElementById('rankName').value = savedName;
+      if (savedPhone) document.getElementById('rankPhone').value = savedPhone;
+
       modal.classList.add('show');
     }
     function closeSuccessModal() { document.getElementById('successModal').classList.remove('show'); }
+
+    async function showRanking() {
+      const modal = document.getElementById('rankingModal');
+      const content = document.getElementById('rankingContent');
+      const slug = getSlugParam();
+      
+      modal.classList.add('show');
+      content.innerHTML = '<p><i class="fas fa-spinner fa-spin"></i> Cargando ranking...</p>';
+      
+      try {
+        const response = await fetch(`ranking.php?action=get_ranking&slug=${encodeURIComponent(slug)}`);
+        const text = await response.text();
+        
+        let data;
+        try {
+          data = JSON.parse(text);
+        } catch (e) {
+          if (text.trim().startsWith('<?php')) {
+            throw new Error('Servidor sem PHP: O arquivo ranking.php está sendo lido como texto. Use um servidor que suporte PHP.');
+          }
+          throw new Error('Resposta inválida do servidor.');
+        }
+        
+        if (data.success && data.ranking && data.ranking.length > 0) {
+          let html = `
+            <table class="ranking-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Nombre</th>
+                  <th>Nota</th>
+                  <th>Errores</th>
+                  <th>Tiempo</th>
+                </tr>
+              </thead>
+              <tbody>
+          `;
+          
+          data.ranking.forEach((entry, idx) => {
+            const time = formatTime(entry.time_seconds);
+            html += `
+              <tr>
+                <td>${idx + 1}</td>
+                <td style="font-weight:bold;">${entry.name}</td>
+                <td>${entry.accuracy}%</td>
+                <td>${entry.mistakes}</td>
+                <td>${time}</td>
+              </tr>
+            `;
+          });
+          
+          html += '</tbody></table>';
+          content.innerHTML = html;
+        } else if (data.success) {
+          content.innerHTML = '<p style="margin:20px 0;">Aún no hay puntuaciones para este simulado. ¡Sé el primero!</p>';
+        } else {
+          throw new Error(data.error);
+        }
+      } catch (e) {
+        content.innerHTML = `<p class="bad">Error al cargar el ranking: ${e.message}</p>`;
+      }
+    }
+
+    function closeRankingModal() { document.getElementById('rankingModal').classList.remove('show'); }
+
+    async function saveRankingData() {
+      const name = document.getElementById('rankName').value.trim();
+      const phone = document.getElementById('rankPhone').value.trim();
+      const btn = document.getElementById('btnSaveRanking');
+      
+      if (!name || !phone) {
+        alert('Por favor, ingresa tu nombre y celular.');
+        return;
+      }
+
+      const stats = getCurrentStats();
+      const slug = getSlugParam();
+      
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Guardando...';
+
+      const formData = new FormData();
+      formData.append('name', name);
+      formData.append('phone', phone);
+      formData.append('accuracy', stats.pct);
+      formData.append('mistakes', stats.mistakes);
+      formData.append('time_seconds', elapsedTime);
+      formData.append('slug', slug);
+
+      try {
+        const response = await fetch('ranking.php?action=save_score', {
+          method: 'POST',
+          body: formData
+        });
+        const data = await response.json();
+        
+        if (data.success) {
+          // Salvar no localStorage
+          localStorage.setItem('rankName', name);
+          localStorage.setItem('rankPhone', phone);
+          
+          closeSuccessModal();
+          showRanking();
+          updateTopPlayerDisplay();
+        } else {
+          throw new Error(data.error);
+        }
+      } catch (e) {
+        alert('Error al salvar el ranking: ' + e.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fas fa-save"></i> Guardar mi puntuación';
+      }
+    }
 
     function toggleDarkMode() { document.body.classList.toggle('dark-mode'); localStorage.setItem('darkMode', document.body.classList.contains('dark-mode') ? 'enabled' : 'disabled'); }
     function loadDarkModePreference() { if (localStorage.getItem('darkMode') === 'enabled') document.body.classList.add('dark-mode'); }

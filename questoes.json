@@ -12834,6 +12834,54 @@
                 "imagem": "https://s1.static.brasilescola.uol.com.br/be/vestibular/-5ad753e530e27.jpg"
               }
             ]
+          },
+          {
+            "title": "3) Comprensión Auditiva: Conceptos de Básico II",
+            "badge": "Escuchar",
+            "perguntas": [
+              {
+                "numero": 1,
+                "enunciado": "Escucha el audio y escribe la acción que se pide (Imperativo):",
+                "gabarito": ["abre la ventana", "abrir la ventana"],
+                "mensagem": "Concepto: Imperativo afirmativo (abrir).",
+                "tipo": "text",
+                "audio": "media/audio/repaso3-abrir.mp3"
+              },
+              {
+                "numero": 2,
+                "enunciado": "Escucha y elige qué está haciendo Juan (Gerundio):",
+                "gabarito": ["está limpiando la casa"],
+                "mensagem": "Concepto: Estar + Gerundio (limpiar).",
+                "opcoes": ["está abriendo la ventana", "está limpiando la casa", "está haciendo ejercicios"],
+                "tipo": "mc",
+                "audio": "media/audio/repaso3-limpiando.mp3"
+              },
+              {
+                "numero": 3,
+                "enunciado": "Escucha el audio y completa el imperativo irregular:",
+                "gabarito": ["diga la verdad", "diga toda la verdad"],
+                "mensagem": "Concepto: Imperativo irregular (decir).",
+                "tipo": "text",
+                "audio": "media/audio/repaso3-decir.mp3"
+              },
+              {
+                "numero": 4,
+                "enunciado": "Escucha y elige dónde está la escuela (Ser/Estar):",
+                "gabarito": ["en Barra do Imbuí"],
+                "mensagem": "Concepto: Verbo Estar (ubicación).",
+                "opcoes": ["en el centro", "en Barra do Imbuí", "en Caracas"],
+                "tipo": "select",
+                "audio": "media/audio/repaso3-casa.mp3"
+              },
+              {
+                "numero": 5,
+                "enunciado": "Escucha y escribe la orden que recibe Clara:",
+                "gabarito": ["haz los ejercicios", "hacer los ejercicios"],
+                "mensagem": "Concepto: Imperativo irregular (hacer).",
+                "tipo": "text",
+                "audio": "media/audio/repaso3-hacer.mp3"
+              }
+            ]
           }
         ]
       ]
